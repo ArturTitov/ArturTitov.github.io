@@ -1,0 +1,49 @@
+.js-tooltip
+	position: relative
+    
+.tooltip-content
+	padding: 8px
+	border-radius: 0
+	overflow: hidden
+	color: #333
+	font-size: 0.8rem
+	display: none
+	line-height: 1.2
+	white-space: nowrap
+	position: absolute
+	top: 100%
+	left: 50%
+	opacity: 0
+	visibility: hidden
+	transform: translateX(-50%)
+	transition: .3s linear
+	pointer-events: none
+	z-index: 3
+	max-width: 200px
+	&:before 
+		content: ''
+		background-color: #fff
+		height: 250px
+		width: 250px
+		border-radius: 50%
+		position: absolute
+		left: 50%
+		top: 0
+		visibility: hidden
+		z-index: -1
+		transform: translate(-50%, -50%) scale(0.1)
+		transition: .3s linear, transform 0s .3s linear
+
+// ≤768px
++media-breakpoint-up(md)
+	.tooltip-content
+		display: block
+	.js-tooltip:hover
+		.tooltip-content 
+			top: calc(100% + 10px)
+			opacity: 1
+			visibility: visible
+		.tooltip-content:before 
+			visibility: visible
+			transform: translate(-50%, -50%) scale(1)
+			transition: .3s linear

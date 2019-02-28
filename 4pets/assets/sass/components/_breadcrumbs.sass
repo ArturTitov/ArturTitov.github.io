@@ -1,0 +1,34 @@
+.breadcrumbs
+	font-size: 0.858rem
+	margin: 14px 0 35px
+	padding: 0
+	list-style-type: none
+	color: $color-breadcrumbs
+	+media-breakpoint-down(xs)
+		margin: 10px 0 20px
+		font-size: 0.8rem
+	li
+		padding-right: 12px
+		margin-right: 12px
+		position: relative
+		&:after
+			content: '\e90c'
+			color: $color-breadcrumbs
+			position: absolute
+			right: -3px
+			font-size: 0.7em
+			top: 51%
+			font-family: 'icomoon'!important
+			transform: translateY(-50%)
+			speak: none
+			font-style: normal
+			font-variant: normal
+			text-transform: none
+			line-height: 1
+			-webkit-font-smoothing: antialiased
+		&:last-child
+			color: $color-breadcrumbs-active
+			padding-right: 0
+			margin-right: 0
+			&:after
+				display: none

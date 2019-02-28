@@ -1,0 +1,243 @@
+.filter__wrapper
+	flex: 0 0 27.5%
+	max-width: 27.5%
+	position: relative
+	width: 100%
+	min-height: 1px
+	padding-right: 15px
+	padding-left: 15px
+	.btn-close
+		display: none
+
+.filter
+	color: $color-filter
+	&-head
+		margin-bottom: 7px
+	&-title
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: 15px
+		font-size: 0.786em
+
+.chosen-filter__clear
+	font-size: 0.858em
+	cursor: pointer
+	line-height: 1
+	display: flex
+	align-items: center
+	transition: all 0.2s ease
+	i
+		margin: 0 0 0 7px
+		text-shadow: none
+		font-size: 0.6em
+		padding-top: 1px
+	&:hover
+		color: $black
+
+.filter-tab
+	border-top: 1px solid $color-filter-option-border
+	padding-bottom: 22px
+	transition: all 0.3s ease
+	&:last-child
+		border-bottom: 1px solid $color-filter-option-border
+	&.filter-tab__closed
+		padding-bottom: 0
+		.filter-tab__head
+			&:before
+				content: "\e90a"
+	&.filter-tab__categories
+		text-transform: uppercase
+	&__head
+		font-size: 0.858em
+		text-transform: uppercase
+		position: relative
+		padding: 17px 25px 15px 0
+		cursor: pointer
+		font-weight: 700
+		text-shadow: none
+		&:before 
+			content: "\e90d"
+			position: absolute
+			font-family: 'icomoon'
+			right: 0
+			top: 53.5%
+			font-size: 0.9em
+			transform: translateY(-50%)
+			color: #b5b5b5
+	&__content
+		position: relative
+		display: none
+		&.open
+			display: block
+
+.noUi-target
+	border: none
+	box-shadow: none
+	background: $color-border
+	height: 2px
+	padding-left: 13px
+
+.noUi-connects
+	height: 2px
+
+.noUi-horizontal .noUi-handle
+	width: 16px
+	height: 16px
+	background-color: $accent
+	border-radius: 50%
+	border: none
+	box-shadow: none
+	outline: none
+	top: -7px
+	&:focus
+		outline: none	
+
+.noUi-handle
+	&:before, &:after
+		display: none
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle
+	right: -2px
+
+.noUi-connect
+	background: $accent
+
+#keypress
+	margin: 20px 0 8px
+
+.noUi-horizontal .noUi-tooltip
+	padding: 3px 7px 2px
+	font-size: 0.9em
+	display: none
+
+.filter-price__slider
+	font-size: 0.858em
+	.filter-price__input-wrap
+		padding: 5px 8px
+		border: 1px solid $color-border
+		max-width: 36%
+		flex-basis: 36%
+		text-align: center
+		input
+			text-align: center
+			padding: 0
+			border: none
+			margin-bottom: 0
+			width: 100%
+			color: #878787
+.input-hidden
+	input
+		display: none
+
+.filter-tab__options-list
+	font-size: 0.93em
+	.filter-option
+		display: flex
+		margin-bottom: 14px
+		&:last-child
+			margin-bottom: 0
+		.filter-option__inp
+			transition: all 0.2s ease
+		&:hover
+			color: $accent
+		.input-checkbox
+			display: block
+			font-size: 0.9em
+			margin-right: 10px
+		&.checked
+			.input-checkbox
+				background-color: $accent
+				outline: none
+				border-color: $accent
+				&:before
+					content: ""
+					display: block
+					width: 4px
+					height: 8px
+					border: 0 solid $white
+					border-width: 0 1px 1px 0
+					transform: rotateZ(45deg)
+					margin: -2px 4px
+					pointer-events: none
+					outline: none
+					box-shadow: none
+		&[data-visible="false"]
+			display: none
+		
+		&__trigger
+			display: inline-block
+			align-items: center
+			font-size: 0.93em
+			padding: 0 20px 0 25px
+			position: relative
+			+media-breakpoint-up(lg)
+				&:hover
+					font-weight: 600
+			i
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-38%)
+				font-size: 0.85em
+
+	.filter-option__trigger
+		&.active
+			i:before
+				content: '\e90d'
+
+	.filter-option__name
+		position: relative
+		cursor: pointer
+		transition: all 0.1s ease
+		flex-basis: calc(100% - 26px)
+		max-width: calc(100% - 26px)
+		line-height: 1.3
+		.qnty
+			color: $gray
+			margin-left: 5px
+			font-size: 0.93em
+
+.filter-trigger
+	display: none
+	padding: 10px 9px 8px
+	background: $accent
+	color: $white
+	position: fixed
+	left: 0
+	top: 170px
+	z-index: 15
+	+media-breakpoint-down(xs)
+		padding: 8px 6px 6px
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.filter__wrapper
+		position: fixed
+		top: 0
+		left: 0
+		width: 290px
+		height: 100vh
+		overflow-y: auto
+		max-width: 290px
+		background: #ffffff
+		border: 1px solid $color-border
+		z-index: 22
+		padding: 30px 20px
+		transform: translateX(-100%)
+		transition-property: transform
+		transition: transform .7s cubic-bezier(.3,1,.44,1)
+		&.active
+			transform: translateX(0)
+		.btn-close
+			display: inline-block
+			position: absolute
+			right: 20px
+			top: 8px
+			opacity: 0.7
+	.filter-trigger
+		display: inline-flex
+		align-items: center
+	
+	.filter
+		padding-right: 0

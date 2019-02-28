@@ -1,0 +1,115 @@
+.comparison-index
+	&__item
+		display: block
+		margin-top: 15px
+	&__link
+		color: darken($accent, 10%)
+		border-bottom: 1px dotted darken($accent, 10%)
+		font-size: 1rem
+		line-height: 0.9
+		&:hover
+			border-color: transparent
+
+.comparison-wrapper
+	overflow: hidden
+
+.comparison
+	overflow: hidden
+	font-size: 0.86em
+	border-collapse: collapse
+	border-spacing: 0
+	th, td
+		min-width: 325px
+		max-width: 325px
+		&:first-child
+			max-width: 175px
+			min-width: 175px
+			text-transform: uppercase
+			font-weight: 500
+	td
+		padding: 14px 10px 15px 20px
+		vertical-align: middle
+	th
+		font-weight: 500
+		position: relative
+	tr:nth-child(even) 
+  	background: $color-comparison-table-tr-bg
+
+.comparison-product
+	display: block
+	position: relative
+	border: 1px solid #ebebeb
+	padding: 40px 20px 20px
+	margin: 0 5px 10px
+	&__close
+		font-size: 12px
+		color: #ababab
+		line-height: 1
+		display: block
+		position: absolute
+		right: 5px
+		top: 5px
+		z-index: 1
+		transition: all 0.2s ease
+		&:hover
+			color: $text
+	&__image-wrapper
+		margin-bottom: 26px
+		display: block
+		text-align: center
+		img
+			margin: 0 auto
+			max-height: 110px 
+	&__prices
+		text-align: center
+		display: flex
+		justify-content: center
+	&__btn-wrapper
+		display: block
+		text-align: center
+		margin-top: 11px
+	&__code
+		margin-top: 8px
+		color: $gray-3
+		display: block
+	&__price
+		font-size: 1rem
+		font-weight: 700
+		&--old
+			margin-left: 10px
+			color: $gray-3
+			font-weight: 400
+			text-decoration: line-through
+
+/*========== Media Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+	.comparison
+		td
+			padding: 9px 10px 10px	
+		td, th
+			min-width: 260px
+			max-width: 260px
+			&:first-child	
+				font-size: 0.9em
+				max-width: 160px
+				min-width: 160px
+	
+// ≥992px
++media-breakpoint-down(md)
+	.comparison
+		td, th
+			min-width: 270px
+			max-width: 270px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.comparison-wrapper
+		overflow-x: auto
+	.comparison
+		td, th
+			min-width: 260px
+			max-width: 260px
+			&:first-child
+				max-width: 150px
+				min-width: 150px

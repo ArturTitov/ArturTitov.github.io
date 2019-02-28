@@ -1,0 +1,65 @@
+.page-article
+	.reviews-form
+		margin-top: 50px
+
+.reviews-section
+	margin-top: 55px
+	&__head
+		color: $color-reviews-head
+		font-size: 0.9rem
+		font-weight: 500
+		text-shadow: 0 0 0 $color-reviews-head
+		border-bottom: 1px solid #d1d1d1
+		padding-bottom: 5px
+		margin-bottom: 35px
+
+.article
+	&-img
+		float: left
+		margin: 0 45px 35px 0
+		max-width: 400px
+	&-info
+		font-size: 0.9em
+		margin-bottom: 20px
+		.views
+			margin-left: 20px
+	&-nav
+		margin-top: 50px
+		.btn
+			margin: 0 20px
+	&-prev,
+	&-next
+		color: #d8d8d8
+		font-size: 20px
+		line-height: 1
+		padding-top: 4px
+
+.views
+	padding-left: 18px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 49%
+		transform: translateY(-50%)
+		background-image: url('../img/comment.png')
+		background-repeat: no-repeat
+		width: 14px
+		height: 10px
+		background-size: cover
+/*========== Media Desktop First  ==========*/
+
+// ≥768px
++media-breakpoint-down(sm)
+	.article
+		&-img
+			max-width: 300px
+			margin: 0 30px 20px 0
+
+// ≥576px
++media-breakpoint-down(xs)
+	.article
+		&-img
+			max-width: 150px
+			margin: 0 25px 10px 0

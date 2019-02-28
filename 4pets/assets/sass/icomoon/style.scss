@@ -1,0 +1,506 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?o833pw') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?o833pw') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?o833pw##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-noun_calendar {
+  &:before {
+    content: $icon-noun_calendar; 
+  }
+}
+.icon-noun_delivery-return {
+  &:before {
+    content: $icon-noun_delivery-return;     
+    color: #6c6c6c;
+  }
+}
+.icon-noun_Info {
+  &:before {
+    content: $icon-noun_Info;     
+    color: #8a8a8a;
+  }
+}
+.icon-noun_order-delivery {
+  &:before {
+    content: $icon-noun_order-delivery;     
+    color: #ccc;
+  }
+}
+.icon-noun_registration {
+  &:before {
+    content: $icon-noun_registration; 
+  }
+}
+.icon-noun_right {
+  &:before {
+    content: $icon-noun_right;     
+    color: #6c6c6c;
+  }
+}
+.icon-arrow_left {
+  &:before {
+    content: $icon-arrow_left; 
+  }
+}
+.icon-arrow_right {
+  &:before {
+    content: $icon-arrow_right; 
+  }
+}
+.icon-delivery {
+  &:before {
+    content: $icon-delivery; 
+  }
+}
+.icon-office-phone {
+  &:before {
+    content: $icon-office-phone; 
+  }
+}
+.icon-partner-condition {
+  &:before {
+    content: $icon-partner-condition; 
+  }
+}
+.icon-present {
+  &:before {
+    content: $icon-present; 
+  }
+}
+.icon-resources {
+  &:before {
+    content: $icon-resources; 
+  }
+}
+.icon-warranty {
+  &:before {
+    content: $icon-warranty; 
+  }
+}
+.icon-basket {
+  &:before {
+    content: $icon-basket;     
+    color: #fff;
+  }
+}
+.icon-bonus {
+  &:before {
+    content: $icon-bonus;     
+    color: #fff;
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user;     
+    color: #fff;
+  }
+}
+.icon-whatsapp1 {
+  &:before {
+    content: $icon-whatsapp1;     
+    color: #25d366;
+  }
+}
+.icon-bag {
+  &:before {
+    content: $icon-bag; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-arrow-thin-down {
+  &:before {
+    content: $icon-arrow-thin-down; 
+  }
+}
+.icon-arrow-thin-left {
+  &:before {
+    content: $icon-arrow-thin-left; 
+  }
+}
+.icon-arrow-thin-right {
+  &:before {
+    content: $icon-arrow-thin-right; 
+  }
+}
+.icon-arrow-thin-up {
+  &:before {
+    content: $icon-arrow-thin-up; 
+  }
+}
+.icon-checkmark {
+  &:before {
+    content: $icon-checkmark; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-filter1 {
+  &:before {
+    content: $icon-filter1; 
+  }
+}
+.icon-chevron-thin-down {
+  &:before {
+    content: $icon-chevron-thin-down; 
+  }
+}
+.icon-chevron-thin-left {
+  &:before {
+    content: $icon-chevron-thin-left; 
+  }
+}
+.icon-chevron-thin-right {
+  &:before {
+    content: $icon-chevron-thin-right; 
+  }
+}
+.icon-chevron-thin-up {
+  &:before {
+    content: $icon-chevron-thin-up; 
+  }
+}
+.icon-chevron-with-circle-down {
+  &:before {
+    content: $icon-chevron-with-circle-down; 
+  }
+}
+.icon-chevron-with-circle-left {
+  &:before {
+    content: $icon-chevron-with-circle-left; 
+  }
+}
+.icon-chevron-with-circle-right {
+  &:before {
+    content: $icon-chevron-with-circle-right; 
+  }
+}
+.icon-chevron-with-circle-up {
+  &:before {
+    content: $icon-chevron-with-circle-up; 
+  }
+}
+.icon-resize-100 {
+  &:before {
+    content: $icon-resize-100; 
+  }
+}
+.icon-resize-full-screen {
+  &:before {
+    content: $icon-resize-full-screen; 
+  }
+}
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down; 
+  }
+}
+.icon-triangle-left {
+  &:before {
+    content: $icon-triangle-left; 
+  }
+}
+.icon-triangle-right {
+  &:before {
+    content: $icon-triangle-right; 
+  }
+}
+.icon-triangle-up {
+  &:before {
+    content: $icon-triangle-up; 
+  }
+}
+.icon-attachment {
+  &:before {
+    content: $icon-attachment; 
+  }
+}
+.icon-envelope-o {
+  &:before {
+    content: $icon-envelope-o; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
+  }
+}
+.icon-check-square-o {
+  &:before {
+    content: $icon-check-square-o; 
+  }
+}
+.icon-thumbs-o-up {
+  &:before {
+    content: $icon-thumbs-o-up; 
+  }
+}
+.icon-heart-o {
+  &:before {
+    content: $icon-heart-o; 
+  }
+}
+.icon-square-o {
+  &:before {
+    content: $icon-square-o; 
+  }
+}
+.icon-envelope {
+  &:before {
+    content: $icon-envelope; 
+  }
+}
+.icon-angle-double-left {
+  &:before {
+    content: $icon-angle-double-left; 
+  }
+}
+.icon-angle-double-right {
+  &:before {
+    content: $icon-angle-double-right; 
+  }
+}
+.icon-angle-double-up {
+  &:before {
+    content: $icon-angle-double-up; 
+  }
+}
+.icon-angle-double-down {
+  &:before {
+    content: $icon-angle-double-down; 
+  }
+}
+.icon-long-arrow-down {
+  &:before {
+    content: $icon-long-arrow-down; 
+  }
+}
+.icon-long-arrow-up {
+  &:before {
+    content: $icon-long-arrow-up; 
+  }
+}
+.icon-long-arrow-left {
+  &:before {
+    content: $icon-long-arrow-left; 
+  }
+}
+.icon-long-arrow-right {
+  &:before {
+    content: $icon-long-arrow-right; 
+  }
+}
+.icon-cc-visa {
+  &:before {
+    content: $icon-cc-visa; 
+  }
+}
+.icon-cc-mastercard {
+  &:before {
+    content: $icon-cc-mastercard; 
+  }
+}
+.icon-file-picture {
+  &:before {
+    content: $icon-file-picture; 
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+}
+.icon-mobile {
+  &:before {
+    content: $icon-mobile; 
+  }
+}
+.icon-bubble {
+  &:before {
+    content: $icon-bubble; 
+  }
+}
+.icon-bubbles2 {
+  &:before {
+    content: $icon-bubbles2; 
+  }
+}
+.icon-bubble2 {
+  &:before {
+    content: $icon-bubble2; 
+  }
+}
+.icon-spinner2 {
+  &:before {
+    content: $icon-spinner2; 
+  }
+}
+.icon-spinner3 {
+  &:before {
+    content: $icon-spinner3; 
+  }
+}
+.icon-spinner4 {
+  &:before {
+    content: $icon-spinner4; 
+  }
+}
+.icon-spinner6 {
+  &:before {
+    content: $icon-spinner6; 
+  }
+}
+.icon-spinner9 {
+  &:before {
+    content: $icon-spinner9; 
+  }
+}
+.icon-spinner10 {
+  &:before {
+    content: $icon-spinner10; 
+  }
+}
+.icon-gift {
+  &:before {
+    content: $icon-gift; 
+  }
+}
+.icon-download2 {
+  &:before {
+    content: $icon-download2; 
+  }
+}
+.icon-upload2 {
+  &:before {
+    content: $icon-upload2; 
+  }
+}
+.icon-link {
+  &:before {
+    content: $icon-link; 
+  }
+}
+.icon-star-empty {
+  &:before {
+    content: $icon-star-empty; 
+  }
+}
+.icon-star-full {
+  &:before {
+    content: $icon-star-full; 
+  }
+}
+.icon-checkbox-checked {
+  &:before {
+    content: $icon-checkbox-checked; 
+  }
+}
+.icon-filter {
+  &:before {
+    content: $icon-filter; 
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus; 
+  }
+}
+.icon-google-plus2 {
+  &:before {
+    content: $icon-google-plus2; 
+  }
+}
+.icon-google-plus3 {
+  &:before {
+    content: $icon-google-plus3; 
+  }
+}
+.icon-facebook-2 {
+  &:before {
+    content: $icon-facebook-2; 
+  }
+}
+.icon-facebook2 {
+  &:before {
+    content: $icon-facebook2; 
+  }
+}
+.icon-instagram-2 {
+  &:before {
+    content: $icon-instagram-2; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-vk {
+  &:before {
+    content: $icon-vk; 
+  }
+}
+.icon-rss {
+  &:before {
+    content: $icon-rss; 
+  }
+}
+.icon-rss2 {
+  &:before {
+    content: $icon-rss2; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-skype {
+  &:before {
+    content: $icon-skype; 
+  }
+}
+

@@ -1,0 +1,757 @@
+.page-product
+	.p-title
+		margin-bottom: 0
+	.product-code
+		margin-bottom: 25px
+.product
+	&-images
+		padding-bottom: 30px
+		position: relative
+		+media-breakpoint-down(md)
+			max-width: 360px
+			margin: 0 auto
+		+media-breakpoint-down(sm)
+			.gc-thumbs-area
+				display: none
+		+media-breakpoint-down(xs)
+			padding-bottom: 20px
+			
+		.product-thumb__sticker
+			position: absolute
+			z-index: 2
+			line-height: 1
+		.sticker__hit
+			right: 13px
+			top: 14px
+		.sticker__sale
+			left: 13px
+			top: 70%
+	&-info
+		padding-bottom: 30px
+		+media-breakpoint-down(md)
+			padding-bottom: 10px
+		&__right
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			min-height: 100%
+		.rating-wrap
+			justify-content: flex-start
+			margin-bottom: 11px
+			.rating
+				font-size: 19px
+			.product-rate
+				margin-left: 13px
+				font-size: 0.786em
+		.btn-w-icon
+			margin-left: 30px
+			line-height: 1.25
+			padding-right: 0
+			&:first-child
+				margin-left: 0
+			+media-breakpoint-down(md)
+				margin-left: 10px
+			+media-breakpoint-down(sm)
+				font-size: 0.95em
+			.dropdown
+				background-image: url(../img/dropdown_background.png)
+				white-space: normal
+				line-height: 1.5
+				font-size: 0.93em
+				min-width: 200px
+				top: calc(100% + 10px)
+				right: 0
+				left: auto
+				&:before
+					content: ''
+					left: 0
+					position: absolute
+					top: -10px
+					width: 100%
+					height: 10px
+					background: transparent
+		.btn-w-icons__wrapper
+			+media-breakpoint-down(lg)
+				display: flex
+				justify-content: space-between
+		.product-options
+			+media-breakpoint-down(md)
+				margin-bottom: 10px
+	&-sale
+		font-size: 0.93em
+		background: $color-product-sale-bg
+		padding: 10px 20px 12px
+		line-height: 1.3
+		margin-bottom: 10px
+		&.hidden
+			opacity: 0
+			display: block
+		.accent
+			font-weight: 700
+			text-transform: uppercase
+			color: $accent-light
+			letter-spacing: 0.5px
+		p
+			margin: 0
+
+	&-availability
+		font-size: 0.93em
+		margin-bottom: 10px
+
+	&-price__wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 11px
+		>*
+			line-height: 1.3
+		i
+			font-size: 20px
+			&:before
+				color: $accent
+		.prices
+			.price-new
+				font-size: 1.285rem
+				font-weight: 700
+				margin-right: 5px
+			.price-old
+				font-size: 1rem
+				color: $color-old-price
+				text-decoration: line-through	
+
+	&-bonus
+		line-height: 1
+		font-size: 0.85em
+		margin-top: 1px
+		strong
+			font-weight: 600
+		.bonus-value
+			color: $accent-light
+			position: relative
+		.description__tooltip
+			right: -14px
+			top: -6px
+			&-btn
+				border-radius: 0
+				border: none
+				width: auto
+				height: auto
+				color: $accent-light
+				font-size: 11px
+			i
+				font-weight: 600
+			&-descr
+				left: 100%
+				min-width: 290px
+				+media-breakpoint-down(md)
+					top: auto
+					bottom: calc(100% + 30px)
+					left: auto
+					right: 0
+				+media-breakpoint-down(sm)
+					right: auto
+					left: 5px
+					&:before
+						border-right: none
+						border-left: 7px solid #fff
+						right: auto
+						left: 0
+				+media-breakpoint-down(xs)
+					left: 50%
+					transform: translateX(-50%)
+	
+	&-controls
+		margin: 50px 0
+		max-width: 168px
+		+media-breakpoint-down(md)
+			margin: 25px 0 20px
+		+media-breakpoint-down(sm)
+			margin: 15px 0 20px
+		+media-breakpoint-down(xs)
+			max-width: 100%
+			.btn-accent
+				width: 100%
+		a
+			display: block
+		.btn-accent
+			text-align: center
+			margin-bottom: 5px
+
+	&-options
+		&__title
+			font-size: 0.93em
+			font-weight: 600
+			margin-bottom: 10px
+	&-option
+		cursor: pointer
+		display: inline-flex
+		margin: 0 13px 10px 0
+		flex-direction: column
+		text-align: center
+		&.active
+			.product-option__value
+				background: $accent
+				color: $white
+		&:not(.active):hover
+			.product-option__value
+				background: $accent-light
+				color: $white
+		&__value
+			padding: 5px 15px
+			border: 1px solid #e8e8e8
+			margin-bottom: 4px
+			transition: .2s
+			font-size: 0.786em
+			min-width: 44px
+		&__descr
+			font-size: 0.642em
+			color: #7d7d7d
+		
+
+	&-params
+		display: flex
+		+media-breakpoint-down(sm)
+			margin-bottom: 2px
+			&:last-child
+				margin-bottom: 0
+		&__container
+			font-size: 0.786em
+			margin: 25px 0 6px
+			+media-breakpoint-down(sm)
+				margin: 5px 0 6px
+		&__name
+			flex-basis: 55%
+			max-width: 55%
+			position: relative
+			&:after
+				content: ''
+				width: 100%
+				height: 1px
+				background: #e8e8e8
+				position: absolute
+				left: 0
+				bottom: 2px
+				z-index: -1
+			span
+				background: #ffffff
+		&__value
+			flex-basis: 45%
+			max-width: 45%
+			a
+				text-decoration: underline
+
+	&__count
+		display: inline-flex
+		border: 1px solid $color-inputs-border
+		font-size: 0.93em
+		align-items: center
+		&-value
+			border: none
+			padding: 0
+			width: 30px
+			line-height: 1
+			display: block
+			text-align: center
+			margin: 0
+	&__button-decrease,
+	&__button-increase
+		padding: 7px 3px 6px
+		cursor: pointer
+		line-height: 8px
+		font-size: 0.85em
+		border: none
+		color: $color-gray
+		transition: all 0.2s  ease
+		+media-breakpoint-up(lg)
+			&:hover
+				background: $accent-light
+				color: #ffffff
+		
+.reg-delivery
+	+media-breakpoint-down(md)
+		margin-top: 15px
+	&__input--wrapper
+		display: flex
+		font-size: 0.93em
+	&__input
+		transform: translateY(3px)
+	&__content
+		padding-left: 10px
+		line-height: 1.6
+		flex-basis: calc(100% - 15px)
+		max-width: calc(100% - 15px)
+		cursor: pointer
+		user-select: none
+		span
+			display: block
+	&__descr
+		font-weight: 700
+		font-size: 0.7em
+		color: $accent-light
+	.input-checkbox:checked, input[type=checkbox]:checked, input[type=radio]:checked
+		background-color: $accent
+		border-color: $accent
+		&:before
+			border-color: #fff
+	.form__group-select
+		display: none
+		font-size: 0.858em
+		margin-top: 15px
+		&.active
+			display: inline-block
+		&-selected
+			margin-right: 30px
+
+.btns-row
+	margin-top: 70px
+	+media-breakpoint-down(md)
+		margin-top: 20px
+	.btn-to-compare
+		cursor: pointer
+		transition: 0.2s ease
+		.st0, .st1, .st2
+			transition: 0.2s ease
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $accent
+				font-weight: 600
+				svg
+					fill: $accent
+				.st0, .st1, .st2
+					stroke: $accent
+
+.products-tabs__wrapper
+	.s-title
+		margin: 10px 0 0
+
+.product-info__tabs
+	font-size: 0.93em
+	.tab-pane
+		ul
+			padding: 0
+			list-style-type: none
+			li
+				padding-left: 10px
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 11px
+					width: 5px
+					height: 1px
+					background: $text
+	.table
+		th
+			color: #8a8a8a
+			font-weight: 600
+			padding: 0 15px 9px 0
+			line-height: 1.25
+		td
+			padding: 9px 15px 9px 0
+		tr
+			border-bottom: 1px solid $color-title-border
+			&:last-child
+				border-bottom: 0
+		&.consist
+			min-width: 555px
+			+media-breakpoint-down(xs)
+				min-width: auto
+				width: 100%
+			th, td
+				width: 50%
+		&.recommendations
+			max-width: 750px
+			+media-breakpoint-down(sm)
+				min-width: auto
+				width: 100%
+			+media-breakpoint-down(xs)
+				font-size: 0.88em
+			th, td
+				width: 25%
+			th
+				padding-right: 4%
+				+media-breakpoint-down(lg)
+					padding-right: 15px
+					font-size: 0.858em
+				+media-breakpoint-down(xs)
+					font-size: 0.8em
+	.tab-nav__accordion
+		margin-bottom: 20px
+		border-bottom: 1px solid $color-title-border
+		display: flex
+		justify-content: space-between
+		+media-breakpoint-down(sm)
+			display: none
+		.tab-nav__item
+			text-transform: uppercase
+			padding: 10px 40px
+			text-align: center
+			cursor: pointer
+			font-size: 0.93em
+			display: inline-flex
+			align-items: center
+			transition: .2s
+			+media-breakpoint-up(lg)
+				&:hover:not(.active)
+					color: $accent
+			+media-breakpoint-down(lg)
+				padding: 10px 20px
+			+media-breakpoint-down(md)
+				padding: 9px 10px
+				font-size: 0.8em
+				font-weight: 600
+			&.active
+				background: $accent
+				color: $white
+
+	.accordion__item
+		+media-breakpoint-down(sm)
+			border-bottom: 1px solid $color-product-thumb-border
+			&.active
+				.accordion__item--head
+					color: $white
+					background: $accent
+		&--head
+			display: none
+			padding: 10px 15px
+			text-align: center
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 0.93em
+			transition: all 0.3s ease
+			+media-breakpoint-down(sm)
+				display: block
+			+media-breakpoint-down(sm)
+				font-size: 0.858em
+		&--content
+			+media-breakpoint-down(sm)
+				padding: 20px 0
+				display: none
+
+.whobought
+	&-list
+		display: flex
+		flex-wrap: wrap
+		margin-left: -10px
+		margin-right: -10px
+	&-item
+		flex-basis: calc(25% - 20px)
+		max-width: calc(25% - 20px)
+		padding: 25px
+		margin: 10px
+		border: 1px solid $color-whobought-border
+		display: flex
+		flex-wrap: wrap
+		+media-breakpoint-down(lg)
+			padding: 20px
+		+media-breakpoint-down(md)
+			flex-basis: calc(33.3% - 20px)
+			max-width: calc(33.3% - 20px)
+		+media-breakpoint-down(sm)
+			flex-basis: calc(50% - 20px)
+			max-width: calc(50% - 20px)
+		+media-breakpoint-down(xs)
+			flex-basis: calc(50% - 10px)
+			max-width: calc(50% - 10px)
+			padding: 10px
+			margin: 5px
+			align-items: center
+		&__img
+			flex-basis: 60px
+			max-width: 60px
+			margin-right: 13px
+			+media-breakpoint-down(xs)
+				flex-basis: 20%
+				max-width: 20%
+				margin-right: 0
+		&__info
+			flex-basis: calc(100% - 74px)
+			max-width: calc(100% - 74px)
+			+media-breakpoint-down(xs)
+				flex-basis: 80%
+				max-width: 80%
+				padding-left: 10px
+		&__name
+			color: $accent
+			font-weight: 600
+			margin-bottom: 5px
+			+media-breakpoint-down(xs)
+				margin-bottom: 2px
+		&__descr
+			color: #636363
+			font-size: 0.858em
+			line-height: 1.3
+			+media-breakpoint-down(xs)
+				font-size: 0.75em
+
+
+.reviews-list
+	.review-item
+		border: 1px solid $color-review-border
+		padding: 20px 22px
+		margin-bottom: 20px
+		.reviewer
+			color: $accent
+			font-weight: 600
+			margin-bottom: 2px
+		.animal
+			font-size: 0.858em
+			border-left: 1px solid $accent
+			padding-left: 5px
+			margin-bottom: 12px
+			line-height: 1
+		.rating
+			margin-bottom: 6px
+		.text
+			margin-bottom: 4px
+		.data
+			color: $color-data
+			font-size: 0.858em
+
+.review-answer
+	border: 1px solid $color-review-border
+	padding: 20px 22px
+	margin-bottom: 20px
+	position: relative
+	margin-left: 13.5%
+	display: flex
+	&:before
+		content: '\e92b'
+		position: absolute
+		right: calc(100% + 10px)
+		top: -3px
+		font-family: icomoon
+		font-weight: 700
+		font-size: 11px
+		color: #8a8a8a
+	&__img
+		max-width: 40px
+		flex-basis: 40px
+		+media-breakpoint-down(xs)
+			display: none
+		img
+			width: 100%
+	&__title
+		text-transform: uppercase
+		color: $accent-light
+		font-weight: 600
+	&__content
+		padding-left: 15px
+		+media-breakpoint-down(xs)
+			padding-left: 0
+	&__text
+		margin-bottom: 4px
+	&__data
+		color: $color-data
+		font-size: 0.858em
+
+
+.if-not-logged
+	background: $color-reviews-form-bg
+	padding: 25px
+	line-height: 1.4
+
+
+.reviews__form
+	background: $color-reviews-form-bg
+	padding: 25px
+	font-size: 0.858em
+	+media-breakpoint-down(sm)
+		margin-bottom: 30px
+	.form__title
+		margin-bottom: 10px
+	.form__group--textarea
+		.form__group-label
+			font-weight: 700
+			margin-bottom: 10px			
+	textarea
+		border-color: $color-reviews-form-inp-border
+	.btn-wrap
+		text-align: right
+
+.rating-wrapper 
+	overflow: hidden
+	display: inline-block
+	vertical-align: middle
+
+.rating-star 
+	display: inline-block
+	width: 15px
+	height: 15px
+	line-height: 15px
+	position: relative
+	margin: 0 2px 0 0
+	vertical-align: middle
+	float: right
+	font-weight: 300
+
+.rating-star:before 
+	content: "\e9d9"
+	font-family: "icomoon"
+	display: inline-block
+	font-size: 15px
+	position: absolute
+	left: 0
+	top: 0
+	color: $color-rating-star-gray
+
+.rating-input 
+	display: none
+
+.rating-wrapper:hover .rating-star:hover:before, .rating-wrapper:hover .rating-star:hover ~ .rating-star:before, .rating-input:checked ~ .rating-star:before 
+	color: $color-rating-star-accent
+	
+.w-iframe 
+	overflow: hidden
+	padding-bottom: 56.25%
+	position: relative
+	height: 0
+	margin-bottom: 30px
+	&:last-child 
+		margin-bottom: 0
+	iframe 
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		position: absolute
+	
+.product-videos
+	max-width: 750px
+	margin: 0 auto
+
+
+.tab-nav__slider
+	margin-bottom: 20px
+	display: flex
+	flex-wrap: wrap
+	font-size: 0.93em
+	+media-breakpoint-down(xs)
+		justify-content: center
+	.tab-nav__item
+		text-transform: uppercase
+		padding: 10px 35px
+		text-align: center
+		cursor: pointer
+		font-size: 0.93em
+		display: inline-flex
+		align-items: center
+		transition: .2s
+		+media-breakpoint-up(lg)
+			&:hover:not(.active)
+				color: $accent
+		+media-breakpoint-down(lg)
+			padding: 10px 20px
+		+media-breakpoint-down(md)
+			padding: 9px 10px
+			font-size: 0.8em
+			font-weight: 600
+		&.active
+			background: $accent
+			color: $white
+
+
+#glasscase
+	max-height: 78px	
+	.product_img
+		opacity: 0
+.glass-case #glasscase .product_img
+	opacity: 1
+
+.gc-display-area
+	border: 1px solid $color-product-thumb-border
+	padding: 0
+
+.gc-thumbs-area
+	max-height: 78px
+	max-width: calc(100% - 42px)
+	left: 50%!important
+	transform: translateX(-50%)
+	overflow: visible
+	+media-breakpoint-down(lg)
+		max-width: calc(100% - 44px)
+	+media-breakpoint-down(md)
+		max-width: calc(100% - 40px)
+	&.gc-hz li
+		margin: 0 13.5px
+		max-width: 79px
+		max-height: 78px
+		+media-breakpoint-down(lg)
+			margin: 0 15px
+		+media-breakpoint-down(md)
+			margin: 0 10px
+		+media-breakpoint-down(sm)
+			margin: 0 13.5px
+		+media-breakpoint-down(xs)
+			margin: 0 8px
+			max-width: 21.2%
+			max-height: 100%
+	
+.gc-thumbs-area-next, .gc-thumbs-area-prev
+	font-size: 12px
+
+.glass-case ul li
+	border: 1px solid $color-product-thumb-border
+	padding: 1px
+	transition: 0.15s
+	&:hover
+		border-color: lighten($accent-light, 10%)
+	.gc-li-display-container img
+		transform: translate(-50%, -50%)
+		margin: 0!important
+.glass-case ul li.gc-active, .glass-case ul li.gc-active:hover
+	border-color: $accent-light
+
+.gc-icon
+	border: none
+	color: $text
+	background: rgba(255,255,255, 0.5)
+	font-size: 24px
+	font-weight: 400
+	+media-breakpoint-down(sm)
+		z-index: 10
+
+.gc-icon-next:before,
+.gc-icon-prev:before
+	font-family: icomoon
+	font-weight: 400
+	font-weight: 300
+	top: 0
+
+.gc-icon-next:before
+	content: '\e90c'
+	
+.gc-icon-prev:before
+	content: '\e90b'
+
+.gc-display-area
+	font-size: 12px
+
+.glasscase__thumbs--wrapper
+	overflow: hidden
+	max-height: 100%
+
+.gc-thumbs-area-next .gc-icon-next:before
+	top: 0
+.gc-thumbs-area.gc-hz .gc-thumbs-area-next
+	right: -21px
+	+media-breakpoint-down(md)
+		right: -24px
+
+.gc-thumbs-area-prev .gc-icon-prev:before
+	top: 0
+.gc-thumbs-area.gc-hz .gc-thumbs-area-prev
+	left: -21px
+
+.gc-icon-close:before
+	top: 0
+	right: 0
+
+.gc-icon-enlarge:before 
+	top: 2px
+	left: 2px
+	right: 2px
+	bottom: 2px
+	font-size: 20px			

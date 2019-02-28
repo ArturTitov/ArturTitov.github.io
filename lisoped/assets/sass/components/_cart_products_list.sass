@@ -1,0 +1,72 @@
+.cart-product
+	border: 1px solid $color-border
+	padding: 18px 12px 18px 15px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 10px
+	font-size: 0.8em
+	&__img
+		width: 95px
+		text-align: center
+		img
+			margin: 0 auto
+	&__descr
+		max-width: 154px
+		margin-left: 1.5em
+	&__name
+		font-size: 1em
+		text-transform: none
+		margin-bottom: 6px
+	.cart-product__count
+		display: flex
+		align-items: center
+		&-price
+			font-weight: 500
+		input
+			width: 26px
+			padding: 0 3px
+			border: none
+			line-height: 1
+			text-align: center
+			font-size: 1.1em
+			margin-bottom: 0
+		>div
+			cursor: pointer
+	.option-item
+		display: flex
+		&__name
+			flex-basis: 40%	
+			max-width: 40%
+			color: $color-option-name
+		&__value
+			flex-basis: 60%
+			max-width: 60%
+	&__col
+		display: flex
+		align-items: center
+		flex-basis: 50%
+		max-width: 50%
+	&__info
+		justify-content: space-between
+		padding-left: 7%
+		.remove
+			margin-bottom: -3px
+			
+/*========== Media Desktop First  ==========*/
+// ≥576px
++media-breakpoint-down(xs)
+	.cart-product__col
+		flex-basis: 100%
+		max-width: 100%
+		&.cart-product__info
+			flex-basis: 225px
+			max-width: 225px
+			margin: 15px auto 0
+			padding-left: 0
+	.cart-product__descr
+		max-width: 65%
+	
+	

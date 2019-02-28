@@ -1,0 +1,217 @@
+.catalog__main-content
+	flex: 0 0 72.5%
+	max-width: 72.5%
+	position: relative
+	width: 100%
+	min-height: 1px
+	padding-right: 15px
+	padding-left: 20px
+	+media-breakpoint-down(md)
+		flex: 0 0 100%
+		max-width: 100%
+		padding: 0 15px
+	&__head
+		display: flex
+		justify-content: space-between
+		+media-breakpoint-down(md)
+			flex-direction: column
+		.p-title
+			flex-basis: calc(100% - 380px) 
+			max-width: calc(100% - 380px)
+			+media-breakpoint-down(md)
+				flex-basis: 100%
+				max-width: 100%
+		.product-sort__group
+			flex-basis: 380px
+			max-width: 380px
+			justify-content: flex-end
+			+media-breakpoint-down(md)
+				flex-basis: 100%
+				max-width: 100%
+				justify-content: space-between
+
+.catalog-content
+	padding-bottom: 30px
+	.p-title
+		margin-bottom: 30px
+		font-size: 1rem
+		padding-top: 3px
+
+.product-sort__group
+	margin-bottom: 30px
+	color: $color-sort
+	font-size: 0.8em
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	+media-breakpoint-down(xs)
+		> div
+			margin-bottom: 10px
+	.has-dropdown
+		padding-right: 12px
+	.product-sort__item:first-of-type
+		.product-sort__item-select
+			min-width: 200px
+			+media-breakpoint-down(xs)
+				min-width: 170px
+	.product-sort__item-name
+		line-height: 1
+		margin-right: 19px
+		text-shadow: 0 0 0 $accent
+	.selected-option
+		border: 1px solid #d5d4d4
+		padding: 6px 30px 6px 10px
+		line-height: 1
+		position: relative
+		display: inline-block
+		font-weight: 600
+		font-size: 0.93em
+		&:after
+			content: "\e90a"
+			position: absolute
+			font-family: 'icomoon'
+			right: 9px
+			top: 54%
+			font-size: 0.85em
+			transform: translateY(-50%)
+
+
+.products-controls__view-switchers
+	line-height: 1
+	+media-breakpoint-down(xs)
+		display: none
+	.products-controls__view-switcher
+		display: inline-block
+		line-height: 1
+		margin-left: 8px
+		color: #e4e4e4
+		svg
+			width: 20px
+			height: 20px
+			fill: #e4e4e4
+		&.active
+			color: $accent
+			svg
+				fill: $accent
+		+media-breakpoint-up(md)
+			&:hover
+				color: $accent
+				svg
+					fill: $accent
+
+.products-row
+	&.products-row__list
+		.product-thumb
+			max-width: 100%
+			display: flex
+			.product-thumb__image
+				max-height: 165px
+				img
+					max-height: 165px
+			&__image-wrapper
+				margin-bottom: 0
+				.sticker__hit
+					right: 0
+			&__col-image
+				flex-basis: 24%
+				max-width: 24%
+			&__col-info
+				flex-basis: 44%
+				max-width: 44%
+				padding: 0 20px 0 15px
+			&__col-options
+				flex-basis: 32%
+				max-width: 32%
+			.bonus-price__wrapper
+				margin-top: 10px
+			&__name
+				margin-bottom: 5px
+			&__manufacture
+				margin-bottom: 15px
+			.btn-load-more
+				min-height: 0
+			.bonus-price__wrapper	.bonus-price
+				font-weight: 700
+				font-size: 1rem
+			+media-breakpoint-down(sm)
+				.product-thumb__col-image
+					flex-basis: 18%
+					max-width: 18%
+				.product-thumb__col-info
+					flex-basis: 46%
+					max-width: 46%
+				.product-thumb__col-options
+					flex-basis: 36%
+					max-width: 36%
+				.bonus-price__wrapper
+					flex-direction: column
+				.bonus-description
+					margin-top: 5px
+			+media-breakpoint-down(xs)
+				flex-direction: column
+				max-width: 300px
+				.product-thumb__col-image,
+				.product-thumb__col-info,
+				.product-thumb__col-options
+					flex-basis: 100%
+					max-width: 100%
+				.product-thumb__col-image
+					margin-bottom: 10px
+				.product-thumb__col-info
+					padding: 0
+				.product-thumb__manufacture
+					margin-bottom: 8px
+				.bonus-price__wrapper
+					flex-direction: row
+
+
+	.product-thumb
+		margin: 0 auto 30px
+
+.btn-load-more
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+	height: 100%
+	width: 100%
+	text-transform: uppercase
+	text-align: center
+	font-size: 0.93em
+	line-height: 1
+	color: $accent
+	font-weight: 600
+	min-height: 390px
+	padding: 20px
+	transition: none
+	+media-breakpoint-up(md)
+		&:hover
+			color: $accent-light
+			svg
+				fill: $accent-light
+	span 
+		display: block
+		margin-top: 24px
+	svg
+		fill: $accent
+		width: 130px
+		height: 130px
+	
+.social__sidebar
+	&.about-us__sidebar
+		margin-top: 90px
+		+media-breakpoint-down(md)
+			margin-top: 20px
+	.subscribe
+		margin-top: 65px
+		+media-breakpoint-down(md)
+			margin-top: 20px
+			.subscribe-icon
+				display: none
+	.socials
+		display: inline-flex
+		padding: 5px
+		background: $color-socials-bg
+		font-size: 20px
+		.icon-youtube
+			font-size: 26px

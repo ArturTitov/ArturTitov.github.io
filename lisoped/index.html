@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Lisoped</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="assets/img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+</head>
+
+<body>
+
+	<div id="my-wrapper" class="wrapper">
+
+		<header id="my-header" class="header">
+			<div class="container">
+
+				<div class="topline d-flex align-items-center justify-content-between flex-wrap">
+
+					<ul class="h-item menu d-lg-flex align-items-center flex-wrap remove-md">
+						<li class="has-dropdown">
+							<span>Покупателям</span>
+							<ul class="dropdown">
+								<li><a href="delivery_order.html">Оплата и доставка</a></li>
+								<li><a href="reviews.html">Отзывы</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="credit.html">Рассрочка</a></li>
+								<li><a href="manufacturer.html">Производители</a></li>
+								<li><a href="about_us.html">О нас</a></li>
+							</ul>
+						</li>
+						<li><a href="blog.html">Блог</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="shares.html">Акции</a></li>
+					</ul>
+
+					<span data-toggle="mobile-menu" class="hamburger hamburger--3dx">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</span>
+
+					<a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Lisoped"></a>
+
+					<div class="h-item h-phones hidden-sm remove-sm">
+						<div class="h-phones__list has-dropdown">
+							<a href="tel:998887766">(050) 377-50-77</a>
+							<div class="h-phones-more" data-toggle="dropdown">
+								<i class="icon-caret-down"></i>
+							</div>
+							<div class="dropdown h-phones__dropdown">
+								<ul>
+									<li>
+										<a href="tel:955203728">
+											<span>(050) 377-50-77</span>
+											<!-- нужно в админке реализовать чекалки: 
+												если привязан к номеру телеграм или вайбер,
+												то выводим соответствующий span-->
+											<span class="icon_telegram"></span>
+											<span class="icon_viber"></span>
+											<span class="icon_whatsapp"></span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li><a href="tel:951536866"><span>(050) 377-50-77</span></a></li>
+								</ul>
+								<strong class="h6">Режим работы</strong>
+								<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+							</div>
+						</div>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</div>
+
+					<div class="h-item header__user-buttons">
+						<ul class="hub-list d-flex justify-content-center justify-content-sm-end">
+					
+							<li class="hub-i hub-i__user hidden-md">
+								<a href="#log-in-popup" class="hub-i__link to-popup">
+									<span class="i i-user"></span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__compare">
+								<a href="comparison.html" class="hub-i__link">
+									<span class="i i-lawyer"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__wishlist">
+								<a href="wishlist.html" class="hub-i__link">
+									<span class="i i-heart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>								
+							
+							<li class="hub-i hub-i__cart">
+								<a href="#cart-popup" class="hub-i__link to-popup">
+									<span class="i i-shopping-cart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+	
+						</ul>
+					</div>
+					
+				</div><!-- /.topline -->
+			</div>
+
+			<div class="botline">
+				<div class="container">
+
+					<div class="botline-inner d-flex align-items-center justify-content-between flex-wrap">
+
+						<a href="#mobile-catalog" id="trigger-btn" class="btn-accent">
+							<span>Каталог товаров</span>
+						</a>
+
+						<ul class="language ul">
+							<li class="language-item active"><a href="index.html">ru</a></li>
+							<li class="language-item"><a href="index.html">ua</a></li>
+						</ul>
+
+						<nav class="site-nav d-lg-flex align-items-center remove-md">
+							
+							<div class="nav-item">
+								<span class="nav-item__t">Велосипеды</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Горные</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Горные электровелосипеды</a></li>
+												<li><a href="catalog.html">Двухподвесные</a></li>
+												<li><a href="catalog.html">Найнеры</a></li>
+												<li><a href="catalog.html">Фэтбайки</a></li>
+												<li><a href="catalog.html">Хардтейл</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Городские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Гибридные кроссовые</a></li>
+												<li><a href="catalog.html">Городские электровелосипеды</a></li>
+												<li><a href="catalog.html">Круизеры</a></li>
+												<li><a href="catalog.html">Туристические</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Женские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Комфортные</a></li>
+												<li><a href="catalog.html">Спортивные</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Детские и подростковые</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Беговелы</a></li>
+												<li><a href="catalog.html">Детские</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Складные</a>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Шоссейные</a>
+										</div><!-- /.nav-item__links -->										
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<span class="nav-item__t">Аксессуары</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велобагажники</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокомпьютер</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Звонки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Замки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Защита рамы</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крепления и стойки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Зеркала</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Корзины на велосипед</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Освещение</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крылья</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Насосы</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Фляги</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Подножки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Сумки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Флягодержатели</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокресла для детей</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Запчасти</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Инструменты и химия</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Экипировка</a>
+							</div><!-- /.nav-item -->
+
+						</nav>
+
+						<div class="search">
+							<div class="search-btn"><span class="text">Поиск</span><span class="i i-search"></span></div>
+							<div class="search-inp">
+                <input type="search" placeholder="Что будете искать?">
+							</div>
+							
+							<div id="live-search" class="live-search">
+							
+								<div class="cart-product__list">
+
+									<div class="cart-product">
+										<div class="cart-product__img">
+											<img src="assets/img/products/product1_xs_img.jpg" alt="Product name">
+										</div>
+										<div class="cart-product__descr-wrapper">
+											<div class="cart-product__descr">
+												<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+												<span class="product-info__availability product-info__availability--available">Есть в наличии</span>
+											</div>
+											<div class="cart-product__price">12 745 грн</div>		
+										</div>
+									</div><!-- /.cart-product -->
+
+									<div class="cart-product">
+										<div class="cart-product__img">
+											<img src="assets/img/products/product2_xs_img.jpg" alt="Product name">
+										</div>
+										<div class="cart-product__descr-wrapper">
+											<div class="cart-product__descr">
+												<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+												<span class="product-info__availability product-info__availability--available">Есть в наличии</span>
+											</div>
+											<div class="cart-product__price">12 745 грн</div>		
+										</div>
+									</div><!-- /.cart-product -->
+
+									<div class="cart-product">
+										<div class="cart-product__img">
+											<img src="assets/img/products/product3_xs_img.jpg" alt="Product name">
+										</div>
+										<div class="cart-product__descr-wrapper">
+											<div class="cart-product__descr">
+												<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+												<span class="product-info__availability product-info__availability--available">Есть в наличии</span>
+											</div>
+											<div class="cart-product__price">12 745 грн</div>		
+										</div>
+									</div><!-- /.cart-product -->
+			
+								</div><!-- /.cart-product__list -->
+							
+								<div class="result-text">
+									<a href="catalog.html">Показать все результаты (23)</a>
+								</div>
+							</div>
+													
+						</div>
+
+					</div>
+				</div>
+			</div><!-- /.botline -->
+
+
+			<!-- .mobile-menu ================== -->
+			<div id="mobile-menu" class="mobile-menu">
+
+				<div class="btn-close">
+					<i class="icon-close"></i>
+				</div>
+				
+				<div class="mobile-item mobile-item__user">
+					<span class="i i-user"></span>
+					<a href="#log-in-popup" class="to-popup">Войти</a> /
+					<a href="#registration.html">Зарегистрироваться</a>
+				</div>
+
+				<ul class="mobile-list mobile-item mobile-list__phones">
+					<li><span class="h6">Заказы по телефонам:</span></li>
+					<li>
+						<a href="tel:955203728">
+							<span>(050) 377-50-77</span>
+							<span class="icon icon_telegram"></span>
+							<span class="icon icon_viber"></span>
+							<span class="icon icon_whatsapp"></span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</li>
+				</ul>
+						
+				<ul class="mobile-list mobile-item">
+					<li><a href="delivery_order.html">Оплата и доставка</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="credit.html">Рассрочка</a></li>
+					<li><a href="manufacturer.html">Производители</a></li>
+					<li><a href="about_us.html">О нас</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="shares.html">Акции</a></li>
+				</ul>
+
+				<div class="mobile-item mobile-item__timework">
+					<span class="h6">Режим работы</span>
+					<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+				</div>
+			</div>
+			<!-- /.mobile-menu ================== -->
+
+			
+			<!-- #mobile-catalog ================== -->
+			<div id="mobile-catalog" class="hidden">
+				<ul>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li><a href="category.html">Блог</a></li>
+					<li><a href="category.html">Контакты</a></li>
+					<li><a href="category.html">Акции</a></li>
+				</ul>
+			</div>
+			<!-- /#mobile-catalog ================== -->
+
+			<div class="hidden">
+				<div id="cart-popup" class="cart-popup popup">
+
+					<div class="popup-header">Корзина</div>
+
+					<div class="cart-product__list">
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product1_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">12 745 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">12 745 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product2_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Звонок велосипедный XLC DD-H02</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">черный</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">293 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="2">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">586 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product3_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Антипрокольная жидкость  для беcкамерок Slime Naplo</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Объем:</span>
+											<span class="option-item__value">473мл</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">426 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">426 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+
+					</div><!-- /.cart-product__list -->
+
+					<div class="popup-footer">
+						<div class="cart-total">
+							<span class="text">Сумма:</span>
+							<span class="sum">13 757 грн</span>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="btn-continue">Продолжить покупки</a>
+							<a href="#" class="btn">
+								<span>Оформить заказ</span>
+							</a>
+						</div>
+					</div>
+
+				</div><!-- /.cart-popup -->
+			</div>
+				
+		</header>
+		<!-- /.header ===================================== -->
+
+		<!-- Блок main на всех страницах разный -->
+		<main id="my-content" class="page-content">
+				
+			<section class="s-banner">
+				<div class="main-banner">
+
+					<!-- Если у банера есть фото (блок: class="banner-p__link") то к блоку: class="banner-item" добавляем класс "banner-item__with-img" -->
+					<div class="banner-item__wrapper">
+						<div class="banner-item banner-item__with-img" style="background-image: url(assets/img/banner/banner_1_bg.jpg);">
+							<div class="d-flex">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-lg-7 col-sm-6 order-sm-last banner-p__img-wrap">
+											<a href="#" class="banner-p__img">
+												<img src="assets/img/banner/bicycle_1.png" alt="bicycle">
+											</a>
+										</div>
+										<div class="col-lg-5 col-sm-6 banner-item_descr-wrap">
+											<div class="banner-item_descr">
+												<h2 class="h2">Новая  коллекция</h2>
+												<div class="banner-item_links">
+													<a href="catalog.html" class="banner-c__link btn_accent">
+														<span class="text">Горные велосипеды</span>
+														<span class="i i-next"></span>
+													</a>
+													<a href="product.html" class="banner-p__link">Merida Reacto 7000E</a>
+												</div>
+											</div>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div><!-- /.banner-item -->
+					</div>
+
+					<div class="banner-item__wrapper">
+						<div class="banner-item" style="background-image: url(assets/img/banner/banner_4_bg.jpg);">
+							<div class="d-flex">
+								<div class="container">
+									<div class="row align-items-center">
+										<div class="col-lg-5 col-md-6 banner-item_descr-wrap">
+											<div class="banner-item_descr">
+												<h2 class="h2">На наших великах гоняют чемпионы! Истории из жизни, проблемы и советы</h2>
+												<div class="banner-item_links">
+													<a href="catalog.html" class="banner-c__link btn_accent">
+														<span class="text">Горные велосипеды</span>
+														<span class="i i-next"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /.banner-item -->
+					</div>
+				</div>
+			</section>
+			<!-- /.s-banner ===================================== -->
+
+			<section class="s-categories s-padding">
+				<div class="container">
+					<div class="categories d-flex flex-wrap">
+						<div class="categories-col categories-col__left">
+							<a href="category.html" class="categories-item">
+								<span class="categories-item__title">Велосипеды</span>
+								<img src="assets/img/home_categories/category_1.jpg" alt="Название категории">
+							</a>				
+						</div>
+						<div class="categories-col categories-col__right">
+							<a href="category.html" class="categories-item">
+								<span class="categories-item__title">Аксессуары</span>
+								<img src="assets/img/home_categories/category_2.jpg" alt="Название категории">
+							</a>
+							<a href="category.html" class="categories-item">
+								<span class="categories-item__title">Инструменты и химия</span>
+								<img src="assets/img/home_categories/category_3.jpg" alt="Название категории">
+							</a>
+							<a href="category.html" class="categories-item">
+								<span class="categories-item__title">Запчасти</span>
+								<img src="assets/img/home_categories/category_4.jpg" alt="Название категории">
+							</a>
+							<a href="category.html" class="categories-item">
+								<span class="categories-item__title">Экипировка</span>
+								<img src="assets/img/home_categories/category_5.jpg" alt="Название категории">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.s-categories ===================================== -->
+
+			<section class="choice-help s-padding">
+				<div class="container">
+					<h2 class="s-title">Мы поможем подобрать идеальный велосипед именно для Вас!</h2>
+
+					<form action="" class="ch-help__form">
+
+						<div class="ch-help__form-col ch-help__form-col_1">
+							<label for="#ch-help__inp1">Для кого</label>
+							<select id="ch-help__inp1" class="select">
+								<option value="1">Женщина</option>
+								<option value="2">Мужчина</option>
+								<option value="3">Ребенок</option>
+							</select>
+						</div>
+
+						<div class="ch-help__form-col ch-help__form-col_2">
+							<label for="#help__inp2">Рост</label>
+							<input id="help__inp2" type="text" name="Height" placeholder="170" required>
+						</div>
+
+						<div class="ch-help__form-col ch-help__form-col_3">
+							<label for="#help__inp3">Вес</label>
+							<input id="help__inp3" type="text" name="Weight" placeholder="54" required>
+						</div>
+
+						<div class="ch-help__form-col ch-help__form-col_4">
+							<label for="help__inp4">Где будете кататься</label>
+							<select id="help__inp4" class="select">
+								<option value="1">Город</option>
+								<option value="2">Загород</option>
+								<option value="3">Зал</option>
+							</select>
+						</div>
+
+						<div class="ch-help__form-col ch-help__form-col_5">
+							<label for="help__inp5">Цена</label>
+							<select id="help__inp5" class="select">
+								<option value="1">4 000 - 6 000 грн</option>
+								<option value="2">6 000 - 8 000 грн</option>
+								<option value="3">8 000 - 10 000 грн</option>
+								<option value="4">10 000 - 12 000 грн</option>
+								<option value="5">12 000 - 14 000 грн</option>
+								<option value="6">14 000 - 16 000 грн</option>
+								<option value="7">16 000 - 18 000 грн</option>
+								<option value="8">18 000 - 20 000 грн</option>
+								<option value="9">20 000 - 22 000 грн</option>
+							</select>
+						</div>
+
+						<button class="btn"><span>Подобрать</span></button>
+
+					</form>
+				</div>
+			</section>
+			<!-- /.choice-help ===================================== -->
+			
+
+			<section class="s-products__tabs s-padding">
+				<div class="container">
+					<div class="tab-block products-tabs">
+
+						<div class="row">
+							<div class="col-12">
+								<ul class="tab-nav d-flex align-items-center flex-wrap">
+									<li class="active">Новые</li>
+									<li>Хиты</li>
+									<li>Акции</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="tab-cont">
+	
+	
+							<div class="tab-pane">
+								<div class="row">
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_sale">
+													<span class="sticker_text">Sale</span>
+													<span class="sticker_percent">-20%</span>
+												</div>
+												
+												<div class="product-item__sticker sticker_our-choice">
+													<span class="sticker_text">Наш выбор</span>
+												</div>
+
+												<!-- Стикер: new -->
+												<!-- <div class="product-item__sticker sticker_new">
+													<span class="sticker_text">New</span>
+												</div>-->
+												<!-- Стикер: hit -->
+												<!--<div class="product-item__sticker sticker_hit">
+													<span class="sticker_text">Hit</span>
+												</div> -->
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/orange.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/green.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product1_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_new">
+													<span class="sticker_text">New</span>
+												</div>
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/orange.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/gray.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/black.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product2_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue Centurion </a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_hit">
+													<span class="sticker_text">Hit</span>
+												</div> 
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/purple.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/yellow.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/blue.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product3_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_sale">
+													<span class="sticker_text">Sale</span>
+													<span class="sticker_percent">-20%</span>
+												</div>
+												
+												<!-- <div class="product-item__sticker sticker_our-choice">
+													<span class="sticker_text">Наш выбор</span>
+												</div> -->
+
+												<!-- Стикер: new -->
+												<!-- <div class="product-item__sticker sticker_new">
+													<span class="sticker_text">New</span>
+												</div>-->
+												<!-- Стикер: hit -->
+												<!--<div class="product-item__sticker sticker_hit">
+													<span class="sticker_text">Hit</span>
+												</div> -->
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/orange.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/purple.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product4_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_sale">
+													<span class="sticker_text">Sale</span>
+													<span class="sticker_percent">-20%</span>
+												</div>
+												
+												<!-- <div class="product-item__sticker sticker_our-choice">
+													<span class="sticker_text">Наш выбор</span>
+												</div> -->
+
+												<!-- Стикер: new -->
+												<!-- <div class="product-item__sticker sticker_new">
+													<span class="sticker_text">New</span>
+												</div>-->
+												<!-- Стикер: hit -->
+												<!--<div class="product-item__sticker sticker_hit">
+													<span class="sticker_text">Hit</span>
+												</div> -->
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/orange.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/green.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product5_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>
+
+									<div class="col-lg-4 col-sm-6">
+										<div class="product-item">
+
+											<div class="product-item__stickers">
+												<div class="product-item__sticker sticker_sale">
+													<span class="sticker_text">Sale</span>
+													<span class="sticker_percent">-20%</span>
+												</div>
+
+												<!-- Стикер: new -->
+												<!-- <div class="product-item__sticker sticker_new">
+													<span class="sticker_text">New</span>
+												</div>-->
+												<!-- Стикер: hit -->
+												<!--<div class="product-item__sticker sticker_hit">
+													<span class="sticker_text">Hit</span>
+												</div> -->
+											</div>
+
+											<div class="product-item__btns">
+												<button type="button" class="product-item__btn" title="В сравнение">
+													<i class="i i-lawyer"></i>
+												</button>
+												<button type="button" class="product-item__btn" title="В закладки">
+													<i class="i i-heart"></i>
+												</button>
+											</div>
+
+											<ul class="product-item__color-list d-flex flex-column justify-content-center">
+												<li class="active">
+													<img src="assets/img/colors/orange.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/green.png" alt="Оранжевый">
+												</li>
+												<li>
+													<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+												</li>
+											</ul>
+
+											<div class="product-item__img-wrap">
+												<a href="#" class="product-item__img" rel="nofollow">
+													<img src="assets/img/products/product6_img.jpg" alt="Product name">
+												</a>
+											</div>
+
+											<div class="product-item__name-wrap">
+												<div class="product-item__availability availability available">В наличии</div>
+												<!-- Если нет в наличии: -->
+												<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+	
+												<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+											</div>
+
+											<div class="product-item__descr">
+												<div class="product-item__code">C16-BF-B6MD</div>
+
+												<ul class="product-options">
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+														<span class="product-options__item-value">горный</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Тип тормоза</span></span>
+														<span class="product-options__item-value">ободной</span>
+													</li>
+													<li class="product-options__item">
+														<span class="product-options__item-name"><span>Материал рамы</span></span>
+														<span class="product-options__item-value">алюминий</span>
+													</li>
+												</ul>
+
+											</div>
+
+											<div class="product-item__bottom">
+												<div class="rating-wrap">
+													<div class="rating">
+														<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+														<!-- <?php if ($product['rating'] > $i) { ?> -->
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<i class="icon-star-full i_stack-2x"></i>
+														<!-- <?php } else { ?> -->
+														<i class="icon-star-full i_stack-1x"></i>												
+														<!-- <?php } ?> -->
+														<!-- <?php } ?> -->
+													</div>
+													<a href="#" class="reviews-number">(0 отзывов)</a>
+												</div>
+	
+												<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+													<div class="product-item__price d-flex flex-wrap align-items-center">
+														<span class="product-titem__price-old">10 000 грн</span>
+														<span class="product-titem__price-current">8 750 грн</span>
+													</div>
+													<a href="#" class="btn" rel="nofollow">
+														<span>купить</span>
+													</a>
+												</div>
+											</div>
+
+										</div>
+										<!-- /.product-item -->
+									</div>									
+
+								</div>
+							</div><!-- /.tab-pane -->
+
+							
+							<div class="tab-pane">222222</div>
+	
+							<div class="tab-pane"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magnam porro iure fugiat repellendus iusto aperiam ducimus laudantium alias omnis maiores beatae veniam debitis voluptatibus asperiores, voluptates nostrum nihil quae?</p></div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.s-products__tabs ===================================== -->
+
+			<section class="advantages">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="s-title">Почему выбирают нас</h2>
+						</div>
+						<div class="col-12">
+							<div class="advantages-list d-flex flex-wrap justify-content-between">
+
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-delivery"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">Бесплатная доставка</h6>
+										<p class="advantages-item__descr">Доставим бесплатно заказы от 2000 грн Новой Почтой, на склад или курьером по адресу.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+								
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-office_goods"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">Большой выбор товаров</h6>
+										<p class="advantages-item__descr">У нас есть огромный выбор велосипедов, а так 
+												же акскссуаров и экипировки к ним.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+								
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-online_consultation"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">профессиональная консультация</h6>
+										<p class="advantages-item__descr">Чтобы не растеряться в огромном выборе, 
+												обратитесь к нашим специалистам.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+								
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-dealer"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">официальный дилер</h6>
+										<p class="advantages-item__descr">Мы – сертифицированный дилер зарубежных 
+												и украинских производителей.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+								
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-certificate"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">ГАРАНТИИ ОТ МАГАЗИНА</h6>
+										<p class="advantages-item__descr">Мы предоставляем гарантию сроком на 
+												1 месяц на любой товар.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+								
+								<div class="advantages-item">
+									<div class="advantages-item__icon">
+										<i class="i-payment"></i>
+									</div>
+									<div class="advantages-item__info">
+										<h6 class="advantages-item__title">УДОБНАЯ ОПЛАТА</h6>
+										<p class="advantages-item__descr">Оплатить товар просто – наличными при 
+												получении или переводом на карту банка.</p>
+									</div>
+								</div>
+								<!-- /.advantages-item -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.advantages ===================================== -->
+
+			<section class="s__blog-tabs">
+				<div class="container">
+					<div class="tab-block blog-tabs">
+					
+						<div class="row">
+							<div class="col-12">
+								<ul class="tab-nav d-flex align-items-center flex-wrap">
+									<li class="active">Блог</li>
+									<li>Отзывы о магазине</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.tab-nav -->
+						
+						<div class="tab-cont">
+						
+							<div class="tab-pane tab-blog">
+								<div class="row">
+
+									<div class="col-lg-3 col-sm-6">
+										<div class="blog-item">
+											<div class="blog-item__img">
+												<img src="assets/img/blog/blog_img_1.jpg" alt="blog-item__title">
+											</div>
+											<h6 class="blog-item__title">Необходимые и полезные аксессуары для велосипеда и велосипедиста</h6>
+											<a href="#" class="more">
+												<span>Читать больше</span>
+												<i class="i-next"></i>
+											</a>
+										</div>
+									</div><!-- /.blog-item -->
+
+									<div class="col-lg-3 col-sm-6">
+										<div class="blog-item">
+											<div class="blog-item__img">
+												<img src="assets/img/blog/blog_img_2.jpg" alt="blog-item__title">
+											</div>
+											<h6 class="blog-item__title">КАК ВЫБРАТЬ ВЕЛОСИПЕД ДЛЯ РЕБЕНКА</h6>
+											<a href="#" class="more">
+												<span>Читать больше</span>
+												<i class="i-next"></i>
+											</a>
+										</div>
+									</div><!-- /.blog-item -->
+
+									<div class="col-lg-3 col-sm-6">
+										<div class="blog-item">
+											<div class="blog-item__img">
+												<img src="assets/img/blog/blog_img_3.jpg" alt="blog-item__title">
+											</div>
+											<h6 class="blog-item__title">Как собрать велосипед из коробки</h6>
+											<a href="#" class="more">
+												<span>Читать больше</span>
+												<i class="i-next"></i>
+											</a>
+										</div>
+									</div><!-- /.blog-item -->
+
+									<div class="col-lg-3 col-sm-6">
+										<div class="blog-item">
+											<div class="blog-item__img">
+												<img src="assets/img/blog/blog_img_4.jpg" alt="blog-item__title">
+											</div>
+											<h6 class="blog-item__title">Хранение велосипеда дома</h6>
+											<a href="#" class="more">
+												<span>Читать больше</span>
+												<i class="i-next"></i>
+											</a>
+										</div>
+									</div><!-- /.blog-item -->
+
+									<div class="col-12">
+										<div class="all">
+											<a href="#" class="btn">Смотреть все</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- /.tab-pane -->
+						
+							<div class="tab-pane tab-reviews">
+								<div class="row">
+
+									<div class="col-12">
+
+										<div class="reviews-item">
+											<div class="reviews-item__reviewer">Артем Иванов</div>
+											<div class="reviews-item__date">21.06.2018</div>
+											<div class="rating reviews-item__rating">
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-1x"></i>
+											</div>
+											<div class="reviews-item__descr">
+												<p>Очень долго выбирал себе велосипед, чтобы можно было покататься вне города и по нашим дорогам. В конце-концов остановил свой выбор на LEON TN 90 DD в этом магазине. Мне понравился набор комплектующих за ту цену и колеса 29, которые очень даже помогают преодолевать длинные дистанции. За все время использования с переключателями проблем не было, переключает мягко в обе стороны. Тормоза хорошие, не разу не подвели на крутых виражах :)</p>
+											</div>
+										</div><!-- /.reviews-item -->
+
+										<div class="reviews-item">
+											<div class="reviews-item__reviewer">Иван Молчанов</div>
+											<div class="reviews-item__date">12.05.2018</div>
+											<div class="rating reviews-item__rating">
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-1x"></i>
+											</div>
+											<div class="reviews-item__descr">
+												<p>Магазин ну оочень порадовал ассортиментом товара. долго подбирал себе снарядные перчатки и вот здесь наконец нашел сразу два (!) идеальных варианта. на связь со мной ввшли практически сразу, быстро оформил заказ и теперь жду возможностт опробовать перчатки в деле)</p>
+											</div>
+										</div><!-- /.reviews-item -->
+
+										<div class="reviews-item">
+											<div class="reviews-item__reviewer">Кирилл</div>
+											<div class="reviews-item__date">10.02.2018</div>
+											<div class="rating reviews-item__rating">
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-1x"></i>
+											</div>
+											<div class="reviews-item__descr">
+												<p>Долго сомневался по поводу целесообразности покупки дешевого двухподвеса, но в конце концов решился. Стал прицениваться - увидел крутую акцию на груше, в итоге заказал  именно здесь, и на следующий день, в субботу, получил свой вел с велокомпьютером, полностью собранным и доставленным бесплатно. </p>
+											</div>
+										</div><!-- /.reviews-item -->
+
+									</div>
+
+									<div class="col-12">
+										<div class="all">
+											<a href="#" class="btn">Смотреть все</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- /.tab-pane -->
+						
+						</div>
+						<!-- /.tab-cont -->
+
+					</div><!-- /.tab-block -->
+				</div>
+			</section>
+			<!-- /.s__blog-tabs ===================================== -->
+
+			<section class="s-manufacturer s-padding">
+				<div class="container">
+
+					<h3 class="s-title">Производители</h3>
+
+					<div class="manufacturer-slider">
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/giant.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/kinetic.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/ghost.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/cannondale.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/optimabikes.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/pride.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/giant.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/appollo.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/finish_line.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/leon.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/liv.png" alt="Giant">
+							</div>
+						</div>
+						<div class="manufacturer-item">
+							<div class="manufacturer-item__img">
+								<img src="assets/img/manufacturer/lapierre.png" alt="Giant">
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /.s-manufacturer ===================================== -->
+
+			<section class="description">
+				<div class="container">
+				
+					<div class="text-description show-text">
+						<div>
+							<div class="text-wrap">
+								<div class="text">
+									<strong>Добро пожаловать в интернет-магазине lisoped.ua!</strong>
+									<br>
+									<br>
+									<p>Велосипед – это популярный вид транспорта для прогулок, занятий спортом, передвижения по населенному пункту. Купить велосипед в Киеве на выгодных условиях предлагает наш веломагазин. Мы работаем с поставщиками напрямую, поэтому предлагаем клиентам магазина доступные цены. Передвижение по городу на велосипеде – это возможность не обращать внимания на пробки, всегда оказываться в нужном месте без опозданий. Проблема жителей мегаполиса заключается в недостаточных физических нагрузках.  Вращение педалей компенсирует этот недостаток, позволяет поддерживать физическую форму и сохранить здоровье. Велосипедные прогулки – это отличный вид активного отдыха.</p>
+									<p>Наш магазин работает с поставщиками напрямую. Мы предлагаем модели настоящих брендовых велосипедов высокого качества. Они не подведут владельцев в поездках по  городу, прогулках на природе, во время занятий спортом. У нас представлена продукция следующих известных брендов: Apollo, Bellelli, BerGaMont, Cannondale, Cyclone, 	Dorozhnik, Electra, Ghost, Haibike, Head, Kiddy Moto, Lapierre, Leon, Optima, Orbea, Polygon, Pride, Royalbaby, Schwinn, Winner, Winora.</p>
+									<p>Мы предлагаем купить велосипед по наиболее выгодной цене с доставкой заказа в Киеве. Возможна доставка в другие города Украины. Самовывоз отсутствует. Все заказы  доставляются компанией-перевозчиком «Новая почта» до ближайшего склада. Возможна курьерская доставка по адресу покупателя. Мы работаем с поставщиками напрямую, поэтому предлагаем клиентам магазина доступные цены. Передвижение по городу на велосипеде – это возможность не обращать внимания на пробки, всегда оказываться в нужном месте без опозданий. Проблема жителей мегаполиса заключается в недостаточных физических нагрузках.  Вращение педалей компенсирует этот недостаток, позволяет поддерживать физическую форму и сохранить здоровье. Велосипедные прогулки – это отличный вид активного отдыха.</p>
+									<h1>h1 Добро пожаловать в интернет-магазине lisoped.ua!</h1>
+									<h2>h2 Добро пожаловать в интернет-магазине lisoped.ua!</h2>
+									<h3>h3 Добро пожаловать в интернет-магазине lisoped.ua!</h3>
+									<h4>h4 Добро пожаловать в интернет-магазине lisoped.ua!</h4>
+									<h5>h5 Добро пожаловать в интернет-магазине lisoped.ua!</h5>
+									<h6>h6 Добро пожаловать в интернет-магазине lisoped.ua!</h6>
+								</div>
+							</div>
+							<div class="btn-wrap hidden">
+								<span class="btn__text-more">Читать полностью</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- /.description ===================================== -->
+
+			<!-- character -->
+			<!-- data-time - время до появления персонажа -->
+			<div class="character-wrapper character-welcome" data-time="10000">
+				<div class="character">
+					<div class="character-text">
+						<div class="character-text__inner">Приветствуем Вас на сайте Lisoped! У нас большой выбор велосипедов и комплектующих к ним! Вы найдете то что ищите!</div>
+					</div>
+					<img src="assets/gif/man_welcome.gif" alt="character" class="character-img">
+				</div>
+			</div>
+			<!-- /character -->
+			
+			<div class="page-overlay"></div>
+		
+		</main><!-- /.page-content -->
+
+		<footer id="my-footer" class="footer">
+			<div class="container">
+				<div class="d-flex footer-row flex-wrap justify-content-between">
+
+					<div class="footer-col footer-col__contacts">
+						<a href="#" class="logo">
+							<img src="assets/img/logo.svg" alt="Lisoped">
+						</a>
+						<ul class="contact-list">
+							<li><address>г. Харьков ул. Щорса 7</address></li>
+							<li><address>г. Киев ул. Короленка 23</address></li>
+							<li class="phones">
+								<a href="tel:676206611">
+									<span>(067) 62-06-611</span>
+									<span class="icon icon_telegram"></span>
+									<span class="icon icon_viber"></span>
+									<span class="icon icon_whatsapp"></span>
+								</a>
+							</li>							
+							<li><a href="mailto:info@lisoped.ua">info@lisoped.ua</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__products">
+						<h6 class="title">Продукция</h6>
+						<ul class="links-list">
+							<li><a href="catalog.html">Велосипеды</a></li>
+							<li><a href="catalog.html">Аксессуары</a></li>
+							<li><a href="catalog.html">Запчасти</a></li>
+							<li><a href="catalog.html">Инструменты и химия</a></li>
+							<li><a href="catalog.html">Экипировка</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__about">
+						<h6 class="title">О магазине</h6>
+						<ul class="links-list two-columns">
+							<li><a href="about_us.html">О нас</a></li>
+							<li><a href="manufacturer.html">Производители</a></li>
+							<li><a href="reviews.html">Отзывы о магазине</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="guarantee.html">Гарантия</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="delivery_order.html">Оплата и доставка</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="credit.html">Рассрочка</a></li>
+							<li><a href="shares.html">Акции</a></li> 
+						</ul>
+					</div>
+
+					<div class="footer-col t-a-right footer-col__subscribe">
+						<div class="footer-col__inner t-a-left">
+							<h6 class="title">Следите за нами</h6>
+							<ul class="socials d-flex align-items-center flex-wrap">
+								<li><a href="#"><i class="i-facebook"></i></a></li>
+								<li><a href="#"><i class="i-instagram"></i></a></li>
+								<li><a href="#"><i class="i-twitter"></i></a></li>
+								<li><a href="#"><i class="i-youtube"></i></a></li>
+							</ul>
+							<form action="" class="subscribe">
+								<input id="footer_subscribe_email" name="email" type="text" placeholder="Введите свой E-mail" required>
+								<button type="submit" class="btn"><span>Подписаться</span></button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer__bottom-line">
+					<div class="copy">&copy; 2018 Все права защищены</div>
+					<div class="dev">
+						<p>Разработано в:</p>
+						<a rel="nofollow" href="http://art-marks.net/" class="cont" target="_blank"><img alt="alt" src="assets/img/artmarks-logo.png"></a>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- /.footer ===================================== -->
+
+	</div>
+
+	<div class="hidden">
+		
+		<div id="log-in-popup" class="log-in-popup popup">
+			<form action="" class="log-in-form popup-form" data-form="login">
+				<div class="formhead">Вход в личный кабинет</div>
+				<div class="form-row">
+					<label>
+						<span>Логин:</span>
+						<input type="email" name="login" required placeholder="I-Ivanov@gmail.com">
+					</label>
+				</div>
+				<div class="form-row">
+					<label>
+						<span>Пароль:</span>
+						<input type="text" name="password" required placeholder="*********">
+					</label>
+				</div>
+				<div class="form-row form-row_cols-2">
+					<label class="label-check">
+						<input type="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<div class="login-form__lost link"><span>Забыли пароль?</span></div>
+				</div>				
+				
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Вход</span>
+					</button>
+				</div>
+			</form>
+
+			<form action="" class="lost-form popup-form" data-form="lost">
+				<div class="success"><span>Ссылка для восстановления пароля отправлена на ваш e-mail. Пожалуйста, проверьте почту.</span></div>
+				<div class="formhead">Восстановление пароля</div>
+				<div class="formdescr">Укажите адрес эл. почты, который вы использовали при оформлении заказов в нашем магазине. Мы вышлем вам инструкцию по восстановлению пароля.</div>
+				<input type="email" name="email" maxlength="50" required placeholder="E-mail">
+				<span class="lost-form__login link"><span>Вспомнили пароль?</span></span>
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+					</button>
+				</div>
+			</form>
+
+			<div class="login-socials">
+				<div class="formdescr">Войти через социальные сети</div>
+				<div class="ulogin-buttons-container">
+					<div class="ulogin-button" role="button" title="Facebook"><i class="icon-facebook2"></i></div>
+					<div class="ulogin-button" role="button" title="Google+"><i class="icon-google-plus2"></i></div>
+				</div>
+			</div>
+			<div class="if-has-uccount">
+				<a href="#">Регистрация</a>
+			</div>
+		</div><!-- /.log-in-popup -->
+
+		<div id="callback-popup" class="callback popup">
+			<form action="" class="callback-form popup-form">
+				<div class="success">
+					<div class="s-inner">
+						<span>Спасибо за заявку!</span>
+						<span>В ближайшее время с Вами свяжется наш менеджер</span>
+					</div>
+				</div>
+				<div class="formhead">Обратный звонок</div>
+				<div class="form-row form-row_cols-2">
+					<label>
+						<span>Номер телефона:</span>
+						<input type="phone" name="phone" required placeholder="Телефон*">
+					</label>
+					<label>
+						<span>Имя:</span>
+						<input type="text" name="name" required placeholder="Иван*">
+					</label>
+				</div>
+				<div class="form-row">
+					<div class="time-selects">
+						<div class="select-day">
+							<select name="Day" class="select">
+								<option value="today">Сегодня</option>
+								<option value="tomorrow">Завтра</option>
+							</select>
+						</div>
+						<div class="select-hour">
+							<select name="Hour" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<div class="select-min">
+							<select name="Min" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Жду звонка</span>
+					</button>
+				</div>
+			</form>
+		</div><!-- /.callback-popup -->
+
+		<div id="reviews-popup" class="reviews-popup popup">
+			<form action="" class="reviews-popup__form">
+				<div class="success"><span>Спасибо за отзыв!</span></div>
+				<div class="formhead">Оставить отзыв</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Reviews" rows="6" placeholder="Ваш отзыв*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#reviews-popup -->
+
+		<div id="faq-popup" class="faq-popup popup">
+			<form action="" class="faq-popup__form">
+				<div class="success"><span>Спасибо за вопрос!</span></div>
+				<div class="formhead">Задать вопрос</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Question" rows="6" placeholder="Ваш вопрос*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#faq-popup -->
+
+		<div id="wishlist-popup" class="wishlist-popup popup">
+			<div class="inner">Вы должны выполнить <a href="#log-in-popup" class="to-popup accent">вход</a> или <a href="registration.html" class="accent">зарегистрироваться</a> чтобы добавить товар в свой список закладок!</div>
+		</div><!-- /.wishlist-popup -->
+
+	</div>
+	
+	<div class="top" title="Наверх">
+		<i class="icon-chevron-thin-up"></i>
+	</div>
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ79uJPujvlv4hzNzKoOsq9umUqTU_JiE"></script>
+	<script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>

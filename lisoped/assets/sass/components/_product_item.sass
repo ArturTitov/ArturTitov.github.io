@@ -1,0 +1,215 @@
+.product-item
+	position: relative
+	border: 1px solid #ebebeb
+	padding: 70px 20px 20px
+	height: 100%
+	margin: 10px auto
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	max-width: 380px
+	transition: all 0.3s ease
+	&__btns
+		position: absolute
+		z-index: 1
+		position: absolute
+		right: 20px
+		top: 20px
+		font-size: 17px
+		.product-item__btn
+			color: $color-product-btn
+			margin-left: 7px
+			display: inline-block
+			vertical-align: top
+			&:first-child
+				margin-left: 0
+			.i-heart
+				font-size: 0.9em
+	&__img-wrap
+		position: relative
+		margin-bottom: 5px
+		height: 151px
+		transform: scale(1)
+		display: flex
+		transition: all 0.6s ease
+	&__img
+		text-align: center
+		display: inline-block
+		margin: auto
+		height: 100%
+		img
+			margin: auto
+			max-width: 100%
+			width: auto
+			height: auto
+			max-height: 100%
+	&__color-list
+		position: absolute
+		right: 20px
+		bottom: 58%
+		margin: 0
+		padding: 0
+		z-index: 1
+		li
+			list-style-type: none
+			width: 11px
+			line-height: 1
+			margin-bottom: 6px
+			&:last-child
+				margin-bottom: 0
+
+	&__availability
+		display: block
+		margin-bottom: 8px
+	&__name
+		font-size: 0.7rem
+		text-transform: uppercase
+		font-weight: 500
+		height: 30px
+		overflow: hidden
+		text-shadow: 0 0 0 $text
+		&:hover
+			color: #000
+	&__descr
+		height: 0
+		overflow: hidden
+		transition: all 0.6s ease
+		.product-item__code
+			font-size: 0.8em
+			text-transform: uppercase
+			color: $color-product-code
+			margin-bottom: 9px
+	&__bottom
+		margin-top: 10px
+	&__price
+		font-weight: 600
+		.product-titem__price-old
+			margin-right: 16px
+			color: $color-old-price
+			font-size: 0.85em
+			font-weight: 300
+			text-decoration: line-through
+
+.availability
+	font-size: 0.8em
+	font-weight: 500
+	position: relative
+	padding-left: 10px
+	&:before
+		content: ''
+		width: 4px
+		height: 4px
+		position: absolute
+		top: 50%
+		left: 0
+		border-radius: 50%
+		font-weight: 500
+		transform: translateY(-50%)
+	&.available
+		color: $accent
+		&:before
+			background: $accent
+	&.not-available
+		color: $color-available
+		&:before
+			background: $color-available
+
+.product-options
+	font-size: 0.86em
+	padding: 0
+	margin: 0
+	text-shadow: 0 0 0 $text
+	&__item
+		display: flex
+		list-style-type: none
+		margin-bottom: 3px
+		align-items: flex-end
+		>*
+			flex-basis: 50%
+			max-width: 50%
+		&-name
+			position: relative
+			line-height: 1.2
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				bottom: 3px
+				width: 100%
+				height: 1px
+				border-bottom: 1px dotted #bcbcbc
+				z-index: -1
+			span
+				background: #ffffff
+				padding-right: 5px
+				
+		&-value
+			padding-left: 8px
+
+/*========== Media Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+	.product-item
+		padding: 70px 15px 20px
+		.btn
+			font-size: .7rem
+			padding: .5rem 1.5rem .4rem
+		&__sticker
+			font-size: 0.65em
+			margin-bottom: 4px
+			.sticker_text
+				padding: 2px 20px 2px 7px
+			&.sticker_sale .sticker_percent
+				padding: 2px 15px
+		.rating-wrap
+			margin-bottom: 4px
+		
+		&__btns
+			top: 10px
+			right: 15px
+		&__color-list
+			right: 15px
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	.product-item
+		padding: 50px 10px 10px
+		.btn
+			font-size: .7rem
+			padding: .5rem 1rem .4rem
+		&__img-wrap
+			height: 130px
+	.product-item__price .product-titem__price-old
+		margin-right: 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.product-item
+		padding: 40px 15px 15px
+		height: auto
+		margin: 7px auto
+		.btn
+			font-size: .8rem
+			padding: .6rem 1.5rem .5rem
+		&__img-wrap
+			height: 140px
+		&__name
+			height: auto
+			margin-bottom: 6px
+
+
+/*==========  Mobile First  ==========*/
+// ≤768px
++media-breakpoint-up(md)
+	.product-item
+		&:hover
+			box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
+			.product-item__img-wrap
+				height: 53px
+				transform: scale(0.99)
+			.product-item__descr
+				height: 100px
+				margin-top: 10px

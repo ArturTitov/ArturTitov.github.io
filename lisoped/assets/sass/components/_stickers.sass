@@ -1,0 +1,45 @@
+.product-item__stickers
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 1
+	
+.product-item__sticker
+	margin-bottom: 7px
+	font-weight: 500
+	text-transform: uppercase
+	color: $white
+
+.product-item__sticker
+	margin-bottom: 6px
+	font-weight: 500
+	text-transform: uppercase
+	color: $white
+	font-size: 0.72em
+	
+	.sticker_text
+		background: #ffa258
+		padding: 3px 20px 3px 7px
+		min-width: 62px
+		display: inline-block
+		vertical-align: middle
+		clip-path: polygon(0 0,100% 0,calc(100% - 15px) 100%,0 100%)
+
+	&.sticker_sale
+		>*
+			background: #e63233
+		.sticker_percent
+			padding: 3px 16px
+			transform: translateX(-16px)
+			clip-path: polygon(15px 0,100% 0,calc(100% - 15px) 100%,0 100%)
+			position: relative
+			margin-left: 1px
+			display: inline-block
+			vertical-align: middle
+	&.sticker_new
+		>*
+			background: #00d271
+	&.sticker_hit
+		>*
+			background: #21a5fa
+					

@@ -1,0 +1,70 @@
+@import "vars"
+
+
+/*========== Media Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.s-padding
+		padding: 50px 0
+
+// ≥992px
++media-breakpoint-down(md)
+	.hidden-md
+		display: none
+
+// ≥768px
++media-breakpoint-down(sm)
+	.hidden-sm
+		display: none
+
+	html
+		font-size: 14px
+	
+	.s-title
+		margin-bottom: 2rem
+	
+	.s-padding
+		padding: 40px 0
+	
+	.slick-prev
+		left: 0
+	.slick-next
+		right: 0
+	
+	.btn, .btn:hover, .btn:focus
+		background: darken($accent, 10%)
+		border: none
+		color: $white
+		&:before, &:after
+			display: none	
+
+	button.btn:hover
+		border: none
+
+// ≥576px
++media-breakpoint-down(xs)
+	.hidden-xs
+		display: none
+
+	.p-title
+		font-size: 1rem
+		margin-bottom: 20px
+		text-shadow: none
+		line-height: 1.4
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+	.hamburger
+		display: none
+
+// ≤1200px
++media-breakpoint-up(xl)

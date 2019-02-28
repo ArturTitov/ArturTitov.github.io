@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Product</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="assets/img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+</head>
+
+<body>
+
+	<div id="my-wrapper" class="wrapper">
+
+		<header id="my-header" class="header">
+			<div class="container">
+
+				<div class="topline d-flex align-items-center justify-content-between flex-wrap">
+
+					<ul class="h-item menu d-lg-flex align-items-center flex-wrap remove-md">
+						<li class="has-dropdown">
+							<span>Покупателям</span>
+							<ul class="dropdown">
+								<li><a href="delivery_order.html">Оплата и доставка</a></li>
+								<li><a href="reviews.html">Отзывы</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="credit.html">Рассрочка</a></li>
+								<li><a href="manufacturer.html">Производители</a></li>
+								<li><a href="about_us.html">О нас</a></li>
+							</ul>
+						</li>
+						<li><a href="blog.html">Блог</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="shares.html">Акции</a></li>
+					</ul>
+
+					<span data-toggle="mobile-menu" class="hamburger hamburger--3dx">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</span>
+
+					<a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Lisoped"></a>
+
+					<div class="h-item h-phones hidden-sm remove-sm">
+						<div class="h-phones__list has-dropdown">
+							<a href="tel:998887766">(050) 377-50-77</a>
+							<div class="h-phones-more" data-toggle="dropdown">
+								<i class="icon-caret-down"></i>
+							</div>
+							<div class="dropdown h-phones__dropdown">
+								<ul>
+									<li>
+										<a href="tel:955203728">
+											<span>(050) 377-50-77</span>
+											<!-- нужно в админке реализовать чекалки: 
+												если привязан к номеру телеграм или вайбер,
+												то выводим соответствующий span-->
+											<span class="icon_telegram"></span>
+											<span class="icon_viber"></span>
+											<span class="icon_whatsapp"></span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li><a href="tel:951536866"><span>(050) 377-50-77</span></a></li>
+								</ul>
+								<strong class="h6">Режим работы</strong>
+								<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+							</div>
+						</div>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</div>
+
+					<div class="h-item header__user-buttons">
+						<ul class="hub-list d-flex justify-content-center justify-content-sm-end">
+					
+							<li class="hub-i hub-i__user hidden-md">
+								<a href="#log-in-popup" class="hub-i__link to-popup">
+									<span class="i i-user"></span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__compare">
+								<a href="comparison.html" class="hub-i__link">
+									<span class="i i-lawyer"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__wishlist">
+								<a href="#" class="hub-i__link">
+									<span class="i i-heart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>								
+							
+							<li class="hub-i hub-i__cart">
+								<a href="#cart-popup" class="hub-i__link to-popup">
+									<span class="i i-shopping-cart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+	
+						</ul>
+					</div>
+					
+				</div><!-- /.topline -->
+			</div>
+
+			<div class="botline">
+				<div class="container">
+
+					<div class="botline-inner d-flex align-items-center justify-content-between flex-wrap">
+
+						<a href="#mobile-catalog" id="trigger-btn" class="btn-accent">
+							<span>Каталог товаров</span>
+						</a>
+
+						<ul class="language ul">
+							<li class="language-item active"><a href="index.html">ru</a></li>
+							<li class="language-item"><a href="index.html">ua</a></li>
+						</ul>
+
+						<nav class="site-nav d-lg-flex align-items-center remove-md">
+							
+							<div class="nav-item">
+								<span class="nav-item__t">Велосипеды</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Горные</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Горные электровелосипеды</a></li>
+												<li><a href="catalog.html">Двухподвесные</a></li>
+												<li><a href="catalog.html">Найнеры</a></li>
+												<li><a href="catalog.html">Фэтбайки</a></li>
+												<li><a href="catalog.html">Хардтейл</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Городские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Гибридные кроссовые</a></li>
+												<li><a href="catalog.html">Городские электровелосипеды</a></li>
+												<li><a href="catalog.html">Круизеры</a></li>
+												<li><a href="catalog.html">Туристические</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Женские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Комфортные</a></li>
+												<li><a href="catalog.html">Спортивные</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Детские и подростковые</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Беговелы</a></li>
+												<li><a href="catalog.html">Детские</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Складные</a>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Шоссейные</a>
+										</div><!-- /.nav-item__links -->										
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<span class="nav-item__t">Аксессуары</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велобагажники</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокомпьютер</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Звонки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Замки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Защита рамы</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крепления и стойки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Зеркала</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Корзины на велосипед</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Освещение</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крылья</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Насосы</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Фляги</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Подножки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Сумки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Флягодержатели</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокресла для детей</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Запчасти</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Инструменты и химия</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Экипировка</a>
+							</div><!-- /.nav-item -->
+
+						</nav>
+
+						<div class="search">
+							<div class="search-btn"><span class="text">Поиск</span><span class="i i-search"></span></div>
+							<div class="search-inp">
+                <input type="search" placeholder="Что будете искать?">
+            	</div>							
+						</div>
+
+					</div>
+				</div>
+			</div><!-- /.botline -->
+
+
+			<!-- .mobile-menu ================== -->
+			<div id="mobile-menu" class="mobile-menu">
+
+				<div class="btn-close">
+					<i class="icon-close"></i>
+				</div>
+				
+				<div class="mobile-item mobile-item__user">
+					<span class="i i-user"></span>
+					<a href="#log-in-popup" class="to-popup">Войти</a> /
+					<a href="#registration.html">Зарегистрироваться</a>
+				</div>
+
+				<ul class="mobile-list mobile-item mobile-list__phones">
+					<li><span class="h6">Заказы по телефонам:</span></li>
+					<li>
+						<a href="tel:955203728">
+							<span>(050) 377-50-77</span>
+							<span class="icon icon_telegram"></span>
+							<span class="icon icon_viber"></span>
+							<span class="icon icon_whatsapp"></span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</li>
+				</ul>
+						
+				<ul class="mobile-list mobile-item">
+					<li><a href="delivery_order.html">Оплата и доставка</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="credit.html">Рассрочка</a></li>
+					<li><a href="manufacturer.html">Производители</a></li>
+					<li><a href="about_us.html">О нас</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="shares.html">Акции</a></li>
+				</ul>
+
+				<div class="mobile-item mobile-item__timework">
+					<span class="h6">Режим работы</span>
+					<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+				</div>
+			</div>
+			<!-- /.mobile-menu ================== -->
+
+			
+			<!-- #mobile-catalog ================== -->
+			<div id="mobile-catalog" class="hidden">
+				<ul>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li><a href="category.html">Блог</a></li>
+					<li><a href="category.html">Контакты</a></li>
+					<li><a href="category.html">Акции</a></li>
+				</ul>
+			</div>
+			<!-- /#mobile-catalog ================== -->
+
+			<div class="hidden">
+				<div id="cart-popup" class="cart-popup popup">
+
+					<div class="popup-header">Корзина</div>
+
+					<div class="cart-product__list">
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product1_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">12 745 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">12 745 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product2_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Звонок велосипедный XLC DD-H02</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">черный</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">293 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="2">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">586 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product3_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Антипрокольная жидкость  для беcкамерок Slime Naplo</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Объем:</span>
+											<span class="option-item__value">473мл</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">426 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">426 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+
+					</div><!-- /.cart-product__list -->
+
+					<div class="popup-footer">
+						<div class="cart-total">
+							<span class="text">Сумма:</span>
+							<span class="sum">13 757 грн</span>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="btn-continue">Продолжить покупки</a>
+							<a href="#" class="btn">
+								<span>Оформить заказ</span>
+							</a>
+						</div>
+					</div>
+
+				</div><!-- /.cart-popup -->
+			</div>
+				
+		</header>
+		<!-- /.header ===================================== -->
+
+		<main id="my-content" class="page-content page-product__content">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-12">
+						<ul class="breadcrumbs ul d-flex align-items-center flex-wrap">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="category.html">Велосипеды</a></li>
+							<li><a href="catalog.html">Велосипед</a></li>
+						</ul>
+					</div>
+					<div class="col-12">
+						<h1 class="p-title">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</h1>
+					</div>
+				</div>
+
+				<div class="row align-items-md-center align-items-lg-start">
+					<div class="col-md-6 col-lg-7">
+						<div class="product-images">
+
+							<div class="product-item__stickers">
+								<div class="product-item__sticker sticker_sale">
+									<span class="sticker_text">Sale</span>
+									<span class="sticker_percent">-20%</span>
+								</div>
+								
+								<div class="product-item__sticker sticker_our-choice">
+									<span class="sticker_text">Наш выбор</span>
+								</div>
+
+								<!-- Стикер: new -->
+								<!-- <div class="product-item__sticker sticker_new">
+									<span class="sticker_text">New</span>
+								</div>-->
+								<!-- Стикер: hit -->
+								<!--<div class="product-item__sticker sticker_hit">
+									<span class="sticker_text">Hit</span>
+								</div> -->
+							</div>
+					
+							<ul id="glasscase" class="gc-start">
+								<li><img src="assets/img/products/product1_img_large.jpg" title="Product Name" alt="Product Name"></li>
+								<li><img src="assets/img/products/product2_img_large.jpg" title="Product Name" alt="Product Name"></li>
+								<li><img src="assets/img/products/product3_img_large.jpg" title="Product Name" alt="Product Name"></li>
+								<li><img src="assets/img/products/product4_img_large.jpg" title="Product Name" alt="Product Name"></li>
+							</ul>
+							
+						</div>
+					</div>
+					<!-- /.product-images ====================-->
+
+					<div class="col-md-6 col-lg-5">
+						<div class="product-info">
+
+							<div class="product-info__top d-flex align-items-center justify-content-between">
+								<div class="rating-wrap">
+									<div class="product-info__rating rating">
+										<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+										<!-- <?php if ($product['rating'] > $i) { ?> -->
+										<i class="icon-star-full i_stack-2x"></i>
+										<i class="icon-star-full i_stack-2x"></i>
+										<i class="icon-star-full i_stack-2x"></i>
+										<i class="icon-star-full i_stack-2x"></i>
+										<!-- <?php } else { ?> -->
+										<i class="icon-star-full i_stack-1x"></i>												
+										<!-- <?php } ?> -->
+										<!-- <?php } ?> -->
+									</div>
+									<a href="#" class="reviews-number">(0 отзывов)</a>
+								</div>
+								<div class="product-info__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="product-info__d-list">
+								<div class="product-info__d-item">
+									<span class="product-info__d-item--name">Артикул</span>
+									<span class="product-info__d-item--value">C16-BF-B6MD</span>
+								</div>
+								<div class="product-info__d-item">
+									<span class="product-info__d-item--name">Производитель</span>
+									<span class="product-info__d-item--value">CENTURION</span>
+								</div>
+							</div>
+
+							<div class="product-info__options">
+								<div class="product-info__option product-info__option--color">
+									<div class="product-info__option-name">Цвет</div>
+									<div class="product-info__option-values">
+										<label class="product-info__option-value">
+											<input type="radio" name="product_color" value="1" class="product-info__option-value--input" >
+											<img class="product-info__option-value--color" src="assets/img/colors/orange.png" alt="Оранжевый">
+										</label>
+										<label class="product-info__option-value">
+											<input type="radio" name="product_color" value="2" class="product-info__option-value--input">
+											<img class="product-info__option-value--color" src="assets/img/colors/black.jpg" alt="Оранжевый">
+										</label>
+										<label class="product-info__option-value">
+											<input type="radio" name="product_color" value="3" class="product-info__option-value--input">
+											<img class="product-info__option-value--color" src="assets/img/colors/green.png" alt="Оранжевый">
+										</label>
+									</div>
+								</div>
+								<div class="product-info__option product-info__option--size">
+									<div class="product-info__option-name">Размер</div>
+									<div class="product-info__option--flex">
+										<div class="product-info__option-values">
+											<label class="product-info__option-value">
+												<input type="radio" name="product_size" value="1" class="product-info__option-value--input">
+												<span class="product-info__option-value--size">S</span>
+												<span class="product-info__option-value--tooltip">
+													<span class="accent">S</span>
+													(рост 170-185 см)
+												</span>
+											</label>
+											<label class="product-info__option-value">
+												<input type="radio" name="product_size" value="2" class="product-info__option-value--input">
+												<span class="product-info__option-value--size">M</span>
+												<span class="product-info__option-value--tooltip">
+													<span class="accent">M</span>
+													(рост 170-185 см)
+												</span>
+											</label>
+											<label class="product-info__option-value">
+												<input type="radio" name="product_size" value="3" class="product-info__option-value--input">
+												<span class="product-info__option-value--size">L</span>
+												<span class="product-info__option-value--tooltip">
+													<span class="accent">L</span>
+													(рост 170-185 см)
+												</span>
+											</label>
+											<label class="product-info__option-value">
+												<input type="radio" name="product_size" value="4" class="product-info__option-value--input">
+												<span class="product-info__option-value--size">XL</span>
+												<span class="product-info__option-value--tooltip">
+													<span class="accent">Xl</span>
+													(рост 170-185 см)
+												</span>
+											</label>
+										</div>
+										<a href="#sizes-popup" class="product-info__sizes-link to-popup">Таблица размеров</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="product-info__price">
+								<div class="main-price">8 750 грн</div>
+								<!-- <div class="old-price">10 299 грн</div> -->
+							</div>
+
+							<div class="product-info__main-controls">
+								<div class="product-info__main-controls--col">
+									<div class="product-info__count">
+										<div class="product-info__button-decrease">-</div>
+										<input class="product-info__count-value" type="text" readonly="" name="count[]" value="1">
+										<div class="product-info__button-increase">+</div>
+									</div>
+									<span class="product-info__availability product-info__availability--available">Есть в наличии</span>
+								</div>
+
+								<div class="product-info__main-controls--col">
+									<a href="#to-cart__popup" id="addProductToCart" class="btn to-popup"><span>Купить</span></a>
+									<a href="#one-click-buy__popup" class="buy-one-click-btn to-popup"><span>Купить в 1 клик</span></a>
+									<!-- Разные кнопки: -->
+									<!-- <a href="#" id="reportAvailability" class="btn btn__accent"><span>Сообщить о наличии</span></a>
+									<a href="#" id="notAvailability" class="btn btn__accent"><span>Нет в наличии</span></a> -->
+								</div>							
+							</div>
+
+							<div class="product-info__bottom">
+								<a href="#delivery-popup" class="product-info__bottom-link to-popup">
+									<span class="i i-delivery-1"></span>
+									<span class="text">Оплата и доставка</span>
+								</a>
+								<a href="#guarantee-popup" class="product-info__bottom-link to-popup">
+									<span class="i i-protection"></span>
+									<span class="text">Гарантия</span>
+								</a>
+								<a href="#installments-popup" class="product-info__bottom-link to-popup">
+									<span class="i i-money"></span>
+									<span class="text">Рассрочка</span>
+								</a>
+							</div>
+
+							<div class="hidden">
+
+								<div id="delivery-popup" class="product-info__popup">
+									<h6>Доставка</h6>
+									<p>Доставка заказа в течении 1-3 рабочих дней (только Украина).
+										Бесплатно доставим товар стоимостью от 2000 грн в любое отделение Новой почты. 
+										Доставка товара до 2000 грн оплачивается покупателем по тарифам Новой почты.
+										Возможна курьерская доставка на указанный вами адрес. Оплачивается покупателем 
+										по тарифам Новой почты.</p>
+									<h6>Оплата</h6>
+									<ul>
+										<li>Visa/MasterCard</li>
+										<li>Приват24</li>
+										<li>LiqPay</li>
+										<li>Касса любого банка</li>
+										<li>Наложенный платеж</li>
+									</ul>
+								</div>
+
+								<div id="guarantee-popup" class="product-info__popup">
+									<h6>Гарантия</h6>
+									<p>Доставка заказа в течении 1-3 рабочих дней (только Украина).
+										Бесплатно доставим товар стоимостью от 2000 грн в любое отделение Новой почты. 
+										Доставка товара до 2000 грн оплачивается покупателем по тарифам Новой почты.
+										Возможна курьерская доставка на указанный вами адрес. Оплачивается покупателем 
+										по тарифам Новой почты.</p>
+									<h6>Оплата</h6>
+									<ul>
+										<li>Visa/MasterCard</li>
+										<li>Приват24</li>
+										<li>LiqPay</li>
+										<li>Касса любого банка</li>
+										<li>Наложенный платеж</li>
+									</ul>
+								</div>
+
+								<div id="installments-popup" class="product-info__popup">
+									<h6>Рассрочка</h6>
+									<p>Доставка заказа в течении 1-3 рабочих дней (только Украина).
+										Бесплатно доставим товар стоимостью от 2000 грн в любое отделение Новой почты. 
+										Доставка товара до 2000 грн оплачивается покупателем по тарифам Новой почты.
+										Возможна курьерская доставка на указанный вами адрес. Оплачивается покупателем 
+										по тарифам Новой почты.</p>
+									<h6>Оплата</h6>
+									<ul>
+										<li>Visa/MasterCard</li>
+										<li>Приват24</li>
+										<li>LiqPay</li>
+										<li>Касса любого банка</li>
+										<li>Наложенный платеж</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<!-- /.product-info ====================-->
+				</div>
+
+				<!-- buy popups =================== -->
+				<div class="hidden">
+					<div id="to-cart__popup" class="cart-popup popup">
+						<div class="popup-header">Товар добавлен в корзину</div>
+		
+						<div class="cart-product__list">
+		
+							<div class="cart-product">
+								<div class="cart-product__col">
+									<div class="cart-product__img">
+										<img src="assets/img/products/product1_xs_img.jpg" alt="Product name">
+									</div>
+									<div class="cart-product__descr">
+										<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+										<div class="cart-product__options">
+											<div class="option-item">
+												<span class="option-item__name">Цвет:</span>
+												<span class="option-item__value">серый</span>
+											</div>
+											<div class="option-item">
+												<span class="option-item__name">Цвет:</span>
+												<span class="option-item__value">серый</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-product__col cart-product__info">
+									<div class="cart-product__price">12 745 грн</div>
+									<div class="cart-product__count">
+										<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+										<input type="text" readonly="" name="count" value="1">
+										<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+									</div>
+									<div class="cart-product__count-price">12 745 грн</div>
+									<button class="remove"></button>
+								</div>							
+							</div><!-- /.cart-product -->
+		
+						</div><!-- /.cart-product__list -->
+		
+						<div class="popup-footer">
+							<div class="btn-wrap">
+								<a href="#" class="btn-continue">Продолжить покупки</a>
+								<a href="checkout.html" class="btn">
+									<span>Оформить заказ</span>
+								</a>
+							</div>
+						</div>
+					</div><!-- /.cart-popup -->
+
+					<div id="one-click-buy__popup" class="one-click__popup popup">
+						<form action="" class="popup-form">
+							<div class="success">
+								<div class="s-inner">
+									<span>Спасибо за заявку!</span>
+									<span>В ближайшее время с Вами свяжется наш менеджер</span>
+								</div>
+							</div>
+							<div class="formhead">Быстрый заказ</div>
+							<label>
+								<span>*Имя:</span>
+								<input type="text" name="Name" required>
+							</label>
+							<label>
+								<span>*Номер телефона:</span>
+								<input type="phone" name="Phone" required>
+							</label>
+							<label>
+								<span>Комментарий к заказу:</span>
+								<textarea name="Message" rows="1"></textarea>
+							</label>
+							<input type="hidden" name="Product name" value="Название товара">
+							<div class="btn-submit__wrap">
+								<button type="submit" class="btn">
+									<span>Заказать</span>
+								</button>
+							</div>
+						</form>
+					</div><!-- /#one-click-buy__popup -->
+
+				</div>
+				<!-- /buy popups =================== -->
+
+
+				<!-- sizes popups =================== -->
+				<div class="hidden">
+					<div id="sizes-popup" class="sizes-popup sizes-popup__col-1 popup">
+						<div class="sizes-popup__text content-text">
+							<p>Если вы сомневаетесь, какой размер вам лучше подойдет – обращайтесь к нам, будем рады помочь.</p>
+							<p>Если ваш рост находится на границе размеров рам, мы рекомендуем воспользоваться таким правилом:</p>
+							<ul>
+								<li>-  для более спортивной езды, мы рекомендуем выбрать раму меньшего размера;</li>
+								<li>-  для более умеренной, комфортной езды, следует выбирать раму большего размера.</li>
+							</ul>
+						</div>
+						<div class="sizes-popup__tables">
+
+							<div class="sizes-popup__table--wrapper">
+								<div class="sizes-popup__table-head">Горные (26, 27.5 Дюймов)</div>
+								<table class="sizes-popup__table">
+									<thead>
+										<tr>
+											<th>Размер</th>
+											<th>Ваш рост<br>(см)</th>
+											<th>Размер рамы (дюйм)</th>
+											<th>Размер рамы (см)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>XS</td>
+											<td>140-157</td>
+											<td>13-14"</td>
+											<td>&lt;37</td>
+										</tr>
+										<tr>
+											<td>S</td>
+											<td>155-168</td>
+											<td>15-16"</td>
+											<td>38-41</td>
+										</tr>
+										<tr>
+											<td>M</td>
+											<td>165-178</td>
+											<td>17-18"</td>
+											<td>42-46</td>
+										</tr>
+										<tr>
+											<td>L</td>
+											<td>172-185</td>
+											<td>19-20"</td>
+											<td>47-51</td>
+										</tr>
+										<tr>
+											<td>XL</td>
+											<td>182-195</td>
+											<td>21-22"</td>
+											<td>52-56</td>
+										</tr>
+										<tr>
+											<td>XXL</td>
+											<td>192-200+</td>
+											<td>23-24"</td>
+											<td>57&gt;</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="sizes-popup__table--wrapper">
+								<div class="sizes-popup__table-head">Горные (26, 27.5 Дюймов)</div>
+								<table class="sizes-popup__table">
+									<thead>
+										<tr>
+											<th>Размер</th>
+											<th>Ваш рост<br>(см)</th>
+											<th>Размер рамы (дюйм)</th>
+											<th>Размер рамы (см)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>XS</td>
+											<td>140-157</td>
+											<td>13-14"</td>
+											<td>&lt;37</td>
+										</tr>
+										<tr>
+											<td>S</td>
+											<td>155-168</td>
+											<td>15-16"</td>
+											<td>38-41</td>
+										</tr>
+										<tr>
+											<td>M</td>
+											<td>165-178</td>
+											<td>17-18"</td>
+											<td>42-46</td>
+										</tr>
+										<tr>
+											<td>L</td>
+											<td>172-185</td>
+											<td>19-20"</td>
+											<td>47-51</td>
+										</tr>
+										<tr>
+											<td>XL</td>
+											<td>182-195</td>
+											<td>21-22"</td>
+											<td>52-56</td>
+										</tr>
+										<tr>
+											<td>XXL</td>
+											<td>192-200+</td>
+											<td>23-24"</td>
+											<td>57&gt;</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- /sizes popups =================== -->
+				
+
+				<div class="row">
+					<div class="col-12">
+						<div class="tab-block product-info__tabs">
+
+							<ul class="tab-nav d-flex align-items-center flex-wrap">
+								<li class="active">Описание</li>
+								<li>Характеристики</li>
+								<li>Отзывы(2)</li>
+								<li>Видеообзор</li>
+							</ul>
+
+							<div class="tab-cont">
+
+								<div class="tab-pane">
+									<p>Классический горный велосипед с колесами 29 дюймов. </p>
+									<p>Скорость - основная характеристика велосипедов Backfire. Благодаря большим колесам диаметром 29 дюймов, этот байк не только имеет отличный накат и может развить  большую скорость, но и легко переезжает неровности поверхности, что делает длительную поездку более комфортной. Эти байки позволят почувствовать себя  профессиональным спортсменом, приняв участие в соревнованиях кросс кантри, а также с комфортом доставят Вас на работу по нашим плохим дорогам.</p>
+									<p>Современные горные велосипеды, которые имеют универсальные характеристики и широкий спектр использования: от маневренной скоростной езды по лесу, до утренней  поездки на работу. В этих велосипедах есть всё необходимое для комфортного и безопасного катания по любой поверхности и при любых погодных условиях. Прочная и 	удобная рама, амортизационная вилка с гидравлической блокировкой, дисковые тормоза и широкие покрышки. Эти байки никого не оставят равнодушными.</p>
+								</div>
+								<!-- /.tab-pane -->
+								
+								<div class="tab-pane">
+									<div class="properties d-flex justify-content-between flex-wrap">
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/list.svg" alt="list">
+												<div class="propertie-head__text">Основные характеристики</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Бренд</span>
+													</span>
+													<span class="propertie-list__item-value">Bergamont</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Гарантия</span>
+													</span>
+													<span class="propertie-list__item-value">3 года на раму и год на оборудование</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Год</span>
+													</span>
+													<span class="propertie-list__item-value">2018</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Тип велосипеда</span>
+													</span>
+													<span class="propertie-list__item-value">Стрит, дерт</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Вес</span>
+													</span>
+													<span class="propertie-list__item-value">14,4 кг</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/frame.svg" alt="list">
+												<div class="propertie-head__text">Рама</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Материал рамы</span>
+													</span>
+													<span class="propertie-list__item-value">Алюминий</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Подседельный штырь</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Pivotal seatpost</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Рулевая колонка</span>
+													</span>
+													<span class="propertie-list__item-value">BGM F13, рулеваяt, полу-интегрированая конусная</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Тип амортизации</span>
+													</span>
+													<span class="propertie-list__item-value">Хардтейл</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Вилка</span>
+													</span>
+													<span class="propertie-list__item-value">RST Dirt RA, 1 1/8", 100 мм, пружинная, крутилка преднагрузки, регулировка отскока</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Рама</span>
+													</span>
+													<span class="propertie-list__item-value">26" Dirt, AL-6013 баттинг с усилением, T4/T6 термообработка, конусная рулевая, 3D-дропауты</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/transmission.svg" alt="list">
+												<div class="propertie-head__text">Трансмисия</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Каретка</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Conrod, external cup, 68 мм</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Система</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Conrod, 3-pcs., 28t</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Кассета</span>
+													</span>
+													<span class="propertie-list__item-value">Singlespeed, 12t</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Цепь</span>
+													</span>
+													<span class="propertie-list__item-value">KMC Z510HX</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/brake.svg" alt="list">
+												<div class="propertie-head__text">Тормозная система</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Тип тормоза</span>
+													</span>
+													<span class="propertie-list__item-value">Гидравлический</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Тормоза</span>
+													</span>
+													<span class="propertie-list__item-value">Shimano BR-M365, гидравлические дисковые тормоза, SM-RT56 ротор: 160 мм</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Тормозные ручки</span>
+													</span>
+													<span class="propertie-list__item-value">Shimano BL-M365,гидравлические дисковые тормоза</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/wheel.svg" alt="list">
+												<div class="propertie-head__text">Колеса</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Обода</span>
+													</span>
+													<span class="propertie-list__item-value">Sun Ringle Inferno 31, дисковые, eyelets</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Передняя втулка</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Pro FR, 6-bolt, диск, 20x110мм ось</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Покрышки</span>
+													</span>
+													<span class="propertie-list__item-value">Maxxis DTH, wired, 26×2,30 Tubes: Schwalbe SV13A Light</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Спицы</span>
+													</span>
+													<span class="propertie-list__item-value">стальные, черные</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Задняя втулка</span>
+													</span>
+													<span class="propertie-list__item-value">BGM OneByOne, 6-bolt, диск</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Диаметр колеса</span>
+													</span>
+													<span class="propertie-list__item-value">26"</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+
+										<div class="propertie">
+											<div class="propertie-head">
+												<img src="assets/img/svg/wheel.svg" alt="list">
+												<div class="propertie-head__text">Дополнительные опции</div>
+											</div>
+											<ul class="propertie-list">
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Грипсы</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Kiez</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Педали</span>
+													</span>
+													<span class="propertie-list__item-value">Wellgo B087U, flatpedals</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Руль</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Kiez, riser bar, загиб назад: 9°, rise: 50 мм, ширина: 750 мм</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Седло</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Dirt</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Вынос</span>
+													</span>
+													<span class="propertie-list__item-value">BGM Kiez, 0°</span>
+												</li>
+												<li class="propertie-list__item">
+													<span class="propertie-list__item-name">
+														<span>Количество скоростей</span>
+													</span>
+													<span class="propertie-list__item-value">1 скорость (1х1)</span>
+												</li>
+											</ul>
+										</div>
+										<!-- /.propertie -->
+											
+									</div>
+								</div>
+								<!-- /.tab-pane -->
+								
+								<div class="tab-pane">
+									
+									<div class="reviews-list">
+
+										<div class="reviews-item">
+											<div class="reviews-item__reviewer">Артем Иванов</div>
+											<div class="reviews-item__date">21.06.2018</div>
+											<div class="rating reviews-item__rating">
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-1x"></i>
+											</div>
+											<div class="reviews-item__descr">
+												<p>Очень долго выбирал себе велосипед, чтобы можно было покататься вне города и по нашим дорогам. В конце-концов остановил свой выбор на LEON TN 90 DD в этом магазине. Мне понравился набор комплектующих за ту цену и колеса 29, которые очень даже помогают преодолевать длинные дистанции. За все время использования с переключателями проблем не было, переключает мягко в обе стороны. Тормоза хорошие, не разу не подвели на крутых виражах :)</p>
+												<img src="assets/img/reviews/reviews_img_1.jpg" alt=""> 
+												<img src="assets/img/reviews/reviews_img_2.jpg" alt="">
+											</div>
+										</div><!-- /.reviews-item -->
+
+										<div class="reviews-item">
+											<div class="reviews-item__reviewer">Артем Иванов</div>
+											<div class="reviews-item__date">21.06.2018</div>
+											<div class="rating reviews-item__rating">
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-2x"></i>
+												<i class="icon-star-full i_stack-1x"></i>
+											</div>
+											<div class="reviews-item__descr">
+												<p>Очень долго выбирал себе велосипед, чтобы можно было покататься вне города и по нашим дорогам. В конце-концов остановил свой выбор на LEON TN 90 DD в этом магазине. Мне понравился набор комплектующих за ту цену и колеса 29, которые очень даже помогают преодолевать длинные дистанции. За все время использования с переключателями проблем не было, переключает мягко в обе стороны. Тормоза хорошие, не разу не подвели на крутых виражах :)</p>
+											</div>
+										</div><!-- /.reviews-item -->
+
+									</div>
+									<!-- /.reviews-list -->
+
+									<form action="" class="reviews-form">
+										<div class="formhead">Оставить отзыв</div>
+										<div class="d-flex justify-content-sm-between flex-wrap">
+											<div class="reviews-form__content">
+												<textarea name="ReviewsText" cols="30" rows="7" required placeholder="Комментарий..."></textarea>
+												<label class="reviews-form__file">
+													<input type="file" name="file" multiple>
+													<span class="reviews-form__file-name"></span>
+													<span class="reviews-form__file-icon"><i class="icon-attach_file"></i></span>
+												</label>
+											</div>
+											<div class="reviews-form__info">
+												<div class="rating-wrapper clearfix">
+													<input type="radio" class="rating-input" id="rating-input-1-5" name="rating" value="5" />
+													<label for="rating-input-1-5" class="rating-star"></label>
+												
+													<input type="radio" class="rating-input" id="rating-input-1-4" name="rating" value="4" />
+													<label for="rating-input-1-4" class="rating-star"></label>
+												
+													<input type="radio" class="rating-input" id="rating-input-1-3" name="rating" value="3" />
+													<label for="rating-input-1-3" class="rating-star"></label>
+												
+													<input type="radio" class="rating-input" id="rating-input-1-2" name="rating" value="2" />
+													<label for="rating-input-1-2" class="rating-star"></label>
+												
+													<input type="radio" class="rating-input" id="rating-input-1-1" name="rating" value="1" />
+													<label for="rating-input-1-1" class="rating-star"></label>
+												</div>
+												<input type="text" name="Name" required placeholder="Имя">
+												<input type="email" name="E-mail" required placeholder="E-mail">
+												<button type="submit" class="btn"><span>Отправить</span></button>
+											</div>
+										</div>
+									</form>
+
+								</div>
+								<!-- /.tab-pane -->
+								
+								<div class="tab-pane tab-video">
+									<div class="w-iframe">
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Nz3RxvztB_0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen></iframe>
+									</div>
+									<div class="w-iframe">
+										<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Nz3RxvztB_0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen></iframe>
+									</div>
+									
+								</div>
+								<!-- /.tab-pane -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- /.product-info__tabs -->
+
+				<div class="slider-section">
+
+					<h2 class="slider-title">Похожие товары</h2>
+
+					<div class="slider-products">
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+						
+					</div>
+					<!-- /.slider-products -->
+
+				</div>
+				<!-- /.slider-section -->
+
+				<div class="slider-section">
+
+					<h2 class="slider-title">Просмотренные товары</h2>
+
+					<div class="slider-products">
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product2_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product3_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<!-- <div class="product-item__availability availability available">В наличии</div> -->
+									<!-- Если нет в наличии: -->
+									<div class="product-item__availability availability not-available">Нет в наличии</div>
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue Велосипед Centurion asd sdasdasd</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div>
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product4_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+
+						<div class="slider-products__item">
+							<div class="product-item">
+								<div class="product-item__stickers">
+									<div class="product-item__sticker sticker_sale">
+										<span class="sticker_text">Sale</span>
+										<span class="sticker_percent">-20%</span>
+									</div>
+									<div class="product-item__sticker sticker_our-choice">
+										<span class="sticker_text">Наш выбор</span>
+									</div>
+									<!-- Стикер: new -->
+									<!-- <div class="product-item__sticker sticker_new">
+										<span class="sticker_text">New</span>
+									</div>-->
+									<!-- Стикер: hit -->
+									<!--<div class="product-item__sticker sticker_hit">
+										<span class="sticker_text">Hit</span>
+									</div> -->
+								</div>
+								<div class="product-item__btns">
+									<button type="button" class="product-item__btn" title="В сравнение">
+										<i class="i i-lawyer"></i>
+									</button>
+									<button type="button" class="product-item__btn" title="В закладки">
+										<i class="i i-heart"></i>
+									</button>
+								</div>
+								<ul class="product-item__color-list d-flex flex-column justify-content-center">
+									<li class="active">
+										<img src="assets/img/colors/orange.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/green.png" alt="Оранжевый">
+									</li>
+									<li>
+										<img src="assets/img/colors/light_blue.png" alt="Оранжевый">
+									</li>
+								</ul>
+								<div class="product-item__img-wrap">
+									<a href="#" class="product-item__img" rel="nofollow">
+										<img src="assets/img/products/product1_img.jpg" alt="Product name">
+									</a>
+								</div>
+								<div class="product-item__name-wrap">
+									<div class="product-item__availability availability available">В наличии</div>
+									<!-- Если нет в наличии: -->
+									<!-- <div class="product-item__availability availability not-available">Нет в наличии</div> -->
+									<h3 class="product-item__name"><a href="#">Велосипед Centurion BACKFIRE B6-MD, Dark Blue</a></h3>
+								</div>
+								<div class="product-item__descr">
+									<div class="product-item__code">C16-BF-B6MD</div>
+									<ul class="product-options">
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип велосипеда</span></span>
+											<span class="product-options__item-value">горный</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Тип тормоза</span></span>
+											<span class="product-options__item-value">ободной</span>
+										</li>
+										<li class="product-options__item">
+											<span class="product-options__item-name"><span>Материал рамы</span></span>
+											<span class="product-options__item-value">алюминий</span>
+										</li>
+									</ul>
+								</div>
+								<div class="product-item__bottom">
+									<div class="rating-wrap">
+										<div class="rating">
+											<!-- <?php for ($i = 1; $i <= 5; $i++) { ?> -->
+											<!-- <?php if ($product['rating'] > $i) { ?> -->
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<i class="icon-star-full i_stack-2x"></i>
+											<!-- <?php } else { ?> -->
+											<i class="icon-star-full i_stack-1x"></i>												
+											<!-- <?php } ?> -->
+											<!-- <?php } ?> -->
+										</div>
+										<a href="#" class="reviews-number">(0 отзывов)</a>
+									</div>
+									<div class="product-item__price-wrap d-flex justify-content-between align-items-center flex-wrap">
+										<div class="product-item__price d-flex flex-wrap align-items-center">
+											<span class="product-titem__price-old">10 000 грн</span>
+											<span class="product-titem__price-current">8 750 грн</span>
+										</div>
+										<a href="#" class="btn" rel="nofollow">
+											<span>купить</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.slider-products__item -->
+						
+					</div>
+					<!-- /.slider-products -->
+
+				</div>
+				<!-- /.slider-section -->
+
+			</div><!-- /.container -->
+			<div class="page-overlay"></div>
+		</main>
+
+		<footer id="my-footer" class="footer">
+			<div class="container">
+				<div class="d-flex footer-row flex-wrap justify-content-between">
+
+					<div class="footer-col footer-col__contacts">
+						<a href="#" class="logo">
+							<img src="assets/img/logo.svg" alt="Lisoped">
+						</a>
+						<ul class="contact-list">
+							<li><address>г. Харьков ул. Щорса 7</address></li>
+							<li><address>г. Киев ул. Короленка 23</address></li>
+							<li class="phones">
+								<a href="tel:676206611">
+									<span>(067) 62-06-611</span>
+									<span class="icon icon_telegram"></span>
+									<span class="icon icon_viber"></span>
+									<span class="icon icon_whatsapp"></span>
+								</a>
+							</li>							
+							<li><a href="mailto:info@lisoped.ua">info@lisoped.ua</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__products">
+						<h6 class="title">Продукция</h6>
+						<ul class="links-list">
+							<li><a href="catalog.html">Велосипеды</a></li>
+							<li><a href="catalog.html">Аксессуары</a></li>
+							<li><a href="catalog.html">Запчасти</a></li>
+							<li><a href="catalog.html">Инструменты и химия</a></li>
+							<li><a href="catalog.html">Экипировка</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__about">
+						<h6 class="title">О магазине</h6>
+						<ul class="links-list two-columns">
+							<li><a href="about_us.html">О нас</a></li>
+							<li><a href="manufacturer.html">Производители</a></li>
+							<li><a href="reviews.html">Отзывы о магазине</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="guarantee.html">Гарантия</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="delivery_order.html">Оплата и доставка</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="credit.html">Рассрочка</a></li>
+							<li><a href="shares.html">Акции</a></li> 
+						</ul>
+					</div>
+
+					<div class="footer-col t-a-right footer-col__subscribe">
+						<div class="footer-col__inner t-a-left">
+							<h6 class="title">Следите за нами</h6>
+							<ul class="socials d-flex align-items-center flex-wrap">
+								<li><a href="#"><i class="i-facebook"></i></a></li>
+								<li><a href="#"><i class="i-instagram"></i></a></li>
+								<li><a href="#"><i class="i-twitter"></i></a></li>
+								<li><a href="#"><i class="i-youtube"></i></a></li>
+							</ul>
+							<form action="" class="subscribe">
+								<input id="footer_subscribe_email" name="email" type="text" placeholder="Введите свой E-mail" required>
+								<button type="submit" class="btn"><span>Подписаться</span></button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		<!-- /.footer ===================================== -->
+
+	</div>
+
+	<div class="hidden">
+		
+		<div id="log-in-popup" class="log-in-popup popup">
+			<form action="" class="log-in-form popup-form" data-form="login">
+				<div class="formhead">Вход в личный кабинет</div>
+				<div class="form-row">
+					<label>
+						<span>Логин:</span>
+						<input type="email" name="login" required placeholder="I-Ivanov@gmail.com">
+					</label>
+				</div>
+				<div class="form-row">
+					<label>
+						<span>Пароль:</span>
+						<input type="text" name="password" required placeholder="*********">
+					</label>
+				</div>
+				<div class="form-row form-row_cols-2">
+					<label class="label-check">
+						<input type="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<div class="login-form__lost link"><span>Забыли пароль?</span></div>
+				</div>				
+				
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Вход</span>
+					</button>
+				</div>
+			</form>
+
+			<form action="" class="lost-form popup-form" data-form="lost">
+				<div class="success"><span>Ссылка для восстановления пароля отправлена на ваш e-mail. Пожалуйста, проверьте почту.</span></div>
+				<div class="formhead">Восстановление пароля</div>
+				<div class="formdescr">Укажите адрес эл. почты, который вы использовали при оформлении заказов в нашем магазине. Мы вышлем вам инструкцию по восстановлению пароля.</div>
+				<input type="email" name="email" maxlength="50" required placeholder="E-mail">
+				<span class="lost-form__login link"><span>Вспомнили пароль?</span></span>
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+					</button>
+				</div>
+			</form>
+
+			<div class="login-socials">
+				<div class="formdescr">Войти через социальные сети</div>
+				<div class="ulogin-buttons-container">
+					<div class="ulogin-button" role="button" title="Facebook"><i class="icon-facebook2"></i></div>
+					<div class="ulogin-button" role="button" title="Google+"><i class="icon-google-plus2"></i></div>
+				</div>
+			</div>
+			<div class="if-has-uccount">
+				<a href="#">Регистрация</a>
+			</div>
+		</div><!-- /.log-in-popup -->
+
+		<div id="callback-popup" class="callback popup">
+			<form action="" class="callback-form popup-form">
+				<div class="success">
+					<div class="s-inner">
+						<span>Спасибо за заявку!</span>
+						<span>В ближайшее время с Вами свяжется наш менеджер</span>
+					</div>
+				</div>
+				<div class="formhead">Обратный звонок</div>
+				<div class="form-row form-row_cols-2">
+					<label>
+						<span>Номер телефона:</span>
+						<input type="phone" name="phone" required placeholder="Телефон*">
+					</label>
+					<label>
+						<span>Имя:</span>
+						<input type="text" name="name" required placeholder="Иван*">
+					</label>
+				</div>
+				<div class="form-row">
+					<div class="time-selects">
+						<div class="select-day">
+							<select name="Day" class="select">
+								<option value="today">Сегодня</option>
+								<option value="tomorrow">Завтра</option>
+							</select>
+						</div>
+						<div class="select-hour">
+							<select name="Hour" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<div class="select-min">
+							<select name="Min" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Жду звонка</span>
+					</button>
+				</div>
+			</form>
+		</div><!-- /.callback-popup -->
+
+		<div id="one-click-buy__popup" class="__popup">
+			<form action="" class="one-click-buy__form flex align-items-center flex-wrap">
+				<div class="success">
+					<div class="s-inner">
+						<span>Спасибо за заявку!</span>
+						<span>В ближайшее время с Вами свяжется наш менеджер</span>
+					</div>
+				</div>
+				
+				<div class="one-click__popup-img">
+					<img src="assets/img/products/product1_img_nav1.jpg" alt="Название товара">
+				</div>
+
+				<div class="one-click__popup-content">
+					<div class="formhead">Купить в 1 клик</div>
+					<div class="formdescr">Пожалуйста, укажите Ваш контактный номер телефона и мы свяжемся с Вами в ближайшее время</div>
+					<input type="tel" name="Phone" required="" placeholder="+38(0__)___-__-__">
+					<input type="hidden" name="Product name" value="Название товара">
+					<div class="btn-submit__wrap">
+						<button type="submit" class="btn">
+							<span>Заказать</span>
+							<svg class="angle-icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div><!-- /#one-click-buy__popup -->
+
+		<div id="reviews-popup" class="reviews-popup popup">
+			<form action="" class="reviews-popup__form">
+				<div class="success"><span>Спасибо за отзыв!</span></div>
+				<div class="formhead">Оставить отзыв</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Reviews" rows="6" placeholder="Ваш отзыв*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#reviews-popup -->
+
+		<div id="faq-popup" class="faq-popup popup">
+			<form action="" class="faq-popup__form">
+				<div class="success"><span>Спасибо за вопрос!</span></div>
+				<div class="formhead">Задать вопрос</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Question" rows="6" placeholder="Ваш вопрос*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#faq-popup -->
+
+		<div id="wishlist-popup" class="wishlist-popup popup">
+			<div class="inner">Вы должны выполнить <a href="#log-in-popup" class="to-popup accent">вход</a> или <a href="registration.html" class="accent">зарегистрироваться</a> чтобы добавить товар в свой список закладок!</div>
+		</div><!-- /.wishlist-popup -->
+
+	</div>
+	
+	<div class="top" title="Наверх">
+		<i class="icon-chevron-thin-up"></i>
+	</div>
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ79uJPujvlv4hzNzKoOsq9umUqTU_JiE"></script>
+	<script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>

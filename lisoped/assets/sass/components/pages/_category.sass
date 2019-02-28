@@ -1,0 +1,48 @@
+.categories-grid
+	.row
+		>div
+			margin-bottom: 20px
+.category-item
+	display: block
+	text-align: center
+	background: $color-category-item-bg
+	padding: 50px 25px 20px
+	height: 100%
+	max-width: 300px
+	margin: 0 auto
+	&:hover
+		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2)
+		.line:before
+			width: 30px
+	&__img
+		display: flex
+		margin-bottom: 20px
+		img
+			margin: auto
+	&__name
+		text-transform: uppercase
+		font-weight: 500
+		font-size: 0.9rem		
+		min-height: 50px
+		display: block
+		.line
+			display: inline-block
+			position: relative
+			padding-bottom: 9px
+			&:before
+				content: ''
+				position: absolute
+				width: 0
+				height: 2px
+				background: $accent
+				right: 0
+				bottom: 0
+				transition: all 0.2s ease
+
+/*========== Media Desktop First  ==========*/
+// ≥576px
++media-breakpoint-down(xs)
+	.category-item
+		padding: 30px 25px 20px
+		&__name
+			min-height: auto

@@ -1,0 +1,87 @@
+.page-wishlist
+	.cart-product__list-header
+		padding: 12px 20px
+		&--photo
+			flex-basis: 120px
+			max-width: 120px
+		&--name
+			flex-basis: 60%
+			max-width: 60%
+			padding-left: 1.5rem
+		&--price
+			flex-basis: calc(40% - 120px)
+			max-width: calc(40% - 120px)
+	.cart-product
+		position: relative
+		&__descr
+			flex-basis: 60%
+			max-width: 60%
+			margin: 0
+			padding: 0 1.5rem
+		&__price
+			flex-basis: calc(40% - 120px)
+			max-width: calc(40% - 120px)
+			font-weight: 500
+			padding-right: 20px
+		&__name
+			margin-bottom: 4px
+			a
+				text-decoration-color: #a2a2a2
+				&:hover
+					text-decoration: underline
+					text-decoration-color: #a2a2a2
+		.product-info__availability
+			font-size: 0.85em
+			&:before
+				width: 4px
+				height: 4px
+				transform: none
+				top: 45%
+		.remove
+			position: absolute
+			right: 15px
+			top: 50%
+			transform: translateY(-50%)
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.page-wishlist
+		.cart-product__list-header
+			&--name
+				flex-basis: 55%
+				max-width: 55%
+				padding-left: 1.2rem
+			&--price
+				flex-basis: calc(45% - 120px)
+				max-width: calc(45% - 120px)
+		.cart-product
+			&__descr
+				flex-basis: 55%
+				max-width: 55%
+				padding: 0 1.2rem
+			&__price
+				flex-basis: calc(45% - 120px)
+				max-width: calc(45% - 120px)
+
+// ≥576px
++media-breakpoint-down(xs)
+	.page-wishlist
+		.cart-product__list-header
+			display: none
+		.cart-product
+			position: relative
+			display: block
+			padding: 16px 10px 16px 12px
+			&__img 
+				float: left
+				margin-right: 1rem
+				width: 80px
+			&__descr, &__price
+				max-width: calc(100% - 85px)
+				padding: 0 25px 0 1.2rem
+				margin: 0 0 0 auto
+			&__price
+				margin: 6px 0 0 auto
+			.remove
+				right: 10px

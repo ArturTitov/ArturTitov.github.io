@@ -1,0 +1,32 @@
+.products-tabs
+	.tab-nav
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-transform: uppercase
+		color: #565656
+		font-weight: 600
+		margin-bottom: 15px
+		+media-breakpoint-down(xs)
+			flex-direction: column
+		.active
+			font-weight: 700
+			color: $text
+			+media-breakpoint-down(xs)
+				color: #ffffff
+				background: $accent
+				font-weight: 600
+		li
+			margin-right: 40px
+			cursor: pointer
+			transition: all 0.2s ease
+			+media-breakpoint-up(lg)
+				&:hover
+					color: $accent
+			+media-breakpoint-down(xs)
+				margin: 0 0 3px
+				padding: 5px
+				width: 100%
+				text-align: center
+			&:last-child
+				margin-bottom: 0

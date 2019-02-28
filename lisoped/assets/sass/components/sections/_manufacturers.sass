@@ -1,0 +1,78 @@
+.manufacturers-list
+	margin: 0 -10px
+	.manufacturer-item
+		flex-basis: calc((100% / 6) - 20px)
+		max-width: calc((100% / 6) - 20px)
+		padding: 13px 15px
+		background-color: #fff
+		border: 1px solid #ddd
+		margin: 0 10px 30px
+		text-align: center
+		display: flex
+		transition: all 0.2s ease
+		&:hover
+			border-color: transparent
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1)
+			img
+				filter: none
+				opacity: 1
+		&__img
+			margin: auto
+		img
+			display: block
+			max-height: 40px
+			filter: grayscale(100%) brightness(60%) contrast(1)
+			opacity: 0.6
+			transition: all 0.2s ease
+
+.s-manufacturer
+	.manufacturer-item
+		padding: 0 25px
+		&__img
+			display: flex
+			img
+				max-height: 40px
+				margin: auto
+				filter: grayscale(100%) brightness(110%) contrast(0)
+				opacity: 0.6
+				transition: all 0.2s ease
+				&:hover
+					filter: none
+					opacity: 1
+
+.manufacturer-slider
+	margin: 0 auto
+	padding: 0 40px
+	.slick-slide
+		>div
+			line-height: 1
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.manufacturer-slider
+		padding: 0 20px
+	
+	.manufacturers-list
+		.manufacturer-item
+			flex-basis: calc((100% / 4) - 20px)
+			max-width: calc((100% / 4) - 20px)
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	.manufacturer-slider
+		padding: 0 30px
+	.s-manufacturer .manufacturer-item
+		padding: 0 7px
+	.manufacturers-list
+		.manufacturer-item
+			flex-basis: calc((100% / 3) - 20px)
+			max-width: calc((100% / 3) - 20px)
+
+// ≥576px
++media-breakpoint-down(xs)
+	.manufacturers-list
+		.manufacturer-item
+			flex-basis: calc((100% / 2) - 20px)
+			max-width: calc((100% / 2) - 20px)

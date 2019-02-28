@@ -1,0 +1,54 @@
+.page-content.page-contacts
+	padding-bottom: 70px
+	+media-breakpoint-down(sm)
+		padding-bottom: 50px
+
+.contacts
+	+media-breakpoint-down(sm)
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 40px
+	+media-breakpoint-down(xs)
+		display: block
+	&-item
+		font-size: 0.858em
+		margin-bottom: 28px
+		+media-breakpoint-down(sm)
+			flex-basis: 45%
+			max-width: 45%
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+			margin-bottom: 23px
+		&:last-child
+			margin-bottom: 0
+		&__title
+			padding-bottom: 4px
+			border-bottom: 1px solid $color-inputs-border
+			text-transform: uppercase
+			margin-bottom: 12px
+			font-weight: 700
+	address
+		line-height: 2
+	.socials li
+		margin: 0 16px 0 0
+	.timework
+		min-width: 230px
+		line-height: 1.9
+
+.phones-list
+	.phone-item
+		display: flex
+		margin-bottom: 6px
+		span
+			flex-basis: 95px
+			max-width: 95px
+			padding-right: 10px
+		a
+			flex-basis: calc(100% - 95px)
+			max-width: calc(100% - 95px)
+	
+.map
+	height: 100%
+	min-height: 400px

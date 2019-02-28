@@ -1,0 +1,118 @@
+.page-delivery-peyment
+	font-size: 0.93em
+	.title
+		text-transform: uppercase
+		font-weight: 700
+		padding-bottom: 6px
+		border-bottom: 1px solid $color-inputs-border
+		margin-bottom: 25px
+		font-size: 0.93em
+
+	.delivery
+		p
+			margin-bottom: 0
+		&__item
+			display: flex
+			flex-wrap: wrap
+			+media-breakpoint-down(xs)
+				margin-bottom: 20px
+			&-name
+				flex: 0 0 16.66667%
+				max-width: 16.66667%
+				font-weight: 600
+				padding-top: 40px
+				+media-breakpoint-down(lg)
+					flex: 0 0 22%
+					max-width: 22%
+				+media-breakpoint-down(md)
+					flex: 0 0 100%
+					max-width: 100%
+					padding-top: 0
+					margin-bottom: 15px
+					font-size: 1.04em
+				+media-breakpoint-down(xs)
+					margin-bottom: 10px
+			&-content
+				flex: 0 0 66.66667%
+				max-width: 66.66667%
+				display: flex
+				flex-wrap: wrap
+				+media-breakpoint-down(lg)
+					flex: 0 0 78%
+					max-width: 78%
+				+media-breakpoint-down(md)
+					flex: 0 0 100%
+					max-width: 100%
+				&.cols-3
+					.item
+						flex-basis: 33.3%
+						max-width: 33.3%
+						+media-breakpoint-down(xs)
+							flex: 0 0 100%
+							max-width: 100%
+				&.cols-2
+					.item
+						flex-basis: 33.3%
+						max-width: 33.3%
+						+media-breakpoint-down(xs)
+							flex: 0 0 100%
+							max-width: 100%
+						&:nth-child(2)
+							flex-basis: 66.6%
+							max-width: 66.6%
+							+media-breakpoint-down(xs)
+								flex: 0 0 100%
+								max-width: 100%
+		.item
+			padding-right: 30px
+			margin-bottom: 30px
+			line-height: 1.4
+			+media-breakpoint-down(lg)
+				&:last-child
+					padding-right: 0
+			+media-breakpoint-down(xs)
+				margin-bottom: 15px
+			&__head
+				color: #8b8b8b
+				margin-bottom: 20px
+				+media-breakpoint-down(xs)
+					margin-bottom: 5px
+			
+.peyment
+	padding-top: 20px
+	p:last-child
+		margin-bottom: 0
+	&__item
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 25px
+		+media-breakpoint-down(sm)
+			margin-bottom: 30px
+		&-name
+			flex: 0 0 16.66667%
+			max-width: 16.66667%
+			font-weight: 600
+			padding-right: 30px
+			+media-breakpoint-down(lg)
+				flex: 0 0 22%
+				max-width: 22%
+			+media-breakpoint-down(md)
+				flex: 0 0 28%
+				max-width: 28%
+			+media-breakpoint-down(sm)
+				flex: 0 0 100%
+				max-width: 100%
+				margin-bottom: 10px
+				font-size: 1.02em
+		&-description
+			flex: 0 0 66.66667%
+			max-width: 66.66667%
+			+media-breakpoint-down(lg)
+				flex: 0 0 78%
+				max-width: 78%
+			+media-breakpoint-down(md)
+				flex: 0 0 72%
+				max-width: 72%
+			+media-breakpoint-down(sm)
+				flex: 0 0 100%
+				max-width: 100%

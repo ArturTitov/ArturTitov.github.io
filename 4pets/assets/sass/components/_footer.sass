@@ -1,0 +1,120 @@
+.footer
+	padding: 46px 0
+	background: $color-footer-bg
+	font-size: 0.858em
+	&-col
+		&__contacts
+			flex-basis: 250px
+			margin-right: 20px
+			+media-breakpoint-down(lg)
+				flex-basis: 190px
+				margin-right: 10px
+			+media-breakpoint-down(xs)
+				flex-basis: 152px
+				margin-right: 5px
+			.phones-list
+				max-width: 180px
+			.phone-item
+				display: flex
+				margin-bottom: 6px
+				span
+					flex-basis: 85px
+					max-width: 85px
+					padding-right: 10px
+					+media-breakpoint-down(xs)
+						font-size: 0.8em
+						max-width: 60px
+						flex-basis: 60px
+						padding-right: 5px
+				a
+					flex-basis: calc(100% - 85px)
+					max-width: calc(100% - 85px)
+					+media-breakpoint-down(xs)
+						flex-basis: calc(100% - 65px)
+						max-width: calc(100% - 65px)
+		&__catalog
+			flex-basis: 120px
+			+media-breakpoint-down(md)
+				display: none
+		&__info
+			flex-basis: 145px
+			margin: 0 7%
+			+media-breakpoint-down(lg)
+				margin: 0 10px
+			+media-breakpoint-down(md)
+				margin: 0
+			+media-breakpoint-down(sm)
+				order: 3
+				flex-basis: 100%
+				margin-top: 30px
+				text-align: center
+				.title
+					display: inline-block
+		&__about
+			flex-basis: 210px
+			+media-breakpoint-down(md)
+				flex-basis: 145px
+			+media-breakpoint-down(sm)
+				order: 4
+				flex-basis: 100%
+				margin-top: 30px
+				text-align: center
+				.title
+					display: inline-block
+		&__social
+			flex-basis: 130px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			+media-breakpoint-down(sm)
+				order: 2
+			.socials
+				li
+					margin: 0 18px 6px 0
+
+	.title
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 0.84em
+		position: relative
+		padding-bottom: 4px
+		margin-bottom: 25px
+		+media-breakpoint-down(sm)
+			margin-bottom: 20px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			height: 1px
+			width: 35px
+			background: $accent
+	ul
+		padding: 0
+		margin: 0
+		li
+			list-style-type: none
+			margin-bottom: 6px
+	.links-list
+		+media-breakpoint-down(sm)
+			text-align: center
+		li
+			+media-breakpoint-down(sm)
+				display: inline-block
+				margin: 4px 10px 
+				vertical-align: middle
+
+.dev
+	display: flex
+	flex-wrap: wrap
+	font-size: 0.84em
+	align-items: center
+	margin-top: 24px
+	span
+		+media-breakpoint-down(lg)
+			margin-bottom: 5px
+	a
+		max-width: 95px
+		margin-left: 8px
+	img
+		width: 95px

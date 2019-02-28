@@ -1,0 +1,67 @@
+.search__result
+	position: absolute
+	left: 15px
+	right: 15px
+	top: 100%
+	background: $white
+	box-shadow: 0 1px 7px rgba(143, 143, 143, 0.15)
+	padding: 15px
+	z-index: 2
+	color: $text
+	display: none
+	min-width: 495px
+	+media-breakpoint-down(lg)
+		left: 0
+		right: auto
+	+media-breakpoint-down(md)
+		left: auto
+		right: 0
+	+media-breakpoint-down(xs)
+		min-width: 0
+		width: calc(100vw - 30px)
+	&.active
+		display: block
+	.product
+		flex-wrap: nowrap
+		&__list
+			max-height: none
+			.product:first-child
+				margin-top: 0
+		&__descr--wrap
+			flex-basis: calc(100% - 100px)
+			max-width: calc(100% - 100px)
+		&__img
+			flex-basis: 44px
+			max-width: 44px
+			margin-right: 10px
+		&__descr
+			flex-basis: calc(100% - 55px)
+			max-width: calc(100% - 55px)
+			font-size: 0.786em
+			.product__options
+				font-size: 0.93em
+		&__sum
+			max-width: 100px
+	a
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $accent
+	.btn-wrap
+		text-align: right
+		.link
+			color: #8f8f8f
+			border-bottom: 1px dashed #8f8f8f
+			font-size: 0.785em
+			+media-breakpoint-up(lg)
+				&:hover
+					color: $accent
+					border-color: transparent
+	p
+		margin-bottom: 0
+	&.search__empty
+		color: #8f8f8f
+		font-size: 0.858em
+	.btn-remove__wrapper
+		padding: 5px 10px 5px 0
+		i
+			font-size: 14px

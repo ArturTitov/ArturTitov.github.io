@@ -1,0 +1,62 @@
+.pagination
+	margin-top: 30px
+	color: $color-pagination
+	display: block
+	&.ul
+		margin-top: 30px
+	li
+		margin:  0 7px
+		&.active
+			a
+				background-color: $color-pagination-bg
+				border-color: $color-pagination-bg
+				color: $black
+		>*
+			padding: 3px 7px
+			line-height: 1
+		a
+			border: 1px solid transparent
+			border-radius: 3px
+			&:hover
+				background-color: $color-pagination-bg
+				border-color: $color-pagination-bg
+		.prev
+			margin-right: 10px
+			&:before
+				content: '\e90c'
+		.next
+			margin-left: 10px
+			&:before
+				content: '\e90d'
+		.prev,
+		.next
+			position: relative
+			font-weight: 300
+			border: none
+			border-radius: 0
+			padding: 0
+			speak: none
+			font-variant: normal
+			-webkit-font-smoothing: antialiased
+			font-style: normal
+			text-transform: none
+			font-family: icomoon!important
+			&:hover
+				background-color: transparent
+			&:before
+				line-height: 26px
+				font-size: 0.85rem
+				display: inline-block
+
+/*========== Media Desktop First  ==========*/
+// ≥576px
++media-breakpoint-down(xs)
+	.pagination
+		li
+			margin: 0 2px
+			>*
+				padding: 3px 6px
+			.prev
+				margin-right: 5px
+			.next
+				margin-left: 5px

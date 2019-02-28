@@ -1,0 +1,61 @@
+.personal-area__inputs
+	input
+		border: none
+		border-bottom: 1px solid $color-border
+		padding: 3px 0
+		font-size: 0.94em
+		text-shadow: 0 0 0 $text
+
+.registration-form
+	&__label
+		&-head
+			text-transform: uppercase
+			font-weight: 500
+			padding: 0 0 4px
+			border-bottom: 1px solid $accent
+			margin-bottom: 2rem
+	&__inputs
+		max-width: 574px
+		margin: 0 0 0 auto
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		input
+			margin-bottom: 2.3rem
+			flex-basis: 45%
+			max-width: 45%
+			&:last-child
+				margin-bottom: 2.3rem
+	.btn-wrap
+		text-align: center
+		margin-top: 8rem
+
+
+/*========== Media Desktop First  ==========*/	
+// ≥1200px
++media-breakpoint-down(lg)
+	.registration-form
+		.btn-wrap
+			margin-top: 6rem
+
+// ≥992px
++media-breakpoint-down(md)
+	.registration-form
+		.btn-wrap
+			margin-top: 4rem
+
+// ≥576px
++media-breakpoint-down(xs)
+	.registration-form
+		.btn-wrap
+			margin-top: 1rem
+		&__label-head
+			margin-bottom: 1.5rem
+			font-size: 0.9rem
+		&__inputs
+			input
+				margin-bottom: 1.4rem
+				flex-basis: 100%
+				max-width: 100%
+				&:last-child
+					margin-bottom: 2rem

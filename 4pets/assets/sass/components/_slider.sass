@@ -1,0 +1,176 @@
+.slider__wrapper
+	.slider-nav
+		>div
+			color: #000000
+			font-size: 16px
+			margin-right: 25px
+			line-height: 1
+			cursor: pointer
+			&[aria-disabled="true"]
+				opacity: 0.5
+			&:before
+				display: none
+			+media-breakpoint-up(lg)
+				&[aria-disabled=false]:hover
+					color: $accent-light
+	.slider
+		.slick-next, .slick-prev
+			display: none
+			opacity: 0	
+
+.slider-title__wrapper
+	display: flex
+	justify-content: space-between
+	margin-bottom: 30px
+	// +media-breakpoint-down(xs)
+	// 	flex-direction: column
+	// 	.slider-control
+	// 		margin-top: 15px
+
+.slider__overflow
+	&:before, &:after
+		content: ''
+		position: absolute
+		width: calc((100vw - 1170px) / 2)
+		top: 0
+		height: 100%
+		background: #ffffff
+		z-index: 1
+		+media-breakpoint-up(lg)
+			width: calc((100vw - 900px) / 2)
+		+media-breakpoint-up(sm)
+			width: calc((100vw - 400px) / 2)
+		@media (max-width: $xsMobile)
+			display: none
+	&:before
+		right: 100%
+	&:after
+		left: calc(100% + 28px)
+	.slick-list
+		overflow: visible	
+		@media (max-width: $xsMobile)
+			overflow: hidden
+
+.slider
+	max-width: 1110px
+	z-index: 1
+	.slick-slide:not(.slick-active)
+		+media-breakpoint-up(lg)
+			&:hover
+				.product-thumb__modal
+					opacity: 0
+					visibility: hidden
+					height: 0
+	.product-thumb, .blog-item
+		+media-breakpoint-down(lg)
+			max-width: 216px
+		@media (max-width: $xsMobile)
+			max-width: 300px
+			margin-left: auto
+			margin-right: auto
+			text-align: left
+			img
+				margin-left: auto
+				margin-right: auto
+	.slick-slide
+		@media (max-width: $xsMobile)
+			text-align: center
+
+.slider__nav
+	.slick-next, .slick-prev
+		transform: none
+		top: -35px
+		font-size: 16px
+		line-height: 16px
+		width: 28px
+		height: 16px
+		-webkit-appearance: button
+		&:before
+			color: #000
+			font-family: icomoon!important
+			speak: none
+			font-style: normal
+			font-size: 16px
+			font-weight: 700
+			font-variant: normal
+			text-transform: none
+			line-height: 1
+			-webkit-font-smoothing: antialiased
+	.slick-next
+		right: 20px
+		&:before
+			content: '\e917'
+	.slick-prev
+		left: auto
+		right: 75px
+		&:before
+			content: "\e901"
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before
+	opacity: 0.5
+
+.slick-next:before, .slick-prev:before
+	opacity: 1
+
+.slider-control
+	display: flex
+	align-items: flex-end
+
+.slider-nav
+	display: flex
+	align-items: center
+	i
+		font-weight: 700
+	
+.slick-dots
+	bottom: 17px
+	li
+		width: auto
+		height: auto
+	li
+		margin: 0 4px
+		padding: 4px
+		&.slick-active
+			button
+				opacity: 1
+				transform: scale(1.5)
+		button
+			width: 7px
+			height: 7px
+			padding: 0
+			border-radius: 50%
+			opacity: 0.2
+			background-color: #722e74
+			transition: all 0.3s ease
+			&:before
+				display: none
+		
+.slider-paging__wrapper
+	width: 300px
+	+media-breakpoint-down(md)
+		display: none
+	// +media-breakpoint-down(sm)
+	// 	width: 100px
+	// +media-breakpoint-down(xs)
+	// 	width: calc(100% - 110px)
+
+.progress 
+  display: block
+  width: 100%
+  height: 3px
+  border-radius: 10px
+  overflow: hidden
+  background-color: #e4e4e4
+  background-image: linear-gradient(to right, $accent, $accent)
+  background-repeat: no-repeat
+  background-size: 0 100%
+  transition: background-size .4s ease-in-out
+
+.slider-paging
+	font-size: 0.93em
+	color: #8a8a8a
+	letter-spacing: 1px
+	.current
+		color: $text
+		font-weight: 600
+

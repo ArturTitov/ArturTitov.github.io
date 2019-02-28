@@ -1,0 +1,47 @@
+.reviews-item
+	font-size: 0.86em
+	margin: 0 0 28px
+	color: $black
+	&.level1
+		margin-left: 30px
+	&.level2
+		margin-left: 60px
+	&__reviewer
+		text-transform: uppercase
+		font-weight: 500
+		text-shadow: 0 0 0 $text
+		font-size: 0.95em
+		margin-bottom: 4px
+		span
+			text-transform: none
+			color: $color-reviews-head
+			font-weight: 400
+	&__date
+		font-size: 0.95em
+		color: $color-date
+		margin-bottom: 8px
+	&__descr
+		margin-top: 22px
+		position: relative
+		padding-left: 2.5em
+		color: $text
+		text-shadow: 0 0 0 $text
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 5px
+			height: calc(100% - 6px)
+			background: #bcbcbc
+		img
+			margin-right: 8px
+	.answer
+		margin-top: 15px
+		.to-answer
+			color: $gray-3
+			cursor: pointer
+			transition: all 0.2s ease
+			&:hover
+				color: $black

@@ -1,0 +1,22 @@
+.top 
+	position: fixed
+	bottom: 30px
+	background: $white
+	color: $accent
+	border: 1px solid $accent
+	width: 36px
+	height: 36px
+	font-size: 15px
+	line-height: 36px
+	text-align: center
+	cursor: pointer
+	right: -100px
+	z-index: 12
+	transition: all 0.15s ease
+	+media-breakpoint-up(lg)
+		&:hover
+			background: $accent
+			color: $white
+	&.active
+		right: 20px
+	

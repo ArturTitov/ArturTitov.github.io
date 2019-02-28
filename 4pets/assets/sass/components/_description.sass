@@ -1,0 +1,33 @@
+.description
+
+.show-text
+	font-size: 0.93rem
+	&.active
+		.btn__text-more:after
+			content: '\e90d'
+	.text-wrap
+		max-height: 220px
+		overflow: hidden
+		position: relative
+		transition: all 0.4s ease
+	.text
+		>*
+			margin-bottom: 1rem
+	.btn-link
+		cursor: pointer
+	.btn-wrap
+		margin-top: 30px
+	
+.btn__text-more
+	font-size: 0.858rem
+	color: #6b6b6b
+	position: relative
+	padding-right: 20px
+	&:after
+		content: '\e90a'
+		position: absolute
+		font-family: icomoon
+		right: 0
+		top: 58%
+		font-size: .75em
+		transform: translateY(-50%)

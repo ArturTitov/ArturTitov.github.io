@@ -1,0 +1,720 @@
+@import "base/module"
+@import "components/module"
+@import "icomoon/style.css"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	font-size: 14px
+	&.__fixed
+		overflow: hidden
+		// padding-right: 20px
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.55
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: 1px solid $color-inputs-border
+		outline: none
+		appearance: none
+		// &:focus:required:invalid
+		// 	border-color: red
+		// &:required:valid
+		// 	border-color: green
+
+.wrapper
+	overflow-x: hidden
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	// min-height: 100vh
+
+section
+	position: relative
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center, .t-a-c
+	text-align: center
+
+.t-a-r
+	text-align: right
+
+.pos-r
+	position: relative
+
+b, strong
+	font-weight: bold
+
+h1, .h1
+	font-size: 1.1rem
+h2, .h2
+	font-size: 1rem
+h3, .h3
+	font-size: 0.95rem
+h4, .h4
+	font-size: 0.93rem
+h5, .h5
+	font-size: 0.92rem
+h6, .h6
+	font-size: 0.858rem
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+	line-height: 1.25
+	text-transform: uppercase
+	font-weight: 700
+	+media-breakpoint-down(xs)
+		font-size: 1rem
+
+.hidden
+	display: none
+
+address
+	margin-bottom: 0
+
+a, a:active, a:focus, a:hover 
+	color: inherit
+	text-decoration: inherit
+	outline: 0
+	transition: all 0.2s ease
+
+a
+	text-transform: inherit
+	svg
+		transition: all 0.2s ease
+	+media-breakpoint-up(lg)
+		&:hover
+			color: $accent
+			svg
+				fill: $accent
+
+img 
+  max-width: 100%
+  height: auto
+
+button,
+button:hover,
+button:focus
+	outline: none
+	border: none
+	-webkit-appearance: none
+	transition: all 0.2s ease
+
+button
+	cursor: pointer
+	transition: all 0.25s ease
+
+textarea
+	resize: none
+
+label
+	margin-bottom: 0
+
+.accent
+	color: $accent
+
+.accent-light
+	color: $accent-light
+
+.__show-overlay
+	.page-overlay 
+		opacity: 1
+		visibility: visible
+
+.page-overlay 
+	position: absolute
+	background: rgba(0,0,0,0.5)
+	opacity: 0
+	visibility: hidden
+	transition-property: opacity, visibility
+	transition-duration: 0.2s
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 21
+
+.has-dropdown
+	position: relative
+	padding-right: 20px
+	&:hover
+		.dropdown
+			z-index: 10
+			opacity: 1
+			visibility: visible
+	&__icon
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-45%)
+		font-size: 10px
+		cursor: pointer
+		z-index: 1
+		height: 15px
+
+.dropdown
+	position: absolute
+	top: 100%
+	left: 0
+	padding: 13px 18px
+	white-space: nowrap
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.2)
+	list-style: none
+	background-color: #fff
+	color: $text
+	margin: 0
+	z-index: -2
+	opacity: 0
+	visibility: hidden
+	transition: all 0.2s ease
+	&:hover
+		z-index: 10
+		opacity: 1
+		visibility: visible
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+	li
+		margin-bottom: 5px
+		&:last-child
+			margin-bottom: 0
+		a
+			display: block
+			font-weight: 600
+			+media-breakpoint-up(md)
+				&:hover
+					color: $accent
+
+.socials
+	color: $color-socials
+	list-style-type: none
+	margin: 0
+	padding: 0 5px
+	display: flex
+	font-size: 17px
+	align-items: center
+	li
+		margin: 0 15px
+	.icon-youtube
+		font-size: 24px
+	a
+		display: block
+		line-height: 1
+
+html.mm-pagedim-black.mm-opening #mm-blocker, html.mm-pagedim-white.mm-opening #mm-blocker, html.mm-pagedim.mm-opening #mm-blocker
+	opacity: 0.5
+
+.mm-opened
+	#my-content
+		z-index: 5
+	.mm-menu.mm-offcanvas
+		z-index: 10
+
+.mm-title
+	color: $black
+	text-shadow: 0 0 0 $black
+
+input[type="radio"],
+input[type="checkbox"],
+.input-checkbox
+  -webkit-appearance: none
+  width: 15px
+  height: 15px
+  padding: 3px 1px
+  border: 1px solid #cacaca
+  border-radius: 0
+  outline: none
+  margin: 0
+  box-sizing: border-box
+  box-shadow: none
+  cursor: pointer
+  background-color: #fff
+  &:checked:before,
+  &:checked:before
+    content: ""
+    display: block
+    width: 4px
+    height: 8px
+    border: 0 solid $accent
+    border-width: 0 1px 1px 0
+    transform: rotateZ(45deg)
+    margin: -2px 4px
+    pointer-events: none
+    outline: none
+    box-shadow: none
+  &:checked,
+  &:checked
+    background-color: #fff
+    outline: none
+    border-color: $color-inputs-border
+
+input[type="number"]
+	-moz-appearance: textfield
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+.s-padding
+	padding: 33px 0
+	+media-breakpoint-down(xs)
+		padding: 20px 0
+.s-padding__top
+	padding-top: 60px
+	+media-breakpoint-down(xs)
+		padding-top: 40px
+.s-padding__bottom
+	padding-bottom: 60px
+	+media-breakpoint-down(xs)
+		padding-bottom: 40px 
+
+.rating-wrap
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-between
+
+.rating
+	font-size: 14px
+	line-height: 1
+	color: $color-rating-star-gray
+	.i_stack-accent
+		color: $color-rating-star-accent
+
+.reviews-number
+	font-size: 0.85em
+	color: $gray
+	margin-left: 8px
+
+.btn-accent, .btn
+	display: inline-block
+	text-transform: uppercase
+	font-size: 0.93rem
+	padding: 9px 35px
+	line-height: 1
+	background: $accent
+	color: $white
+	overflow: hidden
+	position: relative
+	cursor: pointer
+	font-weight: 600
+	border: 1px solid transparent
+	transition: 0.5s ease-out
+	+media-breakpoint-up(lg)
+		&:hover, &:focus
+			color: $white
+			border: 1px solid transparent
+		&:hover
+			&:before
+				transform: scale(10)
+	&:before
+		content: ''
+		position: absolute
+		top: -20px
+		left: 50%
+		transform: translate(-50%, -50%) scale(1)
+		display: block
+		width: 40px
+		height: 40px
+		background: $color-nav-hover
+		border-radius: 50px
+		transition: 0.4s
+	span
+		color: $white
+		position: relative
+		z-index: 1
+    
+.btn
+	background: $white
+	color: $text
+	border: 1px solid $accent
+	+media-breakpoint-up(lg)
+		&:hover, &:focus
+			color: $white
+			border: 1px solid $accent
+			span
+				color: $white
+	span
+		color: $text
+		transition: 0.4s
+
+.btn-remove
+	background: transparent
+
+.btn-more
+	font-size: 0.858em
+	display: flex
+	align-items: center
+	i
+		font-size: 6px
+		margin-left: 7px
+		font-weight: 600
+
+.btn-close
+	background: transparent
+	padding: 0
+
+.btn-link
+	font-size: 0.786em
+	font-weight: 600
+	+media-breakpoint-up(lg)
+		&:hover
+			color: $accent
+			span
+				border-color: transparent
+	span
+		border-bottom: 1px solid $text
+		line-height: 1.05
+		display: inline-block
+		transition: 0.2s
+
+
+button[type=submit]
+	cursor: pointer
+
+.s-title
+	text-transform: uppercase
+	font-weight: 700
+	margin-bottom: 15px
+
+.bg-img
+	position: absolute
+
+.subscribe
+	max-width: 236px
+	&-icon
+		margin-bottom: 20px
+		font-size: 23px
+		color: #a0a0a0
+		i
+			opacity: 0.8
+	&-text
+		font-size: 0.858em
+		line-height: 1.3
+		margin-bottom: 20px
+	&-form
+		position: relative
+		input 
+			display: block
+			width: 100%
+			background: #fafafa
+			color: $text
+			font-size: 0.858em
+			border: none
+			padding: 9px 40px 8px 15px
+			&:focus
+				box-shadow: 0 0 10px 1px lighten($accent, 50%)
+				&+ button[type="submit"]
+					color: $accent
+					right: 5px
+					i
+						font-weight: 700
+			&:placeholder
+				color: #909090
+		button[type="submit"]
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			background: transparent
+			font-size: 8px
+			padding: 10px 13px 10px 8px
+			z-index: 1
+			cursor: pointer
+			transition: all 0.2s ease
+			i
+				font-weight: 700
+	
+.success
+	display: none
+
+.lowercase
+	text-transform: lowercase
+
+.icon-bonus:before
+	color: inherit
+
+.btn-w-icon
+	display: inline-flex
+	align-items: center
+	svg
+		width: 23px
+	svg, i
+		color: #8a8a8a
+		fill: #8a8a8a
+		stroke: #8a8a8a
+		font-size: 22px
+		margin-right: 10px
+		line, circle, polygon
+			stroke: #8a8a8a
+		polygon
+			color: #ffffff
+			fill: #ffffff
+
+	i:before
+		color: inherit
+	span
+		font-size: 0.858em
+
+.clearfix
+	&:before
+		content: ''
+    display: table
+	&:after 
+    content: ''
+    display: table
+    clear: both
+
+.link
+	border-bottom: 1px solid $accent
+	color: $accent
+	line-height: 1.1
+	display: inline-block
+	&:hover
+		border-color: transparent
+
+.i-flex
+	display: inline-flex
+.flex
+	display: flex
+.ai-fs
+	align-items: flex-start
+.ai-fe
+	align-items: flex-end
+.ai-c 
+	align-items: center
+.jc-sb 
+	justify-content: space-between
+.jc-c
+	justify-content: center
+.jc-sa
+	justify-content: space-around
+
+form, .form
+	.form__group-label
+		display: block
+		font-weight: 600
+		margin-bottom: 6px
+		line-height: 1.3
+	textarea
+		width: 100%
+	.form__group
+		margin-bottom: 15px
+		position: relative
+		&.form__group--rating
+			line-height: 1
+			margin-bottom: 12px
+		&__cols-2
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			>*
+				flex-basis: 48%
+				max-width: 48%
+				+media-breakpoint-down(xs)
+					flex-basis: 100%
+					max-width: 100%
+		&__cols-3
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			>*
+				flex-basis: 26%
+				max-width: 26%
+				+media-breakpoint-down(xs)
+					flex-basis: 100%
+					max-width: 100%
+		&--img
+			input[type=file]
+				display: none
+			.form__group-input
+				position: relative
+				display: flex
+				align-items: center
+				justify-content: center
+				border: 1px solid $color-inputs-border
+				color: #909090
+				cursor: pointer
+				transition: all 0.3s ease
+				+media-breakpoint-down(xs)
+					min-height: 70px
+					span
+						padding: 0 30px
+				+media-breakpoint-up(lg)
+					&:hover
+						color: $accent
+				&.active
+					min-height: 0
+					+media-breakpoint-down(xs)
+						display: inline-flex
+						display: inline-flex
+						margin: 0 auto
+					.file-img
+						display: block
+					span
+						display: none
+				span
+					font-weight: 400
+					margin-bottom: 0
+			.file-img
+				display: none
+	.form__descr
+		font-size: 0.93em
+		margin-bottom: 10px	
+	input, textarea
+		width: 100%
+		margin: 0
+		padding: 4px 13px
+		font-size: .93em
+	input[type="radio"],
+	input[type="checkbox"]
+		width: 15px
+		padding: 3px 1px
+	.label-check
+		line-height: 1
+		cursor: pointer
+		font-size: 0.93em
+		input
+			margin-right: 10px
+		span
+			line-height: 1.3
+			max-width: calc(100% - 25px)
+
+
+.page-content
+	padding-bottom: 70px
+	min-height: 51vh
+	+media-breakpoint-down(lg)
+		padding-bottom: 40px
+
+.text
+	font-size: 0.93em
+	>*
+		margin-bottom: 1.1rem
+		&:last-child
+			margin-bottom: 0
+	h1, h2
+		font-size: 1rem
+	h1, h2, h3, h4, h5, h6
+		padding-bottom: 7px
+		border-bottom: 1px solid $color-inputs-border
+	img
+		+media-breakpoint-down(xs)
+			float: none !important
+			display: block
+			margin: 0 auto 1.3rem !important
+	.title
+		font-size: 0.92em
+		font-weight: 700
+		padding-bottom: 5px
+		text-transform: uppercase
+		border-bottom: 1px solid $color-inputs-border
+	ul
+		padding: 0
+		list-style-type: none
+		li
+			position: relative
+			padding-left: 15px
+			&:before
+				content: ''
+				width: 4px
+				height: 4px
+				background-color: #8f8f8f
+				position: absolute
+				left: 0
+				top: 8px
+
+.scrollbar-rail > .scroll-element 
+  background-color: transparent
+
+.scrollbar-rail > .scroll-element .scroll-element_size 
+  background-color: #e6e6e6
+
+.scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-element_size 
+  background-color: #e6e6e6
+
+.scrollbar-rail > .scroll-element .scroll-bar 
+  background-color: $accent
+  border-radius: 7px
+  width: 2px
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_outer 
+  width: 3px
+
+.scrollbar-rail > .scroll-element.scroll-y 
+  width: 2px
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-bar 
+  width: 2px
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_size 
+  left: 1px
+  width: 2px
+
+.p-title
+	margin-bottom: 25px
+
+.search__result-text
+	margin-bottom: 5px
+	&.empty
+		margin-bottom: 28px
+
+#icon-compare, .icon-compare
+	width: 22px
+	.st0, .st1, .st2
+		fill: none
+		stroke: $gray
+		stroke-width: 2
+	.st0
+		stroke-linecap: round
+		stroke-miterlimit: 10
+	.st1
+		stroke-miterlimit: 10
+	.st2
+		stroke-linecap: round
+		stroke-linejoin: round
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

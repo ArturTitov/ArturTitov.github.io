@@ -1,0 +1,40 @@
+.s-reviews
+	.slider-title__wrapper
+		padding-right: 120px
+.reviews-slider
+	&.slider__nav
+		.slick-next, .slick-prev
+			top: -45px
+	.slick-list
+		margin: 0 -27px
+		+media-breakpoint-down(lg)
+			margin: 0 -15px
+		.slick-slide
+			margin: 0 27px
+			+media-breakpoint-down(lg)
+				margin: 0 15px
+.review
+	font-size: 0.93em
+	border: 1px solid #f0f0f0
+	padding: 25px
+	&-info__wrapper
+		display: flex
+		margin-bottom: 30px
+	&-img
+		width: 100px
+		flex-basis: 100px
+		padding-right: 20px
+	&-info
+		flex-basis: calc(100% - 80px)
+		max-width: calc(100% - 80px)
+	&-title
+		color: $accent
+		margin-bottom: 3px
+		font-weight: 600
+	&-data
+		color: #636363
+		font-size: 0.858em
+		margin-bottom: 25px
+	&-text > *:last-child
+		margin-bottom: 0
+			

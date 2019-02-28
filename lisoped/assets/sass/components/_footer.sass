@@ -1,0 +1,176 @@
+.footer
+	padding: 40px 0 20px
+	border-top: 1px solid $color-border
+	font-size: 0.76rem
+	color: $black
+	ul
+		margin: 0
+		padding: 0
+		li
+			list-style-type: none
+			line-height: 1.3
+			margin-bottom: 10px
+	.socials
+		margin-bottom: 15px
+		li
+			margin-bottom: 0
+	address
+		margin: 0
+	a:hover
+		text-shadow: 0 0 0 $black
+
+	&-col
+		max-width: 220px
+		.logo
+			margin-bottom: 31px
+			display: block
+		.contact-list
+			.phones
+				padding-top: 3px
+				a
+					display: flex
+					align-items: center 
+					span
+					line-height: 1
+		.title
+			font-size: 0.76rem
+			margin-bottom: 1.1rem
+			padding-bottom: 5px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 35px
+				height: 1px
+				background: $accent
+				left: 0
+				bottom: 0
+		
+		.two-columns
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			li
+				flex-basis: 43%
+				max-width: 43%
+
+		&__inner
+			display: inline-block
+		
+		&__products, &__contacts
+			max-width: 180px
+		&__about
+			max-width: 290px
+		
+		.socials
+			font-size: 1rem
+
+	&__bottom-line
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 20px
+		.copy
+			font-size: 1em
+			margin-top: 3px
+
+	.icon_whatsapp
+		font-size: 1.02em
+
+.m-auto
+	margin: 0 auto
+	display: inline-block
+	text-align: left
+
+.subscribe
+	min-width: 217px
+	input
+		width: 100%
+		border-radius: 0
+		padding: 9px 12px
+		margin-bottom: 15px
+	.btn
+		width: 100%
+		&:before
+			width: 100%
+		&:after
+			height: 100%
+
+.dev 
+	display: inline-flex
+	align-items: center
+	font-size: 0.9rem
+	p
+		margin: 0
+		font-size: 0.85em
+	a 
+		max-width: 95px
+		opacity: .65
+		margin: 0 10px
+		filter: grayscale(1)
+		transition: all .3s ease
+		&:hover
+			opacity: .9
+			filter: grayscale(0)
+		img
+			display: block
+
+/*========== Media Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.subscribe
+		min-width: 180px
+
+// ≥992px
++media-breakpoint-down(md)
+	.footer-row
+		.footer-col
+			&:nth-child(2),
+			&:nth-child(3)
+				padding: 0 10px 0 20px
+			.two-columns li
+				flex-basis: 100%
+				max-width: 100%
+			&__contacts, &__products, &__about
+				max-width: 170px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.footer-row 
+		.footer-col__subscribe
+			order: 2
+		.footer-col__products
+			order: 3
+			flex-basis: 100%
+			max-width: 100%
+		.footer-col__about
+			order: 4
+		.footer-col__products,
+		.footer-col__about
+			flex-basis: 100%
+			max-width: 100%
+			text-align: center
+			margin-top: 30px
+			.title:before
+				left: 50%
+				transform: translateX(-50%)
+			ul
+				li
+					display: inline-block
+					vertical-align: middle
+					margin: 7px 10px
+				&.two-columns
+					display: block
+
+	.footer__bottom-line
+		justify-content: center
+		flex-direction: column
+		.dev
+			order: -1
+			margin-bottom: 6px
+			
+// ≥576px
++media-breakpoint-down(xs)
+	.subscribe
+		min-width: 150px

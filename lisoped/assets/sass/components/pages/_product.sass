@@ -1,0 +1,434 @@
+.page-product__content
+	padding: 30px 0 10px
+
+.product-images
+	position: relative
+	margin-bottom: 30px
+	.product-item__stickers
+		z-index: 6
+
+
+// zoom img
+.glass-case
+	width: 100%
+	margin: 0 auto
+	font-size: 18px
+
+.gc-zoom-container img
+	max-height: none
+
+.gc-display-area
+	border: none
+	padding: 0
+
+.glass-case ul li
+	border: 1px solid #e8e8e8
+	padding: 0
+
+.gc-thumbs-area.gc-vt .gc-thumbs-area-next, .gc-thumbs-area.gc-vt .gc-thumbs-area-prev
+	display: none
+
+.gc-display-area
+	.gc-icon-prev,
+	.gc-icon-next
+		top: 55%
+	.gc-icon
+		color: #9e9e9e
+		border: none
+		background: transparent
+		z-index: 2
+		// height: 38px
+		// width: 15px
+		margin-top: 0
+	.gc-lens
+		z-index: 4
+	.gc-zoom-inner
+		z-index: 5 !important
+
+.gc-thumbs-area.gc-hz
+	li
+		margin-right: 20px
+	img
+		max-width: 80%
+
+
+.product-info
+	padding-left: 5%
+	font-size: 0.82rem
+	text-shadow: 0 0 0 $text
+	margin-bottom: 30px
+	&__top
+		margin-bottom: 20px
+		.product-info__rating
+			font-size: 1.2em
+			letter-spacing: 1px
+		.reviews-number
+			font-size: 1em
+			color: #818181
+			margin-left: 15px
+			&:hover
+				color: $black
+	&__btns
+		font-size: 1.5em
+		line-height: 1
+		.product-item__btn
+			margin-left: 6px
+			color: $gray-3
+			&:hover
+				color: $black
+		.i-lawyer
+			font-size: 1.05em
+	&__d-list
+		margin-bottom: 30px
+	&__d-item
+		display: flex
+		margin-bottom: 4px
+		&--name
+			color: $color-product-option-name
+			flex-basis: 40%
+			max-width: 40%
+		&--value
+			flex-basis: 60%
+			max-width: 60%
+	&__option
+		margin-bottom: 22px
+		&-name
+			text-transform: uppercase
+			font-weight: 500
+			margin-bottom: 17px
+			text-shadow: none
+		&-values
+			margin: 0
+			padding: 0
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			li
+				list-style-type: none
+		&--color
+			.product-info__option-value
+				border-radius: 50%
+				margin: 0 18px 0 0
+				cursor: pointer
+				display: inline-flex
+				line-height: 1				
+				&:last-child
+					margin-right: 0
+				&:hover
+					.product-info__option-value--color
+						transform: scale(1.4)
+						width: auto
+						height: auto
+				&--color
+					max-width: 10px
+					max-height: 10px
+					border-radius: 50%
+					transform: scale(1)
+					transform-origin: center
+					transition: all 0.15s ease
+				&--input
+					display: none
+					&:checked+.product-info__option-value--color
+						transform: scale(1.4)
+
+		&--size
+			.product-info__option-value
+				margin: 0 11px 0 0
+				display: inline-flex
+				cursor: pointer
+				position: relative
+				&:hover
+					.product-info__option-value--tooltip
+						opacity: 1
+						visibility: visible
+				&--input
+					display: none
+					&:checked+.product-info__option-value--size
+						background: $accent
+						color: $white
+						border-color: $accent
+				&--size
+					width: 32px
+					height: 32px
+					border: 1px solid #bababa
+					border-radius: 50%
+					text-align: center
+					line-height: 30px
+					font-size: 0.9em
+					text-transform: uppercase
+					font-weight: 500
+					transition: all 0.2s ease
+				&--tooltip
+					position: absolute
+					left: 50%
+					bottom: calc(100% + 10px)
+					transform: translateX(-50%)
+					padding: 12px
+					min-width: 150px
+					background-color: #fff
+					border-radius: 3px
+					box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25)
+					opacity: 0
+					visibility: hidden
+					transition: all 0.2s ease
+					&:before
+						content: '\f0d7'
+						font-family: icomoon
+						color: #fff
+						z-index: 1
+						font-size: 16px
+						position: absolute
+						left: 50%
+						top: calc(100% - 6px)
+						transform: translateX(-50%)
+						text-shadow: none
+				&--flex
+					display: flex
+					justify-content: space-between
+					align-items: center
+		&--flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+
+	&__price
+		font-size: 1.53em
+		font-weight: 600
+		text-shadow: none
+		display: flex
+		margin-bottom: 12px
+		>*
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+		.old-price
+			color: $gray-3
+			text-decoration: line-through
+			font-weight: 400
+		
+	&__main-controls
+		display: flex
+		flex-wrap: wrap
+		&--col
+			margin: 0 10% 15px 0
+			&:last-child
+				margin-right: 0
+			.btn
+				padding: 8.5px 34px
+				margin-bottom: 11px
+			.buy-one-click-btn
+				display: block
+				font-weight: 500
+				text-shadow: none
+				span
+					border-bottom: 0.5px dashed #9a9a9a
+					line-height: 0.9
+					display: inline-block
+	&__count
+		display: flex
+		border: 1px solid #c6c6c6
+		font-size: 1.2em
+		margin-bottom: 12px
+		&-value
+			border: none
+			padding: 0
+			width: 60px
+			text-align: center
+			margin: 0
+			font-weight: 500
+			text-shadow: none
+	&__button-decrease,
+	&__button-increase
+		padding: 5px 10px
+		cursor: pointer
+		color: $gray-3
+		transition: all 0.2s  ease
+		&:hover
+			background: #999999
+			color: #ffffff
+	&__availability 
+		position: relative
+		padding-left: 11px
+		text-shadow: none
+		font-weight: 500
+		&:before
+			content: ''
+			position: absolute
+			left: 1px
+			top: 50%
+			transform: translateY(-40%)
+			width: 5px
+			height: 5px
+			border-radius: 50%
+			background: $text
+			text-shadow: none
+		&--available
+			color: $accent
+			&:before	
+				background: $accent
+
+	&__bottom
+		margin-top: 20px
+		display: flex
+		felx-wrap: wrap
+		&-link
+			margin-right: 5%
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 0.8em
+			display: inline-flex
+			align-items: flex-end
+			&:last-child
+				margin-right: 0
+			.i
+				font-size: 25px
+				margin-right: 10px
+			.text
+				text-decoration-color: #9a9a9a
+				text-decoration: underline
+				text-decoration-style: dashed
+				margin-bottom: 5px
+	&__sizes-link
+		border-bottom: 1px dotted $text
+
+.product-info__tabs
+	margin: 20px 0 50px
+	.tab-nav
+		margin-bottom: 30px
+		li
+			min-width: 200px
+			text-transform: none
+			font-weight: 500
+			text-shadow: none
+			font-size: 0.9rem
+			&:before
+				left: 0
+				transform: none
+				width: 0
+				height: 3px
+				transition: all 0.25s ease
+			&.active:before
+				width: 70%
+	.tab-video
+		.w-iframe 
+			overflow: hidden
+			padding-bottom: 56.25%
+			position: relative
+			height: 0
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+		.w-iframe iframe 
+			left: 0
+			top: 0
+			height: 100%
+			width: 100%
+			position: absolute
+
+.propertie
+	flex-basis: 50%
+	max-width: 50%
+	padding-right: 5%
+	margin-bottom: 40px
+	&-head
+		display: flex
+		align-items: center
+		margin-bottom: 20px
+		img
+			max-width: 30px
+			max-height: 30px
+			flex-basis: 30px
+		&__text
+			text-transform: uppercase
+			font-weight: 500
+			flex-basis: calc(100% - 42px)
+			padding: 0 0 4px 0
+			margin-left: 12px
+			border-bottom: 1px solid $color-border
+
+	&-list
+		font-size: 0.92em
+		padding: 0
+		margin: 0
+		text-shadow: 0 0 0 $text
+		color: $text
+		&__item
+			display: flex
+			list-style-type: none
+			margin-bottom: 5px
+			align-items: flex-start
+			&-name
+				position: relative
+				line-height: 1.2
+				flex-basis: 36%
+				max-width: 36%
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					bottom: 3px
+					width: 100%
+					height: 1px
+					border-bottom: 1px dotted #bcbcbc
+					z-index: -1
+				span
+					background: #ffffff
+					padding-right: 5px
+					
+			&-value
+				flex-basis: 64%
+				max-width: 64%
+				padding-left: 8px
+
+
+/*========== Media Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+	.product-info__tabs .tab-nav li
+		min-width: auto
+		margin-right: 5%
+
+// ≥992px
++media-breakpoint-down(md)
+	.propertie 
+		flex-basis: 100%
+		max-width: 100%
+		padding-right: 0
+		&:last-child
+			margin-bottom: 0
+	
+	.glass-case ul li .gc-li-display-container img
+		transform: translate(-50%, -50%)
+		margin-top: 0 !important
+		margin-left: 0 !important
+
+	.product-info__main-controls--col .btn, .product-info__count
+		margin-bottom: 15px
+
+	.product-info__main-controls--col .buy-one-click-btn
+		font-size: 0.84rem
+		
+// ≥576px
++media-breakpoint-down(xs)
+	.product-info
+		padding-left: 0
+		&__bottom-link
+			margin-right: 3%
+	
+	.gc-thumbs-area.gc-hz li
+		margin-right: 10px
+	
+	.product-info__tabs .tab-nav 
+		li
+			margin-bottom: 8px
+			padding-bottom: 6px
+			&:before
+				height: 2px
+
+	.product-info__option--size .product-info__option-value--tooltip
+		left: 0
+		transform: none
+		&:before
+			left: 11px
+			transform: none

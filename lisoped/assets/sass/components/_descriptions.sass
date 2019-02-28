@@ -1,0 +1,56 @@
+
+.description
+	padding-bottom: 65px
+	font-size: 0.94rem
+
+.show-text
+	&.active
+		.btn__text-more:before
+			content: '\f0d8'
+	.text-wrap
+		max-height: 270px
+		overflow: hidden
+		position: relative
+		transition: all 0.4s ease
+		position: relative
+		color: $black
+		&:before
+			content: ''
+			position: absolute
+			z-index: 1 
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 30px
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%)
+	.text
+		>*
+			margin-bottom: 1rem
+
+.btn__text-more
+	display: inline-block
+	position: relative
+	padding-right: 15px
+	color: $accent
+	cursor: pointer
+	line-height: 1
+	font-size: 0.95em
+	&:before
+		content: '\f0d7'
+		font-family: "icomoon"
+		position: absolute
+		font-size: 0.9em
+		right: 0
+		top: 50%
+		transform: translateY(-30%)
+
+/*========== Media Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+	.description
+		padding-bottom: 50px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.description
+		padding-bottom: 40px

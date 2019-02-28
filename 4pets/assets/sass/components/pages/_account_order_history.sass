@@ -1,0 +1,101 @@
+.history-table 
+	font-size: 0.786em
+	line-height: 1.35
+	@include media-breakpoint-down(sm) 
+		min-width: 690px
+	&__wrapper
+		@include media-breakpoint-down(sm)
+			overflow: hidden
+			overflow-x: scroll
+	.thead 
+		color: $color-history-table-head 
+	.tr 
+		display: flex 
+	.td, .th
+		padding: 10px 10px
+		flex-basis: 100px
+		&:nth-child(5)
+			flex-basis: 120px 
+		&:first-child 
+			flex-basis: 45%
+			max-width: 45%
+			text-align: left
+			padding: 12px 20px 12px 0
+		&:last-child
+			flex-basis: 130px
+			letter-spacing: -0.3px
+		i 
+			color: #9a9a9a
+			transition: all 0.5s ease
+	.th 
+		text-shadow: 0 0 0 $color-history-table-head 
+		padding-bottom: 0
+	.td
+		text-shadow: 0 0 0 $text
+	.history-order 
+		cursor: pointer
+		border-bottom: 1px solid $color-inputs-border
+		i 
+			display: inline-block
+			font-size: 0.8em
+			margin-left: 5px 
+		&.active 
+			i 
+				transform: rotate(180deg)
+	a 
+		text-decoration: underline
+		&:hover 
+			text-decoration: none 
+	.history-order__descr-table 
+		margin-left: 20px
+		display: none
+		.th, .td 
+			padding: 5px 15px
+			&:first-child
+				flex-basis: calc(43% + 75px)
+				max-width: calc(43% + 75px)
+			&:last-child
+				text-align: center
+		.thead 
+			background: #f7f7f7
+		.product-info
+			display: flex
+			align-items: center
+			text-decoration: none
+			padding-bottom: 0
+			.product__img
+				max-width: 45px
+				border: 1px solid $color-inputs-border
+				padding: 3px
+				text-align: center
+				margin-right: 10px
+			.product__name span
+				display: block
+		.tbody
+			.tr
+				align-items: center
+	.delivery__info
+		font-size: 1em
+		padding: 12px 20px 8px
+		margin-bottom: 20px
+		.delivery__info-item
+			+media-breakpoint-down(lg)
+				flex-basis: 48%
+				max-width: 48%
+			+media-breakpoint-down(sm)
+				flex-basis: 100%
+				max-width: 100%
+			strong
+				flex-basis: 39%
+				max-width: 39%
+				+media-breakpoint-down(xs)
+					flex-basis: 45%
+					max-width: 45%
+			span
+				flex-basis: 60%
+				max-width: 60%
+				+media-breakpoint-down(xs)
+					flex-basis: 55%
+					max-width: 55%
+
+

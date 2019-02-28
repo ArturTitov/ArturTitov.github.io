@@ -1,0 +1,129 @@
+.reviews-form,
+.answer-form
+	.formhead
+		text-transform: uppercase
+		font-size: 0.9rem
+		font-weight: 500
+		margin-bottom: 15px
+		color: $color-reviews-form-title
+	&__content
+		border: 1px solid $border-color
+		padding: 13px
+		flex-basis: 65%
+		max-width: 65%
+	textarea
+		border: none
+		padding: 0
+		text-shadow: 0 0 0 $text
+	input
+		border-color: $border-color
+		margin-bottom: 15px
+		text-shadow: 0 0 0 $text
+	&__file
+		display: flex
+		justify-content: space-between
+		color: $color-inputs-placeholder
+		margin: 0
+		&-icon
+			font-size: 1.3em
+			line-height: 1
+			transform: rotate(45deg)
+			text-shadow: none
+			font-weight: 300
+			cursor: pointer
+		input
+			display: none
+	&__info
+		flex-basis: 33%
+		max-width: 33%
+		.rating-wrapper 
+			margin-bottom: 15px
+
+.rating-wrapper 
+	overflow: hidden
+	display: inline-block
+	vertical-align: middle
+
+.rating-input
+	display: none
+
+.rating-star 
+	display: inline-block
+	width: 24px
+	height: 24px
+	line-height: 21px
+	position: relative
+	margin: 0 2px 0 0
+	vertical-align: middle
+	float: right
+	font-weight: 300
+
+.rating-star:before 
+	content: '\e9d9'
+	font-family: "icomoon"
+	display: inline-block
+	font-size: 22px
+	position: absolute
+	left: 0
+	top: 0
+	color: $color-rating-star-gray
+
+.rating-wrapper:hover .rating-star:hover:before, .rating-wrapper:hover .rating-star:hover ~ .rating-star:before, .rating-input:checked ~ .rating-star:before 
+	color: $color-rating-star-accent
+
+.answer-form
+	margin-left: 32px
+	&__head
+		margin-bottom: 15px
+		color: #636363
+		strong
+			text-transform: uppercase
+			color: $text
+	.btn
+		font-size: 0.9em
+	.butt2
+		padding: 11px 30px
+		border: 2px solid $color-border
+		margin-left: 10%
+		font-size: 0.9em
+		text-transform: uppercase
+		font-weight: 500
+		transition: all 0.2s ease
+		&:hover
+			background: $color-border
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.reviews-form,
+	.answer-form
+		textarea
+			height: 71%
+	
+	.answer-form
+		button
+			display: block
+			width: 100%
+			text-align: center
+		.butt2
+			margin: 10px 0 0
+
+// ≥576px
++media-breakpoint-down(xs)
+	.answer-form__content, .reviews-form__content,
+	.answer-form__info, .reviews-form__info
+		flex-basis: 100%
+		max-width: 100%
+	
+	.answer-form__content, .reviews-form__content,
+		margin-bottom: 15px
+	
+	.answer-form
+		button
+			display: inline-block
+			width: auto
+			text-align: center
+		.butt2
+			margin: 0 0 0 15px
+			padding: 9px 15px
+			font-size: 0.87em

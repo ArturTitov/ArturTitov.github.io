@@ -1,0 +1,101 @@
+.s-categories
+	.categories
+		justify-content: space-between
+		align-items: stretch
+		&-col__left
+			flex-basis: calc(40% - 20px)
+			.categories-item
+				min-height: calc(100% - 20px)
+		&-col__right
+			flex-basis: 60%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			.categories-item
+				flex-basis: calc(50% - 10px)
+				margin-bottom: 20px
+		&-item
+			border: 1px solid $categories-border
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			min-height: 214px
+			padding: 40px 40px 0 0
+			&:hover
+				box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1)
+				.categories-item__title:before
+					width: 50px
+			&__title
+				text-align: right
+				display: block
+				font-size: 0.86em
+				letter-spacing: 1px
+				font-weight: 500
+				text-shadow:  0 0 0 #333
+				text-transform: uppercase
+				padding-bottom: 10px
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					right: 0
+					bottom: 0
+					width: 0
+					height: 2px
+					background: $accent
+					transition: all 0.2s ease
+
+/*========== Media Desktop First  ==========*/
+	
+// ≥1200px
++media-breakpoint-down(lg)
+	.s-categories.s-padding
+		padding: 50px 0 35px
+
+// ≥992px
++media-breakpoint-down(md)
+	.s-categories
+		.categories-item
+			min-width: 190px
+	
+		
+// ≥768px
++media-breakpoint-down(sm)
+	.s-categories
+		.categories-item
+			padding: 15px 15px 0 0
+			min-height: 180px
+		.categories-col__left,
+		.categories-col__right
+			flex-basis: 100%
+			max-width: 100%
+		.categories-col__left
+			margin-bottom: 20px
+			min-height: 100%
+			a
+				min-height: 100%
+				display: block
+			img
+				max-width: 300px
+				max-height: 142px
+	
+	.s-categories.s-padding
+		padding: 40px 0 25px
+		
+// ≥576px
++media-breakpoint-down(xs)
+
+	.s-categories
+		.categories-col__left
+			margin-bottom: 20px
+			img
+				width: auto
+				max-height: 200px 
+		.categories-col__right
+			.categories-item
+				max-width: 100%
+				flex-basis: 100%
+				img
+					width: auto
+					max-height: 200px
+					max-width: 300px

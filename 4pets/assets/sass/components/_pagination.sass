@@ -1,0 +1,42 @@
+.pagination
+	margin: 0
+	display: block
+	padding: 0
+	font-size: 0.93rem
+	font-weight: 600
+	width: 100%
+	li
+		list-style-type: none
+		margin:  0 4px
+		&.active
+			color: $white
+			font-weight: 700
+			a
+				background: $accent
+				&:hover
+					color: $white
+		&.prev
+			margin-right: 15px
+		&.next
+			margin-left: 15px
+		&.disable
+			opacity: 0.5
+		a
+			padding: 2px 6px 3px
+			line-height: 1
+	i
+		font-size: 0.7em
+		font-weight: 600
+
+/*========== Media Desktop First  ==========*/
+// ≥576px
++media-breakpoint-down(xs)
+	.pagination
+		li
+			margin: 0 2px
+			>*
+				padding: 3px 6px
+			.prev
+				margin-right: 5px
+			.next
+				margin-left: 5px

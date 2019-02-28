@@ -1,0 +1,58 @@
+.sizes-popup
+	font-size: 0.95em
+	&.sizes-popup__col-1.popup
+		max-width: 570px
+	&.popup
+		max-width: 930px
+	&__tables-2
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.sizes-popup__table--wrapper
+			flex-basis: 47%
+			max-width: 47%
+	&__table
+		font-size: 0.95em
+		&--wrapper
+			margin: 20px 0 0
+		&-head
+			text-transform: uppercase
+			font-weight: 700
+			margin-bottom: 1.7em
+		th, td
+			border: 1px solid #aeaeae
+			text-align: center
+		th
+			padding: 10px 5px
+			font-weight: 500
+			width: 25%
+		td
+			padding: 8px
+			width: 25%
+	.content-text
+		>*
+			margin-bottom: 0.7rem
+	
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.sizes-popup
+		&.popup
+			max-width: 520px
+		&__tables-2
+			flex-direction: column
+			.sizes-popup__table--wrapper
+				flex-basis: 100%
+				max-width: 100%
+
+// ≥576px
++media-breakpoint-down(xs)
+	.sizes-popup
+		&.popup
+			padding: 40px 20px 20px
+		&__table
+			font-size: 0.92em
+			td
+				padding: 8px 4px
+			th
+				padding: 9px 5px

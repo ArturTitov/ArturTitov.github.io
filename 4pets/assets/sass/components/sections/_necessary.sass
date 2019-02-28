@@ -1,0 +1,58 @@
+.s-necessary
+	margin: 33px 0
+	padding: 115px 0 140px
+	background: #fafafa
+	+media-breakpoint-down(xs)
+		padding: 120px 0 50px
+	.bg-img
+		top: 50%
+		transform: translateY(-50%)
+		&__1
+			left: calc((100vw - 1240px) / 2)
+			+media-breakpoint-down(lg)
+				left: calc((100vw - 1080px) / 2)
+			+media-breakpoint-down(md)
+				left: calc((100vw - 900px) / 2)
+			+media-breakpoint-down(sm)
+				opacity: 0.5
+				left: calc((100vw - 800px) / 2)
+			+media-breakpoint-down(xs)
+				opacity: 0.4
+				left: 50%
+				top: 0
+				transform: translate(-50%, 0)
+		&__2
+			right: calc((100vw - 1090px) / 2)
+			+media-breakpoint-down(lg)
+				right: calc((100vw - 870px) / 2)
+			+media-breakpoint-down(md)
+				right: calc((100vw - 800px) / 2)
+			+media-breakpoint-down(sm)
+				opacity: 0.6
+				right: calc((100vw - 700px) / 2)
+			+media-breakpoint-down(xs)
+				display: none
+
+.necessary
+	max-width: 450px
+	margin: 0 auto
+	text-align: center
+	position: relative
+	z-index: 1
+	&-title
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 10px
+		font-size: 1.215rem
+	&-description
+		font-size: 0.93em
+		font-weight: 600
+	.btn-wrap
+		margin-top: 30px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		+media-breakpoint-down(xs)
+			justify-content: center
+		a
+			margin: 10px

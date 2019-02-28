@@ -1,0 +1,48 @@
+.blog-nav
+	text-transform: uppercase
+	list-style-type: none
+	font-size: 0.8rem
+	flex-basis: 140px
+	max-width: 140px
+	+media-breakpoint-down(md)
+		font-size: 0.85rem
+	+media-breakpoint-down(xs)
+		margin: 0 0 20px
+	a
+		display: block
+		padding-left: 7px
+		border-left: 3px solid transparent
+		line-height: 1
+		margin-bottom: 16px
+		&.active
+			font-weight: 700
+			border-color: $accent
+
+
+.blog-items
+	flex-basis: calc(100% - 140px)			
+	max-width: calc(100% - 140px)
+	margin: 0 -22px
+	font-size: 0.858em
+	+media-breakpoint-down(md)
+		margin: 0 -15px	
+	+media-breakpoint-down(xs)
+		flex-basis: 100%	
+		max-width: 100%
+		margin: 0
+	.blog-item
+		flex-basis: 25%
+		max-width: 25%
+		padding: 0 22px
+		margin-bottom: 36px
+		+media-breakpoint-down(lg)
+			flex-basis: 33.333%
+			max-width: 33.333%
+		+media-breakpoint-down(md)
+			flex-basis: 50%
+			max-width: 50%
+			padding: 0 15px
+		+media-breakpoint-down(xs)
+			padding: 0 10px
+	.pagination
+		padding-top: 10px

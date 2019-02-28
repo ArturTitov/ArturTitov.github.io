@@ -1,0 +1,104 @@
+.s-about-us
+	.socials__wrapper
+		max-width: 160px
+		+media-breakpoint-down(xs)
+			margin: 0 auto 30px
+	.title
+		font-size: 0.858em
+		font-weight: 700
+		padding-bottom: 3px
+		text-transform: uppercase
+		border-bottom: 1px solid $color-title-border
+		margin-bottom: 20px
+	.subscribe
+		padding-top: 65px
+		+media-breakpoint-down(md)
+			padding-top: 0
+		+media-breakpoint-down(xs)
+			margin: 0 auto
+		&-icon
+			+media-breakpoint-down(xs)
+				display: none
+	
+.socials-title
+	font-size: 0.93em
+	font-weight: 600
+	line-height: 1.4
+	margin-bottom: 25px
+	
+.about-us__sidebar
+	margin-top: 60px
+	+media-breakpoint-down(md)
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	+media-breakpoint-down(xs)
+		justify-content: center
+		flex-direction: column
+
+
+.skills-wrapper
+	padding-top: 90px
+	+media-breakpoint-down(md)
+		padding-top: 60px
+
+.numbers-skills
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.skill
+	margin-bottom: 30px
+	max-width: 22%
+	+media-breakpoint-down(xs)
+		flex-basis: 50%
+		max-width: 50%
+		text-align: center
+		padding: 0 10px
+	&-title
+		font-weight: 600
+		.number
+			font-size: 2.14rem
+			font-weight: 700
+			color: $accent
+	&-descr
+		font-size: 0.858em
+		line-height: 1.35
+	
+.why-us
+	display: flex
+	flex-wrap: wrap
+	+media-breakpoint-down(xs)
+		justify-content: space-between
+	&__title
+		margin-top: 50px
+		+media-breakpoint-down(md)
+			margin-top: 30px
+	&__item
+		padding-top: 30px
+		position: relative
+		margin-bottom: 35px
+		flex-basis: 25%
+		max-width: 25%
+		padding-right: 5%
+		line-height: 1.35
+		font-size: 0.858em
+		+media-breakpoint-down(sm)
+			flex-basis: 33%
+			max-width: 33%
+			padding-right: 20px
+		+media-breakpoint-down(xs)
+			flex-basis: 45%
+			max-width: 45%
+			padding-right: 0
+			padding-top: 15px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 15px
+			width: 4px
+			height: 4px
+			background: $accent
+			+media-breakpoint-down(xs)
+				top: 0

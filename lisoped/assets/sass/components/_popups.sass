@@ -1,0 +1,428 @@
+.popup
+	padding: 60px 30px 30px
+	background: $white
+	position: relative
+	max-width: 500px
+	margin: auto
+	.formhead
+		text-transform: uppercase
+		margin-bottom: 1rem
+		text-align: center
+		font-weight: 500
+		font-size: 1rem
+		margin-bottom: 1.2em
+		line-height: 1.3
+		color: $black
+	.formdescr
+		font-size: 12px
+		text-transform: uppercase
+		margin-bottom: 15px
+	input, textarea
+		width: 100%
+		margin: 0
+		padding: 7px 10px
+	button[type=submit]
+		font-size: 0.75rem
+		padding: 10px 48px
+	.form-row
+		margin-bottom: 18px
+		&_cols-2
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			>*
+				flex-basis: 48%
+				max-width: 48%
+	label
+		span
+			margin-bottom: 7px
+			display: block
+			font-size: 0.92em
+	.time-selects
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		>div:nth-child(1)
+			flex-basis: 38%
+			max-width: 38%
+		>div
+			flex-basis: 28%
+			max-width: 28%
+		.selectize-input
+			color: #404040
+
+.popup-form
+	.btn-submit__wrap
+		margin-top: 20px
+		text-align: center
+
+.log-in-popup.popup
+	max-width: 345px
+	padding: 30px
+	.formhead
+		font-size: 0.9rem
+	label
+		display: block
+	.label-check
+		cursor: pointer
+		display: flex
+		align-items: center
+		margin: 0
+		line-height: 1.2
+		&:hover
+			span
+				color: $accent
+		span
+			margin: 0 0 0 10px
+			transition: all 0.2s ease
+	.mfp-close
+		right: 15px
+		top: 15px
+		font-size: 35px
+
+.ulogin-buttons-container
+	>div
+		font-size: 1.4em
+		display: inline-block
+		vertical-align: middle
+		cursor: pointer
+		margin-right: 8px
+		&:last-child
+			margin-right: 0
+
+.icon-facebook2
+	color: #3c5a99
+.icon-google-plus2
+	color: #dc4141
+
+.if-has-uccount
+	margin-top: 14px
+	text-shadow: 0 0 0 $text
+	text-align: center
+	a
+		border-bottom: 1px dotted $black
+		&:hover
+			border-color: transparent
+
+.login-socials
+	margin-top: 20px
+	text-align: center
+
+.log-in-form,
+.lost-form
+	.link
+		text-align: right
+		font-size: 0.9em
+		display: block
+		cursor: pointer
+		span
+			border-bottom: 1px dotted $black
+			transition: all 0.2s ease
+			&:hover
+				color: $accent
+				border-color: $accent
+
+.lost-form
+	display: none
+	position: relative
+	.formdescr
+		text-transform: none
+		line-height: 1.45
+	.link
+		margin-top: 10px
+
+// magnific-popup
+button.mfp-close
+	font: 200 40px "TimesNewRoman"
+	opacity: 0.7
+	color: $color-close-icon
+	right: 33px
+	top: 18px
+	width: auto
+	height: auto
+	line-height: 12px
+	width: 22px
+	height: 20px
+	padding: 0 0 4px
+	overflow: hidden
+	&:hover, &:focus
+		opacity: 1
+		font-weight: 200
+		color: $color-close-icon !important
+	&:active 
+		top: 18px
+/* overlay at start */
+.mfp-fade.mfp-bg 
+	opacity: 0
+	transition: all 0.2s ease-out
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0
+	// transform: perspective(700px) rotate3d(2,0,0,15deg)
+	transition: all 0.35s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+	opacity: 1
+	transform: none
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0
+
+
+
+
+.popup-sizes
+	background: #ffffff
+	padding: 50px
+	box-shadow: 0 0 22.7px 4.3px rgba(0, 0, 0, 0.07)
+	position: relative
+	max-width: 950px
+	margin: 0 auto
+	text-align: center
+	overflow-x: auto
+	&__title
+		text-transform: uppercase
+		margin-bottom: 20px
+		font-size: 1rem
+	&__descr
+		font-size: 13px
+		max-width: 700px
+		line-height: 1.3
+		margin: 0 auto 15px
+		text-shadow: 0 0 0 $black
+
+.sizes-tabs
+	&__nav
+		margin: 0 auto 20px
+		padding: 0
+		max-width: 445px
+		border-radius: 10px
+		border: 1px solid $border-color
+		li
+			text-align: center
+			list-style-type: none
+			flex-basis: 50%
+			max-width: 50%
+			&:first-child
+				border-right: 1px solid $border-color
+		a
+			display: block
+			padding: 10px
+			font-size: 0.9em
+			font-weight: 400
+			text-transform: lowercase
+			&.__selected
+				color: $accent
+		
+.sizes-table
+	width: 100%
+	border-collapse: collapse
+	th
+		border: 1px solid $border-color
+		padding: 12px 5px 9px
+		font-size: 0.85em
+		text-transform: uppercase
+		font-weight: 400
+		text-align: center
+		span
+			display: block
+			line-height: 1.2
+			max-width: 80px
+			margin: 0 auto
+			text-align: center
+	td
+		border: 1px solid $border-color
+		padding: 9px
+		font-size: 0.85em
+		color: $gray
+
+.one-click-buy__form
+	justify-content: space-between
+	.one-click__popup-img
+		flex-basis: 35%
+		max-width: 35%
+	.btn-submit__wrap
+		text-align: right
+	.one-click__popup-content
+		padding-left: 30px
+		flex-basis: 65%
+		max-width: 65%
+	.formhead
+		margin-bottom: 20px
+	.formdescr
+		color: #999999
+		text-align: center
+		text-transform: none
+		margin-bottom: 20px
+		font-size: 0.9em
+	.btn-submit__wrap
+		margin-top: 25px
+	.btn
+		text-shadow: 0 0 0 $black
+	img
+		max-width: 150px
+
+.reviews-popup__form,
+.faq-popup__form
+	.btn-wrap
+		text-align: center
+		margin-top: 20px
+	.btn
+		font-weight: 400
+
+.wishlist-popup
+	text-align: center
+	font-weight: 400
+	line-height: 1.7
+	text-shadow: none
+	a:hover
+		text-decoration: underline
+
+.to-cart__popup
+	text-align: center
+	text-shadow: 0 0 0 $black
+	max-width: 600px
+	.formhead
+		text-shadow: none
+	.to-cart__product-img
+		flex-basis: 40%
+		max-width: 40%
+	.to-cart__caption
+		flex-basis: 60%
+		max-width: 60%
+		padding-left: 15px
+		.to-cart__product-name
+			margin-bottom: 15px
+		.to-cart__product-price
+			color: $accent
+			font-size: 1.25rem
+			font-weight: 400
+			text-shadow: none
+	.to-cart__buttons
+		margin-top: 35px
+		.btn__continue
+			margin-right: 30px
+			cursor: pointer
+			&:hover
+				color: $accent
+
+.cart-popup.popup
+	max-width: 620px
+	padding: 30px 20px 40px
+	.popup-header
+		text-shadow: none
+		font-weight: 500
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 1.1em
+	button.mfp-close
+		right: 18px
+	.btn-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		font-size: 0.8em
+		a
+			font-size: inherit
+		.btn
+			padding: 0.7rem 2.5rem 0.6rem
+			font-weight: 600
+
+.cart-total
+	text-align: right
+	font-weight: 600
+	padding-top: 3px
+	margin-bottom: 23px
+	.text
+		margin-right: 32px
+
+
+.product-info__popup			
+	background-color: #fff
+	border-radius: 3px
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25)
+	max-width: 700px
+	padding: 36px 5% 24px 40px
+	margin: auto
+	position: relative
+	font-size: 0.85rem
+	h1, h2, h3, h4, h5, h6, ul, ol, p
+		margin-bottom: 0.9rem
+	ul
+		padding: 0
+		li
+			list-style-type: none
+			position: relative
+			margin-bottom: 5px
+			padding-left: 15px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ''
+				width: 4px
+				background: $text
+				height: 1px
+				left: 0
+				top: 45%
+				position: absolute
+	
+#to-cart__popup
+	.popup-header
+		margin-bottom: 25px
+	.popup-footer
+		margin-top: 30px
+
+.one-click__popup
+	&.popup
+		max-width: 350px
+		padding: 40px 30px
+		.formhead
+			font-size: 0.92rem
+		button.mfp-close
+			right: 15px
+			font-size: 34px
+	label
+		display: block
+		margin-bottom: 15px
+	
+
+/*==========  Desktop First  ==========*/
+// ≥1300px
++media-breakpoint-down(xl)
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+
+// ≥576px
++media-breakpoint-down(xs)	
+	.cart-popup.popup .btn-wrap
+		>a
+			width: 100%
+			text-align: center
+		.btn 
+			margin-bottom: 15px
+			order: -1
+	
+	.product-info__popup
+		padding: 30px 6% 16px
+		button.mfp-close
+			right: 10px
+			top: 10px

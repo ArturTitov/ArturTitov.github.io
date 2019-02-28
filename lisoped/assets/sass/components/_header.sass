@@ -1,0 +1,366 @@
+.topline
+	padding: 25px 0
+	.menu
+		color: $gray
+		font-size: 0.9em
+		padding: 0
+		margin: 0
+		>li
+			margin-right: 30px
+			list-style-type: none
+			&:last-child
+				margin-right: 0
+		.has-dropdown
+			cursor: pointer
+			transition: all 0.2s ease
+			&:hover
+				>span
+					color: $accent
+				&:before
+					color: $accent
+			&:before
+				content: '\f0d7'
+				position: absolute
+				right: 0
+				top: 49%
+				transform: translateY(-50%)
+				font-size: 1.1em
+				color: inherit
+				font-family: 'icomoon'
+				height: 0.8em
+				z-index: 0
+				transition: all 0.2s ease
+			span
+				padding-right: 15px
+				position: relative
+				transition: all 0.2s ease
+	.btn__callback
+		border-bottom: 1px dashed $gray
+
+.h-phones
+	font-size: 0.93em
+	text-shadow: 0 0 0 $gray
+	.dropdown
+		min-width: 205px
+		padding-right: 6px
+		ul
+			padding: 0
+			margin: 0 0 24px
+			li
+				list-style-type: none
+				margin-bottom: 6px
+				a
+					display: flex
+					align-items: center
+					>span:first-child
+						margin-right: 3px
+					[class^="icon_"]
+						transform: translateY(1px)
+		.h6
+			margin-bottom: 6px
+			display: block
+			font-size: 1.1em
+		.timework
+			line-height: 1.55
+			font-size: 1.1em
+	.has-dropdown
+		padding-right: 16px
+		.h-phones-more
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-45%)
+			font-size: 1.1em
+			cursor: pointer
+
+.header__user-buttons
+	margin: 0
+	padding: 0
+
+.hub-list
+	margin: 0
+	padding: 0
+	text-align: right
+
+.hub-i
+	list-style-type: none
+	margin-right: 10px
+	display: inline-flex
+	&:last-child
+		margin-right: 0
+	svg
+		height: 20px
+		width: 22px
+		fill: $gray
+		path: #000
+	.st0
+		fill: #000000
+		stroke: #000000
+		stroke-width: 3
+		stroke-miterlimit: 10
+	&__link
+		position: relative
+		font-size: 20px
+		padding: 6px 8px 0 0
+		.i-user
+			&:before
+				text-shadow: 0 0 0 $text
+	.num-total
+		position: absolute
+		right: 0
+		top: 0
+		color: $white
+		width: 17px
+		height: 17px
+		border-radius: 10em
+		font-size: 10px
+		background: $accent
+		display: inline-block
+		line-height: 17px
+		padding-right: 1px
+		text-align: center
+
+.botline
+	box-shadow: 0 5px 15px rgba(0,0,0,.11)
+	border-top: 1px solid $color-border
+
+.language
+	text-transform: uppercase
+	color: #9d9d9d
+	display: flex
+	.active
+		color: $black
+	li
+		margin-right: 9px
+		border-right: 1px solid #9d9d9d
+		padding-right: 9px
+		&:last-child
+			margin-right: 0
+			padding: 0
+			border: none
+		a
+			padding: 3px 0
+
+.nav-item
+	&:hover
+		.nav-item__t
+			color: $accent
+		.nav-item__dropdown
+			display: flex
+			
+	&__t
+		padding: 1.1rem 1.3rem
+		display: block
+		cursor: pointer
+		text-transform: uppercase
+		font-size: 0.8em
+		font-weight: 500
+		transition: all 0.2s ease
+	&__dropdown
+		display: none
+		position: absolute
+		width: 1170px
+		left: 50%
+		top: 100%
+		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15)
+		z-index: 4
+		background: #ffffff
+		transform: translateX(-50%)
+		&-img
+			flex-basis: 25%
+			max-width: 25%
+		&-descr
+			flex-basis: 75%
+			max-width: 75%
+			display: flex
+			padding: 40px 4% 30px 5%
+			flex-wrap: wrap
+	&__links
+		flex-basis: 30%
+		max-width: 30%
+		font-size: 0.85em
+		a:hover
+			color: $black
+			text-shadow: 0 0 0 $text
+		&-title
+			text-transform: uppercase
+			font-weight: 500
+			position: relative
+			padding-bottom: 7px
+			margin-bottom: 18px
+			display: block
+			&:hover
+				text-shadow: none
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 35px
+				height: 1px
+				background: $accent
+		&-list
+			margin: 0 0 25px
+			padding: 0
+			color: $gark-gray
+			li
+				list-style-type: none
+				margin-bottom: 7px
+				&:last-child
+					margin-bottom: 0
+		
+.search
+	color: $gray
+	text-shadow: 0 0 0 $gray
+	display: flex
+	align-items: center
+	position: relative
+	&.active
+		.search-inp
+			width: 500px
+		.text
+			opacity: 0
+			visibility: hidden
+
+	&-btn
+		display: flex
+		align-items: center
+		font-size: 1.2em
+		line-height: 1
+		cursor: pointer
+		transition: all 0.2s ease
+		&:hover
+			color: $black
+		.text
+			font-size: 0.73em
+			margin-right: 12px
+			opacity: 1
+			visibility: visible
+	&-inp
+		position: absolute
+		right: 100%
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 1
+		width: 0
+		padding: 15px
+		background: #ffffff
+		transition: width 0.35s ease
+		input
+			border: none
+			border-bottom: 1px solid $color-border
+			padding: 0
+			border-radius: 0
+			width: 100%
+
+.live-search
+	position: absolute
+	width: 500px
+	right: 58px
+	top: calc(100% + 16px)
+	z-index: 4
+	background: #ffffff
+	padding: 15px
+	box-shadow: 0 3px 15px rgba(0,0,0,.25)
+	border-radius: 3px
+	text-shadow: none
+	display: none
+	.cart-product
+		padding: 16px 12px
+		&__img
+			width: 80px
+		&__descr
+			margin: 0
+			flex-basis: calc(70%)
+			max-width: calc(70%)
+		&__price
+			flex-basis: calc(30%)
+			max-width: calc(30%)
+			font-weight: 500
+			text-align: right
+		&__descr-wrapper
+			flex-basis: calc(100% - 80px)
+			max-width: calc(100% - 80px)
+			display: flex
+			align-items: center
+			flex-wrap: wrap 
+			justify-content: space-between
+			padding: 0 3% 0 6%
+	.result-text
+		text-align: center
+		font-size: 0.9em
+		margin-top: 15px
+
+#trigger-btn
+	display: none
+
+/*========== Media Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+	.topline 
+		.menu
+			display: none
+
+	.site-nav
+		display: none
+	
+	#trigger-btn
+		display: inline-block
+	
+	.botline-inner
+		padding: 15px 0
+
+	.topline
+		padding: 15px 0
+	
+	.topline,
+	.botline-inner
+		padding: 10px 0
+
+	#my-header
+		position: fixed
+		left: 0
+		top: 0
+		z-index: 99
+		background: #fff
+		width: 100%
+
+	#my-content
+		margin-top: 100px
+
+// ≥768px
++media-breakpoint-down(sm)
+	
+
+	.topline
+		padding: 6px 0
+	.botline-inner
+		padding: 8px 0
+	
+	.search-inp
+		padding: 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.h-phones
+		.dropdown
+			right: 0
+			left: auto
+
+	.search-btn
+		font-size: 1.3em
+	
+	.topline .logo img
+		width: 100px
+
+	.botline-inner
+		.language
+			display: none
+	
+	.search.active
+		.search-inp
+			width: calc(100vw - 90px)

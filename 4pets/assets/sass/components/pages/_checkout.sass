@@ -1,0 +1,559 @@
+.page-checkout
+	&.page-content
+		padding-bottom: 0
+	.p-title
+		margin-bottom: 20px
+	@media screen and (max-width: $laptop)
+		.breadcrumbs
+			margin: 5px 0 7px
+		.p-title
+			margin-bottom: 7px
+		.product__list
+			max-height: 162px
+			 
+.checkout
+	&__title
+		font-size: .858em
+		font-weight: 700
+		padding-bottom: 3px
+		text-transform: uppercase
+		border-bottom: 1px solid $color-inputs-border
+		margin-bottom: 20px
+	&__steps-title
+		font-size: 0.78em
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 14px
+		color: $color-checkout-steps-title
+		.step-num
+			width: 20px
+			height: 20px
+			background-color: #e9e9e9
+			border-radius: 50%
+			text-align: center
+			line-height: 20px
+			margin-right: 11px
+			display: inline-block
+
+	&__steps-item
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 5px
+
+	&__del-ord-item
+		font-size: 0.93em
+		margin-bottom: 10px
+	&__select
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 5px
+	&__option
+		position: relative
+		flex-basis: 48%
+		max-width: 48%
+		font-size: 0.858em
+		margin-bottom: 10px
+		transition: 0.2s
+		&[data-checked="true"]
+			background: $accent
+			color: $white
+			.description__tooltip-btn
+				border-color: $accent
+				color: $accent
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+		&--label
+			text-align: center
+			padding: 4px 10px
+			border: 1px solid $color-inputs-border
+			display: block
+			cursor: pointer
+			input
+				display: none
+
+.checkout__user-new
+	padding-top: 10px
+
+.checkout__user-info
+	&.form
+		font-size: 0.93em
+		.label-check
+			padding: 5px 0
+		+media-breakpoint-up(sm)
+			.form__group
+				display: flex
+				&-label
+					flex-basis: 118px
+					max-width: 118px
+					padding-right: 10px
+					margin-bottom: 0
+				&-input
+					flex-basis: calc(100% - 118px)
+					max-width: calc(100% - 118px)
+					border: none
+					border-bottom: 1px solid $color-inputs-border
+					padding: 0 10px
+			.btn-submit__wrap	.btn-submit
+				padding: 9px 55px
+
+.checkout__steps--wrapper
+	position: relative
+	padding-bottom: 50px
+	+media-breakpoint-down(xs)
+		padding-bottom: 25px
+
+.checkout__steps-item__user
+	.checkout__user-tab
+		display: none
+	.checkout__user-input
+		display: none
+		&:checked + .checkout__user-label
+			background: $accent
+			color: $white
+		&:checked.new ~ .checkout__user-new
+			display: block
+		&:checked.const ~ .checkout__user-const
+			display: block
+	.checkout__user-label
+		padding: 7px 25px
+		font-size: 0.85em
+		cursor: pointer
+		margin-bottom: 18px
+		transition: 0.3s
+		+media-breakpoint-down(xs)
+			padding: 5px 10px
+
+.checkout__user-const
+	background: #fafafa
+	padding: 20px 55px
+	+media-breakpoint-down(xs)
+		padding: 20px
+
+.log-in-form, .lost-form
+	.form__title
+		text-transform: uppercase
+		text-align: center
+		font-weight: 700
+		margin-bottom: 1.6em
+		line-height: 1.3	
+	input
+		width: 100%
+	.btn-submit
+		width: 100%
+	.label-check
+		span
+			line-height: 1
+	.link
+		color: #8f8f8f
+		border-bottom: 1px dashed #8f8f8f
+		cursor: pointer
+		font-size: 0.8em
+		line-height: 1
+	.form__group
+		font-size: 0.93em
+		&-label
+			margin-bottom: 4px
+
+.lost-form
+	display: none
+	.link
+		border: none
+		display: inline-flex
+		align-items: center
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $accent
+				span
+					border-color: transparent
+		span
+			border-bottom: 1px dashed #8f8f8f
+			transition: .2s
+		i
+			margin-right: 4px
+			font-size: 9px
+
+.login-socials
+	margin-top: 20px
+	font-size: 0.93em
+	.ulogin-button
+		background: #ffffff
+		border: 1px solid $color-inputs-border
+		text-align: center
+		flex-basis: 48%
+		max-width: 48%
+		padding: 5px
+		text-align: center
+		i
+			margin-right: 6px
+			font-size: 19px
+		.icon-google-plus2
+			color: #dc4141
+		.icon-facebook2
+			color: #3c5a99	
+
+.description__tooltip
+	position: absolute
+	right: -7px
+	top: -7px
+	user-select: none
+	&:hover
+		.description__tooltip-descr
+			opacity: 1
+			visibility: visible
+	&-btn
+		width: 14px
+		height: 14px
+		border-radius: 50%
+		background: #fff
+		text-align: center
+		line-height: 13px
+		z-index: 1
+		font-size: 10px
+		display: inline-block
+		border: 1px solid $color-inputs-border
+		color: #303030
+		user-select: none
+	&-descr
+		position: absolute
+		box-shadow: 0 0 13px 0.5px rgba(0,0,0, 0.5)
+		background: #fff
+		color: $text
+		padding: 12px 15px
+		right: 0
+		top: calc(100% + 10px)
+		min-width: 215px
+		font-weight: 300
+		visibility: hidden
+		line-height: 1.6
+		opacity: 0
+		z-index: 2
+		display: inline-block
+		transition: all .25s ease
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: -11px
+			width: 0
+			height: 0
+			border-top: 11px solid transparent
+			border-right: 7px solid #fff
+			display: none
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			top: -11px
+			height: 11px
+			background: transparent
+			width: 100%
+
+.autocomplete-suggestions 
+	background: #fff
+	box-shadow: 2.8px 5.7px 12px 1px rgba(0,0,0,.15)
+	padding: 15px
+	font-size: .9em
+	text-shadow: 0 0 0 #000
+	top: 100%
+	left: 0
+	div 
+		margin-bottom: 5px
+		cursor: pointer
+		transition: all .2s ease
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $accent
+
+.form__group-select 
+	position: relative
+	font-size: 0.93em
+	&-head 
+		position: relative
+		border: 1px solid $color-inputs-border
+		padding: 4px 9px 4px 13px
+		min-height: 28.5px
+		cursor: pointer
+	&-selected 
+		margin: 0
+	&-arrow 
+		color: #8a8a8a
+		font-size: 0.9em
+	&-wrap.active .form__group-select-list 
+		opacity: 1
+		transform: translateY(2%)
+		z-index: 2
+		visibility: visible
+	&-list 
+		position: absolute
+		top: 104%
+		left: 0
+		padding: 0
+		list-style-type: none
+		background-color: #fff
+		right: 0
+		width: 100%
+		opacity: 0
+		transform: translateY(30px)
+		visibility: hidden
+		box-shadow: 0 0 9px 0.5px #ccc
+		padding: 10px 15px
+		z-index: 1
+		transition: 0.3s all ease-in
+		li 
+			cursor: pointer
+			margin-bottom: 5px
+			transition: 0.3s all ease-in
+			+media-breakpoint-up(lg)
+				&:hover
+					color: $accent
+			&:last-child 
+				margin-bottom: 0
+
+.checkout__comment
+	padding-top: 10px
+	font-size: 0.93em
+	&.active
+		.checkout__comment-textarea
+			opacity: 1
+	&-btn
+		display: inline-flex
+		align-items: center
+		cursor: pointer
+		transition: 0.2s
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $accent
+				span
+					border-color: $accent
+		span
+			border-bottom: 1px dashed $color-inputs-border
+			line-height: 1.2
+			transition: 0.2s
+		i
+			color: $color-socials
+			margin-left: 10px
+			font-size: 0.85em
+		
+	&-textarea
+		opacity: 0
+		margin-top: 15px
+		transition: all 0.2s ease
+
+.order__data
+	margin-top: 20px
+	font-size: 0.93em
+	position: absolute
+	bottom: 3px
+	left: 15px
+	+media-breakpoint-down(md)
+		position: static
+
+.product__list--wrapper
+	background: $color-cart-product-list
+
+.checkout__cart
+	margin-bottom: 130px
+	+media-breakpoint-down(md)
+		margin-bottom: 30px
+	.checkout__title
+		margin-bottom: 0
+
+.product__list
+	max-height: 225px
+	+media-breakpoint-down(xs)
+		250px
+	&--wrapper
+		margin-bottom: 22px
+	.product
+		display: flex
+		margin-bottom: 13px
+		align-items: center
+		justify-content: space-between
+		+media-breakpoint-down(xs)
+			flex-wrap: wrap
+			padding-bottom: 13px
+			border-bottom: 1px solid $color-inputs-border
+		&:first-child
+			margin-top: 20px
+		&__info
+			display: flex
+			align-items: flex-start
+			flex-basis: 62%
+			max-width: 62%
+			padding-right: 15px
+			+media-breakpoint-down(xs)
+				flex-basis: 58%
+				max-width: 58%
+				padding-right: 10px
+		&__img
+			background: $white
+			border: 1px solid $color-inputs-border
+			max-width: 46px
+			max-height: 47px
+			margin-right: 14px
+			+media-breakpoint-down(xs)
+				margin-right: 5px
+			img
+				max-height: 45px
+		&__descr
+			font-size: 0.72em
+			font-weight: 600
+			letter-spacing: -0.1px		
+		&__count-price
+			font-size: 1rem
+		&__qnty
+			flex-basis: 35%
+			max-width: 35%
+			display: flex
+			align-items: center
+			+media-breakpoint-down(xs)
+				flex-basis: 35%
+				max-width: 35%
+				flex-wrap: wrap
+		&__count
+			background: #ffffff
+			margin-right: 12%
+			+media-breakpoint-down(xs)
+				margin-right: 0
+				margin-bottom: 3px
+			&-value
+				width: 40px
+		.product__button-decrease, .product__button-increase
+			padding: 10px 5px 9px
+			+media-breakpoint-down(xs)
+				padding: 5px
+		&__count-price
+			font-weight: 600
+		&__bonus 
+			color: $accent-light
+			font-weight: 600
+			line-height: 1
+			font-size: .8em
+			margin-top: 2px
+		
+
+	.btn-remove__wrapper
+		display: flex
+		align-items: center
+		font-size: 15px
+		padding: 10px
+	.btn-remove
+		padding: 2px 0 0
+		background: transparent
+		color: #8a8a8a
+		line-height: 1
+		cursor: pointer
+		+media-breakpoint-up(lg)
+			&:hover
+				color: $text
+
+.checkout__steps-item__del-ord
+	display: none
+
+.checkout__totals-list
+	margin-bottom: 13px
+	.total__item 
+		display: flex
+		justify-content: space-between
+		padding: 0
+		font-weight: 400
+		font-size: .93em
+		border-bottom: none
+		margin-bottom: 2px
+		&:last-child
+			margin-bottom: 0
+		&-name
+			flex-basis: calc(100% - 100px)
+			max-width: calc(100% - 100px)
+			text-transform: none
+			padding-right: 30px
+			text-align: right
+		&-value
+			flex-basis: 100px
+			max-width: 100px
+		&.checkout__total
+			margin-top: 30px
+			border-bottom: 1px solid $color-inputs-border
+			font-size: 1.08rem
+			padding-bottom: 3px
+			.total__item-name
+				text-transform: uppercase
+				font-weight: 700
+		&--add__bonus
+			.total__item-value
+				font-weight: 400
+				color: $accent-light
+.applys__item
+	margin-bottom: 12px
+	font-size: 0.93em
+	&.active
+		.applys__item-content
+			display: flex
+	&-head
+		display: flex
+		align-items: center
+		.btn-link
+			color: $accent
+			border-bottom: 1px dashed $accent
+			line-height: 1.2
+			font-size: 0.93em
+			cursor: pointer
+			+media-breakpoint-up(lg)
+				&:hover
+					border-color: transparent
+	&-content
+		display: none
+		margin-top: 10px
+		input
+			padding: 3px 15px
+		button
+			padding: 7px 25px
+	.bonus-value
+		color: $accent-light
+		font-size: 0.8em
+		display: flex
+		align-items: center
+		margin-left: 60px
+		margin-left: 11%
+		span
+			line-height: 1
+			margin-left: 10px
+		i
+			font-size: 20px
+
+.checkout__submit--wrapper
+	padding-top: 10px
+	+media-breakpoint-down(xs)
+		text-align: center
+		button[type=submit]
+			width: 100%
+
+.btn-submit__wrap.active
+	display: none
+
+// Media
+@media (max-width: 1199.98px) and (min-width: 992px)
+	.product__list .product__count-value
+		width: 20px
+	.product__list .product__count
+		margin-right: 10px
+
++media-breakpoint-down(lg)
+	.checkout__comment
+		&.active
+			.checkout__comment-textarea
+				height: auto
+				z-index: 0
+	 .checkout__comment-textarea
+			height: 0
+			z-index: -1
+	.checkout__totals--holder
+		margin-bottom: 30px
+
+// @media (max-width: $xsMobile)
+// 	.product__list
+// 		.product__qnty,
+// 		.product__info
+// 			max-width: 100%

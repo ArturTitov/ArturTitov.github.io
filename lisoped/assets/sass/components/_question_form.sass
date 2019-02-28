@@ -1,0 +1,54 @@
+.question-form
+	margin-top: 55px
+	display: block
+	&__head
+		text-transform: uppercase
+		font-weight: 600
+		margin-bottom: 26px
+	&__body
+		border: 1px solid $color-question-form-border
+		padding: 38px 34px
+		display: flex
+		flex-wrap: wrap	
+		align-items: center
+		justify-content: space-between
+		input
+			width: auto
+			padding: 0
+			border: none
+			border-bottom: 1px solid $color-border
+	.input-name,
+	.input-email
+		flex-basis: 21%
+		max-width: 21%
+	.input-text
+		flex-basis: 37%
+		max-width: 37%
+	
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.question-form
+		max-width: 500px
+		margin: 40px auto 0
+		&__head
+			text-align: center
+		&__body
+			padding: 30px
+		.input-name,
+		.input-email,
+		.input-text
+			flex-basis: 100%
+			max-width: 100%
+			margin-bottom: 20px
+		.btn-wrap
+			text-align: center
+			margin-top: 10px
+			width: 100%
+
+// ≥576px
++media-breakpoint-down(xs)
+	.question-form
+		max-width: 100%
+		&__body
+			padding: 30px 20px

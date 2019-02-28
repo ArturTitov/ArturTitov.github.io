@@ -1,0 +1,50 @@
+.s-advantages
+	padding: 30px 0
+	+media-breakpoint-down(md)
+		padding: 45px 0 20px
+	+media-breakpoint-down(xs)
+		padding: 35px 0 25px
+
+.advantages
+	&-slider
+		.slick-slide > div
+			text-align: center
+		.slick-dots
+			bottom: -25px
+		&.slider__nav
+			.slick-next,
+			.slick-prev
+				top: -40px
+	&-item
+		// flex-basis: 130px
+		max-width: 160px
+		margin: 0 auto
+		// margin-right: 30px
+		line-height: 1.25
+		text-align: center
+		padding: 0 15px
+		// &:last-child
+		// 	margin-right: 0
+		&__icon
+			color: $accent
+			font-size: 50px
+			margin-bottom: 8px
+			line-height: 1
+			display: block
+			img
+				max-width: 60px
+		&__desc
+			display: block
+		// +media-breakpoint-down(md)
+			// flex-basis: 33%
+			// max-width: 33%
+			// margin: 0 0 30px
+			
+			// text-align: center
+		// +media-breakpoint-down(xs)
+		// 	flex-basis: 50%
+		// 	max-width: 50%
+
+.slick-dotted.slick-slider
+		margin-bottom: 0	
+		

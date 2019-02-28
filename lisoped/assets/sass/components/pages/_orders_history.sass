@@ -1,0 +1,62 @@
+.history-table
+	font-size: 0.9em
+	.thead
+		color: $color-history-table-head
+	.tr
+		display: flex
+	.td, .th
+		text-align: center
+		padding: 12px 5px
+		&:first-child
+			flex-basis: 50%
+			text-align: left
+			padding: 12px 20px
+		&:nth-child(2)
+			flex-basis: 15%
+		&:nth-child(3)
+			flex-basis: 15%
+		&:nth-child(4)
+			flex-basis: 20%
+		i
+			color: #9a9a9a
+			transition: all 0.5s ease
+	.th
+		text-shadow: 0 0 0 $color-history-table-head
+	.history-order
+		cursor: pointer
+		i
+			display: inline-block
+		&.active
+			i
+				transform: rotate(180deg)
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+	.history-order__descr-table
+		background: #f7f7f7
+		display: none
+		.thead
+			border-bottom: 1px solid #ededed
+		.td
+			padding: 5px 20px
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+	.history-table__wrapper
+		overflow-x: auto
+		.history-table
+			min-width: 600px
+			.td, .th
+				padding: 11px 5px
+				&:first-child
+					flex-basis: 40%
+					padding: 11px 15px
+				&:nth-child(2)
+					flex-basis: 20%
+				&:nth-child(3)
+					flex-basis: 20%
+				&:nth-child(4)
+					flex-basis: 20%

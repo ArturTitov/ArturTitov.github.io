@@ -1,0 +1,40 @@
+.catalog-content
+	padding-bottom: 60px
+
+.product-sort__group
+	margin-bottom: 30px
+	.product-sort__item:first-of-type
+		.product-sort__item-select
+			min-width: 200px
+	.product-sort__item-name
+		font-size: 0.85em
+		line-height: 1
+		margin-right: 19px
+		color: #a1a1a1
+	.selectize-control
+		line-height: 1
+	.selectize-input
+		padding: 6px 25px 6px 10px
+		line-height: 1
+		font-size: 0.85em
+		color: #6f6f6f
+		max-width: 220px
+	.selectize-control.single .selectize-input:after
+		right: 8px
+		font-size: 10px
+		border-width: 4px 3px 0 3px
+		top: 55%
+	.selectize-input.dropdown-active
+		box-shadow: none
+		border-radius: 0
+	.selectize-control.single .selectize-input input
+		display: none !important
+
+
+/*========== Media Desktop First  ==========*/
+// ≥576px
++media-breakpoint-down(xs)
+	.product-sort__item
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0

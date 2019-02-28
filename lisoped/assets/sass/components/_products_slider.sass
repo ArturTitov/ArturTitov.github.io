@@ -1,0 +1,57 @@
+.slider-section
+	margin-bottom: 50px
+
+.slider-title
+	font-size: 0.9rem
+	margin-bottom: 25px
+	font-weight: 700
+
+.slider-products
+	padding: 0 40px
+	.product-item
+		margin: 10px
+	.slick-prev
+		left: 0
+	.slick-next
+		right: 0
+
+/*========== Media Desktop First  ==========*/
+// ≥1200px
++media-breakpoint-down(lg)
+	.slider-products
+		padding: 0 10px
+		.slick-prev
+			left: -20px
+		.slick-next
+			right: -20px
+
+// ≥992px
++media-breakpoint-down(md)
+	.slider-section
+		margin-bottom: 40px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.slider-title
+		margin-bottom: 15px
+	.slider-products
+		padding: 0
+		.slick-prev
+			left: -20px
+		.slick-next
+			right: -20px
+	
+// ≥576px
++media-breakpoint-down(xs)
+	.slider-section
+		margin-bottom: 30px
+	.slider-title
+		margin-bottom: 10px
+	.slider-products
+		padding: 0 20px
+		.product-item
+			margin: 10px auto
+		.slick-prev
+			left: -8px
+		.slick-next
+			right: -8px

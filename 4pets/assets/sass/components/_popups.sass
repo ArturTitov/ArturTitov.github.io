@@ -1,0 +1,407 @@
+.popup
+	padding: 35px 30px 25px
+	background: $white
+	position: relative
+	max-width: 500px
+	margin: auto
+	font-size: 1em
+	+media-breakpoint-down(xs)
+		padding: 35px 20px 25px
+	&__title, .formhead
+		text-transform: uppercase
+		text-align: center
+		font-weight: 700		
+		margin-bottom: 1.6em
+		line-height: 1.3
+	.formdescr
+		margin-bottom: 15px
+		text-align: center
+		color: #747474
+		line-height: 1.25
+	input, textarea
+		width: 100%
+		margin: 0
+		padding: 4px 13px
+		font-size: 0.93em
+		&::placeholder
+			color: #878787
+	.form-row
+		margin-bottom: 12px
+		&_cols-2
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			>*
+				flex-basis: 47%
+				max-width: 47%
+				+media-breakpoint-down(xs)
+					flex-basis: 100%
+					max-width: 100%
+					margin-bottom: 12px
+
+		&_cols-3
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			>*
+				flex-basis: 32%
+				max-width: 32%
+				+media-breakpoint-down(xs)
+					flex-basis: 100%
+					max-width: 100%
+					margin-bottom: 12px
+					&:last-child
+						margin-bottom: 0
+	label
+		display: block
+		span
+			margin-bottom: 2px
+			display: block
+			font-size: 0.858em
+			font-weight: 600
+
+	.btn-submit__wrap
+		margin-top: 15px
+		text-align: center
+		display: inline-block
+		width: 100%
+	
+	.form__group-label
+		font-size: 0.858em
+
+	.product__count-value
+		width: 30px
+		padding: 0
+
+.oc__form
+	&--product-content
+		display: flex
+		align-items: flex-start
+	&--product-img
+		flex-basis: 30%
+		max-width: 30%
+		border: 1px solid $color-product-thumb-border
+		padding: 18px 15px
+	&--product-info
+		flex-basis: 70%	
+		flex-basis: 70%
+		padding-left: 15px
+	&--product-name
+		font-size: 0.858em
+		margin-bottom: 8px
+		line-height: 1.3
+	&--product-code
+		font-size: 0.7em
+		margin-bottom: 9px
+	.product-options
+		&__title
+			font-size: 0.8em
+			margin-bottom: 3px
+	.product-option
+		+media-breakpoint-down(xs)
+			margin: 0 7px 7px 0
+		&__value
+			padding: 2px 15px
+			margin-bottom: 0
+	.form__group-label
+		margin-bottom: 3px
+	.form__group--count
+		.form__group-label
+			font-size: 0.8em
+	.product__popup-btn
+		+media-breakpoint-up(md)
+			padding: 9px 75px
+	.form-row
+		margin-bottom: 0
+
+.total__item
+	padding: 5px 0
+	font-weight: 700
+	font-size: 0.93em
+	border-bottom: 1px solid $color-inputs-border
+	&-name
+		text-transform: uppercase
+
+
+// buy__popup
+.buy__popup
+	&.popup
+		max-width: 690px
+		padding: 30px 25px 25px
+	.product__list-head,
+	.product
+		display: flex
+		justify-content: space-between
+		margin-bottom: 15px
+		flex-wrap: wrap
+	.product__list-info
+		flex-basis: 55%
+		max-width: 55%
+		+media-breakpoint-down(sm)
+			flex-basis: 54%
+			max-width: 54%
+		+media-breakpoint-down(xs)
+			flex-basis: calc(100% - 110px)
+			max-width: calc(100% - 110px)
+	.product__list-qnty
+		flex-basis: 39%
+		max-width: 39%
+		+media-breakpoint-down(sm)
+			flex-basis: 42%
+			max-width: 42%
+		+media-breakpoint-down(xs)
+			flex-basis: 110px
+			max-width: 110px
+			flex-direction: column
+			align-items: flex-start
+			>*
+				margin-bottom: 7px
+				&:last-child
+					margin-bottom: 0
+	.product__list-head
+		font-size: 0.8em
+		color: #8f8f8f
+		margin-bottom: 15px
+		+media-breakpoint-down(xs)
+			display: none
+		.product__col-title--sum
+			flex-basis: 80px
+			max-width: 80px
+		.product__col-title--price
+			min-width: 41px	
+	.product__price,
+	.product__option
+		font-size: 0.86em
+	.product__price
+		+media-breakpoint-down(xs)
+			display: none
+	.product__option
+		min-width: 35px
+	.product__sum
+		flex-basis: 80px
+		max-width: 80px
+		+media-breakpoint-down(xs)
+			flex-basis: unset
+			max-width: 100%
+	.product__img
+		flex-basis: 45px
+		max-width: 45px
+		border: 1px solid $color-inputs-border
+		padding: 3px 5px
+		margin-right: 13px
+	.product__descr--wrapper
+		flex-basis: calc(100% - 60px)
+		max-width: calc(100% - 60px)
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+			flex-direction: column
+			align-items: flex-start
+	.product__descr 
+		font-size: .72em
+		font-weight: 600
+		letter-spacing: -.1px
+		max-width: 78%
+
+	.product__count-price
+		font-weight: 600
+		font-size: 1rem
+	.product__bonus 
+		color: #d087af
+		font-weight: 600
+		line-height: 1
+		font-size: .78em
+	.product__col-title
+		font-size: 0.8em
+		color: #8f8f8f
+		display: none
+	.total
+		text-transform: uppercase
+		font-weight: 700
+		padding: 5px 0
+		margin-bottom: 20px
+		font-size: .93em
+		border-bottom: 1px solid $color-inputs-border
+		&__value
+			flex-basis: 80px
+			max-width: 80px
+	.product__popup-btns
+		text-align: right
+		+media-breakpoint-down(xs)
+			text-align: center
+		a
+			margin-bottom: 10px
+			margin: 0 0 10px 18px
+			&:first-child
+				margin-left: 0
+			+media-breakpoint-down(xs)
+				font-size: 0.85em
+				padding: 8px 25px
+				margin: 0 5px 10px
+				&:first-child
+					margin-left: 5px
+
+
+.cart-kit
+	margin-top: 5px
+	&__title
+		margin-bottom: 23px
+	&__product-item
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 15px
+		&__info
+			max-width: 55%
+			flex-basis: 55%
+			+media-breakpoint-down(xs)
+				max-width: calc(100% - 110px)
+				flex-basis: calc(100% - 110px)
+		&__control
+			display: flex
+			align-items: center
+			padding-left: 15px
+			max-width: 45%
+			.btn
+				padding: 7px 13px
+				+media-breakpoint-down(xs)
+					font-size: 0.8em
+					margin-top: 5px
+					padding: 5px 13px
+				span 
+					transition: 0.3s
+			+media-breakpoint-down(xs)
+				flex-direction: column
+				align-items: flex-start
+				max-width: 110px
+				flex-basis: 110px
+
+	.tab-nav__accordion
+		.tab-nav__item
+			padding: 6px 25px 7px
+			padding: 6px 3% 7px
+			font-size: 0.85em
+	.product__sum
+		flex-basis: 115px
+		max-width: 115px
+		padding-right: 25px
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+
+
+// pets__popup
+.pets__popup
+	&.popup
+		label span 
+			margin-bottom: 0
+
+.pets__form
+	&[data-form="cat"]
+		.form__group--pets-select
+			display: none
+	&[data-form="dog"]
+		.form__group--pets-select
+			display: none
+	&[data-form="select-pets"]
+		.form__group--breed
+			display: none
+	&-fields
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-col--img
+		flex-basis: 37%
+		max-width: 37%
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+			padding-right: 0
+			text-align: center
+			.form__group-label
+				text-align: left
+		.form__group-input
+			min-height: 160px
+	&-col--main
+		flex-basis: 59%
+		max-width: 59%
+		+media-breakpoint-down(xs)
+			flex-basis: 100%
+			max-width: 100%
+	.form__group-checkox
+		display: inline-flex
+		align-items: center
+		margin-right: 20px
+		line-height: 1
+		cursor: pointer
+		input
+			margin-right: 8px
+
+	.form__group
+		margin-bottom: 10px
+		&-gender
+			.form__group-label
+				margin-bottom: 0
+		&-label
+			margin-bottom: 3px
+	.birthday__selects
+		display: flex
+		justify-content: space-between
+		.select__day
+			flex-basis: 64px
+		.select__month
+			flex-basis: 94px
+		.select__year
+			flex-basis: 68px
+	.form__group-select
+		font-size: 0.858em
+	.form__group-select-head
+		line-height: 1
+		min-height: 0
+		padding: 7px 9px 7px 13px
+		p
+			margin-right: 5px
+		i
+			font-size: 0.858em
+			color: #999
+			margin-bottom: -2px
+	&-btns
+		padding-top: 10px
+		.link
+			font-size: 0.93em
+			color: #909090
+			border-color: #909090
+			cursor: pointer
+			transition: 0.2s
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+.mfp-close
+	color: transparent
+	font-size: 15px
+	width: 16px
+	height: 16px
+	line-height: 16px
+	right: 14px
+	top: 14px
+	&:before
+		content: '\e909'
+		font-family: icomoon
+		color: #8f8f8f
+
+.mfp-close-btn-in .mfp-close
+	color: transparent
+.mfp-close:active 
+	top: 14px

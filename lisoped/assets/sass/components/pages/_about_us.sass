@@ -1,0 +1,43 @@
+.about-us__content
+	ul
+		margin: 0 0 1rem
+		padding: 0
+		li
+			list-style-type: none
+			position: relative
+			padding-left: 20px
+			line-height: 1.6
+			margin-bottom: 10px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 10px
+				width: 7px
+				height: 1px
+				background: $text
+	.about-us__img
+		float: left
+		margin: 0 40px 20px 0
+	.advantages
+		margin: 30px 0 0
+		&-list
+			max-width: 100%
+		&-item
+			flex-basis: 30%
+			max-width: 30%
+
+/*========== Media Desktop First  ==========*/
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	.about-us__content
+		.advantages
+			&-item
+				flex-basis: 44%
+				max-width: 44%
+
+// ≥576px
++media-breakpoint-down(xs)

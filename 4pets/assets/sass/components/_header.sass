@@ -1,0 +1,517 @@
+.header
+	// position: relative
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 20
+	background: $white
+	&-topline
+		background-size: auto
+		text-align: center
+		padding: 14px 15px
+		font-size: 0.786em
+		font-weight: 600
+		visibility: visible
+		opacity: 1
+		display: block
+		transition: padding 0.3s ease
+		+media-breakpoint-down(sm)
+			padding: 9px 10px
+
+	&-main
+		color: $white
+		background: $accent
+		transition: all 0.3s ease
+		a
+			+media-breakpoint-up(lg)
+				&:hover
+					color: lighten($accent, 55%)
+					svg
+						fill: lighten($accent, 55%)
+		.dropdown
+			a
+				+media-breakpoint-up(lg)
+					&:hover
+						color: $accent
+		&__inner
+			display: flex
+			padding: 11px 0
+			align-items: center
+			justify-content: space-between
+			+media-breakpoint-down(sm)
+				padding: 8px 0
+		.h-phones
+			display: inline-block
+			.has-dropdown__icon
+				opacity: 0.6
+				font-size: 11px
+	.logo
+		margin-right: 15px
+		a
+			display: block
+			max-width: 130px
+			+media-breakpoint-down(md)
+				max-width: 80px
+			+media-breakpoint-down(sm)
+				img
+					max-height: 40px
+		img
+			width: 100%
+			transition: all 0.3s ease
+	.hm-contacts
+		font-size: 0.858em
+		max-width: 120px
+		+media-breakpoint-down(xs)
+			display: none
+		.btn-link
+			font-size: 0.93em
+			text-decoration: underline
+		address
+			opacity: 1
+			visibility: visible
+			transition: 0.3s
+	.hm-center
+		flex-basis: 47%
+		max-width: 47%
+		padding: 0 15px
+		position: relative
+		+media-breakpoint-down(lg)
+			flex-basis: 36%
+			max-width: 36%
+			padding: 0
+		+media-breakpoint-down(md)
+			flex-basis: auto
+			max-width: none
+			display: flex
+			align-items:  center
+		&__top
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			font-size: 0.786em
+			visibility: visible
+			opacity: 1
+			transition: all 0.3s ease
+			>*
+				margin-right: 10%
+				&:last-child
+					margin-right: 0
+				+media-breakpoint-down(md)
+					margin-right: 0
+			+media-breakpoint-down(md)
+				display: block
+				font-size: .93em
+				> a
+					display: none
+	
+	.search
+		position: relative
+		margin-top: 7px
+		transition: all 0.3s ease
+		+media-breakpoint-down(md)
+			margin-top: 0
+			min-width: 300px
+			margin-left: 30px
+		+media-breakpoint-down(xs)
+			min-width: 0
+			margin-left: 16px
+		&-btn
+			position: absolute
+			right: 10px
+			top: 50%
+			transform: translateY(-50%)
+			color: $accent
+			font-size: 17px
+			padding: 0
+			background: transparent
+			line-height: 1
+			cursor: pointer
+			+media-breakpoint-down(md)
+				top: 50%
+				transform: translateY(-50%)
+		input
+			width: 100%
+			border: none
+			font-size: 0.858em
+			padding: 5px 35px 5px 15px
+
+	.header-controls
+		display: flex
+		align-items: center
+		i
+			font-size: 22px
+		&__item
+			position: relative
+			line-height: 1
+			margin: 0 16px
+			a, .a
+				display: inline-block
+				position: relative
+			&--bonus
+				display: flex
+				align-items: center
+				padding-right: 0
+				+media-breakpoint-down(sm)
+					display: none
+				.bonus-info
+					text-align: center
+					font-size: 0.786em
+					margin-left: 16px
+					span
+						display: block
+						line-height: 1.6
+						&:first-child
+							border-bottom: 1px solid $white
+							padding-bottom: 2px 
+				.dropdown
+					white-space: normal
+					width: 250px
+					line-height: 1.6
+					font-size: 0.93em
+					left: 50%
+					transform: translateX(-50%)
+					+media-breakpoint-down(md)
+						left: auto
+						right: 0
+						transform: none
+					&:after
+						display: none
+			&--compare
+				padding-right: 0
+				.dropdown
+					right: 0
+					left: auto
+					min-width: 470px
+					padding: 0
+					white-space: normal
+					+media-breakpoint-down(md)
+						right: -111px
+					+media-breakpoint-down(xs)
+						right: -118px
+						min-width: 0
+						width: calc(100vw - 30px)
+					&:after
+						display: none
+					.btn-accent
+						padding: 8px 25px
+						font-size: 0.8em
+				.search__result
+					position: static
+					display: block
+					box-shadow: none
+			&--account
+				border-left: 1px solid rgba(232, 232, 232, 0.6)
+				border-right: 1px solid rgba(232, 232, 232, 0.6)
+				padding: 14px 20px
+				margin: 0
+				transition: all 0.3s ease
+				+media-breakpoint-down(sm)
+					padding: 5px 10px
+				.dropdown
+					top: 100%
+					left: 50%
+					transform: translateX(-50%)
+					padding: 18px
+					+media-breakpoint-down(lg)
+						right: 0
+						left: auto
+						transform: none
+					&:after
+						display: none
+					li
+						margin-bottom: 15px
+						&:last-child
+							margin-bottom: 0
+			&--cart
+				padding-right: 0
+				// margin: 0
+				padding: 10px 0
+				.dropdown
+					top: 100%
+					left: auto
+					right: 0
+					min-width: 590px
+					white-space: normal
+					background: #fff
+					padding: 10px 25px 25px
+					&:after
+						display: none
+					+media-breakpoint-down(sm)
+						right: -16px
+						min-width: 540px
+						padding: 10px 15px 25px
+					+media-breakpoint-down(xs)
+						min-width: 300px
+				.product__list
+					max-height: none
+					a
+						+media-breakpoint-up(md)
+							&:hover
+								color: $accent
+					.product
+						+media-breakpoint-down(xs)
+							flex-direction: column
+						&__info
+							align-items: center
+							max-width: 59%
+							flex-basis: 59%
+							line-height: 1.4
+							+media-breakpoint-down(sm)
+								max-width: 55%
+								flex-basis: 55%
+							+media-breakpoint-down(xs)
+								max-width: 100%
+								flex-basis: 100%
+						&__qnty
+							max-width: 41%
+							flex-basis: 41%
+							white-space: nowrap
+							+media-breakpoint-down(sm)
+								max-width: 44%
+								flex-basis: 44%
+							+media-breakpoint-down(xs)
+								max-width: 100%
+								flex-basis: 100%
+								padding-top: 10px
+								flex-wrap: nowrap
+						&__img
+							margin-right: 10px
+						&__price
+							font-size: 0.82em
+							flex-basis: 55px
+						&__count-value
+							width: 22px
+						&__count
+							margin: 0 15px
+							+media-breakpoint-down(sm)
+								margin: 0 12px
+						.product__button-increase,
+						.product__button-decrease
+							padding: 6px 2px 5px
+					i
+						font-size: 14px	
+					.btn-remove__wrapper
+						padding: 0 10px 0 0
+				.total
+					text-transform: uppercase
+					font-weight: 700
+					padding: 5px 0
+					margin-bottom: 20px
+					font-size: .93em
+					border-bottom: 1px solid $color-inputs-border
+					padding-top: 20px
+					&__value
+						flex-basis: 100px
+						text-transform: none
+					&__text
+						flex-basis: calc(100% - 100px)
+				.btn-wrap
+					text-align: right
+			.num-total
+				position: absolute
+				bottom: -8px
+				right: -8px
+				width: 14px
+				height: 14px
+				background: $accent-light
+				color: #ffffff
+				border-radius: 10em
+				font-size: 8px
+				display: inline-block
+				line-height: 14px
+				padding-right: 1px
+				text-align: center
+	.dropdown
+		background-image: url(../img/dropdown_background.png)
+		font-size: 1.05em
+		top: calc(100% + 6px)
+		&:before
+			content: ''
+			height: 6px
+			display: block
+			background: transparent
+			width: 100%
+			position: absolute
+			left: 0
+			top: -6px
+		&:after
+			content: ''
+			position: absolute
+			right: 18px
+			bottom: 100%
+			border-left: 8px solid transparent
+			border-right: 8px solid transparent
+			border-bottom: 9px solid #fff
+	
+	&.sticky
+		.header-topline
+			height: 0
+			visibility: hidden
+			padding: 0
+			opacity: 0
+		.nav-item__t, .nav-item__t.accent
+			padding-top: 12px
+			padding-bottom: 10px
+		.hm-contacts
+			address
+				height: 0
+				visibility: hidden
+				opacity: 0
+		.logo img
+			max-height: 43px
+		.header-main__inner
+			padding-top: 8px
+			padding-bottom: 8px
+		.header-controls__item--account
+			padding-top: 8px
+			padding-bottom: 8px
+			.dropdown li a 
+				font-weight: 500
+		.search
+			margin-top: 0
+		+media-breakpoint-up(lg)
+			.hm-center__top
+				height: 0
+				visibility: hidden
+				opacity: 0
+		+media-breakpoint-down(sm)
+			.header-controls__item--account
+				padding-top: 5px
+				padding-bottom: 5px
+			.header-main__inner
+				padding-top: 6px
+				padding-bottom: 6px
+			.logo img
+				max-height: 40px
+			.navbar
+				padding: 8px 0
+	.icon-compare, #icon-compare
+		width: 23px
+		margin-bottom: -3px
+		.st0, .st1, .st2
+			stroke: #fff
+
+.language
+	text-transform: uppercase
+	display: flex
+	margin: 0
+	color: #c0bfbf
+	padding: 0
+	list-style-type: none
+	.active
+		color: $white
+	li
+		margin-right: 4px
+		&:last-child
+			margin-right: 0
+			a
+				padding: 1px 0
+				border: none
+		a
+			padding: 1px 4px 1px 0
+			display: block
+			line-height: 1
+			border-right: 1px solid rgba(242, 242, 242, 0.2)
+		
+.nav
+	display: flex
+	justify-content: space-between
+	text-transform: uppercase
+	color: $white
+	font-size: 0.858em
+	position: relative
+	+media-breakpoint-down(md)
+		display: none
+	&__wrapper
+		background: lighten($accent, 4.6%)
+	
+	&-item
+		&:hover
+			.nav-item__dropdown
+				opacity: 1
+				visibility: visible
+				z-index: 10
+				transition-delay: 0.5s 
+			.nav-item__t
+				background: $color-nav-hover
+				color: $white
+		&__t
+			padding: 15px 36px 13px
+			display: inline-block
+			cursor: pointer
+			transition: color 0.2s ease, padding 0.3s ease
+			+media-breakpoint-down(lg)
+				padding: 15px 15px 13px
+			&.accent
+				color: $white
+				padding: 15px 45px 13px
+				background: $accent-light
+				transition: color 0.2s ease, padding 0.3s ease
+		&__dropdown
+			position: absolute
+			width: 100%
+			left: 0
+			top: 100%
+			background-color: #fff
+			box-shadow: 1px 0.3px 7px rgba(143, 143, 143, 0.15)
+			z-index: 4
+			text-transform: none
+			display: flex
+			flex-wrap: wrap
+			// display: none
+			z-index: -10
+			opacity: 0
+			visibility: hidden
+			transition: all 0.2s ease
+			a
+				+media-breakpoint-up(lg)
+					&:hover
+						text-shadow: 0 0 0 $accent
+		&__submenu
+			color: $text
+			margin-bottom: 15px
+			padding-right: 15px
+			&-holder
+				flex-basis: 33.333%
+				max-width: 33.333%
+			&-items
+				flex-basis: 75%
+				max-width: 75%
+				padding: 25px 30px
+				display: flex
+				flex-wrap: wrap
+			&-img
+				flex-basis: 25%
+				max-width: 25%
+				padding: 25px 20px
+				display: flex
+				justify-content: center
+				background: #f8f8f8
+				img
+					margin: auto
+			&-title
+				color: $accent
+				font-weight: 600
+				font-size: 1.1em
+				margin-bottom: 5px
+				display: block
+				color: $accent
+				&:not([href])
+					color: $accent
+			&-list
+				margin: 0
+				padding: 0
+				li
+					list-style-type: none
+					margin-bottom: 3px
+
+.navbar
+	transition: all 0.3s ease
+	+media-breakpoint-down(md)
+		padding: 10px 0
+		display: flex
+		line-height: 1
+		justify-content: space-between
+		align-items: center

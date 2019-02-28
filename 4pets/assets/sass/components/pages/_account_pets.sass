@@ -1,0 +1,60 @@
+.account__pets
+	.title
+		margin-bottom: 27px
+
+.add__pets-btns
+	a
+		margin: 0 30px 20px 0
+		+media-breakpoint-down(sm)
+			margin: 0 15px 10px 0
+			font-size: 0.8em
+		+media-breakpoint-down(xs)
+			padding: 8px 20px
+			font-size: 0.75em
+
+.pets__item
+	display: flex
+	font-size: 0.93em
+	margin-bottom: 30px
+	&-img
+		flex-basis: 23%
+		max-width: 23%
+		padding-right: 25px
+		+media-breakpoint-down(xs)
+			padding-right: 5px
+	&-content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		max-width: 77%
+	.pets__info
+		line-height: 1.4
+		min-width: 390px
+		+media-breakpoint-down(xs)
+			min-width: 0
+		td
+			padding-right: 30px
+			vertical-align: top
+			+media-breakpoint-down(xs)
+				padding-right: 15px
+				&:last-child
+					padding-right: 0
+			&:last-child
+				padding-right: 0
+	.pets__item--control
+		color: #8b8b8b
+		padding-top: 20px
+		.btn-link
+			display: inline-block
+			background: transparent
+			cursor: pointer
+			color: #8b8b8b
+			border-bottom: 1px solid #8b8b8b
+			font-size: 1em
+			line-height: 1.1
+			font-weight: 400
+			padding: 0
+			+media-breakpoint-up(lg)
+				&:hover
+					border-color: transparent
+					color: $accent

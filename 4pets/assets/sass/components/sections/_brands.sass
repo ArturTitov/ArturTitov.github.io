@@ -1,0 +1,57 @@
+.s-brands
+	padding: 30px 0 15px
+	.slider-title__wrapper
+		margin-bottom: 20px
+		padding-right: 130px
+.brands-slider
+	.slick-list
+		padding-left: 5px
+		margin-left: -5px
+	.slick-slide
+		padding-right: 5px
+	+media-breakpoint-down(md)
+		&:before, &:after
+			content: ''
+			position: absolute
+			width: calc((100vw - 1170px) / 2)
+			top: 0
+			height: 100%
+			background: #ffffff
+			z-index: 1
+			+media-breakpoint-up(lg)
+				width: calc((100vw - 960px) / 2)
+			+media-breakpoint-up(sm)
+				width: calc((100vw - 540px) / 2)
+			@media (max-width: $xsMobile)
+				width: calc((100vw - 540px) / 2)
+		&:before
+			right: 100%
+		&:after
+			left: calc(100% + 28px)
+		.slick-list
+			overflow: visible	
+	@media (max-width: $xsMobile)
+		.slick-list
+			overflow: hidden
+	.slick-slide
+		>div
+			margin: 0 -15px
+			+media-breakpoint-down(md)
+				margin: 0
+.brand-item
+	display: block
+	text-align: center
+	border: 1px solid #e8e8e8
+	margin: 15px
+	padding: 12px
+	transition: all 0.5s ease
+	+media-breakpoint-down(md)
+		margin: 0
+	+media-breakpoint-up(md)
+		&:hover
+			box-shadow: 0 0 10px 2px #e4e4e4
+	&__wrapper
+		+media-breakpoint-down(md)
+			padding: 10px
+	img
+		margin: auto

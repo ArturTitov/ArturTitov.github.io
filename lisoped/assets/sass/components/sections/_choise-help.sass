@@ -1,0 +1,92 @@
+.choice-help
+	background: url('../img/ch_help_bg.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+
+.ch-help__form
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	flex-wrap: wrap
+	&-col
+		label
+			display: block
+			font-weight: 500
+			font-size: 0.87em
+			margin-bottom: 7px
+		&_1
+			flex-basis: 20%
+			max-width: 20%
+		&_2
+			flex-basis: 9%
+			max-width: 9%
+		&_3
+			flex-basis: 9%
+			max-width: 9%
+		&_4
+			flex-basis: 20%	
+			max-width: 20%
+		&_5
+			flex-basis: 20%	
+			max-width: 20%
+	
+		input
+			border-radius: 0
+			border: none
+			color: #878787
+			padding: 10px
+			width: 100%
+			&::placeholder
+				color: #878787
+
+	
+	.selectize-input 
+		border: none
+		padding: 10px
+		display: block
+		box-shadow: none
+		border-radius: 0
+		color: #878787
+	.selectize-control.single .selectize-input.input-active, .selectize-input
+		display: block
+
+/*========== Media Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.choice-help
+		.s-title
+			margin-bottom: 20px
+
+	.ch-help__form
+		&-col
+			&_1, &_2, &_3, &_4, &_5
+				flex-basis: 30%
+				max-width: 30%
+				margin-top: 20px
+		.btn
+			flex-basis: 30%	
+			max-width: 30%
+			margin-top: 20px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+	.ch-help__form
+		&-col
+			&_1, &_2, &_3, &_4, &_5
+				flex-basis: 48%
+				max-width: 48%
+				margin-top: 15px
+		.btn
+			flex-basis: 48%	
+			max-width: 48%
+			margin-top: 15px

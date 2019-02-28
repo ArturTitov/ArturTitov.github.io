@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Гарантия</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="assets/img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="assets/css/main.min.css">
+
+</head>
+
+<body>
+
+	<div id="my-wrapper" class="wrapper">
+
+		<header id="my-header" class="header">
+			<div class="container">
+
+				<div class="topline d-flex align-items-center justify-content-between flex-wrap">
+
+					<ul class="h-item menu d-lg-flex align-items-center flex-wrap remove-md">
+						<li class="has-dropdown">
+							<span>Покупателям</span>
+							<ul class="dropdown">
+								<li><a href="delivery_order.html">Оплата и доставка</a></li>
+								<li><a href="reviews.html">Отзывы</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="credit.html">Рассрочка</a></li>
+								<li><a href="manufacturer.html">Производители</a></li>
+								<li><a href="about_us.html">О нас</a></li>
+							</ul>
+						</li>
+						<li><a href="blog.html">Блог</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="shares.html">Акции</a></li>
+					</ul>
+
+					<span data-toggle="mobile-menu" class="hamburger hamburger--3dx">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</span>
+
+					<a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Lisoped"></a>
+
+					<div class="h-item h-phones hidden-sm remove-sm">
+						<div class="h-phones__list has-dropdown">
+							<a href="tel:998887766">(050) 377-50-77</a>
+							<div class="h-phones-more" data-toggle="dropdown">
+								<i class="icon-caret-down"></i>
+							</div>
+							<div class="dropdown h-phones__dropdown">
+								<ul>
+									<li>
+										<a href="tel:955203728">
+											<span>(050) 377-50-77</span>
+											<!-- нужно в админке реализовать чекалки: 
+												если привязан к номеру телеграм или вайбер,
+												то выводим соответствующий span-->
+											<span class="icon_telegram"></span>
+											<span class="icon_viber"></span>
+											<span class="icon_whatsapp"></span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li>
+										<a href="tel:951536866">
+											<span>(050) 377-50-77</span>
+										</a>
+									</li>
+									<li><a href="tel:951536866"><span>(050) 377-50-77</span></a></li>
+								</ul>
+								<strong class="h6">Режим работы</strong>
+								<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+							</div>
+						</div>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</div>
+
+					<div class="h-item header__user-buttons">
+						<ul class="hub-list d-flex justify-content-center justify-content-sm-end">
+					
+							<li class="hub-i hub-i__user hidden-md">
+								<a href="#log-in-popup" class="hub-i__link to-popup">
+									<span class="i i-user"></span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__compare">
+								<a href="comparison.html" class="hub-i__link">
+									<span class="i i-lawyer"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+
+							<li class="hub-i hub-i__wishlist">
+								<a href="#" class="hub-i__link">
+									<span class="i i-heart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>								
+							
+							<li class="hub-i hub-i__cart">
+								<a href="#cart-popup" class="hub-i__link to-popup">
+									<span class="i i-shopping-cart"></span>
+									<span class="num-total">1</span>
+								</a>
+							</li>
+	
+						</ul>
+					</div>
+					
+				</div><!-- /.topline -->
+			</div>
+
+			<div class="botline">
+				<div class="container">
+
+					<div class="botline-inner d-flex align-items-center justify-content-between flex-wrap">
+
+						<a href="#mobile-catalog" id="trigger-btn" class="btn-accent">
+							<span>Каталог товаров</span>
+						</a>
+
+						<ul class="language ul">
+							<li class="language-item active"><a href="index.html">ru</a></li>
+							<li class="language-item"><a href="index.html">ua</a></li>
+						</ul>
+
+						<nav class="site-nav d-lg-flex align-items-center remove-md">
+							
+							<div class="nav-item">
+								<span class="nav-item__t">Велосипеды</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Горные</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Горные электровелосипеды</a></li>
+												<li><a href="catalog.html">Двухподвесные</a></li>
+												<li><a href="catalog.html">Найнеры</a></li>
+												<li><a href="catalog.html">Фэтбайки</a></li>
+												<li><a href="catalog.html">Хардтейл</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Городские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Гибридные кроссовые</a></li>
+												<li><a href="catalog.html">Городские электровелосипеды</a></li>
+												<li><a href="catalog.html">Круизеры</a></li>
+												<li><a href="catalog.html">Туристические</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Женские</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Комфортные</a></li>
+												<li><a href="catalog.html">Спортивные</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Детские и подростковые</a>
+											<ul class="nav-item__links-list">
+												<li><a href="catalog.html">Беговелы</a></li>
+												<li><a href="catalog.html">Детские</a></li>
+											</ul>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Складные</a>
+										</div><!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Шоссейные</a>
+										</div><!-- /.nav-item__links -->										
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<span class="nav-item__t">Аксессуары</span>
+
+								<div class="nav-item__dropdown align-items-end justify-content-between flex-wrap">
+									<div class="nav-item__dropdown-img">
+										<img src="assets/img/menu_dropdown_img.jpg" alt="Из админки">
+									</div>
+
+									<div class="nav-item__dropdown-descr">
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велобагажники</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокомпьютер</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Звонки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Замки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Защита рамы</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крепления и стойки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Зеркала</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Корзины на велосипед</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Освещение</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Крылья</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Насосы</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Фляги</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Подножки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Сумки</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Флягодержатели</a>
+										</div>
+										<!-- /.nav-item__links -->
+										
+										<div class="nav-item__links">
+											<a class="nav-item__links-title" href="catalog.html">Велокресла для детей</a>
+										</div>
+										<!-- /.nav-item__links -->
+
+									</div>
+								</div><!-- /.nav-item__dropdown -->
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Запчасти</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Инструменты и химия</a>
+							</div><!-- /.nav-item -->
+
+							<div class="nav-item">
+								<a href="category.html" class="nav-item__t">Экипировка</a>
+							</div><!-- /.nav-item -->
+
+						</nav>
+
+						<div class="search">
+							<div class="search-btn"><span class="text">Поиск</span><span class="i i-search"></span></div>
+							<div class="search-inp">
+                <input type="search" placeholder="Что будете искать?">
+            	</div>							
+						</div>
+
+					</div>
+				</div>
+			</div><!-- /.botline -->
+
+
+			<!-- .mobile-menu ================== -->
+			<div id="mobile-menu" class="mobile-menu">
+
+				<div class="btn-close">
+					<i class="icon-close"></i>
+				</div>
+				
+				<div class="mobile-item mobile-item__user">
+					<span class="i i-user"></span>
+					<a href="#log-in-popup" class="to-popup">Войти</a> /
+					<a href="#registration.html">Зарегистрироваться</a>
+				</div>
+
+				<ul class="mobile-list mobile-item mobile-list__phones">
+					<li><span class="h6">Заказы по телефонам:</span></li>
+					<li>
+						<a href="tel:955203728">
+							<span>(050) 377-50-77</span>
+							<span class="icon icon_telegram"></span>
+							<span class="icon icon_viber"></span>
+							<span class="icon icon_whatsapp"></span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:951536866">
+							<span>(050) 377-50-77</span>
+						</a>
+					</li>
+					<li>
+						<a href="#callback-popup" class="btn__callback to-popup">Перезвонить?</a>
+					</li>
+				</ul>
+						
+				<ul class="mobile-list mobile-item">
+					<li><a href="delivery_order.html">Оплата и доставка</a></li>
+					<li><a href="reviews.html">Отзывы</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="credit.html">Рассрочка</a></li>
+					<li><a href="manufacturer.html">Производители</a></li>
+					<li><a href="about_us.html">О нас</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="shares.html">Акции</a></li>
+				</ul>
+
+				<div class="mobile-item mobile-item__timework">
+					<span class="h6">Режим работы</span>
+					<div class="timework">Пн-Пт: 9:00 - 20:00 <br>Сб: 10:00 - 17:00 <br>Вс: выходной</div>
+				</div>
+			</div>
+			<!-- /.mobile-menu ================== -->
+
+			
+			<!-- #mobile-catalog ================== -->
+			<div id="mobile-catalog" class="hidden">
+				<ul>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="category.html">Горные</a>
+						<ul>
+							<li><a href="catalog.html">Горные электровелосипеды</a></li>
+							<li><a href="catalog.html">Двухподвесные</a></li>
+							<li><a href="catalog.html">Найнеры</a></li>
+							<li><a href="catalog.html">Фэтбайки</a></li>
+							<li><a href="catalog.html">Хардтейл</a></li>
+						</ul>
+					</li>
+					<li><a href="category.html">Блог</a></li>
+					<li><a href="category.html">Контакты</a></li>
+					<li><a href="category.html">Акции</a></li>
+				</ul>
+			</div>
+			<!-- /#mobile-catalog ================== -->
+
+			<div class="hidden">
+				<div id="cart-popup" class="cart-popup popup">
+
+					<div class="popup-header">Корзина</div>
+
+					<div class="cart-product__list">
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product1_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Велосипед Centurion BACKFIRE B6-MD</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">серый</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">12 745 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">12 745 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product2_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Звонок велосипедный XLC DD-H02</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Цвет:</span>
+											<span class="option-item__value">черный</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">293 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="2">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">586 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+						<div class="cart-product">
+							<div class="cart-product__col">
+								<div class="cart-product__img">
+									<img src="assets/img/products/product3_xs_img.jpg" alt="Product name">
+								</div>
+								<div class="cart-product__descr">
+									<h6 class="cart-product__name"><a href="product.html">Антипрокольная жидкость  для беcкамерок Slime Naplo</a></h6>
+									<div class="cart-product__options">
+										<div class="option-item">
+											<span class="option-item__name">Объем:</span>
+											<span class="option-item__value">473мл</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart-product__col cart-product__info">
+								<div class="cart-product__price">426 грн</div>
+								<div class="cart-product__count">
+									<div class="cart-product__count-decrease"><i class="icon-caret-left"></i></div>
+									<input type="text" readonly="" name="count" value="1">
+									<div class="cart-product__count-increase"><i class="icon-caret-right"></i></div>
+								</div>
+								<div class="cart-product__count-price">426 грн</div>
+								<button class="remove"></button>
+							</div>							
+						</div><!-- /.cart-product -->
+
+
+					</div><!-- /.cart-product__list -->
+
+					<div class="popup-footer">
+						<div class="cart-total">
+							<span class="text">Сумма:</span>
+							<span class="sum">13 757 грн</span>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="btn-continue">Продолжить покупки</a>
+							<a href="#" class="btn">
+								<span>Оформить заказ</span>
+							</a>
+						</div>
+					</div>
+
+				</div><!-- /.cart-popup -->
+			</div>
+				
+		</header>
+		<!-- /.header ===================================== -->
+
+		<main id="my-content" class="page-content p-padding">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="breadcrumbs ul d-flex align-items-center flex-wrap">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="/">Гарантия</a></li>
+						</ul>
+					</div>
+					<div class="col-12">
+						<h1 class="p-title">Гарантия</h1>
+					</div>
+				</div>
+			</div>
+	
+			<div class="container">
+				
+				<div class="content-text">
+					<p>Деятельность нашего интернет-магазина осуществляется согласно “Закона о защите прав потребителей” и других “Законов Украины”.</p>
+					<p><strong>ОБМЕН</strong></p>
+					<p>Покупатель имеет право обменять или вернуть товар, купленный в нашем магазине, в течении 14 дней со дня получения товара. Для обмена/возврата необходимо убедится, что товар не имеет следов эксплуатации и не был в использовании, не нарушена комплектация и целостность упаковки  товара. После этого сообщите о своем решении менеджеру нашего интернет-магазина удобным вам способом: по телефону или e-mail, и он поможет пройти всю	процедуру обмена/возврата.</p>
+					<p><strong>ГАРАНТИЯ</strong></p>
+					<p>Гарантия от интернет-магазина предоставляется сроком на 1 месяц на любой товар.</p>
+				</div>
+
+				<form class="question-form">
+					<div class="question-form__head">Остались вопросы?</div>
+					<div class="question-form__body">
+						<input class="input-name" type="text" name="Name" required placeholder="*Имя">
+						<input class="input-email" type="email" name="E-mail" required placeholder="*E-mail">
+						<input class="input-text" type="text" name="Question" required placeholder="*Вопрос">
+						<div class="btn-wrap">
+							<button type="submit" class="btn"><span>Отправить</span></button>
+						</div>
+					</div>
+				</form>
+
+			</div><!-- /container -->
+
+			
+			<div class="page-overlay"></div>
+		
+		</main>
+
+		<footer id="my-footer" class="footer">
+			<div class="container">
+				<div class="d-flex footer-row flex-wrap justify-content-between">
+
+					<div class="footer-col footer-col__contacts">
+						<a href="#" class="logo">
+							<img src="assets/img/logo.svg" alt="Lisoped">
+						</a>
+						<ul class="contact-list">
+							<li><address>г. Харьков ул. Щорса 7</address></li>
+							<li><address>г. Киев ул. Короленка 23</address></li>
+							<li class="phones">
+								<a href="tel:676206611">
+									<span>(067) 62-06-611</span>
+									<span class="icon icon_telegram"></span>
+									<span class="icon icon_viber"></span>
+									<span class="icon icon_whatsapp"></span>
+								</a>
+							</li>							
+							<li><a href="mailto:info@lisoped.ua">info@lisoped.ua</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__products">
+						<h6 class="title">Продукция</h6>
+						<ul class="links-list">
+							<li><a href="catalog.html">Велосипеды</a></li>
+							<li><a href="catalog.html">Аксессуары</a></li>
+							<li><a href="catalog.html">Запчасти</a></li>
+							<li><a href="catalog.html">Инструменты и химия</a></li>
+							<li><a href="catalog.html">Экипировка</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col footer-col__about">
+						<h6 class="title">О магазине</h6>
+						<ul class="links-list two-columns">
+							<li><a href="about_us.html">О нас</a></li>
+							<li><a href="manufacturer.html">Производители</a></li>
+							<li><a href="reviews.html">Отзывы о магазине</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="guarantee.html">Гарантия</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="delivery_order.html">Оплата и доставка</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+							<li><a href="credit.html">Рассрочка</a></li>
+							<li><a href="shares.html">Акции</a></li> 
+						</ul>
+					</div>
+
+					<div class="footer-col t-a-right footer-col__subscribe">
+						<div class="footer-col__inner t-a-left">
+							<h6 class="title">Следите за нами</h6>
+							<ul class="socials d-flex align-items-center flex-wrap">
+								<li><a href="#"><i class="i-facebook"></i></a></li>
+								<li><a href="#"><i class="i-instagram"></i></a></li>
+								<li><a href="#"><i class="i-twitter"></i></a></li>
+								<li><a href="#"><i class="i-youtube"></i></a></li>
+							</ul>
+							<form action="" class="subscribe">
+								<input id="footer_subscribe_email" name="email" type="text" placeholder="Введите свой E-mail" required>
+								<button type="submit" class="btn"><span>Подписаться</span></button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+		<!-- /.footer ===================================== -->
+
+	</div>
+
+	<div class="hidden">
+		
+		<div id="log-in-popup" class="log-in-popup popup">
+			<form action="" class="log-in-form popup-form" data-form="login">
+				<div class="formhead">Вход в личный кабинет</div>
+				<div class="form-row">
+					<label>
+						<span>Логин:</span>
+						<input type="email" name="login" required placeholder="I-Ivanov@gmail.com">
+					</label>
+				</div>
+				<div class="form-row">
+					<label>
+						<span>Пароль:</span>
+						<input type="text" name="password" required placeholder="*********">
+					</label>
+				</div>
+				<div class="form-row form-row_cols-2">
+					<label class="label-check">
+						<input type="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<div class="login-form__lost link"><span>Забыли пароль?</span></div>
+				</div>				
+				
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Вход</span>
+					</button>
+				</div>
+			</form>
+
+			<form action="" class="lost-form popup-form" data-form="lost">
+				<div class="success"><span>Ссылка для восстановления пароля отправлена на ваш e-mail. Пожалуйста, проверьте почту.</span></div>
+				<div class="formhead">Восстановление пароля</div>
+				<div class="formdescr">Укажите адрес эл. почты, который вы использовали при оформлении заказов в нашем магазине. Мы вышлем вам инструкцию по восстановлению пароля.</div>
+				<input type="email" name="email" maxlength="50" required placeholder="E-mail">
+				<span class="lost-form__login link"><span>Вспомнили пароль?</span></span>
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+					</button>
+				</div>
+			</form>
+
+			<div class="login-socials">
+				<div class="formdescr">Войти через социальные сети</div>
+				<div class="ulogin-buttons-container">
+					<div class="ulogin-button" role="button" title="Facebook"><i class="icon-facebook2"></i></div>
+					<div class="ulogin-button" role="button" title="Google+"><i class="icon-google-plus2"></i></div>
+				</div>
+			</div>
+			<div class="if-has-uccount">
+				<a href="#">Регистрация</a>
+			</div>
+		</div><!-- /.log-in-popup -->
+
+		<div id="callback-popup" class="callback popup">
+			<form action="" class="callback-form popup-form">
+				<div class="success">
+					<div class="s-inner">
+						<span>Спасибо за заявку!</span>
+						<span>В ближайшее время с Вами свяжется наш менеджер</span>
+					</div>
+				</div>
+				<div class="formhead">Обратный звонок</div>
+				<div class="form-row form-row_cols-2">
+					<label>
+						<span>Номер телефона:</span>
+						<input type="phone" name="phone" required placeholder="Телефон*">
+					</label>
+					<label>
+						<span>Имя:</span>
+						<input type="text" name="name" required placeholder="Иван*">
+					</label>
+				</div>
+				<div class="form-row">
+					<div class="time-selects">
+						<div class="select-day">
+							<select name="Day" class="select">
+								<option value="today">Сегодня</option>
+								<option value="tomorrow">Завтра</option>
+							</select>
+						</div>
+						<div class="select-hour">
+							<select name="Hour" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+						<div class="select-min">
+							<select name="Min" class="select">
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-submit__wrap">
+					<button type="submit" class="btn">
+						<span>Жду звонка</span>
+					</button>
+				</div>
+			</form>
+		</div><!-- /.callback-popup -->
+
+		<div id="one-click-buy__popup" class="__popup">
+			<form action="" class="one-click-buy__form flex align-items-center flex-wrap">
+				<div class="success">
+					<div class="s-inner">
+						<span>Спасибо за заявку!</span>
+						<span>В ближайшее время с Вами свяжется наш менеджер</span>
+					</div>
+				</div>
+				
+				<div class="one-click__popup-img">
+					<img src="assets/img/products/product1_img_nav1.jpg" alt="Название товара">
+				</div>
+
+				<div class="one-click__popup-content">
+					<div class="formhead">Купить в 1 клик</div>
+					<div class="formdescr">Пожалуйста, укажите Ваш контактный номер телефона и мы свяжемся с Вами в ближайшее время</div>
+					<input type="tel" name="Phone" required="" placeholder="+38(0__)___-__-__">
+					<input type="hidden" name="Product name" value="Название товара">
+					<div class="btn-submit__wrap">
+						<button type="submit" class="btn">
+							<span>Заказать</span>
+							<svg class="angle-icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div><!-- /#one-click-buy__popup -->
+
+		<div id="reviews-popup" class="reviews-popup popup">
+			<form action="" class="reviews-popup__form">
+				<div class="success"><span>Спасибо за отзыв!</span></div>
+				<div class="formhead">Оставить отзыв</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Reviews" rows="6" placeholder="Ваш отзыв*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#reviews-popup -->
+
+		<div id="faq-popup" class="faq-popup popup">
+			<form action="" class="faq-popup__form">
+				<div class="success"><span>Спасибо за вопрос!</span></div>
+				<div class="formhead">Задать вопрос</div>
+				<input type="text" name="Name" placeholder="Имя*" required="">
+				<input type="text" name="E-mail" placeholder="E-mail*" required="">
+				<textarea name="Question" rows="6" placeholder="Ваш вопрос*" required=""></textarea>
+				<div class="btn-wrap">
+					<button type="submit" class="btn">
+						<span>Отправить</span>
+						<svg class="angle-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div><!-- /#faq-popup -->
+
+		<div id="wishlist-popup" class="wishlist-popup popup">
+			<div class="inner">Вы должны выполнить <a href="#log-in-popup" class="to-popup accent">вход</a> или <a href="registration.html" class="accent">зарегистрироваться</a> чтобы добавить товар в свой список закладок!</div>
+		</div><!-- /.wishlist-popup -->
+
+		<div id="to-cart__popup" class="to-cart__popup popup">
+			<div class="formhead">ТОВАР ДОБАВЛЕН В КОРЗИНУ</div>
+			<div class="to-cart__product-info flex align-items-center justify-content-between">
+				<div class="to-cart__product-img"><img src="assets/img/products/product1_img_nav1.jpg" alt="Название товара"></div>
+				<div class="to-cart__caption">
+					<div class="to-cart__product-name">Комбинированное трёхцветное платье макси без рукавов</div>
+					<div class="to-cart__product-price">3000 грн</div>
+				</div>
+			</div>
+			<div class="to-cart__buttons flex align-items-center justify-content-center flex-wrap">
+				<a class="btn btn__continue" data-close="popup-close"><span>Продолжить покупки</span></a>
+				<a href="checkout.html" class="btn btn__accent">
+					<span>Оформить заказ</span>
+					<svg class="angle-icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-angle-left"></use>
+					</svg>
+				</a>
+			</div><!-- /.to-cart__popup -->
+		</div>
+
+	</div>
+	
+	<div class="top" title="Наверх">
+		<i class="icon-chevron-thin-up"></i>
+	</div>
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ79uJPujvlv4hzNzKoOsq9umUqTU_JiE"></script>
+	<script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>

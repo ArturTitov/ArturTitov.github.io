@@ -1,0 +1,80 @@
+.mobile-menu
+	position: fixed
+	left: 0
+	top: 0
+	height: 100vh
+	overflow-y: auto
+	background: $white
+	z-index: 9
+	width: 300px
+	padding: 30px 0
+	display: flex
+	flex-direction: column
+	transform: translateX(-315px)
+	border-right: 1px solid $color-border
+	box-shadow: 0 0 15px rgba(0,0,0,.3)
+	font-size: 0.95rem
+	line-height: 1.5
+	transition-property: transform, opacity, visibility
+	transition: transform 0.8s cubic-bezier(0.3, 1, 0.44, 1)
+	&.active
+    transform: translateX(0)
+	ul
+		padding: 0
+		li
+			list-style-type: none
+	.mobile-item
+		margin: 0 0 15px
+		padding: 0 40px 15px
+		border-bottom: 1px solid $border-color
+		&:last-child
+			margin-bottom: 0
+			padding-bottom: 0
+			border: none
+		&__user
+			text-shadow: 0 0 0 $text
+		&__timework
+			.timework
+				line-height: 1.6
+		li
+			margin-bottom: 10px
+		&.mobile-list__phones
+			font-size: 1.05rem
+			.h6
+				font-size: 0.85rem
+			li 
+				line-height: 1
+				margin-bottom: 12px
+				&:last-child
+					margin-bottom: 0
+			a
+				span
+					display: inline-block
+					vertical-align: middle
+
+	.btn__callback
+		text-shadow: 0 0 0 $text
+		font-size: 0.95em
+
+	.btn-close
+		position: absolute
+		right: 13px
+		top: 4px
+		font-size: 22px
+	
+	.h6
+		display: block
+		margin-bottom: 0.4rem
+	
+/*========== Media Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.mobile-menu
+		font-size: 0.8rem
+		.mobile-item.mobile-list__phones
+			font-size: 1.15em
+// ≥768px
++media-breakpoint-down(sm)
+	.mobile-menu
+		font-size: 0.95rem

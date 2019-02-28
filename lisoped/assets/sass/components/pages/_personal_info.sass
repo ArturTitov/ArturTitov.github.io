@@ -1,0 +1,101 @@
+.personal-area__nav
+	margin: 0
+	padding: 0
+	font-size: 0.9em
+	max-width: 230px
+	li
+		list-style-type: none
+		border: 1px solid $color-personal-area-nav
+		padding: 0
+		margin: -1px 0 0 0
+		a
+			padding: 10px
+			color: $gray-3
+			display: block
+			&:hover
+				color: $black
+			&.active
+				color: $black
+
+.personal-info
+	font-size: 0.88em
+	input
+		margin-bottom: 0
+	&__row
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 50px
+	&__col
+		flex-basis: 46.5%
+		max-width: 46.5%
+	&__descr
+		line-height: 1.25
+		color: $color-personal-info-descr
+	&__inputs
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		input
+			flex-basis: 46%
+			max-width: 46%
+	.city__row
+		margin-bottom: 20px
+	&__label
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		>*
+			flex-basis: 46%
+			max-width: 46%
+		&-descr
+			text-transform: uppercase
+			font-weight: 500
+			font-size: 0.95em
+		&-value
+			display: inline-flex
+			margin-right: 30px
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+		&-text
+			margin-left: 10px
+	.selectize-input
+		padding: 3px 0
+		border: none
+		border-bottom: 1px solid $color-border
+		&.focus
+			box-shadow: none
+
+	.btn-wrap
+		text-align: center
+
+/*========== Media Desktop First  ==========*/
+
+// ≥992px
++media-breakpoint-down(md)
+	.personal-info__inputs input
+		flex-basis: 100%
+		max-width: 100%
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+
+// ≥768px
++media-breakpoint-down(sm)
+	.personal-area__nav
+		margin: 40px auto 0 
+
+// ≥576px
++media-breakpoint-down(xs)
+	.personal-info__col
+		flex-basis: 100%
+		max-width: 100%
+	.personal-info__row
+		margin-bottom: 30px
+	.personal-info__descr
+		margin-top: 10px
+	.personal-info__label-value
+		margin-right: 15px
