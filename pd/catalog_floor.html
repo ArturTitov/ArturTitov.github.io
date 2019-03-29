@@ -180,7 +180,7 @@
             <div class="header__main">
               <div class="header__main-left fd-c"><a class="header__phone" href="tel:+380675792222"> <b>+38 (067) 579 22 22</b></a>
                 <div class="header__callback-holder"><a class="header__callback" data-fancybox data-src="#modal__callback" href="#" id="header__callback">Перезвонить?</a></div>
-              </div><a class="header__logo logo header__logo-mobile" href="/"><img src="assets/img/logo.svg" alt="Полы и двери"></a>
+              </div><a class="header__logo logo header__logo-mobile" href="https://arturtitov.github.io/pd/"><img src="assets/img/logo.svg" alt="Полы и двери"></a>
               <nav class="header__nav">
                 <ul class="flex ai-c jc-c">
                   <li><span>Каталог</span><i class="icon-chevron-thin-down dropdown__arrow"></i>
@@ -237,7 +237,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="logo-holder"><a class="header__logo logo icon" href="/"><img class="lazyload" data-src="assets/img/logo.svg" alt="Полы и двери"></a></li>
+                  <li class="logo-holder"><a class="header__logo logo icon" href="https://arturtitov.github.io/pd/"><img class="lazyload" data-src="assets/img/logo.svg" alt="Полы и двери"></a></li>
                   <li><span>О магазине</span><i class="icon-chevron-thin-down dropdown__arrow"></i>
                     <div class="header__nav-dropdown">
                       <div class="header__nav-dropdown-inner">
@@ -261,7 +261,7 @@
                   <div class="icon"><i class="icon-search"></i></div>
                 </div>
                 <div class="header__controls-item header__controls-compare dropdown">
-                  <div class="icon"><i class="icon-compare"></i><span class="num-total"><span>2</span></span></div>
+                  <div class="icon"><i class="icon-compare"></i></div>
                   <div class="dropdown__list">
                     <div class="title">Сравнение</div>
                     <!-- if compare empty-->
@@ -377,12 +377,14 @@
       </div>
       <!--  /#mobile-menu =================================-->
       <div class="maincontent maincontent__catalog">
-        <div class="container">
-          <ul class="breadcrumbs __pdd-left">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li>Двери</li>
-          </ul>
+        <div class="breadcrumbs__holder">
+          <div class="container">
+            <ul class="breadcrumbs __pdd-left">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li>Двери</li>
+            </ul>
+          </div>
         </div>
         <div class="container">
           <h1 class="page__title">Межкомнатные двери</h1>
@@ -1101,8 +1103,8 @@
       <footer class="footer">
         <div class="footer__main-holder">
           <div class="container">
-            <div class="footer__main flex left-animate">
-              <div class="footer__col __col-links item-animate">
+            <div class="footer__main flex">
+              <div class="footer__col __col-links">
                 <div class="footer__col-head">Kаталог</div>
                 <ul class="footer__list">
                   <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Полы</a></li>
@@ -1113,7 +1115,7 @@
                   <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Распродажа</a></li>
                 </ul>
               </div>
-              <div class="footer__col __col-links item-animate">
+              <div class="footer__col __col-links">
                 <div class="footer__col-head">Покупателю</div>
                 <ul class="footer__list">
                   <li class="footer__list-item"><a class="footer__list-link" href="#">О нас</a></li>
@@ -1125,7 +1127,7 @@
                   <li class="footer__list-item"><a class="footer__list-link" href="#">FAQ</a></li>
                 </ul>
               </div>
-              <div class="footer__col __col-contacts item-animate">
+              <div class="footer__col __col-contacts">
                 <div class="footer__col-head">Консультации</div>
                 <ul class="footer__contacts">
                   <li class="footer__contacts-item">Киев<a class="footer__contacts--value" href="tel:+380675779002">+38 (067) 577 90 02</a></li>
@@ -1136,7 +1138,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__bottom one-element-down">
+        <div class="footer__bottom">
           <div class="container">
             <div class="footer__bottom-content">
               <div class="footer__copyright-holder flex ai-c">
@@ -1299,7 +1301,7 @@
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -1321,7 +1323,7 @@
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -1344,7 +1346,7 @@
                   <option value="ru">ru</option>
                   <option value="kz">kz</option>
                 </select>
-                <input class="form__group-input input-phone" name="phone" type="tel" placeholder="Укажите Ваш телефон">
+                <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
               </div>
               <div class="form__group">
                 <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату">
