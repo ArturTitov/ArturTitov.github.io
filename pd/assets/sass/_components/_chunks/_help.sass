@@ -1,0 +1,88 @@
+.help
+  padding: 3.571rem 0
+  position: relative
+  max-width: 305px
+  @include media-breakpoint-down($media_l)
+    max-width: 100%
+    padding: 2.5rem
+  &:before
+    content: ''
+    position: absolute
+    z-index: -2
+    background: #ffffff
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.11)
+    height: 100%
+    top: 0
+    right: 0
+    left: -20rem
+    @include media-breakpoint-down($media_l)
+      display: none
+  &__title
+    font-size: 1.57rem
+    color: #050505
+    font-weight: 800
+    line-height: 1
+    margin-bottom: 1.428rem
+    max-width: 150px
+  &__descr
+    font-style: italic
+    color: #444
+    line-height: 1.2
+    margin-bottom: 2.2rem
+  &__specialist
+    &-img
+      position: relative
+      text-align: center
+      padding: 32px 0 0
+      margin-bottom: 1.85rem
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        background: #fbfbfb
+        right: 0
+        left: -20rem
+        top: 0
+        bottom: 0
+      img
+        margin: 0 auto
+        position: relative
+        z-index: 1
+    &-name
+      line-height: 1.2
+      color: #1e1e1e
+      font-size: 1.142em
+      font-weight: 700
+    &-descr
+      font-style: italic
+      color: #535353
+      font-size: 0.858em
+      line-height: 1.3
+      margin-bottom: 1.8rem
+  &__contacts
+    &-item
+      width: 40px
+      height: 40px
+      border: 1px solid #898989
+      display: inline-flex
+      text-align: center
+      color: #383838
+      background: #fff
+      &:not(:last-of-type)
+        margin-right: 20px
+      &:hover
+        background: $accent-light
+        color: #fff
+        border-color: $accent-light
+      i
+        margin: auto
+        line-height: 1
+        font-size: 20px
+        &.icon-send
+          font-weight: 700
+          transform: translateY(2px)
+        &.icon-mail
+          font-size: 14px
+          transform: translateY(1px)
+    
+

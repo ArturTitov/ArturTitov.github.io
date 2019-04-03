@@ -1,0 +1,275 @@
+.maincontent__account
+  .page__title
+    margin-bottom: 25px
+    line-height: 1
+
+.account
+  justify-content: space-between
+  &__nav-col
+    flex: 0 0 20.193%
+    max-width: 20.193%
+  &__content-col
+    flex: 0 0 72.116%
+    max-width: 72.116%
+    padding-bottom: 9.28rem
+  &__nav
+    list-style-type: none
+    margin: 0
+    padding: 0
+    font-size: 0.93em
+    text-transform: uppercase
+    font-weight: 700
+    line-height: 1
+    &-item
+      padding-right: 16%
+      margin-bottom: 10px
+      &.current
+        padding-right: 0
+        a
+          background: #fff
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.07)
+          &:hover
+            color: $text
+      a
+        display: flex
+        min-height: 70px
+        padding: 1rem 1rem 1rem 2.857rem
+        background: $section-grey     
+        span
+          margin: auto 0
+          padding-top: 3px
+    &-trigger
+      color: $accent-light
+      margin-bottom: $gutter
+      display: none
+
+      .hamburger
+        display: inline-block
+      .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+        background: $accent-light
+      span
+        margin-left: 15px
+      
+  &__title
+    display: flex
+    min-height: 70px
+    padding: 1rem 1rem 1rem 3.214rem
+    background: $section-grey
+    text-transform: uppercase
+    font-size: 1.143rem
+    line-height: 1
+    margin-bottom: 40px
+    span
+      margin: auto 0
+      padding-top: 5px 
+
+
+  &__user
+    &-form
+      padding-left: 3.214rem
+      .form__groups
+        &.__cols-3
+          margin-left: -25px
+          margin-right: -25px
+          >*
+            flex-basis: calc(33.333% - 50px)
+            max-width: calc(33.333% - 50px)
+            margin-left: 25px
+            margin-right: 25px
+        .form__group
+          &.__cols-2
+            display: flex
+            justify-content: space-between
+            .form__group
+              flex: 0 0 calc(50% - 25px)
+              max-width: calc(50% - 25px)
+      .btn-accent
+        min-width: 190px
+    &-row
+      margin-bottom: 4.63rem
+      &.account__user-passwords
+        margin-bottom: 2.85rem
+      .title
+        font-size: 1.143rem
+        font-weight: 700
+        line-height: 1.2
+        margin-bottom: $gutter
+        text-transform: none
+      .addresses
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &__item
+          position: relative
+          background: $section-grey
+          padding: $gutter
+          line-height: 1.3
+          flex: 0 0 46.3%
+          max-width: 46.3%
+          cursor: pointer
+          margin-bottom: 25px
+          b
+            text-transform: uppercase
+            display: block
+            margin-bottom: 5px
+            font-size: 0.858em
+            font-weight: 800
+          input
+            position: absolute
+            right: 10px
+            top: 10px
+            &:checked
+              outline: 1px solid $accent-dark
+              border-color: $accent-dark
+
+
+.add__address
+  &-toggle
+    font-size: 0.93em
+    text-transform: uppercase
+    border-bottom: 1px solid $text
+    display: inline-flex
+    align-items: center
+    line-height: 1.2
+    cursor: pointer
+    margin-bottom: 2.3rem
+    transition: all .3s ease
+    i 
+      margin-left: 8px
+      font-size: 10px 
+      display: inline-block
+    &.active
+      margin-bottom: 20px
+      i
+        transform: rotate(180deg)
+    @include media-breakpoint-up($media_l)
+      &:hover
+        color: $accent-light
+        border-color: $accent-light
+  &-form
+    display: none
+
+
+@include media-breakpoint-down($media_xxxxl) 
+  .account__nav-col
+    flex: 0 0 23%
+    max-width: 23%
+  .account__nav-item
+    padding-right: 10%
+
+@include media-breakpoint-down($media_xl)
+  .account__nav-trigger
+    display: inline-flex
+
+  .account__nav-col
+    position: fixed
+    top: 0
+    left: 0
+    flex: 0 0 100vw
+    max-width: 100vw
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow-y: auto
+    background: #ffffff
+    border: 1px solid #ddd
+    z-index: 999999
+    padding: 100px 15px 20px
+    transform: translateY(-80px)
+    transition-property: transform
+    font-size: 13px
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.3s ease, transform .7s cubic-bezier(.3,1,.44,1)
+    &.active
+      transform: translateY(0)
+      opacity: 1
+      visibility: visible
+    .btn-close
+      display: inline-block
+      position: absolute
+      right: 30px
+      top: 130px
+      font-size: 20px
+      opacity: 0.7
+  .account__content-col
+    flex: 0 0 100%
+    max-width: 100%
+    padding-bottom: 5rem
+  .account__nav-item
+    padding-right: 0
+  .account__nav
+    width: 300px
+  .account__nav-item
+    margin-bottom: 1rem
+    a
+      padding: 1.5rem 1rem
+      min-height: 0
+      span
+        margin: auto
+  
+@include media-breakpoint-down($media_m)
+  .account
+    &__user
+      &-form
+        padding-left: 0
+        .form__groups
+          &.__cols-3
+            >*
+              flex-basis: calc(50% - 50px)
+              max-width: calc(50% - 50px)
+              &.__cols-2
+                flex-basis: calc(100% - 50px)
+                max-width: calc(100% - 50px)
+          .form__group
+            &.__cols-2
+              display: flex
+              justify-content: space-between
+              .form__group
+                flex: 0 0 calc(50% - 25px)
+                max-width: calc(50% - 25px)
+      &-row
+        margin-bottom: 2rem
+        .addresses__item
+          flex-basis: 100%
+          max-width: 100%
+    &__content-col
+      padding-bottom: 4rem
+  
+@include media-breakpoint-down($media_s)
+  .account
+    &__user
+      &-form
+        padding-left: 0
+        .form__groups
+          &.__cols-3
+            margin-left: 0
+            margin-right: 0
+            >*
+              flex-basis: 100%
+              max-width: 100%
+              margin-left: 0
+              margin-right: 0
+              &.__cols-2
+                flex-basis: 100%
+                max-width: 100%
+        .btn-accent
+          width: 100%
+    &__content-col
+      padding-bottom: 3rem
+    
+    &__user-row
+      margin-bottom: 2rem
+      &.account__user-passwords
+        margin-bottom: 2rem
+      .addresses__item
+        padding: 25px 15px 20px
+      .title
+        font-size: 1.3rem
+        margin-bottom: 20px
+    &__title
+      min-height: 60px
+      padding: 1rem 1rem 1rem 2rem
+      margin-bottom: $gutter

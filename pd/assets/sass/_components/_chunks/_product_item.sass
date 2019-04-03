@@ -1,0 +1,216 @@
+.products
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -7px
+  @include media-breakpoint-down($media_sm)
+    margin: 0 auto
+  &.products__with-shadow
+    .products__item
+      margin-bottom: 20px
+      @include media-breakpoint-down($media_l)
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.07)
+      @include media-breakpoint-up($media_l)
+        &:hover
+          box-shadow: 0 0 13px rgba(0, 0, 0, 0.07)
+  &__item
+    padding: 1.428em
+    display: flex
+    flex-wrap: wrap
+    background: transparent
+    flex: 0 0 calc(33.33% - 14px)
+    max-width: calc(33.33% - 14px)
+    margin: 0 7px
+    transition: 0.25s ease
+    @include media-breakpoint-up($media_l)
+      &:hover
+        background: #ffffff
+        .products__buttons, .products__buybtn-wrap
+          opacity: 1    
+
+    &-img, &-content
+      flex: 0 0 50%
+      max-width: 50%
+    &-img
+      background: #f6f6f6
+      text-align: center
+      vertical-align: bottom
+      display: flex
+      &-wrapper
+        margin: auto
+    &-content
+      padding: 0 0 0 7.7%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &-remove
+      font-size: 13px
+      color: #bfbfbf
+      transition: 0.2s
+      @include media-breakpoint-up($media_l)
+        &:hover
+          color: #303030
+
+  &__buttons
+    padding: 0
+    margin: 0 0 2.1em
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+    opacity: 0
+    transition: 0.25s ease
+    &-item
+      transition: 0.25s ease
+      margin-right: 20px
+      font-size: 20px
+      color: #757575
+      cursor: pointer
+      line-height: 1
+      &:last-child
+        margin-right: 0
+      &.active
+        color: $accent-light
+      
+  &__stickers
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 1.3em
+    &-item
+      margin: 0 1em 0.8em 0
+      color: #434343
+      display: inline-flex
+      font-weight: 700
+      text-transform: uppercase
+      font-size: 0.786em
+      line-height: 0.8
+      &:last-of-type
+        margin-right: 0
+      span
+        display: inline-block        
+        border: 1px solid #898989
+        padding: 9px 16px 7px
+        &:nth-child(2)
+          margin-left: 5px
+          padding: 9px 6px 7px
+
+  &__name
+    font-weight: 800
+    text-transform: uppercase
+    color: #383636
+    line-height: 1.3
+    margin-bottom: 1em
+    font-size: 0.928em
+    min-height: 4.228em
+
+  &__attributes
+    font-size: 0.928em
+    margin-bottom: 1.5em
+    min-height: 5em
+    color: #858585
+    &-item
+      margin-bottom: 3px
+      line-height: 1.25
+      &.product__article
+        color: #494949
+        text-transform: uppercase
+  &__options
+    min-height: 38px
+    &-item
+      display: flex
+      line-height: 1.2
+      margin-bottom: 3px
+    &-name 
+      text-transform: uppercase
+      font-weight: 700
+      margin-right: 10px
+      min-width: 55px
+  
+  &__price
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin-bottom: 0.8em
+    &-old
+      text-decoration: line-through
+      line-height: 1
+      margin-right: 1em
+      margin-bottom: 0.5em
+      color: #5d5d5d
+      font-size: 1.1em
+      .price-currency
+        font-size: 0.858em
+    &-main
+      font-weight: 800      
+      line-height: 1
+      margin-bottom: 0.5em
+      font-size: 1.285em
+      .price-currency
+        font-size: 0.858em
+    .price-currency
+      padding-left: 4px
+    
+    
+  &__buybtn-wrap
+    opacity: 0
+    transition: 0.25s ease
+    .btn-accent
+      padding: 12px 20.2% 9px
+
+@media screen and (min-width: $media_xl) and (max-width: $media_xxxxl)
+  .products
+    &__item
+      font-size: 13px
+
+@media screen and (min-width: $media_l) and (max-width: $media_xxxxl)
+  .products
+    &__attributes
+      min-height: 3em
+      margin-bottom: 1em
+    &__buttons
+      margin-bottom: 1em
+    &__name
+      min-height: 3em
+    &__price
+      margin-bottom: 0.2em
+    
+@include media-breakpoint-down($media_xl)
+  .products
+    &__item
+      flex: 0 0 calc(50% - 14px)
+      max-width: calc(50% - 14px)
+
+@include media-breakpoint-down($media_l)
+  .products
+    &__item
+      font-size: 13px
+      &-content
+        padding-left: 6%
+    .products__buttons, .products__stickers
+      margin-bottom: 0.75em
+    &__buttons
+      margin-bottom: 1em
+      &-item
+        font-size: 16px
+    &__attributes
+      min-height: 3em
+      margin-bottom: 0.5em
+    &__name
+      min-height: 3em
+      margin-bottom: 0.5em
+    &__price
+      margin-bottom: 0.2em
+    .products__buttons, .products__buybtn-wrap
+      opacity: 1
+
+@include media-breakpoint-down($media_sm)
+  .products
+    &__item
+      flex: 0 0 100%
+      max-width: 100%
+      transform: translate3d(0,0,0)
+      height: 100%
+      position: relative
+      margin: 0 auto
+      background: #ffffff
+      font-size: 11px
+    .products__buttons, .products__stickers
+      margin-bottom: 0.5em

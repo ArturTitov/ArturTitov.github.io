@@ -1,0 +1,108 @@
+.promo
+  @include media-breakpoint-down($media_s)
+    font-size: 12px
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between 
+  &__slider-item, &__banners-item
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: transparent
+      transition: all 0.3s ease
+    @include media-breakpoint-up($media_l)
+      &:hover
+        color: #161616
+        &:before
+          background: rgba(0,0,0,0.15)
+    &-descr, &-descr
+      position: absolute
+      left: 50%
+      bottom: 0
+      width: 66.7%
+      transform: translateX(-50%)
+      background: #ffffff
+      padding: 16px 5% 0
+      z-index: 2
+      display: flex
+      align-items: flex-end
+      text-align: center
+      justify-content: center
+      min-height: 54px
+      transition: 0.2s ease
+      @include media-breakpoint-down($media_xxl)
+        width: 75%
+      @include media-breakpoint-down($media_xl)
+        width: 80%
+      @include media-breakpoint-down($media_m)
+        min-height: 48px
+      @include media-breakpoint-down($media_s)
+        min-height: 37px
+        padding: 10px 10px 0
+  &__slider
+    flex: 0 0 50%
+    max-width: 50%
+    overflow: hidden
+    position: relative
+    padding-bottom: 2.357rem
+    @include media-breakpoint-down($media_m)
+      flex: 0 0 100%
+      max-width: 100%
+      margin-bottom: 2.357rem
+    &-wrapper
+      align-items: flex-start
+    &-item
+      display: block
+      height: auto
+      position: relative
+      transition-property: transform
+      color: #161616
+      text-transform: uppercase
+      font-size: 1.071em
+      font-weight: 700
+      text-align: center
+      line-height: 1.45
+      overflow: hidden
+      
+      @include media-breakpoint-down($media_xxl)
+        font-size: 0.97em
+      @include media-breakpoint-down($media_xl)
+        font-size: 0.95em
+      @include media-breakpoint-down($media_s)
+        font-size: 0.8em
+  &__banners
+    flex: 0 0 47.75%
+    max-width: 47.75%
+    @include media-breakpoint-down($media_m)
+      flex: 0 0 100%
+      max-width: 100%
+    &-item
+      margin-bottom: 2.357rem
+      position: relative
+      color: #161616
+      text-transform: uppercase
+      font-size: 1.071em
+      font-weight: 700
+      text-align: center
+      line-height: 1.45
+      display: block
+      overflow: hidden
+      @include media-breakpoint-down($media_xxl)
+        font-size: 0.97em
+      @include media-breakpoint-down($media_xl)
+        font-size: 0.95em
+      @include media-breakpoint-down($media_s)
+        font-size: 0.8em
+      &:last-child
+        margin-bottom: 0
+    
+
+.promo__slider.swiper-container-horizontal  
+  >.swiper-pagination-bullets
+    bottom: -2px
+    line-height: 1

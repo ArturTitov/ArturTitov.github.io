@@ -1,0 +1,415 @@
+.checkout-header
+	&.header
+		position: absolute
+		.header__main
+			padding: 8px 0
+			max-width: 830px
+			width: 100%
+		.header__main-left
+			display: inline-flex
+		@include media-breakpoint-down($media_l)
+			.logo
+				max-width: 80px
+			.header__main-right
+				display: none
+		@include media-breakpoint-down($media_s)
+			.logo
+				max-width: 70px
+
+.maincontent.maincontent-checkout
+	padding: 46px 0
+
+.checkout
+	justify-content: space-between
+	&__info
+		flex: 0 0 53.85%
+		max-width: 53.85%
+		display: inline-flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 676px
+	&__steps
+		&-item
+			&.checkout__steps-item--active
+				.step-btn
+					opacity: 0
+					visibility: hidden
+				.checkout__steps-item--title
+					.num
+						background-color: $accent-dark
+						color: #fff
+					.title
+						color: #0d0d0d
+			&--head
+				margin-bottom: 25px
+			&--title
+				font-size: 12px
+				.num
+					display: block
+					width: 25px
+					height: 25px
+					background-color: #d1d1d1
+					margin-right: 2rem
+					color: #868686
+					line-height: 27px
+					text-align: center
+					transition: all .2s ease
+				.title
+					font-size: 1em
+					line-height: 1
+					padding-top: 3px
+					color: #8f8f8f
+					transition: all .2s ease
+			&--content
+				padding-left: 55px
+	&__user-tabs
+		.tab-nav
+			margin-bottom: 2rem
+		.tab-nav__item
+			text-transform: uppercase
+			color: #9d9d9d
+			font-weight: 400
+			font-size: 13px
+			cursor: pointer
+			padding: 9px 22px
+			line-height: 1  
+			position: relative
+			transition: all 0.3s ease
+			&:not(:last-child)
+				margin-right: 25px
+			&:before
+				content: '' 
+				height: 2px
+				width: 0
+				background: #00726a
+				position: absolute
+				left: 50%
+				bottom: 0
+				transform: translateX(-50%)
+				transition: 0.3
+			&.active
+				color: #303030
+				font-weight: 700
+				&:before
+					width: 100%
+		.tab-pane
+			padding-bottom: $gutter
+	.form
+		.form__row
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-bottom: 1.8rem
+			&.__full-w
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				.label, .form__group
+					flex: 0 0 100%
+					width: 100%
+				.label
+					margin-bottom: 1.5em
+			&.__textarea
+				padding-top: 20px
+			.label
+				flex: 0 0 24%
+				font-size: 12px
+				font-weight: 700
+				text-transform: uppercase
+				line-height: 1
+				padding-top: 1px
+				&-wrap
+					line-height: 1
+				&__check
+					display: inline-flex
+					padding-top: 0
+					margin-bottom: 1em
+					font-size: 1em
+					input
+						margin-right: 1em
+					span
+						flex: 0 0 auto
+						max-width: 100%
+						padding-top: 3px
+						line-height: 1
+			.form__group
+				flex: 0 0 30%
+				margin: 0
+			.prompt
+				flex: 0 0 33%
+				color: #9d9d9d
+				font-size: 11px
+				line-height: 1.2
+				padding-top: 3px
+			.form__group-input
+				padding: 4px 0
+				&.input-phone
+					padding-left: 55px
+			.form__group-textarea
+				border: #ddd 1px solid
+				padding: 1em
+				width: 100%
+				max-width: 475px
+
+	&__signin
+		max-width: 475px
+		padding-top: 1rem
+		margin: 0 0 1rem
+		.login__socials
+			margin-top: 1rem
+			
+	.total
+		&-wrap
+			max-width: 555px
+			padding-left: 55px
+		&__item
+			display: flex
+			align-items: flex-end
+			line-height: 1
+			margin-bottom: 10px
+			font-weight: 700
+			&.__sum
+				.total__item-value
+					font-size: 1.57em
+			&-key
+				position: relative
+				flex: 0 0 calc(100% - 130px)
+				&:after
+					content: ''
+					width: 100%
+					display: block
+					position: absolute
+					height: 2px
+					bottom: 2px
+					left: 0
+					z-index: -1
+					background-image: linear-gradient(to right,#8c8c8c 18%,rgba(255,255,255,0) 20%)
+					background-position: top
+					background-size: 4px 1px
+					background-repeat: repeat-x
+				span
+					background: #fff
+					padding-right: 5px
+					font-size: 16px
+					text-transform: uppercase
+					font-size: 13px
+			&-value
+				flex: 0 0 130px
+				padding-left: 5px
+				font-weight: 800
+	
+	.buttons
+		margin-top: 42px
+		padding-right: 25px
+		.btn-accent
+			font-size: 12px
+			width: 100%
+
+	.step-btn
+		text-transform: uppercase
+		font-size: 10px
+		color: #6a6a6a
+		border-bottom: 1px solid #6a6a6a
+		line-height: 1
+		font-weight: 700
+		padding: 2px 0 0
+		&__wrap
+			margin-left: $gutter
+			flex: 0 0 31%
+			max-width: 31%
+		@include media-breakpoint-up($media_l)
+			&:hover
+				color: $accent-light
+				border-color: $accent-light
+
+	.checkout__order-info
+		display: none
+
+	&__cart
+		flex: 0 0 42.95%
+		max-width: 42.95%
+		&-title
+			margin-bottom: 2.3rem
+		.scrollbox
+			max-height: 635px
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.08)
+		.products
+			&__list
+				.products__item
+					font-size: 12px
+					align-items: stretch
+					padding: 25px 25px 24px
+					margin: 0
+					&-img
+						flex: 0 0 108px
+						max-width: 108px
+					&-content
+						flex: 0 0 calc(100% - 130px)
+						max-width: calc(100% - 130px)
+						padding: 0 15px
+			&__attributes
+				font-size: 0.93em
+				min-height: 0
+				margin-bottom: 1.3em
+			&__price-main
+				font-size: 1.185em
+			&__name
+				margin-bottom: 1.2em
+				max-width: 380px
+			&__options
+				min-height: 50px
+				margin-bottom: 0.6em
+			&__item-remove
+				align-self: flex-start
+		.products__item-remove
+			font-size: 14px
+
+	
+@include media-breakpoint-down($media_xxxxl)
+	.checkout__info
+		flex: 0 0 60%
+		max-width: 60%
+	.checkout__cart
+		flex: 0 0 38%
+		max-width: 38%
+
+@include media-breakpoint-down($media_xxl)
+	.checkout .form .form__row .form__group
+		flex: 0 0 34%
+
+@include media-breakpoint-down($media_xl)
+	.checkout
+		&__info
+			flex: 0 0 50%
+			max-width: 50%
+		&__cart
+			flex: 0 0 45%
+			max-width: 45%
+			.products__list .products__item
+				font-size: 11px
+		.form
+			.form__row
+				.label
+					flex: 0 0 40%
+				.form__group
+					flex: 0 0 52%
+				.prompt
+					display: none
+		&__steps-item--content, .total-wrap
+			padding-left: 0
+
+@include media-breakpoint-down($media_l)
+	.checkout__user-tabs .tab-nav__item
+		font-size: 11px
+		&:not(:last-child)
+			margin-right: 0
+
+@media screen and (max-width: $media_l) and (min-width: $media_m)
+	.checkout
+		&__info, &__cart
+			flex: 0 0 48%
+			max-width: 48%
+		&__info
+			font-size: 0.9em
+		&__cart
+			.products__list
+				.products__item
+					padding: 22px
+					&-img
+						flex: 0 0 90px
+						max-width: 90px
+					&-content
+						max-width: calc(100% - 108px)
+						flex: 0 0 calc(100% - 108px)
+						padding: 0 14px
+			.products__name
+				margin-bottom: 1em
+				font-size: 0.858em
+			.products__attributes
+				margin-bottom: 1em
+			.products__options
+				min-height: 30px
+
+		&__user-tabs .tab-nav__item
+			padding: 6px 15px
+
+		.products__options-item
+			align-items: center
+		.products__options-name
+			font-size: 0.8em
+
+		.form .form__row
+			.form__group
+				flex: 0 0 58%
+			.label
+				flex: 0 0 36%
+	
+@include media-breakpoint-down($media_m)
+	.checkout
+		max-width: 475px
+		margin: 0 auto
+		&__info, &__cart
+			flex: 0 0 100%
+			max-width: 100%
+		&__cart
+			order: -1
+			margin-bottom: $gutter
+		
+		&__cart
+			.scrollbox
+				max-height: 207px
+			.products__item
+				font-size: 12px
+			.products__options
+				min-height: 30px
+		&__info
+			min-height: 0
+		&__user-tabs
+			min-height: 362px
+		.checkout .buttons
+			padding-right: 0
+		
+@include media-breakpoint-down($media_s)
+	.maincontent.maincontent-checkout
+		padding: 35px 0 45px
+	.checkout
+		&__cart
+			.scrollbox
+				max-height: 180px
+			.products__list
+				.products__item
+					padding: 22px
+					&-img
+						flex: 0 0 90px
+						max-width: 90px
+					&-content
+						max-width: calc(100% - 108px)
+						flex: 0 0 calc(100% - 108px)
+						padding: 0 14px
+			.products__name
+				margin-bottom: 1em
+				font-size: 0.858em
+			.products__attributes
+				margin-bottom: 1em
+		&__user-tabs 
+			.tab-nav
+				justify-content: space-between
+				&__item
+					padding: 6px 10px
+					font-size: 0.75em
+
+		.products__options-item
+			align-items: center
+
+		.form .form__row
+			flex-wrap: wrap
+			.form__group
+				flex: 0 0 100%
+			.label
+				flex: 0 0 100%
+				font-size: 0.76em
+				margin-bottom: 5px
+		.buttons
+			padding-right: 0
+		.form .form__row .label__check span
+			max-width: calc(100% - 30px)

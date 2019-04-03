@@ -1,0 +1,131 @@
+.maincontent
+  &__catalog
+    .page__title
+      @include media-breakpoint-down($media_xl)
+        margin-bottom: 1rem
+  &__search, &__sale
+    .catalog-main__col
+      padding-top: 1rem
+    span
+      font-size: 0.77em
+
+
+.catalog
+  &-main
+    &__col
+      flex: 0 0 75.65%
+      max-width: 75.65%
+      @include media-breakpoint-down($media_xxl)
+        flex: 0 0 72.65%
+        max-width: 72.65%
+      @include media-breakpoint-down($media_l)
+        flex: 0 0 100%
+        max-width: 100%
+    &__head
+      padding-left: 13.5%
+      margin-bottom: 1.714rem
+      @include media-breakpoint-down($media_l)
+        padding-left: 0
+      .select2-container--default .select2-selection--single
+        border-radius: 0
+  &-sort
+    flex: 0 0 270px
+    position: relative
+    max-width: 100%
+    @include media-breakpoint-down($media_s)
+      flex: 0 0 100%
+      margin-top: 1.3rem
+    .custom-select
+      width: 100%
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+      right: 11px
+
+
+  &__products
+    .products
+      @include media-breakpoint-down($media_sm)
+        margin: 0 auto
+        max-width: 32.5rem
+      @include media-breakpoint-down($media_xs)
+        max-width: 100%
+      &__buttons
+        margin-bottom: 1.4em
+      &__stickers
+        margin-bottom: 1em
+        &-item
+          font-size: 0.82em
+          span
+            padding: 7px 10px 5px
+            &:nth-child(2)
+              padding: 7px 5px 5px
+      &__attributes
+        min-height: 5.81em
+        margin-bottom: 0.6em
+      &__price
+        margin-bottom: 0.7em
+        &-old
+          font-size: 1.1em
+          margin-right: 10px
+        &-main
+          font-size: 1.28em
+          color: #202020
+        &__buybtn-wrap
+          >*
+            font-size: .82em
+            padding: 1.1em 20.2% 0.9em
+      &__item 
+        margin-bottom: 1.428rem
+        font-size: 11px
+        @include media-breakpoint-up($media_l)
+          &:hover
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08)
+        @include media-breakpoint-down($media_l)
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.08)
+    @media screen and (min-width: $media_xxl) and (max-width: $media_xxxxl)
+      .products__attributes 
+        min-height: 3em
+      .products__buttons, .products__stickers
+        margin-bottom: 0.75em
+      .products__buttons-item
+        font-size: 16px
+      .products__name
+        margin-bottom: 1em
+      .products__price
+        margin-bottom: 0.35em
+    @media screen and (min-width: $media_l) and (max-width: $media_xl)
+      .products__attributes 
+        min-height: 5em
+      .products__buttons, .products__stickers
+        margin-bottom: 0.75em
+      .products__buttons-item
+        font-size: 16px
+      .products__name
+        margin-bottom: 1em
+      .products__price
+        margin-bottom: 0.35em
+    @media screen and (min-width: $media_m) and (max-width: $media_l)
+      .products__attributes 
+        min-height: 4em
+    @include media-breakpoint-down($media_l)
+      .products__buttons, .products__stickers
+        margin-bottom: 0.75em
+      .products__buttons-item
+        font-size: 16px
+    @include media-breakpoint-down($media_m)
+      .products__attributes 
+        min-height: 3em
+      .products__name
+        margin-bottom: 0.5em
+
+
+.share-banner
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.07)
+  display: block
+  margin: 0 7px 1.428rem
+  width: 100%
+  flex: 0 0 100%
+  img
+    margin: 0 auto
+  @include media-breakpoint-down($media_s)
+    margin: 0 auto 1.428rem
+  

@@ -1,0 +1,328 @@
+.catalog-sidebar__col
+	flex: 0 0 18.915%
+	max-width: 18.915%
+	position: relative
+	width: 100%
+	@include media-breakpoint-down($media_xxl)
+		flex: 0 0 21.915%
+		max-width: 21.915%
+	@include media-breakpoint-down($media_xxl)
+		flex: 0 0 24.915%
+		max-width: 24.915%
+
+.catalog-filter
+	padding: 2rem 0 5.14rem
+	position: relative
+	background: #ffffff
+	@include media-breakpoint-down($media_l)
+		padding: 15px 0
+	&:before
+		content: ''
+		position: absolute
+		left: -20rem
+		top: -8rem
+		background: #fff
+		box-shadow: 0 0 15px rgba(0,0,0,.1)
+		display: block
+		height: calc(100% + 8rem)
+		right: -14.5rem
+		z-index: -1
+		background: #ffffff
+		@include media-breakpoint-down($media_xxxxl)
+			right: -10rem
+		@include media-breakpoint-down($media_l)
+      display: none
+	.btn-close
+		display: none
+
+.filter
+	color: #191919
+	.filter__title
+		margin-bottom: 0.8rem
+		line-height: 1
+		font-weight: 800
+
+	&-tab
+		border-top: 1px solid #ccc
+		transition: all 0.3s ease
+		&:last-child
+			border-bottom: 1px solid #ccc
+		&.open
+			&:not(.filter-tab__large)
+				padding-bottom: 10px
+			.filter-tab__head
+				&:before
+					content: "\e90d"
+		&.filter-tab__categories
+			text-transform: uppercase
+		&__head
+			text-transform: uppercase
+			position: relative
+			padding: 1.785em 25px 1.55em 0
+			cursor: pointer
+			color: #202020
+			text-shadow: none
+			line-height: 1.2
+			@include media-breakpoint-down($media_l)
+				padding: 17px 22px 15px 0
+			&:before 
+				content: "\e90a"
+				position: absolute
+				font-family: 'icomoon'
+				right: 0
+				top: 53%
+				font-size: 10px
+				line-height: 1
+				transform: translateY(-50%)
+				color: #0d0d0d
+		&__content
+			position: relative
+			display: none
+			&.open
+				display: block
+		&__categories
+			margin-bottom: 3.5rem
+			&-list
+				list-style-type: none
+				margin: 0
+				padding: 0
+			&-item
+				position: relative
+				color: #565656
+				line-height: 1.3
+				a:hover
+					color: #222
+				&:not(:last-child)
+					margin-bottom: 7px
+				&.__active
+					color: #222
+					padding-left: 30px
+					font-weight: 700
+					&:before
+						content: ''
+						width: 20px
+						height: 2px
+						background: #222
+						position: absolute
+						left: 0
+						top: 50%
+						transform: translateY(-50%)	
+			.title
+				font-weight: 800
+				margin-bottom: 1rem
+
+	&-price__slider
+		font-size: 0.93em
+		margin-bottom: 1.2rem
+
+	&-price__input-wrap
+		padding: 0 8px
+		border-bottom: 1px solid #d1d1d1
+		max-width: 37.65%
+		flex-basis: 37.65%
+		text-align: center
+		line-height: 1.4
+		input
+			text-align: center
+			padding: 0
+			border: none
+			margin-bottom: 0
+			width: 100%
+			color: #2d2d2d
+	&-price__divider
+		width: 15%
+		position: relative
+		height: 100%
+		display: inline-flex
+		padding-bottom: 5px
+		&:before
+			content: ''
+			width: 12px
+			height: 1px
+			background: #d1d1d1
+			margin: auto
+			display: inline-block
+	&-tab__options-more
+		display: none
+	&-tab__options-list
+		.filter-option
+			display: flex
+			margin-bottom: .857rem
+			padding: 1px 0 0 1px
+			&.hidden
+				display: none
+			.filter-option__input
+				transition: all .2s ease
+			.input-checkbox
+				display: block
+				font-size: .9em
+				margin-right: 13px
+				outline-color: #898989
+			&.checked
+				.input-checkbox
+					background-color: #fff
+					outline: none
+					border-color: $accent-dark
+					outline: 1px solid $accent-dark
+				&:hover
+					color: $color-filter
+			&[data-visible="false"]
+				
+			
+			&__trigger
+				display: block
+				width: 100%
+				text-align: center
+				font-size: 10px
+				padding: 12px 10px 9px
+				position: relative
+				color: #4d4d4d
+				line-height: 
+				background: #e3e3e3
+				text-transform: uppercase
+				margin-top: 1.7rem
+				transition: .2s ease
+				+media-breakpoint-up(lg)
+					&:hover
+						color: $accent-dark
+				i
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-38%)
+					font-size: 0.85em
+
+	&-option__trigger
+		&.active
+			i:before
+				content: '\e90d'
+
+	&-option__name
+		position: relative
+		cursor: pointer
+		transition: all 0.1s ease
+		flex-basis: calc(100% - 30px)
+		max-width: calc(100% - 30px)
+		line-height: 1.3
+
+	&-trigger
+		display: none
+		padding: 10px 9px 8px
+		position: fixed
+		left: 0
+		top: 19.5em
+		z-index: 20
+		background: $accent-dark
+		color: #ffffff
+		span
+			display: none
+
+	&__clear
+		font-size: .93em
+		cursor: pointer
+		line-height: 1
+		display: flex
+		align-items: flex-end
+		color: #6c6c6c
+		transition: all 0.2s ease
+		i
+			margin: 0 10px 2px 0
+			font-size: 16px
+			line-height: 1
+			color: #383838
+			text-shadow: 0 0 #383838
+		&:hover
+			color: #191919
+		
+.noUi-target
+	border: none
+	box-shadow: none
+	background: #ddd
+	height: 5px
+	padding-left: 17px
+	padding-right: 2px
+
+.noUi-connects
+	height: 5px
+
+.noUi-horizontal .noUi-handle
+	width: 18px
+	height: 18px
+	background-color: #fff
+	border-radius: 50%
+	border: 6px solid $accent-dark
+	box-shadow: none
+	outline: none
+	top: -7px
+	&:focus
+		outline: none	
+
+.noUi-handle
+	&:before, &:after
+		display: none
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-handle
+	right: -2px
+
+.noUi-connect
+	background: $accent-dark
+
+#keypress
+	margin: 30px 0 8px
+
+.noUi-horizontal .noUi-tooltip
+	padding: 3px 7px 2px
+	font-size: 0.9em
+	display: none
+
+@include media-breakpoint-down($media_l)
+	.catalog-sidebar__col:not(.faq-sidebar__col)
+		position: fixed
+		top: 0
+		left: 0
+		width: 290px
+		height: 100vh
+		overflow-y: auto
+		max-width: 290px
+		background: #ffffff
+		border: 1px solid #ddd
+		z-index: 999999
+		padding: 20px
+		transform: translateX(-100%)
+		transition-property: transform
+		font-size: 13px
+		transition: transform .7s cubic-bezier(.3,1,.44,1)
+		&.active
+			transform: translateX(0)
+		.btn-close
+			display: inline-block
+			position: absolute
+			right: 0
+			top: 0
+			opacity: 0.7
+	.filter-trigger
+		display: inline-flex
+		align-items: center
+	
+	.filter
+		padding-right: 0
+	
+@include media-breakpoint-down($media_s)
+	.filter-trigger
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		width: 100%
+		position: static
+		top: 0
+		margin-bottom: 1em
+		left: 0
+		z-index: 0
+		&.sticky
+			position: fixed
+			top: 88px
+			z-index: 2
+		span
+			display: inline-block
+			margin-left: 10px

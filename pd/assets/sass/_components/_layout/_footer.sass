@@ -1,0 +1,115 @@
+.footer
+  color: #ffffff
+  line-height: 1.2
+  background: $footer-bg-main
+  &__main
+    justify-content: space-between
+    margin-left: -15px
+    margin-right: -15px
+    &-holder
+      background: $footer-bg-main
+      padding: 4.286rem 0 1.714rem
+  &__bottom
+    background: $footer-bg-bottom
+    padding: 8px 0
+    color: #d7d7d7
+    &-content
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &__col
+    padding: 0 15px
+    &-head
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 1.072rem
+      border-bottom: 1px solid #555
+      padding: 0 0 3px
+      line-height: 1
+      margin-bottom: 1.15em
+    &.__col-links
+      flex: 0 0 37%
+    &.__col-contacts
+      flex: 0 0 230px
+      a
+        display: block
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none 
+  &__list
+    columns: 2
+    max-width: 460px
+    gap: 1rem
+    li
+      margin-bottom: 7px
+  &__contacts
+    &-item
+      margin-bottom: 1.5rem
+    &--value
+      margin-top: 7px
+
+  .copyright
+    margin-right: 40px
+
+.socials
+  &-list
+    font-size: 17px
+    line-height: 1
+  &-item
+    margin-right: 13px
+    padding-top: 3px
+    &:last-child
+      margin-right: 0
+  &-link
+    display: block
+    line-height: 1
+    .icon-youtube
+      font-size: 24px
+
+@include media-breakpoint-down($media_l)
+  .footer__list
+    columns: 1
+  .footer__col, .footer__col.__col-links
+    flex: 0 0 32%
+
+@include media-breakpoint-down($media_m)
+  .footer__main
+    flex-wrap: wrap
+  .footer__bottom-content
+    justify-content: flex-start
+    flex-direction: column
+  .dev
+    margin-top: 10px
+  .footer__col, .footer__col.__col-links, .footer__col.__col-contacts
+    flex: 0 0 100%
+  .footer__col
+    margin-bottom: 2rem
+  .footer__list
+    max-width: 100%
+    &-item
+      margin-right: 2rem
+      display: inline-block
+  .footer__contacts-item
+    display: inline-block
+    margin-right: 3rem
+  .footer__main-holder
+    padding: 3.8rem 0 0
+  
+@include media-breakpoint-down($media_s)
+  .footer__col.__col-links
+    flex: 0 0 50%
+  .footer__list
+    &-item
+      margin-right: 0
+      display: block
+  .footer__contacts
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-item
+      margin-right: 0
+      width: calc(50% - 15px)
+  .footer__copyright-holder
+    justify-content: space-between
+    width: 100%

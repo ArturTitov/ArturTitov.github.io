@@ -1,0 +1,52 @@
+.reviews
+  &-slider
+    padding-bottom: 105px
+  &__item
+    font-size: 0.93em
+    padding-right: 3.571rem
+    &-header
+      margin-bottom: 2.5em
+      line-height: 1
+    &-reviewer
+      font-size: 1.16em
+      font-weight: 800
+      margin-right: 22px
+    &-content
+      margin-bottom: 1.8em
+      height: 60px
+      overflow: hidden
+      p
+        margin: 0
+    &-action
+      padding-left: 1px
+    .btn
+      font-size: 11px
+      padding: 0.975rem 2.63rem .6rem
+section.reviews
+  .reviews-descr
+    flex: 0 0 43%
+    max-width: 43%
+  .form__review  
+    flex: 0 0 43%
+    max-width: 43%
+    .form__group-input
+      background: transparent
+
+@include media-breakpoint-down($media_xl)
+  section.reviews
+    .form__review  
+      flex: 0 0 50%
+      max-width: 50%
+
+@include media-breakpoint-down($media_l)
+	.reviews-slider
+		padding-bottom: 64px
+
+@include media-breakpoint-down($media_m)
+	section.reviews
+    .reviews-descr, .form__review  
+      flex: 0 0 100%
+      max-width: 100%
+    .reviews-descr
+      padding-left: 0
+      margin-bottom: 1.5em

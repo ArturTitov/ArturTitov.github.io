@@ -1,0 +1,52 @@
+.advantages
+  padding-bottom: 50px
+  @include media-breakpoint-down($media_s)
+    padding-bottom: $gutter
+  &.__with-head
+    background: #fcfcfc
+  &__item
+    &-icon
+      flex-basis: 55px
+      display: inline-flex
+      img
+        max-width: 55px
+        max-height: 36px 
+    &-content
+      flex-basis: calc(100% - 55px)
+      padding-left: 4.8%
+    &-title
+      color: #181818
+      font-weight: 700
+      font-size: 0.786em
+      text-transform: uppercase
+      line-height: 1.25
+      margin-bottom: 1.1em
+    &-descr
+      line-height: 1.2
+      color: #4b4b4b
+      font-size: 0.786em
+      margin: 0
+      max-width: 295px
+    
+  .cols
+    &.__cols-3 
+      > .col 
+        padding-bottom: 0
+        margin-bottom: 2.5rem
+        @include media-breakpoint-up($media_s)
+          flex: 0 0 50%
+          margin-bottom: 3rem
+        @include media-breakpoint-up($media_l)
+          flex: 0 0 33.3334%
+          margin-bottom: 3.7rem
+  &.f-w
+    .section__head
+      margin-bottom: 4.4rem
+    .section__head-descr 
+      max-width: 100% 
+    .advantages__item-descr
+      max-width: 320px
+
+@include media-breakpoint-down($media_m)
+  .advantages.f-w .section__head
+    margin-bottom: 3rem

@@ -1,0 +1,456 @@
+.fancybox-show
+	.header
+		// padding-right: 17px
+		// @include media-breakpoint-down($media_l)
+			// padding-right: 0
+.header
+	position: fixed
+	width: 100vw
+	top: 0
+	left: 0
+	z-index: 3
+	background: #ffffff
+	&__top
+		background: #3f3f3f
+		color: #fff 
+		line-height: 1
+		font-size: 12px
+		position: relative
+		z-index: 1
+		i
+			color: #b3b3b3
+		&-right
+			.header__auth
+				i
+					margin-right: 7px
+		.dropdown
+			padding: 9px 0
+	&__city
+		margin-right: 2.5rem
+		.icon-location
+			margin-right: 10px
+		.dropdown__list
+			columns: 2
+			min-width: 426px
+			column-gap: 23%
+			@include media-breakpoint-down($media_s)
+				min-width: 300px
+				column-gap: 10%
+	&__languages
+		.dropdown__list
+			left: 50%
+			transform: translate(-50%, 10%)
+		&.dropdown:hover .dropdown__list
+			transform: translate(-50%, 0)
+
+	.logo
+		max-width: 96px
+		display: block
+		&.header__logo-mobile
+			display: none
+			@include media-breakpoint-down($media_l)
+				display: inline-block
+				max-width: 80px
+			@include media-breakpoint-down($media_s)
+				max-width: 70px
+	
+	&__main
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #171717
+		@include media-breakpoint-down($media_l)
+			padding: 10px 0
+		&-left
+			font-size: 11px
+			display: inline-flex
+			@include media-breakpoint-down($media_s)
+				display: none
+			a
+				line-height: 1.2
+			.header__phone
+				font-size: 13px
+			.header__callback
+				border-bottom: 1px solid #171717
+				display: inline-block
+				line-height: 1
+				font-weight: 700
+				@include media-breakpoint-up($media_l)
+					&:hover
+						border-color: $accent-light
+						color: $accent-light
+		&-right
+			.icon
+				position: relative
+				line-height: 1
+				i
+					font-size: 20px
+					text-shadow: 0 0 #474747
+					opacity: 0.8
+					color: #474747
+					&.icon-compare
+						font-size: 21px
+		&-holder
+			box-shadow: 0 2px 13px rgba(0, 0, 0, 0.11)
+	&__nav
+		@include media-breakpoint-down($media_l)
+			display: none
+		&-dropdown
+			position: absolute
+			left: 0
+			top: 100%
+			box-shadow: 0 5px 7px rgba(0,0,0,.06)
+			width: 100vw
+			background: #fff
+			z-index: -1
+			opacity: 0
+			visibility: hidden
+			transform: translateY(-30px)
+			transition: all 0.25s ease
+			&-inner
+				max-width: 1174px
+				padding: 0 15px
+				margin: 0 auto
+				display: flex
+				justify-content: flex-end
+				min-height: 400px
+				position: relative
+				text-align: right
+				@include media-breakpoint-down($media_xl)
+					max-width: calc(90vw + 30px)
+		.header__nav-dropmenu
+			width: 20.11%
+			padding: 73px 0 50px
+			position: relative
+			text-align: left
+			z-index: 1
+			>li
+				>a, >span
+					text-transform: uppercase
+					font-size: 0.858em
+					font-weight: 700
+				ul
+					opacity: 0
+					visibility: hidden
+					transform: translateX(-10%)
+					transition: .3s opacity cubic-bezier(.19,1.07,1,1.07), .3s transform linear
+			li
+				margin-bottom: 1.5rem
+				line-height: 1.2
+				display: block
+				&.has-childs
+					cursor: pointer
+					display: flex
+					justify-content: space-between
+					align-items: center
+					&:after
+						content: '\e90c'
+						font-family: icomoon
+						font-size: 9px
+						line-height: 1
+						margin-left: 24%
+						color: #5e5e5e
+						opacity: 0.5
+					>ul
+						 position: absolute
+						 left: 100%
+						 top: 73px
+						 width: 144%
+						 padding-left: 44%
+						 z-index: 1
+					&:hover
+						>a, >span
+							font-weight: 800
+						&:after
+							color: #3e3e3e
+							opacity: 1							
+						>ul
+							opacity: 1
+							visibility: visible
+							transform: translateX(0)
+							a:hover
+								font-weight: 700
+			a:hover
+				color: inherit
+				font-weight: 800
+		&-img
+			flex: 0 0 46.3%
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+			margin: 0 0 0 auto
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+		>ul
+			>li
+				margin: 0 16px
+				padding: 32px 0 30px
+				line-height: 1
+				&:first-child
+					min-width: 67px
+				&:nth-child(2)
+					min-width: 96px
+				&:nth-child(4)
+					min-width: 87px
+				&:nth-child(5)
+					min-width: 63px
+				&.logo-holder
+					padding: 10px 0
+				&:hover
+					.header__nav-dropdown
+						opacity: 1
+						visibility: visible
+						z-index: 1
+						transform: translateY(0)
+						transition-delay: .2s
+					>a, >span
+						font-weight: 700
+						color: inherit
+					>i
+						transform: rotate(180deg)
+				>a, >span
+					font-size: 11px
+					text-transform: uppercase
+					cursor: pointer
+					text-shadow: 0 0 #171717
+				>i
+					margin-left: 5px
+					font-size: 9px
+					display: inline-block
+					transition: 0.1s
+		.logo
+			margin: 0 3.928rem
+			@include media-breakpoint-down($media_xxl)
+				margin: 0 2rem
+			@include media-breakpoint-down($media_xl)
+				margin: 0
+	&__controls
+		&-item
+			margin-left: 20px
+			cursor: pointer
+		&-compare
+			&:before
+				content: ''
+				position: absolute
+				height: 27px
+				width: 28px
+				top: calc(100% - 27px)
+				display: block
+			&.dropdown
+				position: static
+			.title
+				text-align: center
+				margin-bottom: 2.5rem
+			.dropdown__list
+				left: auto
+				right: calc((100vw - 1610px) / 2)
+				width: 425px
+				min-width: 0
+				padding: 40px 50px
+				box-shadow: 0 9px 11px 1px rgba(0,0,0,.11)
+				@include media-breakpoint-down(1660px)
+					right: calc((100vw - 90vw) / 2)
+				@include media-breakpoint-down($media_s)
+					width: calc(100vw - 30px)
+					right: 15px
+					padding: 35px 20px
+	&__auth	
+		.divider
+			margin: 0 7px
+		a
+			@include media-breakpoint-up($media_l)
+				&:hover
+					color: #dadada
+
+.num-total 
+	position: absolute
+	bottom: 0
+	right: -7px
+	width: 14px
+	height: 14px
+	background: $accent-light
+	color: #fff
+	border-radius: 10em
+	font-size: 8px
+	display: flex
+	line-height: 14px
+	padding-right: 1px
+	text-align: center
+	padding-top: 1px
+	z-index: 1
+	span
+		margin: auto
+		width: 3px
+
+
+.header__controls-hamburger.hamburger
+	margin-left: 20px
+
+.mobile-menu__logo
+	display: block
+	text-align: center
+	img
+		max-height: 48px
+		margin: 0 auto
+		
+.mm-navbar_size-2
+	height: 68px
+.mm-menu_navbar_top-2 .mm-panels
+	top: 68px
+.mm-wrapper_opening [class*=mm-menu_pagedim].mm-menu_opened~.mm-page__blocker
+	opacity: 0.6
+
+.search__w 
+	width: 100%
+	height: 0
+	position: relative
+	perspective: 1600px
+	background-color: #e2e2e2
+	form
+		transform: rotateX(-100deg)
+		transform-origin: top center
+		background: #ffffff
+		position: relative
+		.container
+			position: relative
+		input 
+			width: 100%
+			height: 80px
+			outline: none
+			border: none
+			padding: 0
+			box-sizing: border-box
+			font-size: 2rem
+			line-height: 1
+			color: #1e1e1e
+			letter-spacing: 0.8px
+			padding-right: 30px
+			&::placeholder
+				color: #838383
+		.close-search-button 
+			position: absolute
+			top: 50%
+			right: 15px
+			transform: translate(0, -50%)
+			display: inline-block
+			line-height: 1
+			font-size: 20px
+			cursor: pointer
+		@include media-breakpoint-down($media_xl)
+			input
+				font-size: 1.5rem
+				padding-right: 20px
+			.close-search-button 
+				font-size: 20px
+
+
+.authorization
+	position: absolute
+	right: 0
+	top: 100%
+	background: #ffffff
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1)
+	color: #202020
+	display: flex
+	flex-wrap: wrap
+	width: 850px
+	font-size: 1rem
+	opacity: 0
+	visibility: hidden
+	z-index: 3
+	transform: translateY(-30px)
+	transition: all .5s ease
+	&.__active
+		opacity: 1
+		visibility: visible
+		transform: translateY(0)
+	@include media-breakpoint-down($media_l)
+		width: 100%
+	@include media-breakpoint-down($media_s)
+		flex-direction: column-reverse
+	&__favorites.__empty
+		.favorites__content
+			min-height: 75%
+			@include media-breakpoint-down($media_s)
+				min-height: 0
+				padding: 20px 0
+			p
+				margin: auto
+	&__favorites,
+	&__forms
+		flex: 0 0 50%
+		max-width: 50%
+		padding: 35px 65px 50px
+		@include media-breakpoint-down($media_l)
+			padding: 35px 30px 40px
+		@include media-breakpoint-down($media_s)
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 30px 15px
+	&__favorites
+		border-right: 1px solid #ebebeb
+		@include media-breakpoint-down($media_s)
+			border-right: 0
+	.title
+		text-align: center
+		font-size: 0.93rem
+		font-weight: 700
+		margin-bottom: 2.857rem
+	&__tabs
+		&-nav
+			margin-bottom: 3.2rem
+			&-item
+				text-align: center
+				flex: 0 0 46.5%
+				border-bottom: 1px solid #a4a4a4
+				color: #797979
+				padding: 0 15px 7px
+				cursor: pointer
+				transition: 0.2s ease
+				&:not(.active)
+					@include media-breakpoint-up($media_l)
+						&:hover
+							color: $accent-light
+							border-color: $accent-light
+				&.active
+					color: $text
+					border-color: #363636
+		
+	.reset-password__holder
+		font-size: 0.93em
+		color: #1b1b1b
+		
+	.products__list
+		margin-bottom: 4rem
+
+	.form__group-btns
+		margin-bottom: 1.78rem
+	.modal__close
+		display: none
+		@include media-breakpoint-down($media_m)
+			display: inline-block
+
+.modal__signin
+	.lost-form
+		display: none
+	&.__lost
+		.lost-form
+			display: block
+		.signin-form
+			display: none
+
+.login__socials
+	.divider
+		margin-bottom: 0.8rem
+		color: #363636
+		line-height: 1
+	&-buttons
+		font-size: 16px
+		color: #000
+		i
+			color: inherit
+	&-button
+		margin: 10px
+	

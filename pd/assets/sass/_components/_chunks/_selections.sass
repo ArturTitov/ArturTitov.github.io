@@ -1,0 +1,102 @@
+.selections
+  &__slider
+    max-width: 1412px
+    margin: 0 -20px
+    position: relative
+    @include media-breakpoint-down($media_xxxxl)
+      max-width: 100%
+      margin: 0 auto
+    &.custom-nav
+      @include media-breakpoint-down($media_l)
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+          left: -5px
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+          right: -5px
+  &__item
+    display: block
+    margin: 0 auto
+    position: relative
+    color: #ffffff
+    &:hover
+      color: #fff
+    @include media-breakpoint-up($media_l)
+      &:hover
+        color: #fff
+        .selections__item-img:before
+          background: rgba(0,0,0,0.1)
+    &-wrapper
+      padding: 0 20px
+      user-select: none
+    &-img
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 100%
+        background: rgba(0,0,0,0.2)
+        z-index: 1
+        transition: 1.5s all cubic-bezier(.19,1,.22,1)
+      &.icon
+        &:before
+          opacity: 0
+      img
+        width: 100%
+    &-descr
+      position: absolute
+      left: 30px
+      bottom: 28px
+      z-index: 2
+      &-name
+        font-size: 1.143em
+        font-weight: 700
+        display: block
+        line-height: 1.1
+        margin-bottom: 4px
+      &-qnty
+        font-size: 0.93em
+        font-style: italic
+        display: block
+
+  &__item-wrapper
+    transition: 0.5s ease
+    &.swiper-slide-prev
+      transform: translateX(-4em) translateZ(0)
+    &.swiper-slide-active, &.swiper-slide-next, &.swiper-slide-next ~ .selections__item-wrapper
+      transform: translateX(0) translateZ(0)
+    &.swiper-slide.slide__next
+      transform: translateX(4em) translateZ(0)
+
+@include media-breakpoint-down($media_xxxl)
+  .selections__item-wrapper
+    &.swiper-slide-prev
+      transform: translateX(-2em) translateZ(0)
+    &.swiper-slide-active, &.swiper-slide-next, &.swiper-slide-next ~ .selections__item-wrapper
+      transform: translateX(0) translateZ(0)
+    &.swiper-slide.slide__next
+      transform: translateX(2em) translateZ(0)
+
+@include media-breakpoint-down($media_l)
+  .selections__item-wrapper
+    &.swiper-slide-prev
+      transform: translateX(0) translateZ(0)
+    &.swiper-slide-active, &.swiper-slide-next, &.swiper-slide-next ~ .selections__item-wrapper
+      transform: translateX(0) translateZ(0)
+    &.swiper-slide.slide__next
+      transform: translateX(0) translateZ(0)
+
+  .selections__item-descr
+    bottom: 10px
+    left: 20px
+
+@include media-breakpoint-down($media_s)
+  .selections__slider.custom-nav
+    .swiper-button-next, .swiper-button-prev
+      display: none
+
+  .selections__item-wrapper
+    padding: 0
+    margin-right: 20px
+    max-width: calc(100% - 20px)

@@ -1,0 +1,59 @@
+.scrollbar-inner>.scroll-element .scroll-element_track
+	background-color: #efefef
+	opacity: 1
+	border-radius: 0
+
+.scroll-element_outer
+	@include media-breakpoint-up($media_s)
+		&:before, &:after
+			position: absolute
+			left: -1.5px
+			font-size: 9px
+			color: #333
+			font-family: icomoon
+			z-index: 5
+			background: #efefef
+			line-height: 1
+		&:before
+			content: '\e915'
+			top: 0
+			padding-bottom: 6px
+		&:after
+			content: '\e912'
+			bottom: 0
+			padding-top: 6px
+
+.scrollbar-inner>.scroll-element .scroll-bar, .scrollbar-inner>.scroll-element .scroll-element_outer, .scrollbar-inner>.scroll-element .scroll-element_track
+	border-radius: 0
+
+.scrollbar-inner>.scroll-element .scroll-bar
+	@include media-breakpoint-up($media_s)
+		&:before, &:after
+			content: ''
+			position: absolute
+			left: 0
+			width: 100%
+			height: 15px
+			background: #efefef
+			z-index: 2
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+
+.scrollbar-inner>.scroll-element, .scrollbar-inner>.scroll-element div
+	z-index: 3
+
+.scrollbar-inner>.scroll-element .scroll-bar, .scrollbar-inner>.scroll-element.scroll-draggable .scroll-bar 
+	background-color: #828282
+	opacity: 1
+
+.scrollbar-inner>.scroll-element.scroll-y
+	width: 5px
+	right: 0
+
+.scrollbar-inner>.scroll-element:hover .scroll-bar
+	background-color: #828282
+
+.scroll-wrapper>.scroll-content
+	padding-right: 5px

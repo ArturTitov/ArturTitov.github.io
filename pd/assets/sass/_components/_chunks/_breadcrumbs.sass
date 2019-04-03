@@ -1,0 +1,38 @@
+.breadcrumbs
+  margin: 0 0 1.9rem
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  list-style-type: none
+  font-size: 0.93em
+  line-height: 1.2
+  li
+    position: relative
+    color: #1c1c1c
+    &:last-child
+      color: #787878   
+    &:not(:first-child)
+      padding-left: 15px
+      margin-left: 15px      
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        width: 3px
+        height: 3px
+        border-radius: 50%
+        background: #000
+        transform: translateY(-50%)
+  @include media-breakpoint-down($media_l)
+    margin-bottom: 1.5rem
+    
+  @include media-breakpoint-down($media_s)
+    margin: 1.5rem 0
+    white-space: nowrap
+    overflow-x: auto 
+    flex-wrap: nowrap
+    
+.breadcrumbs__holder
+  @include media-breakpoint-down($media_s)
+    order: 50

@@ -1,0 +1,86 @@
+.maincontent__brands
+	padding-bottom: 20px
+	.page__title
+		text-transform: uppercase
+		margin-bottom: 3.57rem
+	.brands
+		&-alphavit__wrap
+			display: flex
+			color: #121212
+			text-transform: uppercase        
+			font-size: 15px
+			line-height: 1
+			margin-bottom: 4.9rem
+			.title
+				letter-spacing: 1px
+				line-height: 1
+				font-size: 1em
+				font-weight: 400
+				margin-right: 8%
+				margin-bottom: 10px
+		&-alphavit
+			a
+				display: inline-block
+				padding: 0 12px
+				margin-bottom: 10px
+				line-height: 1
+	.brand__row
+		margin-bottom: 3.57rem
+		&-head
+			color: #121212
+			text-transform: uppercase
+			line-height: 1
+			padding: 0 0 20px 50px 
+			font-size: 1.8rem
+			border-bottom: 1px solid #ddd
+			margin-bottom: 2.857rem
+		&-content
+			display: flex
+			flex-wrap: wrap 
+			align-items: center 
+			margin-left: -32px
+			margin-right: -32px    
+		.brand-item
+			margin: 0 32px 30px
+			img
+				max-height: 40px
+				filter: grayscale(100%)
+				opacity: 0.6
+				transition: all .2s ease
+			&:hover
+				img
+					opacity: 1
+					filter: none
+
+@include media-breakpoint-down($media_m)
+	.maincontent__brands
+		.page__title
+			margin-bottom: 2.5rem
+		.brands-alphavit__wrap
+			flex-direction: column 
+			.brands-alphavit
+				margin-left: -12px
+				margin-right: -12px
+			.title
+				margin: 0 0 2rem   
+		.brand__row
+			margin-bottom: 3rem  
+		
+@include media-breakpoint-down($media_s)
+	.maincontent__brands
+		padding-bottom: 0
+		.brands-alphavit__wrap
+			margin-bottom: 3rem
+		.brands-alphavit a
+			padding: 0 10px
+		.brand__row-head
+			padding: 0 0 7px 30px
+		.brand__row
+			&-content
+				margin: 0 -15px
+			.brand-item
+				margin: 0 15px 30px
+				flex: 0 0 calc(50% - 30px)
+			img
+				max-height: auto
+				

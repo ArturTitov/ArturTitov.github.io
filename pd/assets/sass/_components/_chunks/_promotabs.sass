@@ -1,0 +1,151 @@
+.promotabs-wrapper
+  .promotabs__nav-wrapper
+    align-items: center
+    @include media-breakpoint-down($media_m)
+      flex-direction: column
+      align-items: flex-start
+  .tab-nav
+    color: #2d2d2d
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+    margin: 0 2rem 1rem 0
+    &__item
+      font-size: 0.928em
+      margin-right: 5.714rem
+      line-height: 1.3
+      margin-bottom: 1rem
+      cursor: pointer
+      user-select: none
+      transition: 0.25s ease
+      &:last-child
+        margin-right: 0
+      &.active
+        font-size: 1.714em
+        font-weight: 800
+        line-height: 1
+        @include media-breakpoint-down($media_m)
+          font-size: 1.5em
+      @include media-breakpoint-up($media_l)
+        &:hover:not(.active)
+          color: #000
+      @include media-breakpoint-down($media_xl)
+        margin-right: 3rem   
+      @include media-breakpoint-down($media_s)
+        margin-right: 2rem   
+  .btn-more
+    margin-bottom: 2rem
+
+  .products__slider
+    position: relative
+    overflow: hidden
+    &:not(.__init-slider)
+      @include media-breakpoint-up($media_m)
+        overflow: visible
+        .swiper-button-prev, .swiper-button-next
+          display: none
+
+.promotabs-init-slider
+  .tooltip
+    .tooltip-content
+      bottom: auto
+      top: 100%
+      &:after
+        display: none
+      &:before
+        bottom: 100%
+        top: auto
+        transform: translateX(-50%) rotate(180deg)
+    &:hover
+      .tooltip-content
+        top: calc(100% + 15px)
+        bottom: auto
+  .promotabs-wrapper
+    @include media-breakpoint-up($media_xxxxxl)
+      min-height: 407px
+
+.products__slider
+  .products
+    @include media-breakpoint-down($media_m)
+      flex-wrap: nowrap
+      transform: translate3d(0,0,0)
+      transition-property: transform
+      transition-property: transform,-webkit-transform
+      position: relative
+      width: 100%
+      height: 100%
+      z-index: 1
+      margin: 0 auto
+    
+.promotabs-init-slider
+  .tab-pane
+    overflow: hidden
+  .products__slider
+    padding: 0
+    max-width: calc(100% - 120px)
+    margin: 0 auto
+    overflow: visible
+    &:before, &:after
+      content: ''
+      background: #ffffff
+      display: block
+      position: absolute
+      height: 100%
+      top: 0
+      width: 60px
+      z-index: 2
+    &:before
+      right: 100%
+    &:after
+      left: 100%
+    .swiper-button-next
+      right: -60px
+    .swiper-button-prev
+      left: -60px
+  .products
+    flex-wrap: nowrap
+    transform: translate3d(0,0,0)
+    transition-property: transform
+    transition-property: transform,-webkit-transform
+    position: relative
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    &__item
+      margin: 0
+      max-width: 100%
+      font-size: 13px
+      flex: 0 0 auto
+    
+
+@include media-breakpoint-down($media_xxxxxl)
+  .promotabs-init-slider
+    .products__slider
+      max-width: calc(100% - 80px)
+      .swiper-button-next
+        right: -40px
+      .swiper-button-prev
+        left: -40px
+    .products
+      &__item
+        padding: 0
+@include media-breakpoint-down($media_sm)
+  .promotabs-wrapper .tab-nav
+    width: 100%
+    justify-content: center
+@include media-breakpoint-down($media_sm)
+  .promotabs-init-slider
+    .products__slider
+      max-width: 100%
+      &:before, &:after
+        display: none
+      .swiper-button-next
+        right: 0
+      .swiper-button-prev
+        left: 0
+    .products
+      &__item
+        font-size: 11px
+        padding: 15px
+  .promotabs-wrapper .tab-nav__item.active
+    font-size: 1.45rem

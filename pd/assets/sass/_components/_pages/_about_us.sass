@@ -1,0 +1,92 @@
+.maincontent__aboutus
+  .page__title
+    text-transform: uppercase
+
+.aboutus
+  &__info
+    justify-content: space-between
+    &-title
+      font-size: 1.785rem
+      font-weight: 700
+      line-height: 1.2
+      margin: 2.8rem 0 4.45rem
+      max-width: 590px
+    &-descr
+      flex: 0 0 50%
+      max-width: 50%
+      columns: 2
+      column-gap: 16%
+    &-video
+      flex: 0 0 40.577%
+      max-width: 40.577%
+
+.gallery
+  margin-left: -$half-gutter
+  margin-right: -$half-gutter
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &-wrap
+    overflow: hidden
+    max-width: 100vw
+  &-item
+    margin: 0 $half-gutter $gutter
+    max-width: calc(33.3334% - 30px)
+.w-iframe
+  position: relative
+  overflow: hidden
+  padding-bottom: 56.25%
+  height: 0
+  iframe
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    position: absolute
+
+@include media-breakpoint-down($media_xl)
+  .aboutus__info
+    &-descr
+      flex: 0 0 100%
+      max-width: 100%
+    &-video
+      flex: 0 0 700px
+      max-width: 700px
+      margin: $gutter auto 0
+    &-title
+      font-size: 1.5rem
+      margin: 1rem 0 3rem
+      max-width: 100%
+    &-descr
+      column-gap: 8%
+
+@include media-breakpoint-down($media_l)
+  .gallery-item
+    flex: 0 0 calc(50% - 30px)
+    max-width: calc(50% - 30px)
+
+@include media-breakpoint-down($media_m)
+  .aboutus__info
+    &-video
+      flex: 0 0 100%
+      max-width: 100%
+    &-descr
+      columns: 1
+
+@include media-breakpoint-down($media_s)
+  .aboutus__info
+    &-title
+      font-size: 1.3rem
+      margin: 0.5rem 0 2rem
+  .gallery
+    justify-content: flex-start
+    flex-wrap: nowrap
+    transition-property: transform
+    width: 100%
+    margin: 0 auto
+    &-item
+      flex: 0 0 calc(100% - 30px)
+      max-width: calc(100% - 30px)
+      margin: 0 30px 0 0
+  .advantages .cols.__cols-3>.col:last-child
+    margin-bottom: 0

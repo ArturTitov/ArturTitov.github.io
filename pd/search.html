@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Template title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="assets/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+    <meta name="theme-color" content="#000">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper" id="my-wrapper">
+      <header class="header down-animate" id="my-header">
+        <div class="search__w">
+          <form class="searh-form" action="" method="get">
+            <div class="container">
+              <input type="text" name="keyword" placeholder="Поиск" value="" id="keyword"><span class="close-search-button"><i class="icon-close"></i></span>
+            </div>
+          </form>
+        </div>
+        <div class="header__top item-animate">
+          <div class="container flex ai-c jc-sb pos-r">
+            <div class="header__top-left i-flex">
+              <div class="header__city dropdown">
+                <div class="dropdown__top flex ai-c"><i class="icon-location"></i>
+                  <p class="dropdown__current">Харьков</p><i class="icon-chevron-thin-down dropdown__arrow"></i>
+                </div>
+                <ul class="dropdown__list">
+                  <li><a href="#">Киев</a></li>
+                  <li><a href="#">Николаев</a></li>
+                  <li><a href="#">Днепропетровск</a></li>
+                  <li><a href="#">Ужгород</a></li>
+                  <li><a href="#">Белгород</a></li>
+                  <li><a href="#">Минск</a></li>
+                  <li><a href="#">Москва</a></li>
+                  <li><a href="#">Кривой Рог</a></li>
+                  <li><a class="active" href="#">Харьков</a></li>
+                </ul>
+              </div>
+              <div class="header__languages dropdown">
+                <div class="dropdown__top flex ai-c">
+                  <p class="dropdown__current">RU</p><i class="icon-chevron-thin-down dropdown__arrow"></i>
+                </div>
+                <ul class="dropdown__list">
+                  <li><a class="active" href="#">RU</a></li>
+                  <li><a href="#">UA</a></li>
+                  <li><a href="#">EN</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__top-right">
+              <div class="header__auth"><i class="icon-user"></i>
+                <!-- if user logged:-->
+                <!-- span useremail@gmail.com-->
+                <!-- if user not logged:--><a class="header__auth-link" href="#" data-authorization="authorization__signin">Вход</a><span class="divider">/</span><a class="header__auth-link" href="#" data-authorization="authorization__register">Регистрация</a>
+              </div>
+              <div class="authorization" id="authorization">
+                <!-- if favorites empty:-->
+                <!--.authorization__favorites.__empty-->
+                <!--  .title Избранное-->
+                <!--  .flex.jc-sb.ai-c.favorites__content-->
+                <!--    p У вас в избранном ничего нет.-->
+                <!-- if favorites !empty:-->
+                <div class="authorization__favorites">
+                  <div class="title">Избранное (5)</div>
+                  <div class="products__list __short">
+                    <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_1_xs.png" alt=""></span></a>
+                      <div class="products__item-content"><a class="products__name" href="#">Двери скрытого монтажа Папа Карло</a>
+                        <div class="products__attribute">
+                          <div class="products__attribute-item">
+                            <div class="products__attribute-name">Медведь</div>
+                            <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_xs.png" alt=""></span></a>
+                      <div class="products__item-content"><a class="products__name" href="#">Входная дверь Токио Страж</a>
+                        <div class="products__attribute">
+                          <div class="products__attribute-item">
+                            <div class="products__attribute-name">Медведь</div>
+                            <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_3_xs.png" alt=""></span></a>
+                      <div class="products__item-content"><a class="products__name" href="#">Входная дверь партии с страж</a>
+                        <div class="products__attribute">
+                          <div class="products__attribute-item">
+                            <div class="products__attribute-name">Медведь</div>
+                            <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-wrap ta-c"><a class="btn-bordered" href="#">Показать все избранные</a></div>
+                </div>
+                <div class="authorization__forms">
+                  <div class="title">Авторизация</div>
+                  <div class="authorization__tabs">
+                    <div class="authorization__tabs-nav tab-nav flex jc-sb">
+                      <div class="authorization__tabs-nav-item tab-nav__item authorization__signin active">Вход</div>
+                      <div class="authorization__tabs-nav-item authorization__register tab-nav__item">Регистрация</div>
+                    </div>
+                    <div class="authorization__tabs-cont tab-cont">
+                      <div class="authorization__tab tab-pane">
+                        <div class="modal__signin">
+                          <form class="signin-form" data-form="login">
+                            <div class="form__fieldset">
+                              <div class="form__group">
+                                <input class="form__group-input" name="login" type="text" required placeholder="Логин">
+                              </div>
+                              <div class="form__group">
+                                <input class="form__group-input" name="password" type="password" required placeholder="Пароль">
+                              </div>
+                            </div>
+                            <div class="form__group reset-password__holder ta-r"><span class="btn-bordered" data="toggle-signin">Забыли пароль?</span></div>
+                            <div class="form__group ta-c form__group-btns">
+                              <button class="btn-accent __light" type="submit"><span>Войти</span></button>
+                            </div>
+                          </form>
+                          <form class="lost-form" data-form="lost">
+                            <div class="form__descr">Укажите адрес эл. почты, который вы использовали при оформлении заказов в нашем магазине. Мы вышлем вам инструкцию по восстановлению пароля.</div>
+                            <div class="form__fieldset">
+                              <div class="form__group">
+                                <input class="form__group-input" name="email" type="email" required placeholder="E-mail">
+                              </div>
+                            </div>
+                            <div class="form__group reset-password__holder ta-r"><span class="btn-bordered" data="toggle-signin">Вспомнили пароль?</span></div>
+                            <div class="form__group ta-c form__group-btns">
+                              <button class="btn-accent __light" type="submit"><span>Отправить</span></button>
+                            </div>
+                          </form>
+                          <div class="login__socials ta-c">
+                            <div class="divider">или</div>
+                            <div class="login__socials-buttons"><a class="login__socials-button" href="http://karree.com.ua/redirect/facebook" role="button" title="Facebook"><i class="icon-facebook"></i></a><a class="login__socials-button" href="http://karree.com.ua/redirect/google" role="button" title="Google"><i class="icon-google-plus2"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="authorization__tab tab-pane">
+                        <div class="modal__register">
+                          <form class="register-form">
+                            <div class="form__fieldset">
+                              <div class="form__group">
+                                <input class="form__group-input" name="name" type="text" required placeholder="Имя">
+                              </div>
+                              <div class="form__group">
+                                <input class="form__group-input" name="email" type="email" required placeholder="E-mail">
+                              </div>
+                              <div class="form__group">
+                                <input class="form__group-input" name="password" type="password" required placeholder="Пароль">
+                              </div>
+                              <div class="form__group">
+                                <label class="label__check">
+                                  <input name="data" type="checkbox" required><span>Согласен(а) на обработку персональных данных</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="form__group ta-c">
+                              <button class="btn-accent __light" type="submit"><span>Зарегистрироваться</span></button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="modal__close" data="authorization-close"><i class="icon-close"> </i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__main-holder item-animate">
+          <div class="container">
+            <div class="header__main">
+              <div class="header__main-left fd-c"><a class="header__phone" href="tel:+380675792222"> <b>+38 (067) 579 22 22</b></a>
+                <div class="header__callback-holder"><a class="header__callback" data-fancybox data-src="#modal__callback" href="#" id="header__callback">Перезвонить?</a></div>
+              </div><a class="header__logo logo header__logo-mobile" href="https://arturtitov.github.io/pd/"><img src="assets/img/logo.svg" alt="Полы и двери"></a>
+              <nav class="header__nav">
+                <ul class="flex ai-c jc-c">
+                  <li><span>Каталог</span><i class="icon-chevron-thin-down dropdown__arrow"></i>
+                    <div class="header__nav-dropdown">
+                      <div class="header__nav-dropdown-inner">
+                        <ul class="header__nav-dropmenu">
+                          <li class="has-childs"><span>Полы</span>
+                            <ul>
+                              <li><a href="catalog.html">Ламинат</a></li>
+                              <li><a href="catalog.html">Паркетная доска</a></li>
+                              <li><a href="catalog.html">Массивная доска</a></li>
+                              <li><a href="catalog.html">Виниловые полы</a></li>
+                              <li><a href="catalog.html">Пробковое покрытие</a></li>
+                              <li><a href="catalog.html">Террасная доска</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-childs"><span>Двери</span>
+                            <ul>
+                              <li><a href="catalog.html">Двери</a></li>
+                              <li><a href="catalog.html">Двери</a></li>
+                              <li><a href="catalog.html">Двери</a></li>
+                              <li><a href="catalog.html">Двери</a></li>
+                              <li><a href="catalog.html">Двери</a></li>
+                              <li><a href="catalog.html">Двери</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-childs"><span>Сопутствующие товары</span>
+                            <ul>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                              <li><a href="catalog.html">Сопутствующие товары</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Акции</a></li>
+                          <li><a href="#">Новинки</a></li>
+                          <li><a href="#">Расспродажи </a></li>
+                        </ul>
+                        <div class="header__nav-img" style="background-image: url('assets/img/header_menu/header_menu_2.jpg')"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><span>Покупателю</span><i class="icon-chevron-thin-down dropdown__arrow"></i>
+                    <div class="header__nav-dropdown">
+                      <div class="header__nav-dropdown-inner">
+                        <ul class="header__nav-dropmenu">
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">Блог</a></li>
+                          <li><a href="#">FAQ</a></li>
+                        </ul>
+                        <div class="header__nav-img" style="background-image: url('assets/img/header_menu/header_menu_1.jpg')"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="logo-holder"><a class="header__logo logo icon" href="https://arturtitov.github.io/pd/"><img class="lazyload" data-src="assets/img/logo.svg" alt="Полы и двери"></a></li>
+                  <li><span>О магазине</span><i class="icon-chevron-thin-down dropdown__arrow"></i>
+                    <div class="header__nav-dropdown">
+                      <div class="header__nav-dropdown-inner">
+                        <ul class="header__nav-dropmenu">
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Бренды</a></li>
+                          <li><a href="#">Шоурум</a></li>
+                          <li><a href="#">Отзывы о магазине</a></li>
+                          <li><a href="#">Сотрудничество</a></li>
+                          <li><a href="#">Вакансии </a></li>
+                        </ul>
+                        <div class="header__nav-img" style="background-image: url('assets/img/header_menu/header_menu_3.jpg')"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__main-right header__controls flex ai-c">
+                <div class="header__controls-item header__controls-search">
+                  <div class="icon"><i class="icon-search"></i></div>
+                </div>
+                <div class="header__controls-item header__controls-compare dropdown">
+                  <div class="icon"><i class="icon-compare"></i></div>
+                  <div class="dropdown__list">
+                    <div class="title">Сравнение</div>
+                    <!-- if compare empty-->
+                    <!-- .compare__empty-->
+                    <!--   p Список сравнения пусть!-->
+                    <div class="products__modal-list compare__modal-list">             
+                      <div class="products__list __short">
+                        <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_1_xs.png" alt=""></span></a>
+                          <div class="products__item-content"><a class="products__name" href="#">Двери скрытого монтажа Папа Карло</a>
+                            <div class="products__attribute">
+                              <div class="products__attribute-item">
+                                <div class="products__attribute-name">Медведь</div>
+                                <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_xs.png" alt=""></span></a>
+                          <div class="products__item-content"><a class="products__name" href="#">Входная дверь Токио Страж</a>
+                            <div class="products__attribute">
+                              <div class="products__attribute-item">
+                                <div class="products__attribute-name">Медведь</div>
+                                <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_3_xs.png" alt=""></span></a>
+                          <div class="products__item-content"><a class="products__name" href="#">Входная дверь партии с страж</a>
+                            <div class="products__attribute">
+                              <div class="products__attribute-item">
+                                <div class="products__attribute-name">Медведь</div>
+                                <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-wrap ta-c"><a class="btn-bordered" href="#">Сравнить</a></div>
+                    </div>
+                  </div>
+                </div><a class="header__controls-item header__controls-cart" href="checkout.html">
+                  <div class="icon"><i class="icon-basket"></i><span class="num-total"><span>3</span></span></div></a><a class="header__controls-hamburger hamburger hamburger--3dx" href="#mobile-menu" data-toggle="mobile-menu">
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--  #mobile-menu =================================-->
+      <div class="mobile-menu hidden" data-title="Меню" id="mobile-menu">
+        <ul>
+          <li><span>Каталог</span>
+            <ul>
+              <li><span>Полы</span>
+                <ul>
+                  <li><a href="catalog.html">Ламинат</a></li>
+                  <li><a href="catalog.html">Паркетная доска</a></li>
+                  <li><a href="catalog.html">Массивная доска</a></li>
+                  <li><a href="catalog.html">Виниловые полы</a></li>
+                  <li><a href="catalog.html">Пробковое покрытие</a></li>
+                  <li><a href="catalog.html">Террасная доска</a></li>
+                </ul>
+              </li>
+              <li><span>Двери</span>
+                <ul>
+                  <li><a href="catalog.html">Двери</a></li>
+                  <li><a href="catalog.html">Двери</a></li>
+                  <li><a href="catalog.html">Двери</a></li>
+                  <li><a href="catalog.html">Двери</a></li>
+                  <li><a href="catalog.html">Двери</a></li>
+                  <li><a href="catalog.html">Двери</a></li>
+                </ul>
+              </li>
+              <li><span>Сопутствующие товары</span>
+                <ul>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                  <li><a href="catalog.html">Сопутствующие товары</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Расспродажи </a></li>
+            </ul>
+          </li>
+          <li><span>Покупателю</span>
+            <ul>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li><span>О магазине</span>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Бренды</a></li>
+              <li><a href="#">Шоурум</a></li>
+              <li><a href="#">Отзывы о магазине</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Вакансии</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Контакты</a></li>
+          <li><a class="header__phone" href="tel:+380675792222"> <b>+38 (067) 579 22 22</b></a></li>
+          <li><span class="header__callback" data-fancybox data-src="#modal__callback" href="#" id="header__callback"><b>Перезвонить?</b></span></li>
+        </ul>
+      </div>
+      <!--  /#mobile-menu =================================-->
+      <div class="maincontent maincontent__catalog maincontent__search">
+        <div class="breadcrumbs__holder">
+          <div class="container">
+            <ul class="breadcrumbs __pdd-left">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li>Двери</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page__title__holder">
+            <h1 class="page__title">Поиск по слову: <span>дв</span></h1>
+          </div>
+          <div class="catalog flex fw-w jc-sb ai-fs __pdd-bottom">
+            <aside class="catalog-sidebar__col">
+              <div class="catalog-filter">
+                <button class="btn-close" data-toggle="filter"><i class="icon-close"></i></button>
+                <div class="filter">
+                  <div class="filter-tab__categories">
+                    <div class="filter-tab__title title">Категории                </div>
+                    <ul class="filter-tab__categories-list">
+                      <li class="filter-tab__categories-item __active"><a href="#">Двери (12)</a></li>
+                      <li class="filter-tab__categories-item"><a href="#">Двери скрытого монтажа (8)</a></li>
+                      <li class="filter-tab__categories-item"><a href="#">Раздвижные двери (10)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="help">
+                <div class="help__title">Затрудняетесь с выбором?</div>
+                <p class="help__descr">Мы сэкономим ваше время!</p>
+                <div class="help__specialist">
+                  <div class="help__specialist-img"><img src="assets/img/specialist.png" alt="Иван Иванов"></div>
+                  <div class="help__specialist-name">Иван Иванов</div>
+                  <p class="help__specialist-descr">Специалист по подбору товаров "Полы и двери"</p>
+                </div>
+                <div class="help__contacts flex"><a class="help__contacts-item" href="#"><i class="icon-phone"></i></a><a class="help__contacts-item" href="#"><i class="icon-mail"></i></a><a class="help__contacts-item" href="#"><i class="icon-send"></i></a></div>
+              </div>
+            </aside>
+            <main class="catalog-main__col">
+              <button class="filter-trigger" data-toggle="filter"><i class="icon-filter1"></i><span>категории</span></button>
+              <div class="catalog__products">
+                <div class="products">
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_1_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <div class="products__price-old">5 999 грн</div>
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_2_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <!-- .products__stickers-item-->
+                        <!--   span sale-->
+                        <!--   span -20%-->
+                        <div class="products__stickers-item"><span>new</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Входная дверь Темная Вишня Папа Карло дверь Темная</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                        <div class="products__attributes-item">Медведь</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_3_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <!--li.products__buttons-item.tooltip.__compare(data-tooltip="Добавить в сравнение")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __compare active" data-tooltip="Удалить из сравнения"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <!--.products__stickers-item-->
+                        <!--  span sale-->
+                        <!--  span -20%-->
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <div class="products__stickers-item"><span>hit</span></div>
+                      </div><a class="products__name" href="product_door.html">Межкомнатные двери Папа Карло клен белый</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_4_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_5_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_6_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_1_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <div class="products__price-old">5 999 грн</div>
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_2_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <!-- .products__stickers-item-->
+                        <!--   span sale-->
+                        <!--   span -20%-->
+                        <div class="products__stickers-item"><span>new</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Входная дверь Темная Вишня Папа Карло дверь Темная</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                        <div class="products__attributes-item">Медведь</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_3_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <!--li.products__buttons-item.tooltip.__compare(data-tooltip="Добавить в сравнение")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __compare active" data-tooltip="Удалить из сравнения"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <!--.products__stickers-item-->
+                        <!--  span sale-->
+                        <!--  span -20%-->
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <div class="products__stickers-item"><span>hit</span></div>
+                      </div><a class="products__name" href="product_door.html">Межкомнатные двери Папа Карло клен белый</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_4_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <!--li.products__buttons-item.tooltip.__bookmark(data-tooltip="Добавить в избранное")i.icon-bookmark_2
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark active" data-tooltip="Удалить из избранного"><i class="icon-bookmark"></i></li>
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_5_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                  <div class="products__item"> <a class="products__item-img" href="product_door.html"><span class="products__item-img-wrapper"><img src="assets/img/products/doors/product_6_sm.png" alt=""></span></a>
+                    <div class="products__item-content">
+                      <ul class="products__buttons">
+                        <li class="products__buttons-item tooltip __compare" data-tooltip="Добавить в сравнение"><i class="icon-compare"></i></li>
+                        <!--li.products__buttons-item.tooltip.__compare.active(data-tooltip="Удалить из сравнения")i.icon-compare
+                        -->
+                        <li class="products__buttons-item tooltip __bookmark" data-tooltip="Добавить в избранное"><i class="icon-bookmark_2"></i></li>
+                        <!--li.products__buttons-item.tooltip.__bookmark.active(data-tooltip="Удалить из избранного")i.icon-bookmark
+                        -->
+                      </ul>
+                      <div class="products__stickers">
+                        <div class="products__stickers-item"><span>sale</span><span>-20%</span></div>
+                        <!-- .products__stickers-item-->
+                        <!--   span new-->
+                        <!-- .products__stickers-item-->
+                        <!--   span hit-->
+                      </div><a class="products__name" href="product_door.html">Двери скрытого монтажа Папа Карло</a>
+                      <div class="products__attributes">
+                        <div class="products__attributes-item">Медведь</div>
+                        <div class="products__attributes-item product__article">MOD807-PL-03-110-W</div>
+                      </div>
+                      <div class="products__price">
+                        <!-- .products__price-old от 5 999 грн-->
+                        <div class="products__price-main">от 5 786 грн</div>
+                      </div>
+                      <div class="products__buybtn-wrap"><a class="btn-accent __dark" href="product_door.html"><span>Подробнее</span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <div class="pagination__top flex ai-c jc-sb">               
+                    <div class="pagination__products-qnty">321 товар</div>
+                    <ul class="pagination__list flex ai-c">
+                      <li><a href="product_door.html">1</a></li>
+                      <li><a href="product_door.html">5</a></li>
+                      <li class="current"><a href="product_door.html">6</a></li>
+                      <li><a href="product_door.html">7</a></li>
+                      <li><a href="product_door.html">12</a></li>
+                    </ul>
+                  </div><a class="pagination__more-btn js-more-btn" href="product_door.html">Показать ещё</a>
+                </div>
+              </div>
+            </main>
+            <div class="catalog-main__overlay" data-toggle="filter"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__main-holder">
+          <div class="container">
+            <div class="footer__main flex">
+              <div class="footer__col __col-links">
+                <div class="footer__col-head">Kаталог</div>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Полы</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Двери</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Сопутствующие товары</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Новинки</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Акции</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="catalog.html">Распродажа</a></li>
+                </ul>
+              </div>
+              <div class="footer__col __col-links">
+                <div class="footer__col-head">Покупателю</div>
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">О нас</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Отзывы о магазине</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Оплата и доставка</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Блог</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Сотрудничество</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Вакансии</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="footer__col __col-contacts">
+                <div class="footer__col-head">Консультации</div>
+                <ul class="footer__contacts">
+                  <li class="footer__contacts-item">Киев<a class="footer__contacts--value" href="tel:+380675779002">+38 (067) 577 90 02</a></li>
+                  <li class="footer__contacts-item">Харьков<a class="footer__contacts--value" href="tel:+380675792227">+38 (067) 579 22 27</a></li>
+                  <li class="footer__contacts-item"><a class="footer__contacts--value" href="mailto:info@poly-dveri.ua">info@poly-dveri.ua</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-content">
+              <div class="footer__copyright-holder flex ai-c">
+                <div class="copyright">&copy; 2007-2019 poly-dveri.ua</div>
+                <ul class="socials-list flex ai-c">
+                  <li class="socials-item"><a class="socials-link" href="https://www.instagram.com" rel="nofollow" target="_blank"><i class="icon-instagram"></i></a></li>
+                  <li class="socials-item"><a class="socials-link" href="https://www.facebook.com" rel="nofollow" target="_blank"><i class="icon-facebook"></i></a></li>
+                  <li class="socials-item"><a class="socials-link" href="https://www.youtube.com" rel="nofollow" target="_blank"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+              <div class="dev"><span>Создание сайта и поддержка - </span><a href="https://art-marks.net" rel="nofollow" target="_blank">ArtMarks</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="loader load-wrapp">
+        <div class="loader_inner load-3">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <script src="assets/js/scripts.min.js"></script>
+      <div class="page-overlay"></div>
+      <div class="modal__cart" id="modal__cart">
+        <div class="modal__cart-close" data="cart-toggle"><i class="icon-close"></i></div>
+        <div class="modal__cart-content">
+          <div class="modal__cart-title title">Корзина (3)</div>
+          <div class="scrollbar-inner scrollbox">
+            <div class="products__list">
+              <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_s.png" alt=""></span></a>
+                <div class="products__item-content"><a class="products__name" href="#">Входная дверь темная вишня</a>
+                  <div class="products__attribute">
+                    <div class="products__attribute-item">
+                      <div class="products__attribute-name">Медведь</div>
+                      <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                    </div>
+                  </div>
+                  <div class="products__options">
+                    <div class="products__options-item">
+                      <div class="products__options-name">Цвет:</div>
+                      <div class="products__options-value">белый</div>
+                    </div>
+                    <div class="products__options-item">
+                      <div class="products__options-name">Полотно:</div>
+                      <div class="products__options-value">800х2000</div>
+                    </div>
+                  </div>
+                  <div class="products__price">
+                    <!-- .products__price-old от 5 999 грн-->
+                    <div class="products__price-main">от 5 786 грн</div>
+                  </div>
+                </div>
+                <button class="products__item-remove"><i class="icon-close"></i></button>
+              </div>
+              <!-- /.products__item  -->
+              <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_s.png" alt=""></span></a>
+                <div class="products__item-content"><a class="products__name" href="#">Входная дверь Темная Вишня</a>
+                  <div class="products__attribute">
+                    <div class="products__attribute-item">
+                      <div class="products__attribute-name">Медведь</div>
+                      <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                    </div>
+                  </div>
+                  <div class="products__options">
+                    <div class="products__options-item">
+                      <div class="products__options-name">Цвет:</div>
+                      <div class="products__options-value">белый</div>
+                    </div>
+                    <div class="products__options-item">
+                      <div class="products__options-name">Полотно:</div>
+                      <div class="products__options-value">800х2000</div>
+                    </div>
+                  </div>
+                  <div class="products__price">
+                    <!-- .products__price-old от 5 999 грн-->
+                    <div class="products__price-main">от 5 786 грн</div>
+                  </div>
+                </div>
+                <button class="products__item-remove"><i class="icon-close"></i></button>
+              </div>
+              <!-- /.products__item -->
+              <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_s.png" alt=""></span></a>
+                <div class="products__item-content"><a class="products__name" href="#">Двери скрытого монтажа</a>
+                  <div class="products__attribute">
+                    <div class="products__attribute-item">
+                      <div class="products__attribute-name">Медведь</div>
+                      <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                    </div>
+                  </div>
+                  <div class="products__options">
+                    <div class="products__options-item">
+                      <div class="products__options-name">Цвет:</div>
+                      <div class="products__options-value">белый</div>
+                    </div>
+                    <div class="products__options-item">
+                      <div class="products__options-name">Полотно:</div>
+                      <div class="products__options-value">800х2000</div>
+                    </div>
+                  </div>
+                  <div class="products__price">
+                    <!-- .products__price-old от 5 999 грн-->
+                    <div class="products__price-main">от 5 786 грн</div>
+                  </div>
+                </div>
+                <button class="products__item-remove"><i class="icon-close"></i></button>
+              </div>
+              <!-- /.products__item -->
+              <div class="products__item"> <a class="products__item-img" href="#"><span class="products__item-img-wrapper icon"><img class="lazyload" data-src="assets/img/products/doors/product_2_s.png" alt=""></span></a>
+                <div class="products__item-content"><a class="products__name" href="#">Двери скрытого монтажа</a>
+                  <div class="products__attribute">
+                    <div class="products__attribute-item">
+                      <div class="products__attribute-name">Медведь</div>
+                      <div class="products__attribute-value">MOD807-PL-03-110-W</div>
+                    </div>
+                  </div>
+                  <div class="products__options">
+                    <div class="products__options-item">
+                      <div class="products__options-name">Цвет:</div>
+                      <div class="products__options-value">белый</div>
+                    </div>
+                    <div class="products__options-item">
+                      <div class="products__options-name">Полотно:</div>
+                      <div class="products__options-value">800х2000</div>
+                    </div>
+                  </div>
+                  <div class="products__price">
+                    <!-- .products__price-old от 5 999 грн-->
+                    <div class="products__price-main">от 5 786 грн</div>
+                  </div>
+                </div>
+                <button class="products__item-remove"><i class="icon-close"></i></button>
+              </div>
+              <!-- /.products__item -->
+            </div>
+          </div>
+          <div class="total">
+            <div class="total__item">
+              <div class="total__item-key">Товаров в корзине</div>
+              <div class="total__item-value">12</div>
+            </div>
+            <div class="total__item">
+              <div class="total__item-key">Товаров на сумму</div>
+              <div class="total__item-value">72 165 грн</div>
+            </div>
+          </div>
+          <div class="buttons"><a class="btn-accent __light" href="#"><span>Оформить заказ</span></a><a class="btn" href="#"><span>Продолжить покупки</span></a></div>
+        </div>
+      </div>
+      <div class="hidden">
+        <div class="modal modal__callback" id="modal__callback">
+          <div class="modal__title title">Обратный звонок</div>
+          <form class="form__callback">   
+            <div class="form__group">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+            </div>
+            <div class="form__group form__group-phone">
+              <select class="country-select" name="language">
+                <option value="ua" selected>ua</option>
+                <option value="ru">ru</option>
+                <option value="kz">kz</option>
+              </select>
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Жду звонка</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal__buy-fast" id="modal__buy-fast">
+          <div class="modal__title title">Оформление быстрого заказа</div>
+          <p class="modal__descr">Оставьте свои контактные данные и наш менеджер перезвонит вам в рабочее время и уточнит все детали.</p>
+          <form class="form__buy-fast form__callback"> 
+            <div class="form__group">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+            </div>
+            <div class="form__group form__group-phone">
+              <select class="country-select" name="language">
+                <option value="ua" selected>ua</option>
+                <option value="ru">ru</option>
+                <option value="kz">kz</option>
+              </select>
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Жду звонка</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal__measurer" id="modal__measurer">
+          <div class="modal__title title">Вызвать замерщика</div>
+          <p class="modal__descr">*Бесплатно при заказе установки. Залог за услугу - 100 грн., возвращается из стоимости монтажа.</p>
+          <form class="form__measurer">
+            <div class="form__groups __cols-3">
+              <div class="form__group">
+                <input class="form__group-input" name="name" type="text" placeholder="Укажите Ваше имя">
+              </div>
+              <div class="form__group form__group-phone">
+                <select class="country-select" name="language">
+                  <option value="ua" selected>ua</option>
+                  <option value="ru">ru</option>
+                  <option value="kz">kz</option>
+                </select>
+                <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату">
+              </div>
+              <div class="form__group __select_bd-b">
+                <select class="custom-select" name="city">
+                  <option value="1" selected>Выберите город*</option>
+                  <option value="5">Киев</option>
+                  <option value="2">Харьков</option>
+                  <option value="3">Москва</option>
+                  <option value="4">Днепр</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="address" type="text" required placeholder="Укажите адрес*">
+              </div>
+            </div>
+            <div class="form__group">
+              <textarea class="form__group-input" name="message" placeholder="Сообщение" rows="1"></textarea>
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Вызвать замерщика</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal__review" id="modal__review">
+          <div class="modal__title title">Оставить отзыв о товаре</div>
+          <form class="form__review">   
+            <div class="form__groups __cols-2">
+              <div class="form__group">
+                <input class="form__group-input" name="name" type="text" placeholder="Укажите Ваше имя">
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="email" type="email" required placeholder="Укажите E-mail*">
+              </div>
+            </div>
+            <div class="form__group">
+              <textarea class="form__group-input" name="reviews" required placeholder="Отзыв...*" rows="3"></textarea>
+            </div>
+            <div class="form__group">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Отправить</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal" id="modal__additional-questions">
+          <p>aaaaa</p>
+        </div>
+        <div class="modal modal__reviews" id="modal__reviews">
+          <div class="reviews__item-header"></div>
+          <div class="reviews__item-content">
+            <p>Reviews content</p>
+          </div>
+        </div>
+        <div class="modal" id="modal__custom">
+          <p>Форма рассрочки</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

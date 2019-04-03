@@ -1,0 +1,175 @@
+.maincontent__faq
+  .catalog-sidebar__col
+    flex: 0 0 25%
+    max-width: 25%
+  .catalog-main__col
+    flex: 0 0 71.3%
+    max-width: 71.3%
+    background: #fbfbfb
+    padding: 25px 60px 30px
+  .help__title
+    max-width: 200px
+.faq
+  &__filter
+    .btn-close
+      display: none
+  &__categories
+    padding: 35px 0 25px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: -20rem
+      top: 0
+      box-shadow: 0 2px 13px rgba(0, 0, 0, 0.07)
+      display: block
+      height: 100%
+      right: 0
+      z-index: -1
+      background: #ffffff
+    &-title
+      line-height: 1
+      margin: 0 0 2rem 2rem
+  &__tabs
+    .tab-nav
+      list-style-type: none
+      font-size: 1.072em     
+      &__item
+        margin-bottom: 8px
+        line-height: 1
+        padding: 6px 15px 4px 2rem
+        border-left: 3px solid transparent
+        transition: all .25s ease
+        &.active
+          font-weight: 700
+          border-color: $accent-light
+          padding-left: 50px
+        @include media-breakpoint-up($media_l)
+          &:not(.active):hover
+            color: $accent-light
+            cursor: pointer
+
+  &__accordion
+    .accordion__item
+      user-select: none
+      &:last-child
+        .accordion__item--head
+          border: none
+      &.active
+        .accordion__item--head
+          border-color: transparent
+          font-weight: 700
+          color: $accent-light
+          @include media-breakpoint-up($media_l)
+            &:hover
+              color: $accent-light
+          &:after
+            content: "\e90d"
+      &--head
+        padding: 22px 20px 17px 0
+        border-bottom: 1px solid $color-inputs-border
+        position: relative
+        cursor: pointer
+        font-size: 1.072em
+        line-height: 1.3
+        @include media-breakpoint-up($media_l)
+          &:hover
+            color: $accent-light
+        &:after
+          content: "\e90a"
+          font-family: icomoon
+          position: absolute
+          right: 0
+          top: 50%
+          transform: translateY(-50%)
+          color: #666
+          font-size: 9px
+          line-height: 1
+          
+      &--content
+        display: none
+        padding: 18px 0 0
+        >*
+          margin: 0 0 1em
+        ul
+          padding: 0
+          list-style-type: none
+        li
+          position: relative
+          padding-left: 20px
+          margin-bottom: 4px
+          &:lst-child
+            margin-bottom: 0
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background: $text
+
+@include media-breakpoint-down($media_xxxl)
+  .maincontent__faq
+    .catalog-sidebar__col
+      flex: 0 0 31%
+      max-width: 31%
+    .catalog-main__col
+      flex: 0 0 64%
+      max-width: 64%
+
+@include media-breakpoint-down($media_l)
+  .maincontent__faq
+    .faq
+      flex-wrap: wrap
+    .catalog-sidebar__col
+      flex: 0 0 100%
+      max-width: 100%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    .catalog-main__col
+      flex: 0 0 100%
+      max-width: 100%
+    .filter-trigger
+      span
+        display: inline-block
+        text-transform: uppercase
+        font-size: 12px
+        margin-left: 10px
+    .faq__filter
+      max-width: 47%
+    .faq__categories
+      padding: 0 0 20px
+    .help
+      padding: 0 0 20px
+      max-width: 48%
+    .help__title
+      max-width: 100%
+      margin-bottom: 1rem
+      font-size: 1.3rem
+    .help__specialist-img
+      padding: 0
+      margin-bottom: 1em
+      img
+        max-width: 120px
+    .help__specialist-descr
+      margin-bottom: 1em
+    .catalog-main__col
+      padding: 20px 5% 30px
+
+  .faq__categories:before, .help__specialist-img:before
+    display: none
+    
+@include media-breakpoint-down($media_s)
+  .maincontent__faq
+    .faq__filter
+      max-width: 100%
+      flex: 0 0 100%
+    .help
+      max-width: 300px
+      flex: 0 0 300px
+      padding: 0
+      margin: 40px auto 0

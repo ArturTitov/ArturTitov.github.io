@@ -1,0 +1,232 @@
+.modal__cart
+	position: fixed
+	right: 0
+	top: 0
+	height: 100vh
+	background: #ffffff
+	z-index: 10
+	width: 500px
+	overflow: hidden
+	overflow-y: auto
+	opacity: 0
+	visibility: hidden
+	transform: translateX(100%)
+	transition: opacity .5s ease, visibility .5s ease, transform .4s cubic-bezier(.1,.26,.93,.85)
+	@include media-breakpoint-down($media_s)
+		width: 100%
+	&.__active
+		opacity: 1
+		visibility: visible
+		transform: translateX(0)
+	&-close
+		position: absolute
+		right: 15px
+		top: 15px
+		display: none
+		@include media-breakpoint-down($media_s)
+			display: inline-block
+	&-content
+		padding: 60px 40px 60px 60px
+		min-height: 100%
+		@include media-breakpoint-down($media_s)
+			padding: 40px 15px 40px 30px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+	&-title
+		text-transform: uppercase
+		color: #202020
+		font-size: 1.286rem
+		margin-bottom: 2.857rem
+		@include media-breakpoint-down($media_s)
+			margin-bottom: 2rem
+	.scrollbox
+		max-height: 520px
+		// max-height: 55vh
+		@include media-breakpoint-down($media_xxxxl)
+			max-height: 55vh
+		@include media-breakpoint-down($media_xxxl)
+			max-height: 60vh
+		@include media-breakpoint-down($media_s)
+			max-height: 50vh
+	.scroll-wrapper
+		margin-bottom: 40px
+	.products__list
+		padding-right: 11%
+		@include media-breakpoint-down($media_s)
+			padding-right: 5% 
+	.total
+		margin: .714rem 0 2.3rem
+		font-size: 15px
+		&__item
+			display: flex
+			justify-content: space-between
+			line-height: 1.3
+			margin-bottom: 5px
+			&:last-child
+				.total__item-value
+					color: #1b1b1b
+					font-size: 16px
+					font-weight: 700
+			&-key, &-value
+				flex: 0 0 45%
+				max-width: 45%
+	.buttons
+		a
+			display: block
+			margin-top: 10px
+		.btn-accent
+			font-size: 12px
+		.btn
+			text-transform: none
+			font-size: 1rem
+			font-weight: 400
+		
+.modal
+	position: relative
+	max-width: 100%
+	text-align: center
+	padding: 60px 15px
+	overflow: hidden
+	&__callback
+		width: 620px
+	&__title
+		font-size: 1.214rem
+		line-height: 1.2
+	&__descr
+		color: #6f6f6f
+		margin: 1em 0 0
+	&__close
+		position: absolute
+		right: 15px
+		top: 15px
+		display: inline-block
+		font-size: 15px
+		line-height: 1
+	&__buy-fast
+		width: 700px		
+	&__measurer
+		width: 1070px
+		@include media-breakpoint-down($media_l)
+			width: 100%
+	&__review
+		width: 690px
+		textarea
+			border: 1px solid $color-inputs-border
+			padding: 1.428em
+			min-height: 190px
+			@include media-breakpoint-down($media_s)
+				min-height: 90px
+		.form__group-buttons
+			padding-top: 10px
+			text-align: center
+	&__reviews
+		text-align: left
+		padding-right: 4%
+		max-width: 1200px
+		width: 100%
+		.reviews__item-content
+			max-height: none
+			height: auto
+	form
+		margin: 4em auto 0
+		text-align: left
+	
+.form__callback 	
+	max-width: 300px
+	.form__group-buttons
+		padding-top: 1.4rem
+
+
+
+.fancybox-close-small
+	opacity: 0.5
+
+
+.answer-content
+	text-align: left
+	line-height: 1.35
+	>*
+		margin: 0 0 1em
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.25
+		text-transform: uppercase
+	h4
+		font-size: 1.428em
+
+.how-to-sample
+	line-height: 1.35
+	text-align: left
+	overflow: hidden
+	.container
+		overflow-x: auto
+	p
+		margin: 0
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.25
+		text-transform: uppercase
+		margin: 0 0 1em
+	ul, ol
+		margin: 0 0 1em
+	h4
+		font-size: 1.428em
+	table
+		width: 100%
+		max-width: 1390px
+		border-collapse: collapse
+		margin-bottom: 1em
+		line-height: 1.25
+		thead
+			font-size: 0.93em
+		th
+			font-weight: 700
+			border-bottom: 1px solid #e1e1e1
+			padding: 10px 15px 10px 0
+			width: 25%
+			&:last-of-type
+				padding-right: 0
+		td
+			padding: 10px 15px 10px 0 
+			width: 25%
+			&:last-of-type
+				padding-right: 0
+		tbody tr:first-child
+			td
+				padding-top: 20px
+	ul
+		padding: 0
+		li
+			list-style-type: none
+			line-height: 1.2
+			margin-bottom: 1em
+			position: relative
+			padding-left: 20px
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 4px
+				height: 4px
+				display: inline-block
+				background: $accent-light
+	.important
+		padding-left: $gutter
+		margin: 0 0 1em
+		border-left: 5px solid #323232
+		p
+			margin: 0 0 1em
+
+
+@include media-breakpoint-down($media_s)
+	.modal form
+		margin: 2em auto 0
+	.answer-content
+		h4
+			font-size: 1em
+	.how-to-sample
+		h4
+			font-size: 1em
+		table
+			font-size: 10px

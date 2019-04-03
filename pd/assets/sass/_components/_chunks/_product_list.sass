@@ -1,0 +1,61 @@
+.products__list
+  .products
+    &__item
+      flex: 0 0 100%
+      max-width: 100%
+      margin: 0 0 40px
+      padding: 0 0 40px
+      border-bottom: 1px solid #e8e8e8
+      align-items: flex-start
+      justify-content: space-between
+      font-size: 9px
+      &:last-child
+        margin: 0
+        padding: 0
+        border: none
+      &-img
+        flex: 0 0 80px
+        max-width: 80px
+      &-content
+        flex: 0 0 calc(100% - 95px)
+        max-width: calc(100% - 95px)
+        padding: 0 15px 0 30px
+      &-remove
+        flex: 0 0 15px
+    &__name
+      min-height: 17px
+      margin-bottom: 5px
+      font-size: 1em
+    &__attribute
+      min-height: auto
+      margin-bottom: 11px
+      line-height: 1.4
+      &-item
+        margin-bottom: 0
+    &__price-main
+      margin: 0
+    &__price
+      margin: 10px 0 0
+      font-size: 1.04em
+  &.__short
+    .products
+      &__item
+        padding: 0
+        border: none
+        margin-bottom: 2.3rem
+        font-size: 10px
+        &-img
+          flex: 0 0 45px
+          max-width: 45px
+        &-content
+          flex: 0 0 calc(100% - 45px)
+          max-width: calc(100% - 45px)
+          padding: 0 0 0 38px
+          @include media-breakpoint-down($media_m)
+            padding: 0 0 0 16px
+      &__attribute
+        font-size: 1em
+        margin-bottom: 0
+      &__name
+        min-height: 0
+        margin-bottom: 1rem

@@ -1,0 +1,71 @@
+.search-empty
+  max-width: 900px
+  margin: 0 auto
+  padding: 3.57rem 0 10rem
+  text-align: center
+  &__head
+    max-width: 510px
+    margin: 0 auto 4.7rem
+    .page__title
+      line-height: 1.1
+      margin-bottom: 2rem
+    .page__descr
+      color: #5c5c5c
+      font-size: 1.07em
+      line-height: 1.4
+  &__content
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.1)
+    padding: 50px 15px
+    .title
+      color: #222222
+      font-size: 1.714rem
+      text-transform: none
+      line-height: 1
+      margin-bottom: 2.8rem
+  &__contacts
+    align-items: center
+    justify-content: center
+    &-item 
+      margin: 0 1rem
+  &__phones, &__callback
+    display: inline-flex
+    justify-content: flex-start
+    align-items: center
+  &__phones    
+    .phone
+      min-width: 190px
+      line-height: 1.4
+      span
+        margin-right: 1rem
+    i
+      font-size: 30px
+      line-height: 1.3
+      margin-left: 1.6rem
+  &__callback
+    align-items: flex-start
+    min-width: 27.5%
+    i
+      font-size: 32px
+      line-height: 1
+      margin-right: 1.6rem
+    .callback
+      max-width: 110px
+      text-align: left
+      line-height: 1.3
+
+@include media-breakpoint-down($media_m)
+  .search-empty__contacts-item
+    margin: 0 10px
+@include media-breakpoint-down($media_s)
+  .search-empty
+    padding: 0.5rem 0 3rem
+  .search-empty__head
+    margin: 0 auto 3rem
+  .search-empty__content
+    padding: 40px 15px
+  .search-empty__contacts-item
+    margin: 0 0 2rem
+    flex: 0 0 100%
+    justify-content: center
+    &:last-child
+      margin-bottom: 0

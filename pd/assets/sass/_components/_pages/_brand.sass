@@ -1,0 +1,61 @@
+.maincontent__brand
+  padding-bottom: 2.7rem
+  .page__title
+    text-transform: uppercase
+    margin-bottom: 1.7rem
+  .products
+    padding-bottom: 3rem 
+.brand__info
+  justify-content: space-between
+  margin-bottom: 5rem
+  &-descr
+    flex: 0 0 41.35%
+    max-width: 41.35%
+    .brand__logo
+      margin-bottom: 4.285rem
+    .brand__text
+      columns: 2
+      column-gap: 60px 
+      color: #272727
+      font-size: 15px
+      >*
+        margin-bottom: 1.5em
+  &-img
+    flex: 0 0 51.3%
+    max-width: 51.3%
+  
+@include media-breakpoint-down($media_xxxxl)
+  .brand__info-descr
+    flex: 0 0 45%
+    max-width: 45%
+    .brand__logo
+      margin-bottom: 2rem
+    .brand__text
+      columns: 1
+  .brand__info
+    margin-bottom: 4rem
+  .maincontent__brand
+    padding-bottom: 0   
+
+@include media-breakpoint-down($media_xl)
+  .brand__info-descr
+    flex: 0 0 58%
+    max-width: 58%
+    .brand__text
+      >*
+        margin-bottom: 1em
+  .brand__info-img
+    flex: 0 0 40%
+    max-width: 40%
+  
+@include media-breakpoint-down($media_xl)
+  .brand__info-descr, .brand__info-img
+    flex: 0 0 100%
+    max-width: 100%
+  .brand__info-img
+    text-align: center
+    img
+      margin: 0 auto
+@include media-breakpoint-down($media_s)
+  .maincontent__brand .products
+    padding-bottom: 1rem
