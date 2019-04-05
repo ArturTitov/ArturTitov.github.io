@@ -410,95 +410,79 @@
               </ul>
             </div>
             <div class="account__content-col">
-              <div class="account__title"> <span>Мой профиль</span></div>
-              <form class="account__user-form">
-                <div class="account__user-row account__user-info">
-                  <div class="title">Контактные данные:</div>
-                  <div class="form__groups __cols-3">
-                    <div class="form__group">
-                      <input class="form__group-input" name="name" type="text" placeholder="ФИО*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="email" type="email" placeholder="E-mail*">
-                    </div>
-                    <div class="form__group form__group-phone">
-                      <select class="country-select" name="language">
-                        <option value="ua" selected>ua</option>
-                        <option value="ru">ru</option>
-                        <option value="kz">kz</option>
-                      </select>
-                      <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="city" type="text" placeholder="Укажите город">
-                    </div>
-                    <div class="form__group __select_bd-b">
-                      <select class="custom-select" name="sex">
-                        <option value="default" selected>Выберите свой пол</option>
-                        <option value="man">Мужской</option>
-                        <option value="woman">Женский</option>
-                      </select>
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="birthday" type="text" placeholder="Укажите дату своего рождения">
-                    </div>
+              <div class="account__title"> <span>Мои заказы</span></div>
+              <div class="order">
+                <div class="table order-table">
+                  <div class="thead">
+                    <div class="tr"><span class="td">Номер заказа</span><span class="td">Дата заказа</span><span class="td">Количество</span><span class="td">Сумма заказа</span><span class="td">Статус заказа</span></div>
                   </div>
-                </div>
-                <div class="account__user-row account__user-addresses">
-                  <div class="title">Мои адреса:</div>
-                  <div class="addresses">
-                    <label class="addresses__item">
-                      <input name="address" type="radio" checked><b>Новая Почта</b><span>г. Харьков, ул. Отакара Яроша, 15</span>
-                    </label>
-                    <label class="addresses__item">
-                      <input name="address" type="radio"><b>Дом</b><span>г. Харьков, ул. Отакара Яроша, 15</span>
-                    </label>
-                  </div>
-                  <div class="add__address">
-                    <div class="add__address-toggle js-account-address-toggle"><span>Добавить адрес</span><i class="icon-chevron-thin-down"></i></div>
-                    <div class="add__address-form">
-                      <div class="form__groups __m-b __cols-3">
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressName" type="text" placeholder="Введите название адреса">
-                        </div>
-                      </div>
-                      <div class="form__groups __cols-3">
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressCity" type="text" placeholder="Город">
-                        </div>
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressStreetName" type="text" placeholder="Название улицы">
-                        </div>
-                        <div class="form__group __cols-2">
-                          <div class="form__group">
-                            <input class="form__group-input" name="addressStreetNum" type="text" placeholder="Номер улицы">
+                  <div class="tbody">
+                    <div class="table__row">
+                      <div class="tr"><span class="td">№765</span><span class="td">24.03.2019 - ...</span><span class="td">3</span><span class="td">4 567 грн</span><span class="td __light">В обработке</span><span class="td"><a class="order__more-trigger js-order-descr" href="#"><i class="icon-chevron-thin-right"></i></a></span></div>
+                      <div class="order__more">
+                        <div class="order__descr">
+                          <div class="order__descr-title">Заказ №567</div>
+                          <div class="order__descr-products">
+                            <div class="order__descr-products--item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
                           </div>
-                          <div class="form__group">
-                            <input class="form__group-input" name="addressHouse" type="text" placeholder="Номер дома">
+                          <div class="order__descr-total">
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Сумма</span><span class="order__descr-total--value">45 700грн</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Дата</span><span class="order__descr-total--value">21.01.2019-30.04.2019</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Статус</span><span class="order__descr-total--value">Выполнено</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Оплата</span><span class="order__descr-total--value">Наличными</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Доставка</span><span class="order__descr-total--value">Саовывоз с Новой Почты</span></div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <!-- /.table__row			-->
+                    <div class="table__row">
+                      <div class="tr"><span class="td">№765</span><span class="td">21.03.2019 - 23.03.209</span><span class="td">1</span><span class="td">2 100 грн</span><span class="td __dark">Выполнен</span><span class="td"><a class="order__more-trigger js-order-descr" href="#"><i class="icon-chevron-thin-right"></i></a></span></div>
+                      <div class="order__more">
+                        <div class="order__descr">
+                          <div class="order__descr-title">Заказ №567</div>
+                          <div class="order__descr-products">
+                            <div class="order__descr-products--item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                          </div>
+                          <div class="order__descr-total">
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Сумма</span><span class="order__descr-total--value">45 700грн</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Дата</span><span class="order__descr-total--value">21.01.2019-30.04.2019</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Статус</span><span class="order__descr-total--value">Выполнено</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Оплата</span><span class="order__descr-total--value">Наличными</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Доставка</span><span class="order__descr-total--value">Саовывоз с Новой Почты</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.table__row			-->
+                    <div class="table__row">
+                      <div class="tr"><span class="td">№765</span><span class="td">08.03.2019 - 10.03.209</span><span class="td">19</span><span class="td">14 570 грн</span><span class="td __dark">Выполнен</span><span class="td"><a class="order__more-trigger js-order-descr" href="#"><i class="icon-chevron-thin-right"></i></a></span></div>
+                      <div class="order__more">
+                        <div class="order__descr">
+                          <div class="order__descr-title">Заказ №567</div>
+                          <div class="order__descr-products">
+                            <div class="order__descr-products--item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                            <div class="order__descr-products--item item"><a class="order__descr-products--item-link" href="product__floor.html">Входная дверь GROFF P2-206 Беленый Дуб</a><span class="order__descr-products--item-count">x2</span><span class="order__descr-products--item-sum">16 754 грн</span></div>
+                          </div>
+                          <div class="order__descr-total">
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Сумма</span><span class="order__descr-total--value">45 700грн</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Дата</span><span class="order__descr-total--value">21.01.2019-30.04.2019</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Статус</span><span class="order__descr-total--value">Выполнено</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Оплата</span><span class="order__descr-total--value">Наличными</span></div>
+                            <div class="order__descr-total--item"><span class="order__descr-total--key">Доставка</span><span class="order__descr-total--value">Саовывоз с Новой Почты</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.table__row			-->
                   </div>
                 </div>
-                <div class="account__user-row account__user-passwords">
-                  <div class="title">Пароль:</div>
-                  <div class="form__groups __cols-3">
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordOld" type="password" required placeholder="Введите старый пароль*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordNew" type="password" required placeholder="Придумайте новый пароль*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordRepeat" type="password" required placeholder="Повторите новый пароль*">
-                    </div>
-                  </div>
-                </div>
-                <div class="btn-wrap">
-                  <button class="btn-accent __light" type="submit"><span>Сохранить    </span></button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

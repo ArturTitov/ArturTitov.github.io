@@ -410,93 +410,49 @@
               </ul>
             </div>
             <div class="account__content-col">
-              <div class="account__title"> <span>Мой профиль</span></div>
-              <form class="account__user-form">
-                <div class="account__user-row account__user-info">
-                  <div class="title">Контактные данные:</div>
-                  <div class="form__groups __cols-3">
-                    <div class="form__group">
-                      <input class="form__group-input" name="name" type="text" placeholder="ФИО*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="email" type="email" placeholder="E-mail*">
-                    </div>
-                    <div class="form__group form__group-phone">
-                      <select class="country-select" name="language">
-                        <option value="ua" selected>ua</option>
-                        <option value="ru">ru</option>
-                        <option value="kz">kz</option>
-                      </select>
-                      <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="city" type="text" placeholder="Укажите город">
-                    </div>
-                    <div class="form__group __select_bd-b">
-                      <select class="custom-select" name="sex">
-                        <option value="default" selected>Выберите свой пол</option>
-                        <option value="man">Мужской</option>
-                        <option value="woman">Женский</option>
-                      </select>
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="birthday" type="text" placeholder="Укажите дату своего рождения">
-                    </div>
+              <div class="account__title"> <span>Рассылки</span></div>
+              <form class="mailing-form">
+                <div class="form__row">
+                  <div class="title">Виды рассылок:</div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="news" checked><span class="__upper">Новости, акции компании</span>
+                    </label>
+                    <p class="label-descr">Будьте в курсе всех событий магазина, просматривайте обзоры.</p>
+                  </div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="sale" checked><span class="__upper">Информация об акциях, промокодах и скидках</span>
+                    </label>
+                    <p class="label-descr">Периодически мы проводим акции со скидками, розыгрышами, промокодами и прочими инструментами, которые могут помочь вам сэкономить на покупке, подобрать подарок себе или близким. Мы обязательно сообщим вам о таких кампаниях, и вы сможете покупать на «Полы и двери» по самым лучшим ценам.</p>
+                  </div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="personalSale" checked><span class="__upper">ПЕРСОНАЛЬНЫЕ СКИДКИ И ПРЕДЛОЖЕНИЯ</span>
+                    </label>
+                    <p class="label-descr">Мы сообщим вам, если у нас появится скидка на товар, которым вы интересовались, товар, который вы добавили в список желаний, или товар, который подобрала наша рекомендационная система.</p>
                   </div>
                 </div>
-                <div class="account__user-row account__user-addresses">
-                  <div class="title">Мои адреса:</div>
-                  <div class="addresses">
-                    <label class="addresses__item">
-                      <input name="address" type="radio" checked><b>Новая Почта</b><span>г. Харьков, ул. Отакара Яроша, 15</span>
-                    </label>
-                    <label class="addresses__item">
-                      <input name="address" type="radio"><b>Дом</b><span>г. Харьков, ул. Отакара Яроша, 15</span>
+                <div class="form__row">
+                  <div class="title">Сообщения отправляются по следующим каналам:</div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="emailing" checked><span>E-mail письма</span>
                     </label>
                   </div>
-                  <div class="add__address">
-                    <div class="add__address-toggle js-account-address-toggle"><span>Добавить адрес</span><i class="icon-chevron-thin-down"></i></div>
-                    <div class="add__address-form">
-                      <div class="form__groups __m-b __cols-3">
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressName" type="text" placeholder="Введите название адреса">
-                        </div>
-                      </div>
-                      <div class="form__groups __cols-3">
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressCity" type="text" placeholder="Город">
-                        </div>
-                        <div class="form__group">
-                          <input class="form__group-input" name="addressStreetName" type="text" placeholder="Название улицы">
-                        </div>
-                        <div class="form__group __cols-2">
-                          <div class="form__group">
-                            <input class="form__group-input" name="addressStreetNum" type="text" placeholder="Номер улицы">
-                          </div>
-                          <div class="form__group">
-                            <input class="form__group-input" name="addressHouse" type="text" placeholder="Номер дома">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="sms" checked><span>SMS сообщения</span>
+                    </label>
                   </div>
-                </div>
-                <div class="account__user-row account__user-passwords">
-                  <div class="title">Пароль:</div>
-                  <div class="form__groups __cols-3">
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordOld" type="password" required placeholder="Введите старый пароль*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordNew" type="password" required placeholder="Придумайте новый пароль*">
-                    </div>
-                    <div class="form__group">
-                      <input class="form__group-input" name="passwordRepeat" type="password" required placeholder="Повторите новый пароль*">
-                    </div>
+                  <div class="label-wrap">
+                    <label class="label__check">
+                      <input class="input-checkbox" type="checkbox" name="socials"><span>Сообщения в Viber/Telegram</span>
+                    </label>
                   </div>
                 </div>
                 <div class="btn-wrap">
-                  <button class="btn-accent __light" type="submit"><span>Сохранить    </span></button>
+                  <button class="btn-accent __light" type="submit"><span>Сохранить</span></button>
                 </div>
               </form>
             </div>
