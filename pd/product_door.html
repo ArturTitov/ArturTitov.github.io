@@ -662,7 +662,24 @@
                     <button class="btn-round toggle-block__btn" type="button"><i class="icon-arrow-thin-right"></i></button>
                     <div class="product__interior-nav toggle-block__content">
                       <div class="title">Выберите вариант интерьера:</div>
-                      <div class="product__interior-nav-images flex f-w"><a class="product__interior-item icon active" data-large="assets/img/products/interiors/interior_1.jpg"><img class="lazyload" data-src="assets/img/products/interiors/interior_thumb_1.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/interior_2.jpg"><img class="lazyload" data-src="assets/img/products/interiors/interior_thumb_2.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/interior_3.jpg"><img class="lazyload" data-src="assets/img/products/interiors/interior_thumb_3.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/interior_4.jpg"><img class="lazyload" data-src="assets/img/products/interiors/interior_thumb_4.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/interior_5.jpg"><img class="lazyload" data-src="assets/img/products/interiors/interior_thumb_5.jpg" alt="alt"></a></div><a class="btn js-download" href="assets/img/products/interiors/interior_1.jpg" download><span>Скачать изображение</span><i class="icon-download"></i></a>
+                      <div class="product__interior-nav-list">
+                        <div class="product__interior-nav-item">
+                          <div class="title">Modern</div>
+                          <div class="product__interior-nav-images"><a class="product__interior-item icon active" data-large="assets/img/products/interiors/dveri_1.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_1_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_2.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_2_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_3.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_3_thumb.jpg" alt="alt"></a></div>
+                        </div>
+                        <div class="product__interior-nav-item">
+                          <div class="title">Loft</div>
+                          <div class="product__interior-nav-images"><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_4.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_4_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_5.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_5_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_6.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_6_thumb.jpg" alt="alt"></a></div>
+                        </div>
+                        <div class="product__interior-nav-item">
+                          <div class="title">Pop</div>
+                          <div class="product__interior-nav-images"><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_7.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_7_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_8.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_8_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_9.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_9_thumb.jpg" alt="alt"></a></div>
+                        </div>
+                        <div class="product__interior-nav-item">
+                          <div class="title">Classic</div>
+                          <div class="product__interior-nav-images"><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_10.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_10_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_11.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_11_thumb.jpg" alt="alt"></a><a class="product__interior-item icon" data-large="assets/img/products/interiors/dveri_12.jpg"><img class="lazyload" data-src="assets/img/products/interiors/dveri_12_thumb.jpg" alt="alt"></a></div>
+                        </div>
+                      </div><a class="btn js-download" href="assets/img/products/interiors/interior_1.jpg" download><span>Скачать изображение</span><i class="icon-download"></i></a>
                     </div>
                   </div>
                 </div>
@@ -1948,15 +1965,15 @@
           <div class="modal__title title">Обратный звонок</div>
           <form class="form__callback">   
             <div class="form__group">
-              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
             </div>
             <div class="form__group form__group-phone">
-              <select class="country-select" name="language">
+              <select class="country-select" name="country">
                 <option value="ua" selected>ua</option>
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -1970,15 +1987,15 @@
           <p class="modal__descr">Оставьте свои контактные данные и наш менеджер перезвонит вам в рабочее время и уточнит все детали.</p>
           <form class="form__buy-fast form__callback"> 
             <div class="form__group">
-              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
             </div>
             <div class="form__group form__group-phone">
-              <select class="country-select" name="language">
+              <select class="country-select" name="country">
                 <option value="ua" selected>ua</option>
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -1996,7 +2013,7 @@
                 <input class="form__group-input" name="name" type="text" placeholder="Укажите Ваше имя">
               </div>
               <div class="form__group form__group-phone">
-                <select class="country-select" name="language">
+                <select class="country-select" name="country">
                   <option value="ua" selected>ua</option>
                   <option value="ru">ru</option>
                   <option value="kz">kz</option>
@@ -2004,7 +2021,7 @@
                 <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
               </div>
               <div class="form__group">
-                <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату">
+                <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату*">
               </div>
               <div class="form__group __select_bd-b">
                 <select class="custom-select" name="city">
@@ -2061,6 +2078,75 @@
         </div>
         <div class="modal" id="modal__custom">
           <p>Форма рассрочки</p>
+        </div>
+        <div id="modal__order"></div>
+        <div class="modal modal__cooperation" id="modal__cooperation">
+          <div class="modal__title title">Заполните анкету</div>
+          <form class="form__measurer">
+            <div class="form__groups __cols-3">
+              <div class="form__group">
+                <input class="form__group-input" name="name" type="text" placeholder="ФИО">
+              </div>
+              <div class="form__group form__group-phone">
+                <select class="country-select" name="country">
+                  <option value="ua" selected>ua</option>
+                  <option value="ru">ru</option>
+                  <option value="kz">kz</option>
+                </select>
+                <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="email" type="email" required placeholder="Укажите Ваш E-mail*">
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="city" type="text" placeholder="Укажите Ваш город">
+              </div>
+              <div class="form__group __select_bd-b">
+                <select class="custom-select" name="career">
+                  <option value="1" selected>Род деятельности</option>
+                  <option value="5">Частный дизайнер/декоратор</option>
+                  <option value="2">Дизайн студия</option>
+                  <option value="3">Строительная компания</option>
+                  <option value="4">Комплектация объектов</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <input class="form__group-input" name="portfolio" type="text" placeholder="Ссылка на сайт портфолио">
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="label__check">
+                <input name="personaldata" type="checkbox" required><span>Согласен(а) на обработку персональных данных</span>
+              </label>
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Отправить</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal__discount" id="modal__discount">
+          <div class="modal__title title">Получение лисконта -15%</div>
+          <p class="modal__descr">Для получения болле выгодного предложения оставьте свой контактный телефон</p>
+          <form class="form__callback">   
+            <div class="form__group">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
+            </div>
+            <div class="form__group form__group-phone">
+              <select class="country-select" name="country">
+                <option value="ua" selected>ua</option>
+                <option value="ru">ru</option>
+                <option value="kz">kz</option>
+              </select>
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Получить дисконт</span></button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
