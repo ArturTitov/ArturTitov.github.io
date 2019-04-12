@@ -1816,6 +1816,8 @@
           <div class="line"></div>
         </div>
       </div>
+      <div class="top"><i class="icon-chevron-thin-up"></i></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ79uJPujvlv4hzNzKoOsq9umUqTU_JiE"></script>
       <script src="assets/js/scripts.min.js"></script>
       <div class="page-overlay"></div>
       <div class="modal__cart" id="modal__cart">
@@ -2109,10 +2111,11 @@
             </div>
           </form>
         </div>
-        <div class="modal modal__discount" id="modal__discount">
-          <div class="modal__title title">Получение лисконта -15%</div>
-          <p class="modal__descr">Для получения болле выгодного предложения оставьте свой контактный телефон</p>
-          <form class="form__callback">   
+        <div class="modal modal__discount" id="modal__discount" data-time="10000">
+          <div class="modal__title title">Получение дисконта -15%</div>
+          <p class="modal__descr">Для получения выгодного предложения оставьте свой контактный телефон</p>
+          <div class="discount-banner"><img src="assets/img/discont-modal.png" alt="Получи дисконт"></div>
+          <form class="form__discount">   
             <div class="form__group">
               <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
             </div>

@@ -460,6 +460,8 @@
           <div class="line"></div>
         </div>
       </div>
+      <div class="top"><i class="icon-chevron-thin-up"></i></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ79uJPujvlv4hzNzKoOsq9umUqTU_JiE"></script>
       <script src="assets/js/scripts.min.js"></script>
       <div class="page-overlay"></div>
       <div class="modal__cart" id="modal__cart">
@@ -592,7 +594,7 @@
           <div class="modal__title title">Обратный звонок</div>
           <form class="form__callback">   
             <div class="form__group">
-              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
             </div>
             <div class="form__group form__group-phone">
               <select class="country-select" name="country">
@@ -600,7 +602,7 @@
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -614,7 +616,7 @@
           <p class="modal__descr">Оставьте свои контактные данные и наш менеджер перезвонит вам в рабочее время и уточнит все детали.</p>
           <form class="form__buy-fast form__callback"> 
             <div class="form__group">
-              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
             </div>
             <div class="form__group form__group-phone">
               <select class="country-select" name="country">
@@ -622,7 +624,7 @@
                 <option value="ru">ru</option>
                 <option value="kz">kz</option>
               </select>
-              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон">
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
             </div>
             <div class="form__group ta-c">
               <div class="form__group-buttons">
@@ -648,7 +650,7 @@
                 <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" placeholder="Укажите Ваш телефон">
               </div>
               <div class="form__group">
-                <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату">
+                <input class="form__group-input" name="data" type="text" required placeholder="Укажите желаемую дату*">
               </div>
               <div class="form__group __select_bd-b">
                 <select class="custom-select" name="city">
@@ -749,6 +751,29 @@
             <div class="form__group ta-c">
               <div class="form__group-buttons">
                 <button class="btn-accent __light" type="submit"><span>Отправить</span></button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal__discount" id="modal__discount" data-time="10000">
+          <div class="modal__title title">Получение дисконта -15%</div>
+          <p class="modal__descr">Для получения выгодного предложения оставьте свой контактный телефон</p>
+          <div class="discount-banner"><img src="assets/img/discont-modal.png" alt="Получи дисконт"></div>
+          <form class="form__discount">   
+            <div class="form__group">
+              <input class="form__group-input" name="name" type="text" required placeholder="Укажите Ваше имя*">
+            </div>
+            <div class="form__group form__group-phone">
+              <select class="country-select" name="country">
+                <option value="ua" selected>ua</option>
+                <option value="ru">ru</option>
+                <option value="kz">kz</option>
+              </select>
+              <input class="form__group-input input-phone" name="phone" type="tel" autocomplete="off" required placeholder="Укажите Ваш телефон*">
+            </div>
+            <div class="form__group ta-c">
+              <div class="form__group-buttons">
+                <button class="btn-accent __light" type="submit"><span>Получить дисконт</span></button>
               </div>
             </div>
           </form>
